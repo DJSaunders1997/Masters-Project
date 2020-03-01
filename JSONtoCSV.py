@@ -3,6 +3,7 @@
 # At the end puts in pandas dataframe and saves as csv
 
 import json
+import time
 import pandas as pd
 
 # To unpacks dictionary to Python list
@@ -48,3 +49,30 @@ def list_JSON_dicts2string_np(list_json_dicts):
         print('{} / {} completed'.format(i+1, length))
 
     return mouse_events_array
+
+
+def convert_json_to_csv(filename):
+    '''
+    Filename must end in .json
+    '''
+    start_time = time.time()
+
+    with open('mouse_events.json') as json_file:
+        mouse_events = json.load(json_file)
+
+    mouse_events_list = list_JSON_dicts2string_np(mouse_events)
+    mouse_events_dataframe = pd.DataFrame(mouse_events_list).rename(columns={0 : "button",
+                                                                         1 : "event_type",
+                                                                         2 : "target",
+                                                                         3 : "time",
+                                                                         4 : "x", 
+                                                                         5 : "y", 
+                                                                         6 : "step",
+                                                                         7 : "turkId"})
+
+    mouse_events_dataframe.to_csv(filename[:-4] + 'csv')   # Saves to filename without the .json
+    end_time = time.time()
+    print("Time taken: {} s".format(int(end_time-start_time)))	
+
+################# Run ###################
+convert_json_to_csv('mouse_events.json')
