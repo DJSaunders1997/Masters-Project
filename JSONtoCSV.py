@@ -75,4 +75,4 @@ def convert_json_to_csv(filename):
     print("Time taken: {} s".format(int(end_time-start_time)))	
 
 ################# Run ###################
-convert_json_to_csv('mouse_events.json')
+#convert_json_to_csv('mouse_events.json')
