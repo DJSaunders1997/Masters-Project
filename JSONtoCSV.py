@@ -14,6 +14,8 @@ def JSON_dict2python_list(json_dict):
     events_length   =   len(json_dict['events']) # number of events this json object has
     list_events = []    # initilise list as empty
 
+    # TODO 'normalise' time
+
     for i in range((events_length)):
 
         values =    [

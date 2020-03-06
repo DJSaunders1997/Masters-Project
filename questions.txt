@@ -1,0 +1,23 @@
+Report was bad
+
+What is x, y ? - Pixels, are there different screen resolutions?
+
+What does the task look like? - Good for motovation and background in presentation
+
+Can only get lab study data - combine_study_data.sh removes all files
+
+
+apply model to other turk studies and find whos paying attention.
+
+tree, svm, random forrest
+
+
+LSTM NN - good for time
+try trigram, tuple of 3 items actions
+3 actions at a time
+start with 3 mouse actions at a time.
+
+Hyptothesis if lots of drag and ditrvtion change = more interation = more attention 
+
+(Try model time)
+
