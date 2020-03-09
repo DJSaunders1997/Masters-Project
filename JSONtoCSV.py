@@ -59,7 +59,7 @@ def convert_json_to_csv(filename):
     '''
     start_time = time.time()
 
-    with open('mouse_events.json') as json_file:
+    with open(filename) as json_file:
         mouse_events = json.load(json_file)
 
     mouse_events_list = list_JSON_dicts2string_np(mouse_events)
