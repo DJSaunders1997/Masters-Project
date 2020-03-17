@@ -7,7 +7,7 @@ import time
 import pandas as pd
 
 # To unpacks dictionary to Python list
-def JSON_dict2python_list(json_dict):
+def JSON_dict2python_list(json_dict, start_time):
     '''
     TODO Docstring
     '''
@@ -22,7 +22,7 @@ def JSON_dict2python_list(json_dict):
                     json_dict['events'][i]['button'],
                     json_dict['events'][i]['event_type'],
                     json_dict['events'][i]['target'],
-                    json_dict['events'][i]['time'],
+                    (json_dict['events'][i]['time'] - start_time) / 1000 ,    # normalized time assume in ms
                     json_dict['events'][i]['x'],
                     json_dict['events'][i]['y'],
                     json_dict['step'],
@@ -41,8 +41,11 @@ def list_JSON_dicts2string_np(list_json_dicts):
     length = len(list_json_dicts)
     mouse_events_array = []
 
+    # Normalize time
+    start_time = list_json_dicts[0]['events'][0]['time']
+
     for i in range(length):
-        events_items = JSON_dict2python_list(list_json_dicts[i])   # Indexes will be continuous
+        events_items = JSON_dict2python_list(list_json_dicts[i], start_time)   # Indexes will be continuous
         # events_items is [event1, event2]
         # Loop ensures events are both appended as seperate items
         for item in events_items:
@@ -77,4 +80,4 @@ def convert_json_to_csv(filename):
     print("Time taken: {} s".format(int(end_time-start_time)))	
 
 ################# Run ###################
-#convert_json_to_csv('mouse_events.json')
+convert_json_to_csv('mouse_events.json')
