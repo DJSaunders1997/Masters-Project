@@ -5,14 +5,12 @@ import pandas as pd
 
 
 # To unpacks dictionary to Python list
-def lab_JSON_dict2python_list(json_dict, turk_id):
+def lab_JSON_dict2python_list(json_dict, turk_id, start_time):
     '''
     TODO Docstring
     '''
     events_length   =   len(json_dict['events']) # number of events this json object has
-    list_events = []    # initilise list as empty
-
-    # TODO 'normalise' time
+    list_events = []    # initialise list as empty
 
     for i in range((events_length)):
 
@@ -20,7 +18,7 @@ def lab_JSON_dict2python_list(json_dict, turk_id):
                     json_dict['events'][i]['button'],
                     json_dict['events'][i]['event_type'],
                     json_dict['events'][i]['target'],
-                    json_dict['events'][i]['time'],
+                    (json_dict['events'][i]['time'] - start_time) / 1000 ,    # normalized time assume in ms
                     json_dict['events'][i]['x'],
                     json_dict['events'][i]['y'],
                     json_dict['step'],
@@ -40,10 +38,13 @@ def lab_list_JSON_dicts2string_np(list_json_dicts, turk_id):
     length = len(list_json_dicts)
     mouse_events_array = []
 
+    # Normalize time
+    start_time = list_json_dicts[0]['events'][0]['time']    # Get first dictionary, first events data
+
     for i in range(length):
-        events_items = lab_JSON_dict2python_list(list_json_dicts[i], turk_id)   # Indexes will be continuous
+        events_items = lab_JSON_dict2python_list(list_json_dicts[i], turk_id, start_time)   # Indexes will be continuous
         # events_items is [event1, event2]
-        # Loop ensures events are both appended as seperate items
+        # Loop ensures events are both appended as separate items
         for item in events_items:
             mouse_events_array.append(item)
 
@@ -57,11 +58,12 @@ def lab_list_JSON_dicts2string_np(list_json_dicts, turk_id):
 
 all_mouseevents = []
 directory_name = 'No-sa-Lab-Study-data'
-turk_id = 0 # Should be user ID but trying to be consistant with other file.
+i = 0
 
 for file in os.listdir(directory_name):
 
-        turk_id = turk_id + 1 # increment turk id for each new file
+        i = i + 1
+        turk_id = 'ID: {}'.format(i) # increment turk id for each new file
 
         with open(directory_name +'\\'+ file) as json_file:
                 dict = json.load(json_file)
