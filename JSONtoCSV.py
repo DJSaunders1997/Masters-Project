@@ -42,7 +42,7 @@ def list_JSON_dicts2string_np(list_json_dicts):
     mouse_events_array = []
 
     # Normalize time
-    start_time = list_json_dicts[0]['events'][0]['time']
+    start_time = list_json_dicts[0]['events'][0]['time']    # TODO fix!! Can have negitive times for some reason.
 
     for i in range(length):
         events_items = JSON_dict2python_list(list_json_dicts[i], start_time)   # Indexes will be continuous
