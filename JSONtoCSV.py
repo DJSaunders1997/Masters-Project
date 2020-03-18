@@ -7,7 +7,7 @@ import time
 import pandas as pd
 
 # To unpacks dictionary to Python list
-def JSON_dict2python_list(json_dict, start_time):
+def JSON_dict2python_list(json_dict, start_time, current_Id):
     '''
     TODO Docstring
     '''
@@ -15,14 +15,22 @@ def JSON_dict2python_list(json_dict, start_time):
     list_events = []    # initilise list as empty
 
     # TODO 'normalise' time
+    
+    if current_Id != json_dict['turkId']:    # test this bad boi
+        current_Id = json_dict['turkId']
+        start_time = json_dict['events'][0]['time'] # Assign start_time to first record in the list of dictionaries
 
     for i in range((events_length)):
+
+        old_time = json_dict['events'][i]['time']
+        debug_curr_time = json_dict['events'][i]['time'] - start_time 
+        debug_time = (debug_curr_time) / 1000   # For easier debugging
 
         values =    [
                     json_dict['events'][i]['button'],
                     json_dict['events'][i]['event_type'],
                     json_dict['events'][i]['target'],
-                    (json_dict['events'][i]['time'] - start_time) / 1000 ,    # normalized time assume in ms
+                    debug_time, #(json_dict['events'][i]['time'] - start_time) / 1000 ,    # normalized time assume in ms
                     json_dict['events'][i]['x'],
                     json_dict['events'][i]['y'],
                     json_dict['step'],
@@ -31,7 +39,7 @@ def JSON_dict2python_list(json_dict, start_time):
 
         list_events.append(values)
 
-    return list_events
+    return list_events, start_time, current_Id
 
 # Unpacks list of dictionaries to Python list
 def list_JSON_dicts2string_np(list_json_dicts):
@@ -41,17 +49,32 @@ def list_JSON_dicts2string_np(list_json_dicts):
     length = len(list_json_dicts)
     mouse_events_array = []
 
-    # Normalize time
-    start_time = list_json_dicts[0]['events'][0]['time']    # TODO fix!! Can have negitive times for some reason.
+    current_Id = list_json_dicts[0]['turkId']
 
-    for i in range(length):
-        events_items = JSON_dict2python_list(list_json_dicts[i], start_time)   # Indexes will be continuous
+    #if current_Id == list_json_dicts[0]['turkId']:
+    #    current_Id = list_json_dicts[0]['turkId']
+
+    ########################################################################
+    ######## Lets assume any new user would be in its own list_json_dicts so:
+    ######## Do any checking of userIds and start times here.
+
+    # Normalize time
+    start_time = list_json_dicts[0]['events'][0]['time']    # TODO fix!! Can have negative times for some reason.
+
+    for i in range(length): # SEe what i is on error
+        events_items, new_start_time, new_current_Id = JSON_dict2python_list(list_json_dicts[i], start_time, current_Id)   # Indexes will be continuous
+
+        
+        if current_Id != new_current_Id:
+            current_Id = new_current_Id
+            start_time = new_start_time
+
         # events_items is [event1, event2]
-        # Loop ensures events are both appended as seperate items
+        # Loop ensures events are both appended as separate items
         for item in events_items:
             mouse_events_array.append(item)
 
-        print('{} / {} completed'.format(i+1, length))
+        print('{} / {} completed'.format(i+1, length), list_json_dicts[i]['turkId'])
 
     return mouse_events_array
 
