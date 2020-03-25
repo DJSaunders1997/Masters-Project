@@ -98,7 +98,7 @@ def convert_json_to_csv(filename):
                                                                          6 : "step",
                                                                          7 : "turkId"})
 
-    mouse_events_dataframe.to_csv(filename[:-4] + 'csv')   # Saves to filename without the .json
+    mouse_events_dataframe.to_csv('All-Turk-Data.csv')
     end_time = time.time()
     print("Time taken: {} s".format(int(end_time-start_time)))	
 

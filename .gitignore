@@ -1,8 +1,3 @@
-mouse_events.json
-mouse_events.csv
 .vscode/settings.json
-all_enets.xlsx
-debug-mouse_events.csv
-all_lab_study_data/
-all_turk_study_data/
-Tom-background-data/
+All-Lab-Data-filename.csv
+All-Turk-Data.csv
