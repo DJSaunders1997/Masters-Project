@@ -1,0 +1,84 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{torsney2011tuner}{article}{}
+      \name{author}{7}{}{%
+        {{hash=e62cbc51788273a0ee6478e36b2d57b0}{%
+           family={Torsney-Weir},
+           familyi={T\bibinithyphendelim W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=eb5cda25b4439bd94ef6eed1d1030950}{%
+           family={Saad},
+           familyi={S\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod}}}%
+        {{hash=859881c62ec6b6be48d207c50847aabd}{%
+           family={Moller},
+           familyi={M\bibinitperiod},
+           given={Torsten},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d37ecf3c5fe8ff48dcb557a67a19a594}{%
+           family={Hege},
+           familyi={H\bibinitperiod},
+           given={Hans-Christian},
+           giveni={H\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=bf8c13390fd5f0d1909a6d35f094bea2}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Britta},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2dcac9fa67063d8675554553e4a996be}{%
+           family={Verbavatz},
+           familyi={V\bibinitperiod},
+           given={Jean-Marc},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=624d89f79172b8af0e1a886a74a94be1}{%
+           family={Bergner},
+           familyi={B\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0eae2bef488728f992598cbce9ff3ec6}
+      \strng{fullhash}{48ce21eb6cb96b916444a679d0b8174e}
+      \strng{bibnamehash}{0eae2bef488728f992598cbce9ff3ec6}
+      \strng{authorbibnamehash}{0eae2bef488728f992598cbce9ff3ec6}
+      \strng{authornamehash}{0eae2bef488728f992598cbce9ff3ec6}
+      \strng{authorfullhash}{48ce21eb6cb96b916444a679d0b8174e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Visualization and Computer Graphics}
+      \field{number}{12}
+      \field{title}{Tuner: Principled parameter finding for image segmentation algorithms using visual response surface exploration}
+      \field{volume}{17}
+      \field{year}{2011}
+      \field{pages}{1892\bibrangedash 1901}
+      \range{pages}{10}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
