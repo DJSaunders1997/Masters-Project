@@ -21,31 +21,46 @@
 
 \tableofcontents
 
-\section*{Mark scheme}
-This coursework contributes 50\% of the mark for the module. The size is
-approximately 5000 words (excluding references) – due on Wednesday 29
-April 2020 (11:00 am).
+% \section*{Mark scheme}
+% This coursework contributes 50\% of the mark for the module. The size is
+% approximately 5000 words (excluding references) – due on Wednesday 29
+% April 2020 (11:00 am).
 
-This report should give a literature review over your project and describe
-any background research that you have carried out. You should state the motivation and aims of the project. It should include a complete specification
-of your project. It should describe the project clearly and the components
-of the work which need to be developed. An outline project plan for the
-summer should be included. This plan should take into account the development methodology being used. You should provide a risk analysis for the
-project. You should view this document as providing the plan for the work
-you expect to carry out over the summer.
+% This report should give a literature review over your project and describe
+% any background research that you have carried out. 
+% You should state the motivation and aims of the project. 
+% It should include a complete specification of your project. 
+% It should describe the project clearly and the components
+% of the work which need to be developed. 
+% An outline project plan for the summer should be included. 
+% This plan should take into account the development methodology being used. 
+% You should provide a risk analysis for the project. 
+% You should view this document as providing the plan for the work
+% you expect to carry out over the summer.
+
+% TO SUMMARISE The structure POINTS
+% - Literature Review
+%   - Background research
+% - Motivation and aims of Project
+%   - Clearly describe project and components 
+% - Outline Project Plan
+%   - Include methodology used. 
+% - Risk Analysis
+
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[scale=0.35]{Test.JPG}
+%     \caption{This will be a figure showcasing some of my work}
+%     \label{fig:test}
+% \end{figure}
+% Write section 1 here \cite{torsney2011tuner} and talk about figure \ref{fig:test}.
 
 \section{Literature review}
 
-Write section 1 here \cite{torsney2011tuner} and talk about figure \ref{fig:test}.
+In this section I will review the literature on how to monitor attention.
 
-This can pretty much be the review I did for the first assignment. 
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.35]{Test.JPG}
-    \caption{This will be a figure showcasing some of my work}
-    \label{fig:test}
-\end{figure}
+%This can pretty much be the review I did for the first assignment. 
 
 \section{Background Research}
 Anything I've looked at with help for mouse data classification algorithms? 
@@ -97,7 +112,6 @@ A good system developed could be used for other tasks to monitor attention - E.g
 Have to decide on the trade off between a good narrow (is this the right word) classifier between attention or not and a more generalised model that can work on any task.
 What I mean by that is I can model the html elements / sliders to see how users interacted to see the stock prices, or I can generalise to any such task involving mouse data.
 
-
 \section{Project plan}
 
 \subsection{Development methodology}
@@ -107,31 +121,39 @@ An agile methodology such as scrum would probably be best but am I constrained  
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.35]{Test.JPG}
-    \caption{A Gantt chart showing the planned milestones of the project.}
+    \caption{A Gantt chart showing the planned milestones of the project. OR A Gantt chart created in the GanttProject free software}
     \label{fig:Gantt}
 \end{figure}
 
 \section{Risk Analysis}
-Copy this from my project last year.
+% Copy risk analysis from last year.
+When creating a project there is always potential risks that the project might encounter and hinder its chances of success. 
+In order to prepare and to hopefully avoid these risks I will now list and analyse the most likely, and most devastating risks to my project. 
+By analysing each risk individually I will be prepared in case I come across any of the potential risks and I will have developed a plan of action of what to do and how to manage myself in case of encountering them. 
+I will initially list the risks in a table where I will briefly examine them, then I will go into each one in more detail. 
+Below I have listed and analysed the risks and have ordered them from potentially the most dangerous to least dangerous. 
+
+Caption A risk analysis table
+DAAAAAAAAAAAAAAAAAVE
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 
 \begin{table}[ht]
-    \caption{A risk analysis table}
-    \centering
-    \begin{tabular}{lllll}
-     Risk   Likelihood  Impact  &  \\
-     &      Low         High       &  \\
-     &      &           &       &  \\
-     
-    \end{tabular}
+    \small %small not needed
+    \caption{\label{table:individual} The top association rules between individual items.}
+    \makebox[\textwidth][c]{%
+        \begin{tabular}{|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{2cm}|p{2cm}|}
+            \hline 
+            { Risk}                                                                                                       & { Probability} & { Impact} & { Combined Risk} & { Mitigation Plan}                                                                                               & { Contingency Plan}                                                                                                                  \\
+            { Unrealistic time   plan and poor time management.}                                                          & { High}        & { High}   & { High}          & { Create work   schedule and stick to it.}                                                                       & { If I am unable to   stick to my work schedule, I must adapt my approach to work and create an   undated, more realistic schedule.} \\
+            { Coronavirus   affects me or a close family member, negatively effecting my work.}                           & { Medium}      & { High}   & { High}          & { Stay   safe during the quarantine to keep everyone safe and mitigate any risks of me   catching anything.}     & { Inform   the University as soon as a situation develops so we can arrange something.}                                              \\
+            { Coronavirus   has a greater impact on Swansea University and  effects the available support and deadlines.} & { Medium}      & { High}   & { Medium}        & { Keep   informed with the University College of Science and supervisor to any news   effecting the University.} & { Keep my   options open? Keep updated?}                                                                                             \\
+            { No correlation   between attention and mouse tracking data can be found.}                                   & { Low}         & { High}   & { Medium}        & { Attempt   as many different methods of classification early before writing in depth about   them.}             & { If no   insights can be gained from the given dataset, I will attempt to find   correlations in other datasets.}                   \\                                                                                                                    
+        \end{tabular}
+    }
 \end{table}
-
-
-Risks: 
-- BIGGEST we find that there is no correlation between attendtion and mouse data and nothing is prooved.
-- COID19 effecting the UK more. - I was considering running more lab studies to get more data but the shutdown has stopped that ambishion.
-    It has already effected, anything worse like close family and elderly parents getting ill so supervisor or me would be a risk.
-    Plan ahead, wash hands.
-
 
 \section{Conclusion}
 
