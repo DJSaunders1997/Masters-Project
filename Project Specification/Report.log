@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  29 APR 2020 21:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  30 APR 2020 10:11
 entering extended mode
-**"c:/Users/DJSau/Masters-Project/Project Specification/Report.tex"
-("c:/Users/DJSau/Masters-Project/Project Specification/Report.tex"
+**"c:/Users/jacqu/Masters-Project/Project Specification/Report.tex"
+("c:/Users/jacqu/Masters-Project/Project Specification/Report.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -45,11 +45,11 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
  ("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty"
+ (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ) ("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
+) (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -58,14 +58,14 @@ Package pdftexcmds Info: \pdfdraftmode found.
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count175
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
+) (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
+ (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
+)) (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count176
- ("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.def"
+ (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -280,7 +280,7 @@ File: biblatex.cfg
 File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count368
 \l__pdf_internal_box=\box45
-) ("c:/Users\DJSau\Masters-Project\Project Specification\Report.aux")
+) ("c:/Users\jacqu\Masters-Project\Project Specification\Report.aux")
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -312,9 +312,9 @@ LaTeX Font Info:    ... okay on input line 15.
 \everyMPtoPDFconversion=\toks19
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- ("C:\Program Files\MiKTeX 2.9\tex/latex/grfext\grfext.sty"
+ (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty"
+ (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -343,7 +343,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Report.bbl' found.
- ("c:/Users\DJSau\Masters-Project\Project Specification\Report.bbl")
+ ("c:/Users\jacqu\Masters-Project\Project Specification\Report.bbl")
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -352,7 +352,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 16.
- ("c:/Users\DJSau\Masters-Project\Project Specification\Report.toc"
+ ("c:/Users\jacqu\Masters-Project\Project Specification\Report.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -363,7 +363,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [1
 
-{C:/Users/DJSau/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/jacqu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 <Test.JPG, id=12, 770.88pt x 433.62pt>
 File: Test.JPG Graphic file (type jpg)
 <use Test.JPG>
@@ -730,21 +730,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--155
 
 LaTeX Warning: Empty bibliography on input line 165.
 
-[3 <c:/Users/DJSau/Masters-Project/Project Specification/Test.JPG>] [4] ("c:/Users\DJSau\Masters-Project\Project Specification\Report.aux")
+[3 <c:/Users/jacqu/Masters-Project/Project Specification/Test.JPG>] [4] ("c:/Users\jacqu\Masters-Project\Project Specification\Report.aux")
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  8473 strings out of 480934
- 156868 string characters out of 2909682
+ 157176 string characters out of 2909682
  789286 words of memory out of 3000000
  24273 multiletter control sequences out of 15000+200000
  538148 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,10n,33p,881b,771s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\DJSau\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on "c:/Users\DJSau\Masters-Project\Project Specification\Report.pdf" (4 pages, 191603 bytes).
+ <C:\Users\jacqu\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on "c:/Users\jacqu\Masters-Project\Project Specification\Report.pdf" (4 pages, 191603 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
