@@ -16,5 +16,78 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{beck2001manifesto}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=c5dcbe71f60a8d55caa11fe1493614d0}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Kent},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b081a82bcbc247aeb2a2ca9ae72f9566}{%
+           family={Beedle},
+           familyi={B\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0f1a324af968f72a7aee2fab6f51bd69}{%
+           family={Van\bibnamedelima Bennekum},
+           familyi={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Arie},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1e5acec4259bb4c17ca1a00866f32e1}{%
+           family={Cockburn},
+           familyi={C\bibinitperiod},
+           given={Alistair},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dc98036d5d01f88b9fdd0b5ff2bc8a2d}{%
+           family={Cunningham},
+           familyi={C\bibinitperiod},
+           given={Ward},
+           giveni={W\bibinitperiod}}}%
+        {{hash=312ac886938a9b2be4f8eb607567fe4c}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=61bdeb09cfbfab0465639014ab3b69be}{%
+           family={Grenning},
+           familyi={G\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bae406ad0a87e2f65be045fff38c80ad}{%
+           family={Highsmith},
+           familyi={H\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=10383d05f32f2a21518b493a3c546e5c}{%
+           family={Hunt},
+           familyi={H\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3673ee61a410ba25401f2aeaf593748a}{%
+           family={Jeffries},
+           familyi={J\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
+      \strng{fullhash}{4df8e492ed7b350a6cd5169f06c200f9}
+      \strng{bibnamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
+      \strng{authorbibnamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
+      \strng{authornamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
+      \strng{authorfullhash}{4df8e492ed7b350a6cd5169f06c200f9}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Manifesto for agile software development}
+      \field{year}{2001}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

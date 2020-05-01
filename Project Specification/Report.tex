@@ -63,6 +63,20 @@
 %   - Include methodology used. 
 % - Risk Analysis
 
+% • Title
+% • Abstract summarising the project
+% • Introduction
+%       • Motivation
+%       • Aims of the project
+% • Background research
+% • Description of the project.
+%       • Including components of the work.
+% • Project plan
+%       • Gantt chart
+%       • Risk analysis
+% • Conclusion.
+% • Bibliography.
+
 
 % \begin{figure}[ht]
 %     \centering
@@ -72,17 +86,7 @@
 % \end{figure}
 % Write section 1 here \cite{torsney2011tuner} and talk about figure \ref{fig:test}.
 
-\section{Literature review}
-
-In this section I will review the literature on how to monitor attention.
-
-%This can pretty much be the review I did for the first assignment. 
-
-\section{Background Research}
-Anything I've looked at with help for mouse data classification algorithms? 
-
-
-\section{Motivation and Aims of project}
+\section{Introduction}
 Can copy from presentation slides but fill in so they're more wordy.
 
 \subsection{Motivation}
@@ -128,11 +132,49 @@ A good system developed could be used for other tasks to monitor attention - E.g
 Have to decide on the trade off between a good narrow (is this the right word) classifier between attention or not and a more generalised model that can work on any task.
 What I mean by that is I can model the html elements / sliders to see how users interacted to see the stock prices, or I can generalise to any such task involving mouse data.
 
+
+\section{Background Research}
+Anything I've looked at with help for mouse data classification algorithms? 
+
+%\section{Literature review}
+In this section I will review the literature on how to monitor attention.
+%This can pretty much be the review I did for the first assignment. 
+
+\section{Description of the project}
+
+\subsection{Components of project}
+Each of the following are separate sections that can be completed separately, but linearly.
+
+Repeat this process N times
+(
+Research of different algorithms and methods.
+Coding section.
+The visualisations of results.
+Write up of results.
+)
+
+Compile results together into dissertation.
+
+TODO: Look at the dissertation outline so I know what stuff needs to be included so I can mention it here.
+
 \section{Project plan}
+% Look into different software methodologies
+% http://www.cs.swan.ac.uk/~csetzer/articles/researchMethodologiesInComputerScience.pdf
+% 
+
+The different components of the work have been explained above.
+This section will specify the timeframe and order in which the modules will be carried out.
+
+Thinking of an agile methodology as it will allow flexibility of my project and the iterative nature should help me to constantly improve it \cite{beck2001manifesto}. 
+
+Scrum will be used as the short scrum periods will encourage bursts of development over the long summer period.
 
 \subsection{Development methodology}
 Discuss software life cycle methodologies with Jacques.
 An agile methodology such as scrum would probably be best but am I constrained  by this specification document?
+
+We want a methodology that has a final write up, but also has lots of iterative stuff in the middle for me to research, explore, and test new algorithms.
+
 
 \begin{figure}[ht]
     \centering
@@ -141,16 +183,15 @@ An agile methodology such as scrum would probably be best but am I constrained  
     \label{fig:Gantt}
 \end{figure}
 
-\section{Risk Analysis}
+\subsection{Risk Analysis}
 % Copy risk analysis from last year.
 When creating a project there is always potential risks that the project might encounter and hinder its chances of success. 
-In order to prepare and to hopefully avoid these risks I will now list and analyse the most likely, and most devastating risks to my project. 
+In order to prepare and to hopefully avoid these risks I will now list and analyse the risks of my project. 
 By analysing each risk individually I will be prepared in case I come across any of the potential risks and I will have developed a plan of action of what to do and how to manage myself in case of encountering them. 
-I will initially list the risks in a table where I will briefly examine them, then I will go into each one in more detail. 
+Each risk is explained with the likelihood of the risk occurring and impact to the project the risk would have.
+A mitigation plan is created in an attempy to prevent the risk from happening, and a contingency plan is made so I can be prepared if the risk does occur.
 Below I have listed and analysed the risks and have ordered them from potentially the most dangerous to least dangerous. 
 
-Caption A risk analysis table
-DAAAAAAAAAAAAAAAAAVE
 
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
@@ -158,7 +199,76 @@ DAAAAAAAAAAAAAAAAAVE
 
 %REPLACE this table with an itemized list, like in the data visualisation module.
 % - Tom said that tables can make it too restrictive.
+% Just coppied from table here, make sure to flesh out later
+% TODO: Flesh out risks 
 
+% Do I keep explaination or just expand risks in the risk item?
+
+\begin{description}
+    \item[Risk:]    
+    Unrealistic time plan and poor time management.
+    \item[Likelihood and Impact:]
+    Medium likelihood, Medium Impact
+    \item[Explaination]
+    If my time is spent poorly then I could not have a piece of work finished for the submission deadline, or the work may not represent the best of my abilities.  
+    \item[Mitigation:]
+    Create work schedule and stick to it.
+    A work schedule and plan for the summer has been created in this document which I aim to follow.
+    \item[Contingency:]
+    If I am unable to stick to my work schedule, I must adapt my approach to work and create an undated, more realistic schedule.
+\end{description}
+
+\begin{description}
+    \item[Risk:]
+    Coronavirus affects me or a close family member, negatively effecting my work.    
+    \item[Likelihood and Impact:]
+    Medium likelihood, High Risk
+    \item[Explaination]
+    Coronavirus is very contagious. 
+    Dispute risks it is still likely that the I may become infected. 
+    \item[Mitigation:]
+    Stay safe indoors during the quarantine to keep everyone safe and mitigate any risks of me catching anything.
+    \item[Contingency:]
+    Inform the University as soon as a situation develops so that alternative assessments can be organised.
+\end{description}
+
+\begin{description}
+    \item[Risk:]    
+    No correlation between attention and mouse tracking data can be found.    
+    \item[Likelihood and Impact:]
+    Medium likelihood, High impact
+    \item[Explaination:]
+    The project will involve the use of many methods to find a link between mouse tracking data and user attention.
+    It is possible that after all methods have been exhausted no correlation is ever discovered, or simply doesn't exist. 
+    \item[Mitigation:]
+    Attempt as many different methods of classification early before writing in depth about them.  
+    \item[Contingency:]
+    If no insights can be gained from the given dataset, I will explore other similar datasets and attempt to find correlations there.
+    I will then attempt to apply findings from other datasets to the original dataset. 
+\end{description}
+
+\begin{description}
+    \item[Risk:]    
+    Coronavirus has a greater impact on Swansea University and  effects the available support and deadlines.
+    \item[Likelihood and Impact:]
+    Low likelihood, Low impact
+    \item[Explaination:]
+    The virus has already shut down in person teaching and with the UK in lockdown it is unlikely the situation will become vastly different. 
+    \item[Mitigation:]
+    Keep informed with the University College of Science and supervisor to any news effecting the University.
+    \item[Contingency:]
+    TODO: What is the plan? Keep my options open? Keep updated?
+    Keep updated with the situation and follow whatever advice is recommended from the university.
+\end{description}
+
+\begin{description}
+    \item[Risk:]    
+    \item[Likelihood and Impact:]
+    \item[Mitigation:]
+    \item[Contingency:]
+\end{description}
+
+\newpage
 \begin{table}[ht]
     \small %small not needed
     \caption{\label{table:individual} The top association rules between individual items.}
@@ -167,9 +277,9 @@ DAAAAAAAAAAAAAAAAAVE
             \hline 
             { Risk}                                                                                                       & { Probability} & { Impact} & { Combined Risk} & { Mitigation Plan}                                                                                               & { Contingency Plan}                                                                                                                  \\
             { Unrealistic time   plan and poor time management.}                                                          & { High}        & { High}   & { High}          & { Create work   schedule and stick to it.}                                                                       & { If I am unable to   stick to my work schedule, I must adapt my approach to work and create an   undated, more realistic schedule.} \\
-            { Coronavirus   affects me or a close family member, negatively effecting my work.}                           & { Medium}      & { High}   & { High}          & { Stay   safe during the quarantine to keep everyone safe and mitigate any risks of me   catching anything.}     & { Inform   the University as soon as a situation develops so we can arrange something.}                                              \\
-            { Coronavirus   has a greater impact on Swansea University and  effects the available support and deadlines.} & { Medium}      & { High}   & { Medium}        & { Keep   informed with the University College of Science and supervisor to any news   effecting the University.} & { Keep my   options open? Keep updated?}                                                                                             \\
-            { No correlation   between attention and mouse tracking data can be found.}                                   & { Low}         & { High}   & { Medium}        & { Attempt   as many different methods of classification early before writing in depth about   them.}             & { If no   insights can be gained from the given dataset, I will attempt to find   correlations in other datasets.}                   \\                                                                                                                    
+            { Coronavirus affects me or a close family member, negatively effecting my work.}                           & { Medium}      & { High}   & { High}          & { Stay   safe during the quarantine to keep everyone safe and mitigate any risks of me   catching anything.}     & { Inform   the University as soon as a situation develops so we can arrange something.}                                              \\
+            { Coronavirus has a greater impact on Swansea University and  effects the available support and deadlines.} & { Medium}      & { High}   & { Medium}        & { Keep   informed with the University College of Science and supervisor to any news   effecting the University.} & { Keep my   options open? Keep updated?}                                                                                             \\
+            { No correlation between attention and mouse tracking data can be found.}                                   & { Low}         & { High}   & { Medium}        & { Attempt   as many different methods of classification early before writing in depth about   them.}             & { If no   insights can be gained from the given dataset, I will attempt to find   correlations in other datasets.}                   \\                                                                                                                    
         \end{tabular}
     }
 \end{table}

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  30 APR 2020 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  1 MAY 2020 18:05
 entering extended mode
-**"c:/Users/jacqu/Masters-Project/Project Specification/Report.tex"
-("c:/Users/jacqu/Masters-Project/Project Specification/Report.tex"
+**"c:/Users/DJSau/Masters-Project/Project Specification/Report.tex"
+("c:/Users/DJSau/Masters-Project/Project Specification/Report.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -45,11 +45,11 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
  ("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/infwarerr\infwarerr.sty
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty"
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ) ("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-) (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/ltxcmds\ltxcmds.sty
+) ("C:\Program Files\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -58,14 +58,14 @@ Package pdftexcmds Info: \pdfdraftmode found.
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count175
-) (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/kvoptions\kvoptions.sty
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
- (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/kvsetkeys\kvsetkeys.sty
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.sty
+)) ("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count176
- (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.def
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -280,7 +280,7 @@ File: biblatex.cfg
 File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count368
 \l__pdf_internal_box=\box45
-) ("c:/Users\jacqu\Masters-Project\Project Specification\Report.aux")
+) ("c:/Users\DJSau\Masters-Project\Project Specification\Report.aux")
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -312,9 +312,9 @@ LaTeX Font Info:    ... okay on input line 15.
 \everyMPtoPDFconversion=\toks19
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/grfext\grfext.sty
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/grfext\grfext.sty"
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
- (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty"
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -343,7 +343,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Report.bbl' found.
- ("c:/Users\jacqu\Masters-Project\Project Specification\Report.bbl")
+ ("c:/Users\DJSau\Masters-Project\Project Specification\Report.bbl")
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -352,401 +352,398 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 16.
- ("c:/Users\jacqu\Masters-Project\Project Specification\Report.toc"
+ ("c:/Users\DJSau\Masters-Project\Project Specification\Report.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 9.
+(Font)              <7> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 9.
+(Font)              <5> on input line 5.
 )
 \tf@toc=\write4
 \openout4 = `Report.toc'.
 
  [1
 
-{C:/Users/jacqu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<Test.JPG, id=12, 770.88pt x 433.62pt>
+{C:/Users/DJSau/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+<Test.JPG, id=16, 770.88pt x 433.62pt>
 File: Test.JPG Graphic file (type jpg)
 <use Test.JPG>
-Package pdftex.def Info: Test.JPG  used on input line 139.
+Package pdftex.def Info: Test.JPG  used on input line 181.
 (pdftex.def)             Requested size: 269.81204pt x 151.76927pt.
- [2]
+ [3 <c:/Users/DJSau/Masters-Project/Project Specification/Test.JPG>] [4] [5]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 174.
+(Font)              <9> on input line 284.
 
-Overfull \hbox (16.91777pt too wide) in paragraph at lines 174--174
+Overfull \hbox (16.91777pt too wide) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Probability| 
  []
 
 
-Overfull \hbox (12.40462pt too wide) in paragraph at lines 174--174
+Overfull \hbox (12.40462pt too wide) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Combined
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Mitigation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Contingency
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Unrealistic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 poor time
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Create work
  []
 
 
-Underfull \hbox (badness 3838) in paragraph at lines 174--174
+Underfull \hbox (badness 3838) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 sched-ule and
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 174--174
+Underfull \hbox (badness 1953) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 If I am un-
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 174--174
+Underfull \hbox (badness 1448) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 able to stick
  []
 
 
-Underfull \hbox (badness 4096) in paragraph at lines 174--174
+Underfull \hbox (badness 4096) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 to my work
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 sched-ule, I
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 must adapt
  []
 
 
-Underfull \hbox (badness 2875) in paragraph at lines 174--174
+Underfull \hbox (badness 2875) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 my ap-proach
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 174--174
+Underfull \hbox (badness 1783) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 to work and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 cre-ate an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 un-dated,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Coronavirus
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 174--174
+Underfull \hbox (badness 2318) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 a close fam-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 ily mem-ber,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 neg-a-tively
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 ef-fect-ing my
  []
 
 
-Overfull \hbox (4.69493pt too wide) in paragraph at lines 174--174
+Overfull \hbox (4.69493pt too wide) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Medium| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Stay safe
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 dur-ing the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 quar-an-tine
  []
 
 
-Underfull \hbox (badness 6559) in paragraph at lines 174--174
+Underfull \hbox (badness 6559) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 to keep ev-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 ery-one safe
  []
 
 
-Underfull \hbox (badness 4569) in paragraph at lines 174--174
+Underfull \hbox (badness 4569) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 and mit-i-gate
  []
 
 
-Underfull \hbox (badness 3977) in paragraph at lines 174--174
+Underfull \hbox (badness 3977) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 any risks of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 me catch-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Inform the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 Uni-ver-sity
  []
 
 
-Underfull \hbox (badness 5817) in paragraph at lines 174--174
+Underfull \hbox (badness 5817) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 sit-u-a-tion de-
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 174--174
+Underfull \hbox (badness 1275) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 vel-ops so we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 can ar-range
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Coronavirus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 im-pact on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 Swansea
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 Uni-ver-sity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 and ef-fects
  []
 
 
-Underfull \hbox (badness 5954) in paragraph at lines 174--174
+Underfull \hbox (badness 5954) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 the avail-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 sup-port and
  []
 
 
-Overfull \hbox (4.69493pt too wide) in paragraph at lines 174--174
+Overfull \hbox (4.69493pt too wide) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Medium| 
  []
 
 
-Overfull \hbox (4.69493pt too wide) in paragraph at lines 174--174
+Overfull \hbox (4.69493pt too wide) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Medium| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Keep in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 formed with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 Col-lege of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 Sci-ence and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 su-per-vi-sor
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 174--174
+Underfull \hbox (badness 2126) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 to any news
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 ef-fect-ing the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Keep my
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 Keep up-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 No cor-re-la-
  []
 
 
-Underfull \hbox (badness 3942) in paragraph at lines 174--174
+Underfull \hbox (badness 3942) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 tion be-tween
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 at-ten-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 and mouse
  []
 
 
-Overfull \hbox (4.69493pt too wide) in paragraph at lines 174--174
+Overfull \hbox (4.69493pt too wide) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Medium| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 Attempt as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 many dif-fer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 ent meth-ods
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 of clas-si-fi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 ca-tion early
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 be-fore writ-
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 174--174
+Underfull \hbox (badness 1478) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 ing in depth
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 If no in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 gained from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 the given
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 at-tempt to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 find cor-re-la-
  []
 
-
-LaTeX Warning: Empty bibliography on input line 184.
-
-[3 <c:/Users/jacqu/Masters-Project/Project Specification/Test.JPG>] [4] ("c:/Users\jacqu\Masters-Project\Project Specification\Report.aux")
+[6] [7] ("c:/Users\DJSau\Masters-Project\Project Specification\Report.aux")
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8473 strings out of 480934
- 157176 string characters out of 2909682
- 789286 words of memory out of 3000000
- 24273 multiletter control sequences out of 15000+200000
+ 8669 strings out of 480934
+ 160832 string characters out of 2909682
+ 788354 words of memory out of 3000000
+ 24469 multiletter control sequences out of 15000+200000
  538148 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,10n,33p,881b,771s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\jacqu\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on "c:/Users\jacqu\Masters-Project\Project Specification\Report.pdf" (4 pages, 191603 bytes).
+ 35i,10n,45p,881b,1121s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\DJSau\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on "c:/Users\DJSau\Masters-Project\Project Specification\Report.pdf" (7 pages, 197258 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
