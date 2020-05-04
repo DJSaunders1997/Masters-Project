@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Masters Project" company="" webLink="http://" view-date="2020-04-01" view-index="0" gantt-divider-location="376" resource-divider-location="300" version="2.8.9" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Masters Project" company="" webLink="http://" view-date="2020-03-23" view-index="0" gantt-divider-location="407" resource-divider-location="300" version="2.8.9" locale="en_GB">
     <description/>
-    <view zooming-state="default:8" id="gantt-chart">
-        <field id="tpd3" name="Name" width="207" order="0"/>
-        <field id="tpd4" name="Begin date" width="83" order="1"/>
-        <field id="tpd5" name="End date" width="82" order="2"/>
-        <option id="color.recent"><![CDATA[#ff3333 #cccccc]]></option>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Name" width="217" order="0"/>
+        <field id="tpd4" name="Begin date" width="93" order="1"/>
+        <field id="tpd5" name="End date" width="93" order="2"/>
+        <option id="color.recent"><![CDATA[#ffff00 #00ff00 #00ccff #ff00ff #00ffff #ffff33 #ff3300 #00cccc #ff33ff #ffcc33]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -34,12 +34,25 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Project Specification" color="#8cb6ce" meeting="false" start="2020-04-01" duration="30" complete="0" thirdDate="2020-04-29" thirdDate-constraint="0" expand="true"/>
-        <task id="8" name="Exam Period" color="#cccccc" meeting="false" start="2020-05-20" duration="40" complete="0" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
-        <task id="2" name="Finish Programming" meeting="false" start="2020-04-29" duration="1" complete="0" expand="true"/>
-        <task id="4" name="Final Submission Deadline" color="#8cb6ce" meeting="false" start="2020-06-10" duration="60" complete="0" thirdDate="2020-04-29" thirdDate-constraint="0" expand="true"/>
-        <task id="11" name="Submission Day" color="#ff3333" meeting="true" start="2020-09-01" duration="0" complete="0" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
-        <task id="13" name="Supervisor Meeting" color="#8cb6ce" meeting="false" start="2020-04-01" duration="1" complete="0" thirdDate="2020-04-01" thirdDate-constraint="1" expand="true"/>
+        <task id="0" name="Project Specification" color="#8cb6ce" meeting="false" start="2020-04-01" duration="29" complete="0" thirdDate="2020-04-29" thirdDate-constraint="0" expand="true"/>
+        <task id="13" name="Supervisor Meeting" color="#ff33ff" meeting="false" start="2020-04-30" duration="1" complete="0" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
+        <task id="19" name="Specification Deadline" color="#0066ff" meeting="true" start="2020-05-11" duration="0" complete="0" thirdDate="2020-03-02" thirdDate-constraint="0" expand="true"/>
+        <task id="8" name="Exam Period" color="#cccccc" meeting="false" start="2020-05-11" duration="20" complete="0" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
+        <task id="4" name="Dissertation Period" color="#ff3300" meeting="false" start="2020-06-05" duration="63" complete="0" thirdDate="2020-04-29" thirdDate-constraint="0" expand="true"/>
+        <task id="96" name="Planning" color="#8cb6ce" meeting="false" start="2020-06-05" duration="6" complete="0" thirdDate="2020-04-29" thirdDate-constraint="0" expand="true"/>
+        <task id="65" name="Supervisor Meeting" color="#ff00ff" meeting="false" start="2020-06-15" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true"/>
+        <task id="67" name="Sprints Begin" color="#00ccff" meeting="true" start="2020-06-15" duration="0" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true"/>
+        <task id="28" name="Sprint 1" color="#00cccc" meeting="false" start="2020-06-15" duration="12" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true"/>
+        <task id="48" name="Supervisor Meeting" color="#ff00ff" meeting="false" start="2020-07-01" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true"/>
+        <task id="33" name="Sprint 2" color="#00cccc" meeting="false" start="2020-07-01" duration="11" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true"/>
+        <task id="51" name="Supervisor Meeting" color="#ff00ff" meeting="false" start="2020-07-15" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true"/>
+        <task id="35" name="Sprint 3" color="#00cccc" meeting="false" start="2020-07-16" duration="10" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true"/>
+        <task id="54" name="Supervisor Meeting" color="#ff00ff" meeting="false" start="2020-07-30" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true"/>
+        <task id="84" name="Write Up Results" color="#8cb6ce" meeting="false" start="2020-07-30" duration="8" complete="0" thirdDate="2020-06-01" thirdDate-constraint="0" expand="true"/>
+        <task id="89" name="Writing Document" color="#00ff00" meeting="false" start="2020-07-30" duration="12" complete="0" thirdDate="2020-06-01" thirdDate-constraint="0" expand="true"/>
+        <task id="18" name="First draft" color="#00ff00" meeting="true" start="2020-08-14" duration="0" complete="0" thirdDate="2020-06-01" thirdDate-constraint="0" expand="true"/>
+        <task id="15" name="Implement feedback" color="#ffff00" meeting="false" start="2020-08-17" duration="12" complete="0" thirdDate="2020-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="Dissertation Deadline" color="#ff3333" meeting="true" start="2020-09-01" duration="0" complete="0" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
