@@ -1,0 +1,344 @@
+%%%%%%%%%%%%  Generated using docx2latex.com  %%%%%%%%%%%%%%
+
+%%%%%%%%%%%%  v2.0.0-beta  %%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{soul}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{graphicx}
+\usepackage[backend=biber,
+style=numeric,
+sorting=none,
+isbn=false,
+doi=false,
+url=false,
+]{biblatex}\addbibresource{bibliography.bib}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}\usepackage[paperheight=11.69in,paperwidth=8.27in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,}
+
+\urlstyle{same}
+
+\renewcommand{\_}{\kern-1.5pt\textunderscore\kern-1.5pt}
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+ %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+
+\setlistdepth{9}
+\renewlist{enumerate}{enumerate}{9}
+		\setlist[enumerate,1]{label=\arabic*)}
+		\setlist[enumerate,2]{label=\alph*)}
+		\setlist[enumerate,3]{label=(\roman*)}
+		\setlist[enumerate,4]{label=(\arabic*)}
+		\setlist[enumerate,5]{label=(\Alph*)}
+		\setlist[enumerate,6]{label=(\Roman*)}
+		\setlist[enumerate,7]{label=\arabic*}
+		\setlist[enumerate,8]{label=\alph*}
+		\setlist[enumerate,9]{label=\roman*}
+
+\renewlist{itemize}{itemize}{9}
+		\setlist[itemize]{label=$\cdot$}
+		\setlist[itemize,1]{label=\textbullet}
+		\setlist[itemize,2]{label=$\circ$}
+		\setlist[itemize,3]{label=$\ast$}
+		\setlist[itemize,4]{label=$\dagger$}
+		\setlist[itemize,5]{label=$\triangleright$}
+		\setlist[itemize,6]{label=$\bigstar$}
+		\setlist[itemize,7]{label=$\blacklozenge$}
+		\setlist[itemize,8]{label=$\prime$}
+
+
+
+ %%%%%%%%%%%%  Header here  %%%%%%%%%%%%%%
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{ 
+\vspace{\baselineskip}
+}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\topsep}{0pt}\setlength{\parindent}{0pt}
+
+ %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+
+\renewcommand{\arraystretch}{1.3}
+
+\title{CSCM10 - Report}
+\author{David Saunders - 910995}
+\date{February 2020}
+
+
+%%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report explores the area of detecting and measuring user engagement with a focus on software technology. First a background on the topic is presented, then various methods of measuring the hard to quantify attribute of engagement are provided. Different methods are presented for the different scenarios this broad term has applications in. Applications of user engagement data such as user behaviour analytics shows the topic has multidisciplinary uses.\par
+\end{abstract}
+
+\vspace{\baselineskip}
+
+
+ %%%%%%%%%%%%  This Produces Table Of Contents %%%%%%%%%%%%%%
+
+\tableofcontents
+
+\section*{Description of project}
+\addcontentsline{toc}{section}{Description of project}
+Crowd-sourcing marketplaces like Amazon's Mechanical Turk are a popular service that provides a way of gathering data from real participants for (Paolacci et al, 2010). User engagement, attention, and low quality responses can all be issues when gathering data from participants in such a distributed way (Ipeirotis et al, 2010). By using data gathered from a Mechanical Turk survey and lab tests, the project is to propose methods of identifying and quantifying user engagement by using machine learning and visual analytics techniques. \par
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+The problem of measuring a users engagement with a system is not a recent problem, nor is it specific to newer interactive systems. Scientists have been trying to measure engagement for multimedia systems design (Jacques, 1995), web systems (Attfield et al, 2011), and even Human Computer Interaction (HCI) systems such as human robot interaction (Lala et al, 2017). User engagement is a broad topic, but may be defined as $``$the emotional, cognitive and behavioural connection that exists, at any point in time and possibly over time, between a user and a resource$"$ . User engagement is the key to measuring the quality of user experience and is essential for technology, as without a positive connection users will be less eager to use that service (Attfield et al, 2011). Being usable is not enough for a technology to become successful, it is crucial they engage users. Measuring user engagement can provide the benefit detailed user experience interactions for companies (O’Brien and Toms, 2008). This report will explore the significance of user experience, the challenges of quantifying it, the different approaches to measure it and the different applications of the technology.  \par
+
+\subsection*{User engagement characteristics}
+\addcontentsline{toc}{subsection}{User engagement characteristics}
+There is no consensus on what set of characteristics can best measure and quantify user engagement. In this section two different approaches of measuring engagement are presented, and the ideas behind the approaches are explored.\par
+
+
+\vspace{\baselineskip}
+In the domain of web analytics online engagement on a web page is measured from various characteristics, all of which have strengths and flaws. The Web Analytics Association defines five basic measurements of: session duration, page views per session, visits per visitor, conversion rate, and customer satisfaction.The first 3 measures are fairly straightforward and provide reasonable proxies for engagement, the later two measures are more suitable for complementary measurements but inappropriate to use on their own. Session duration is the time a user spends on a site which is useful for quantifying a period in which users may have been interacting with a page. However it cannot be used to identify if a user was actually paying attention while browsing. Page views per session attempts to measure the amount of content a user has consumed, but like with session duration does not tell us how a user was engaged. Visits per visitor tells the loyalty a user may have with a site, but more visits may not necessarily mean more engagement. Many consider conversion rate the best measure of engagement as it refers to a $``$visitor completing a target action$"$ , with the obvious flaw that not all engaged users may perform the specific target action. Customer satisfaction is measured by asking users a series of questions about their experience. This method is intrusive, but is able to capture nuanced differences in customers' experiences. (Peterson and Carrabis, 2008)\par
+
+
+\vspace{\baselineskip}
+Other different characteristics of user engagement are intentionally broad and harder to concisely define. These consist of: focused attention, positive affect, aesthetics, endurability, and novelty. Focused attention is defined by excluding focus of other things and a person being fully immersed in what they're doing. Positive affect is when engaged users feel emotions during interaction, through fun or through customer loyalty. Aesthetics simply relates to the visual appeal of a system such as graphics. Endurability describes enjoyable, engaging experiences and novelty is how unique or varied an experience is. A criticism of using these characteristics is that they are too difficult to quantify, particularly aesthetics and novelty which traditionally need to be measured using physiological sensors (Warnock and Lalmas, 2015).\par
+
+\section*{Types of user engagement}
+\addcontentsline{toc}{section}{Types of user engagement}
+\subsection*{Person to person interaction}
+\addcontentsline{toc}{subsection}{Person to person interaction}
+Communication devices such as mobile phones allow for multiple forms of communications between users including text messaging, phone calls, and video calls. Anecdotally each of the methods respectively require more user engagement for the conversation, a text can be sent every minute or so and a conversation will keep going where as with a video call users need to give almost their entire undivided attention. Methods of estimating a users level of engagement in a conversation have been devised by applying speech emotion recognition techniques. Machine learning was used on features extracted from a users speech data as it was put through a Support Vector Machine (SVM) and a Hidden Markov Model (HMM) to achieve engagement detection accuracy of 63$\%$  in continuous speech. (Yu et al, 2004)\par
+
+
+\vspace{\baselineskip}
+\subsection*{Person to robot interaction}
+\addcontentsline{toc}{subsection}{Person to robot interaction}
+User engagement is also an important metric in the field of human-robot interaction, as the robot can change its dialogue approach to keep a users attention on them. The signals of $``$nodding, laughter, verbal backchannels, and eye gaze$"$  were measured from users via the use of a Kinect sensor and a microphone array. By measuring both verbal and non-verbal aspects of a user researchers were able to model an engagement recognition system that performed automatic recognition of social signals. They found that it was necessary to annotate values regarding social signals themselves rather than letting the machine handle it all to result in more accurate classifications. (Lala et al, 2017)\par
+
+
+\vspace{\baselineskip}
+User engagement breakdown is a real concern with human-humanoid interaction as it can indicate the system was not adequately performing its task and thus a user has preemptively terminated the interaction (Youssef et al, 2019). Because of the failure in interaction the breakdown represents researchers have devised ways of predicting when they will occur by analysing multimodal data so that the machine will have ample time to adjust its strategies to keep the user engagement. Similarly to the other method explored, non-verbal features were used in their classification model for forecasting breakdowns.\par
+
+\subsection*{Person to multimedia interaction}
+\addcontentsline{toc}{subsection}{Person to multimedia interaction}
+In the context of educational presentations audience engagement is a big issue. A study on Audience Engagement in Multimedia Presentations measured audience attention by getting students to complete a questionnaire with questions relating to a presentation just delivered to them. It was found that changing the presentations to be more challenging and have more variety increased the level of audience attention (Webster and Ho, 1997). Other research has found that $``$bad$"$  or unimaginative design may be the cause of user disinterest when using an interactive system (Jacques, 1995).\par
+
+\section*{Eye tracking}
+\addcontentsline{toc}{section}{Eye tracking}
+As mentioned previously in the report non-verbal information can be used to detect a user's level of engagement, eye tracking is a prime example of this (Lala et al, 2017). Vision is one of the most powerful human senses so it may give a good measure of user engagement. The methodology of eye tracking is that we move our eyes to focus on particular areas that we want to see in more detail, and divert our attention to that area (Duchowski, 2007). Thus tracking a user's gaze can provide insight into which part of a system they’re engaged with, and how much so.\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{FlushLeft}		\includegraphics[width=4.86in,height=3.91in]{./media/image1.png}
+		\caption{Heatmap showing the popular locations of users eyes on a webpage}
+		\label{fig:Heatmap_showing_the_popular_locations_of_users_eyes_on_a_webpage}
+	\end{FlushLeft}\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 Ends here %%%%%%%%%%%%%%%%%%%%
+
+\par
+
+
+\vspace{\baselineskip}
+Eye tracking data can be used to show user interface elements that users focus their attention on as shown in Fig. \ref{fig:Heatmap_showing_the_popular_locations_of_users_eyes_on_a_webpage}. From this researchers were able to predict the amount of attention elements of the page would receive. By observing what parts of an interface users are interacting with we can determine what a user is engaging with (Buscher et al, 2009).\par
+
+
+\vspace{\baselineskip}
+Eye-tracking has been used, and found success novel applications such as recording the engagement of users when playing a game. Tracking users eye movements helped game designers understand how users can recognise interactable game objects and could be used to investigate problematic game design issues (Renshaw et al, 2009).\par
+
+\subsection*{Mouse cursor tracking}
+\addcontentsline{toc}{subsection}{Mouse cursor tracking}
+Eye tracking has historically had its limitations. To track subjects eyes with a good degree of accuracy required the use of expensive, intrusive equipment that frequently needed recalibrating (Richardson and Spivey, 2004). In contrast mouse movement data can be collected without the drawbacks of eye tracking and with more automatic methods, meaning more data can be collected, and on a larger scale. (Demsar and Coltekin, 2017) Research has also found that there is a correlation between a user's gaze and their cursor position. The position can be considered a $``$poor man’s eye tracker$"$  as it has been found that eye gaze match mouse position 69$\%$  of the time (Cooke, 2006). Therefore it can be said that mouse data can be used as a good alternative to eye tracking data. Mouse activity can be used as input to a neural network and output a quantifiable level of activity for a webpage. By using mouse data it is possible to unobtrusively record a user's normal use of a web browser without disturbing their experience (Goecks and Shavlik, 2000). It has also been found that users tend to follow the text they’re reading with the mouse cursor (Liu and Chung, 2007), and similarly scientists were able to determine what paragraph of a page was being read with 79$\%$  by using mouse cursor data (Hauger et al, 2011). Methodologies mentioned above explore ways of classifying user engagement from eye and cursor data, however it is also possible to predict users attention and user frustration in complex webpages (Navalpakkam and Churchill, 2012).\par
+
+
+\vspace{\baselineskip}
+In contrast to the above literature some studies disagree that mouse cursor is always a good approximation for eye data. Hauger et al found that distinct cursor behaviour exists depending on the task, and that the relationship between eye gaze and mouse position is more nuanced than measuring only mouse data (Huang et al, 2012). \par
+
+\section*{User behaviour analytics}
+\addcontentsline{toc}{section}{User behaviour analytics}
+User Behaviour Analytics (UBA) can be defined as $``$the tracking, collecting and assessing of user data and activities$"$ , and is employed for the purpose of detecting unauthorized access to user accounts from attackers. UBA doesn't relate to measuring user engagement, rather it relates to learning how a user interacts with a system and identifies irregular patterns of behaviour. Therefore it may be thought of as an application of measured user engagement characteristics. Analysts can create models of user behaviour based on historical data of a users computer activity (Turcotte et al, 2019). These models can then in turn be used to detect abnormal user behaviour and classify them as potential security breaches, similarly to how a bank may detect abnormal overseas spending patterns (Delamaire et al, 2009).\par
+
+
+\vspace{\baselineskip}
+The computer event logs of a user can be used as an aggregated multivariate data stream, and used to detect compromised user credentials with a low false positive rate (Turcotte et al, 2016). Probabilistic models of normal user behaviour are generated via use of detailed system event logs. The models are used to detect anomalous events that are not part of normal behaviour. The rationale of detecting anomalous events is that user’s and attacker’s behaviour will differ when using a system, such as different files being accessed (Turcotte et al, 2019).\par
+
+
+\vspace{\baselineskip}
+Interoperability of UBA is a well known issue, thus frameworks have been created to help analysts understand users behaviour at the individual, and group levels. Hierarchical user profiles are created from tasks through topic modeling to encapsulate and classify user behaviour. Text-based clustering was used to group collections of users by similar roles (Nguyen et al, 2019).\par
+
+
+\vspace{\baselineskip}
+ New approaches to UBA have found ways to detect insider threats based on mouse dynamics and deep learning approaches. By reading biobehavioral features from users, researchers were able to describe unique behavioural characteristics of users for use in authentication (Hu et al, 2019).\par
+
+
+\vspace{\baselineskip}
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+User engagement is vital when analysing the user experience, and effectiveness of any system. This report has mentioned various existing methods of how it may be identified and measured as there is no tried and tested way of measuring user engagement. Web analytics approaches have well documented, simple methods that provide methods of identifying engagement with traditional webpages. When approaching engagement with less traditional systems using verbal and non-verbal data need to be analysed. Eye tracking methodologies allow us to see exactly which aspects of a design users are interacting and engaged with, and mouse tracking can provide the same benefit but without the difficulties and intrusiveness. User behavior analytics is a related topic in the field which has been explored using the same techniques as detecting user engagement, but for the different purpose of insider security threats rather than user experience.\par
+
+\subsection*{References}
+\addcontentsline{toc}{section}{References}
+
+\par
+
+Attfield, S., Kazai, G., Lalmas, M. and Piwowarski, B., 2011, February. Towards a science of user engagement (position paper). In \textit{WSDM workshop on user modelling for Web applications} (pp. 9-12).\par
+
+
+\vspace{\baselineskip}
+Buscher, G., Cutrell, E. and Morris, M.R., 2009, April. What do you see when you're surfing? Using eye tracking to predict salient regions of web pages. In \textit{Proceedings of the SIGCHI conference on human factors in computing systems} (pp. 21-30).\par
+
+
+\vspace{\baselineskip}
+Cooke, L., 2006, May. Is the Mouse a" Poor Man's Eye Tracker"?. In \textit{Annual Conference-Society for Technical Communication} (Vol. 53, p. 252).\par
+
+
+\vspace{\baselineskip}
+Delamaire, L., Abdou, H. and Pointon, J., 2009. Credit card fraud and detection techniques: a review. \textit{Banks and Bank systems}, 4(2), pp.57-68.\par
+
+
+\vspace{\baselineskip}
+Demšar, U. and Çöltekin, A., 2017. Quantifying gaze and mouse interactions on spatial visual interfaces with a new movement analytics methodology. PloS one, 12(8).\par
+
+
+\vspace{\baselineskip}
+Duchowski, A.T., 2007. Eye tracking methodology. Theory and practice, 328(614), pp.2-3.\par
+
+
+\vspace{\baselineskip}
+Goecks, J. and Shavlik, J., 2000, January. Learning users' interests by unobtrusively observing their normal behavior. In \textit{Proceedings of the 5th international conference on Intelligent user interfaces} (pp. 129-132).\par
+
+
+\vspace{\baselineskip}
+Hauger, D., Paramythis, A., and Weibelzahl, S. Using browser interaction data to determine page reading behavior. In \textit{Proceedings of UMAP} (2011), 147–158.\par
+
+
+\vspace{\baselineskip}
+Hu, T., Niu, W., Zhang, X., Liu, X., Lu, J. and Liu, Y., 2019. An Insider Threat Detection Approach Based on Mouse Dynamics and Deep Learning. \textit{Security and Communication Networks}, 2019.\par
+
+
+\vspace{\baselineskip}
+Huang, J., White, R. and Buscher, G., 2012, May. User see, user point: gaze and cursor alignment in web search. In \textit{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems} (pp. 1341-1350).\par
+
+
+\vspace{\baselineskip}
+Ipeirotis, P.G., Provost, F. and Wang, J., 2010, July. Quality management on amazon mechanical turk. In \textit{Proceedings of the ACM SIGKDD workshop on human computation} (pp. 64-67).\par
+
+
+\vspace{\baselineskip}
+Jacques, R., 1995. Engagement as a design concept for multimedia. \textit{Canadian Journal of Educational Communication}, 24(1), pp.49-59.\par
+
+
+\vspace{\baselineskip}
+Lala, D., Inoue, K., Milhorat, P. and Kawahara, T., 2017. Detection of social signals for recognizing engagement in human-robot interaction. arXiv preprint arXiv:1709.10257.\par
+
+
+\vspace{\baselineskip}
+Liu, C.C. and Chung, C.W., 2007. Detecting mouse movement with repeated visit patterns for retrieving noticed knowledge components on web pages. \textit{IEICE transactions on information and systems}, 90(10), pp.1687-1696.\par
+
+
+\vspace{\baselineskip}
+Navalpakkam, V. and Churchill, E., 2012, May. Mouse tracking: measuring and predicting users' experience of web-based content. In \textit{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems} (pp. 2963-2972).\par
+
+
+\vspace{\baselineskip}
+Nguyen, P.H., Henkin, R., Chen, S., Andrienko, N., Andrienko, G., Thonnard, O. and Turkay, C., 2019. VASABI: Hierarchical User Profiles for Interactive Visual User Behaviour Analytics. \textit{IEEE transactions on visualization and computer graphics}, 26(1), pp.77-86.\par
+
+
+\vspace{\baselineskip}
+O'Brien, H.L. and Toms, E.G., 2008. What is user engagement? A conceptual framework for defining user engagement with technology. \textit{Journal of the American Society for Information Science and Technology}, 59(6), pp.938-955.\par
+
+
+\vspace{\baselineskip}
+Paolacci, G., Chandler, J. and Ipeirotis, P.G., 2010. Running experiments on amazon mechanical turk. \textit{Judgment and Decision making}, 5(5), pp.411-419.\par
+
+
+\vspace{\baselineskip}
+Peterson, E.T. and Carrabis, J., 2008. Measuring the immeasurable: Visitor engagement. Web Analytics Demystified, 14, p.16.\par
+
+
+\vspace{\baselineskip}
+Renshaw, T., Stevens, R. and Denton, P.D., 2009. Towards understanding engagement in games: an eye‐tracking study. \textit{On the Horizon.}\par
+
+
+\vspace{\baselineskip}
+Richardson, D.C. and Spivey, M.J., 2004. Eye tracking: Characteristics and methods. \textit{Encyclopedia of biomaterials and biomedical engineering}, 3, pp.1028-1042.\par
+
+
+\vspace{\baselineskip}
+Turcotte, M.J., Heard, N.A. and Kent, A.D., 2016. Modelling user behaviour in a network using computer event logs. In \textit{Dynamic Networks and Cyber-Security} (pp. 67-87).\par
+
+
+\vspace{\baselineskip}
+Turcotte, M., Sanna Passino, F., Moore, J.S. and Heard, N., 2019. User Behaviour Analytics (No. LA-UR-19-22194). Los Alamos National Lab.(LANL), Los Alamos, NM (United States).\par
+
+
+\vspace{\baselineskip}
+Warnock, D. and Lalmas, M., 2015. An exploration of cursor tracking data. arXiv preprint arXiv:1502.00317.\par
+
+
+\vspace{\baselineskip}
+Webster, J. and Ho, H., 1997. Audience engagement in multimedia presentations. \textit{ACM SIGMIS Database: the DATABASE for Advances in Information Systems}, 28(2), pp.63-77.\par
+
+
+\vspace{\baselineskip}
+Youssef, A.B., Clavel, C. and Essid, S., 2019. Early detection of user engagement breakdown in spontaneous human-humanoid interaction. \textit{IEEE Transactions on Affective Computing}.\par
+
+
+\vspace{\baselineskip}
+Yu, C., Aoki, P.M. and Woodruff, A., 2004. Detecting user engagement in everyday conversations. arXiv preprint cs/0410027.\par
+
+\printbibliography
+\end{document}
