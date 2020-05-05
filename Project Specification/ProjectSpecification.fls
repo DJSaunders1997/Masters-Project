@@ -1,7 +1,7 @@
 PWD c:\Users\DJSau\Masters-Project\Project Specification
 INPUT C:\Users\DJSau\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.tex
-OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.log
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.tex
+OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.log
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo
@@ -61,9 +61,9 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\australian.lbx
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.aux
-INPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.aux
-OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.aux
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.aux
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.aux
+OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.aux
 INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
@@ -78,10 +78,10 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\british.lbx
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\british.lbx
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
-OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.bcf
-INPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.bbl
-INPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.bbl
-INPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.bbl
+OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.bcf
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.bbl
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.bbl
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.bbl
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
@@ -96,12 +96,12 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx9.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.toc
-INPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.toc
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.toc
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.toc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
-OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.toc
+OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.toc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.pdf
+OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.pdf
 INPUT C:\Users\DJSau\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT c:\Users\DJSau\Masters-Project\Project Specification\GanttChart.PNG
@@ -109,11 +109,12 @@ INPUT c:\Users\DJSau\Masters-Project\Project Specification\GanttChart.PNG
 INPUT c:\Users\DJSau\Masters-Project\Project Specification\GanttChart.PNG
 INPUT c:\Users\DJSau\Masters-Project\Project Specification\GanttChart.PNG
 INPUT c:\Users\DJSau\Masters-Project\Project Specification\GanttChart.PNG
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi9.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy9.tfm
-INPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.aux
-INPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.run.xml
-OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\Report.run.xml
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.aux
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.run.xml
+OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.run.xml
 INPUT C:\Users\DJSau\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\DJSau\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
@@ -130,3 +131,5 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb

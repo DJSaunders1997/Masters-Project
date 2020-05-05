@@ -107,8 +107,8 @@ Could even not tell them (legal ethical repercussions)!
 
 The aims of what I want to achieve in the project will be as follows:
 \begin{itemize}
-    \item Visualise, analyse and understand the data results.
-    \item Use the data to train machine learning models to classify users between 2 groups.
+    \item Visualise, analyse and understand the data.
+    \item Use the data to train machine learning models to classify users between two groups.
     \item Combine the data and methods from the study data with other datasets to create a more robust model.
     \item Stretch goal? Test methods and models developed with other applications?
 \end{itemize}
@@ -165,17 +165,17 @@ TODO: Look at the dissertation outline so I know what stuff needs to be included
 The different components of the work have been explained above.
 This section will specify the timeframe and order in which the modules will be carried out.
 
-Thinking of an agile methodology as it will allow flexibility of my project and the iterative nature should help me to constantly improve it \cite{beck2001manifesto}. 
+I will be using an agile methodology as it will allow flexibility of my project and the iterative nature should help me to constantly improve it \cite{beck2001manifesto}. 
 
 Scrum will be used as the short scrum periods will encourage bursts of development over the long summer period.
 
 \subsection{Development methodology}
-Discuss software life cycle methodologies with Jacques.
+%Discuss software life cycle methodologies with Jacques.
 An agile methodology such as scrum would probably be best but am I constrained  by this specification document?
 
 We want a methodology that has a final write up, but also has lots of iterative stuff in the middle for me to research, explore, and test new algorithms.
 For that reason I will be following the Scrum software lifecycle methodology.
-
+TODO: reference 
 
 Figure \ref{fig:Gantt} shows the sprints I will be undertaking.
 Each sprint starts with a supervisor meeting where the previous work, and the plan for the next sprint will be discussed.
@@ -183,13 +183,14 @@ There will be three sprints in total, with each sprint being a fortnight long.
 Each sprint will consist of researching a method I may be able to use in my project.
 Then I will spend time modifying and implementing the method so that it may be used in the context of this project.
 The latter half of a sprint will consist of analysing and visualising the results of the method and writing these down roughly in the dissertation document.
-For example I may find a particular varient of ANN, have to mo  
+For example I may come across a particular variant of an artificial neural network in my research that I believe may be useful in the project.
+The sprint plan would allow me to spend time implementing this network with my data and experiment with the parameters.  
 
 
 \begin{figure}[ht]
     \centering
     \centerline{
-        \includegraphics[scale=0.3]{GanttChart.PNG}
+        \includegraphics[scale=0.32]{GanttChart.PNG}
     }
     \caption{A Gantt chart showing the planned milestones of the project. OR A Gantt chart created in the GanttProject free software}
     \label{fig:Gantt}
@@ -219,71 +220,76 @@ Below I have listed and analysed the risks and have ordered them from potentiall
 
 % Do I keep explaination or just expand risks in the risk item?
 
-\begin{description}
-    \item[Risk:]    
-    \underline{Unrealistic time plan and poor time management.}
-    \item[Likelihood and Impact:]
-    Medium likelihood, Medium Impact
-    \item[Explaination]
-    If my time is spent poorly then I could not have a piece of work finished for the submission deadline, or the work may not represent the best of my abilities.  
-    \item[Mitigation:]
-    Create work schedule and stick to it.
-    A work schedule and plan for the summer has been created in this document which I aim to follow.
-    \item[Contingency:]
-    If I am unable to stick to my work schedule, I must adapt my approach to work and create an undated, more realistic schedule.
-\end{description}
+\begin{enumerate}
+    \item 
+    \begin{description}
+        \item[Risk:]    
+        \underline{Unrealistic time plan and poor time management.}
+        \item[Likelihood and Impact:]
+        Medium likelihood, Medium Impact
+        \item[Explaination]
+        If my time is spent poorly then I could not have a piece of work finished for the submission deadline, or the work may not represent the best of my abilities.  
+        \item[Mitigation:]
+        Create work schedule and stick to it.
+        A work schedule and plan for the summer has been created in this document which I aim to follow.
+        \item[Contingency:]
+        If I am unable to stick to my work schedule, I must adapt my approach to work and create an undated, more realistic schedule.
+    \end{description}
 
+    \item 
+    \begin{description}
+        \item[Risk:]
+        \underline{Coronavirus affects me or a close family member, negatively effecting my work.}
+        \item[Likelihood and Impact:]
+        Medium likelihood, High Risk
+        \item[Explaination]
+        Coronavirus is very contagious. 
+        Dispute risks it is still likely that the I may become infected. 
+        \item[Mitigation:]
+        Stay safe indoors during the quarantine to keep everyone safe and mitigate any risks of me catching anything.
+        \item[Contingency:]
+        Inform the University as soon as a situation develops so that alternative assessments can be organised.
+    \end{description}
 
-\begin{description}
-    \item[Risk:]
-    \underline{Coronavirus affects me or a close family member, negatively effecting my work.}
-    \item[Likelihood and Impact:]
-    Medium likelihood, High Risk
-    \item[Explaination]
-    Coronavirus is very contagious. 
-    Dispute risks it is still likely that the I may become infected. 
-    \item[Mitigation:]
-    Stay safe indoors during the quarantine to keep everyone safe and mitigate any risks of me catching anything.
-    \item[Contingency:]
-    Inform the University as soon as a situation develops so that alternative assessments can be organised.
-\end{description}
+    \item 
+    \begin{description}
+        \item[Risk:]    
+        \emph{No correlation between attention and mouse tracking data can be found.}    
+        \item[Likelihood and Impact:]
+        Medium likelihood, High impact
+        \item[Explaination:]
+        The project will involve the use of many methods to find a link between mouse tracking data and user attention.
+        It is possible that after all methods have been exhausted no correlation is ever discovered, or simply doesn't exist. 
+        \item[Mitigation:]
+        Attempt as many different methods of classification early before writing in depth about them.  
+        \item[Contingency:]
+        If no insights can be gained from the given dataset, I will explore other similar datasets and attempt to find correlations there.
+        I will then attempt to apply findings from other datasets to the original dataset. 
+    \end{description}
 
+    \item 
+    \begin{description}
+        \item[Risk:]    
+        \emph{Coronavirus has a greater impact on Swansea University and  effects the available support and deadlines.}
+        \item[Likelihood and Impact:]
+        Low likelihood, Low impact
+        \item[Explaination:]
+        The virus has already shut down in person teaching and with the UK in lockdown it is unlikely the situation will become vastly different. 
+        \item[Mitigation:]
+        Keep informed with the University College of Science and supervisor to any news effecting the University.
+        \item[Contingency:]
+        TODO: What is the plan? Keep my options open? Keep updated?
+        Keep updated with the situation and follow whatever advice is recommended from the university.
+    \end{description}
 
-\begin{description}
-    \item[Risk:]    
-    \underline{No correlation between attention and mouse tracking data can be found.}    
-    \item[Likelihood and Impact:]
-    Medium likelihood, High impact
-    \item[Explaination:]
-    The project will involve the use of many methods to find a link between mouse tracking data and user attention.
-    It is possible that after all methods have been exhausted no correlation is ever discovered, or simply doesn't exist. 
-    \item[Mitigation:]
-    Attempt as many different methods of classification early before writing in depth about them.  
-    \item[Contingency:]
-    If no insights can be gained from the given dataset, I will explore other similar datasets and attempt to find correlations there.
-    I will then attempt to apply findings from other datasets to the original dataset. 
-\end{description}
-
-\begin{description}
-    \item[Risk:]    
-    Coronavirus has a greater impact on Swansea University and  effects the available support and deadlines.
-    \item[Likelihood and Impact:]
-    Low likelihood, Low impact
-    \item[Explaination:]
-    The virus has already shut down in person teaching and with the UK in lockdown it is unlikely the situation will become vastly different. 
-    \item[Mitigation:]
-    Keep informed with the University College of Science and supervisor to any news effecting the University.
-    \item[Contingency:]
-    TODO: What is the plan? Keep my options open? Keep updated?
-    Keep updated with the situation and follow whatever advice is recommended from the university.
-\end{description}
-
-\begin{description}
-    \item[Risk:]    
-    \item[Likelihood and Impact:]
-    \item[Mitigation:]
-    \item[Contingency:]
-\end{description}
+    \item 
+    \begin{description}
+        \item[Risk:]    
+        \item[Likelihood and Impact:]
+        \item[Mitigation:]
+        \item[Contingency:]
+    \end{description}
+\end{enumerate}
 
 \newpage
 \begin{table}[ht]
