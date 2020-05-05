@@ -19,6 +19,76 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{paolacci2010running}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b5e04da82100a7ad3262299b071e8b8f}{%
+           family={Paolacci},
+           familyi={P\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a2909bb72e25535c8339c440357c2fc5}{%
+           family={Chandler},
+           familyi={C\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3086e92f9d3bef4f89fcb6c8a5048672}{%
+           family={Ipeirotis},
+           familyi={I\bibinitperiod},
+           given={Panagiotis\bibnamedelima G},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{85c149841703369fe00ba3f8a0de172d}
+      \strng{fullhash}{85c149841703369fe00ba3f8a0de172d}
+      \strng{bibnamehash}{85c149841703369fe00ba3f8a0de172d}
+      \strng{authorbibnamehash}{85c149841703369fe00ba3f8a0de172d}
+      \strng{authornamehash}{85c149841703369fe00ba3f8a0de172d}
+      \strng{authorfullhash}{85c149841703369fe00ba3f8a0de172d}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Judgment and Decision making}
+      \field{number}{5}
+      \field{title}{Running experiments on amazon mechanical turk}
+      \field{volume}{5}
+      \field{year}{2010}
+      \field{pages}{411\bibrangedash 419}
+      \range{pages}{9}
+    \endentry
+    \entry{ipeirotis2010quality}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=3086e92f9d3bef4f89fcb6c8a5048672}{%
+           family={Ipeirotis},
+           familyi={I\bibinitperiod},
+           given={Panagiotis\bibnamedelima G},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=79fae1f3d670f588a9b7148774f77abf}{%
+           family={Provost},
+           familyi={P\bibinitperiod},
+           given={Foster},
+           giveni={F\bibinitperiod}}}%
+        {{hash=49a19e08791a3dc09c932ff975949361}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{44146bc6af25d9521d7371a251ffbca1}
+      \strng{fullhash}{44146bc6af25d9521d7371a251ffbca1}
+      \strng{bibnamehash}{44146bc6af25d9521d7371a251ffbca1}
+      \strng{authorbibnamehash}{44146bc6af25d9521d7371a251ffbca1}
+      \strng{authornamehash}{44146bc6af25d9521d7371a251ffbca1}
+      \strng{authorfullhash}{44146bc6af25d9521d7371a251ffbca1}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the ACM SIGKDD workshop on human computation}
+      \field{title}{Quality management on amazon mechanical turk}
+      \field{year}{2010}
+      \field{pages}{64\bibrangedash 67}
+      \range{pages}{4}
+    \endentry
     \entry{beck2001manifesto}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -80,12 +150,44 @@
       \strng{authorbibnamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
       \strng{authornamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
       \strng{authorfullhash}{4df8e492ed7b350a6cd5169f06c200f9}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Manifesto for agile software development}
       \field{year}{2001}
+    \endentry
+    \entry{GanttProject}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=830d22e75187669aa8397bbad5d6bc05}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={GanttProject},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{830d22e75187669aa8397bbad5d6bc05}
+      \strng{fullhash}{830d22e75187669aa8397bbad5d6bc05}
+      \strng{bibnamehash}{830d22e75187669aa8397bbad5d6bc05}
+      \strng{authorbibnamehash}{830d22e75187669aa8397bbad5d6bc05}
+      \strng{authornamehash}{830d22e75187669aa8397bbad5d6bc05}
+      \strng{authorfullhash}{830d22e75187669aa8397bbad5d6bc05}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{GanttProject - Free project scheduling and management app for Windows, OSX and Linux.}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ganttproject.biz/
+      \endverb
+      \verb{url}
+      \verb https://www.ganttproject.biz/
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

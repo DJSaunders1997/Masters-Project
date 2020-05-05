@@ -90,9 +90,16 @@
 % Write section 1 here \cite{torsney2011tuner} and talk about figure \ref{fig:test}.
 
 \section{Introduction}
-Can copy from presentation slides but fill in so they're more wordy.
+%Can copy from presentation slides but fill in so they're more wordy.
+
+% From Initial CSCM10 Report.
+Crowd-sourcing marketplaces like Amazon’s Mechanical Turk are a popular service that provides a way of gathering data from real participants for studies, and human intelligence tasks \cite{paolacci2010running}. 
+The level of user engagement, attention, and low quality responses can all be issues when gathering data from participants in such a distributed way \cite{ipeirotis2010quality}. 
+By using data gathered from a Mechanical Turk survey and lab tests, the project is to propose methods of identifying and quantifying user engagement by using machine learning and visual analytics techniques.
 
 \subsection{Motivation}
+
+
 
 People are lazy. 
 Often don't pay much attention 
@@ -116,19 +123,22 @@ The aims of what I want to achieve in the project will be as follows:
     \item Stretch goal? Test methods and models developed with other applications?
 \end{itemize}
 
-Talk here about how I will achieve each aim, then describe the components of the project that I will need to complete.
-Try and link each component of the project to an aim.
+% Talk here about how I will achieve each aim, then describe the components of the project that I will need to complete.
+% Try and link each component of the project to an aim.
 
-Machine learning methods
-    SVM
-    Natural Language Processing
-    N-Grams
-    LSTM Neural Networks
-    Markov models
-Deal with Imbalances in classes
-    Sampling
-    Oversampling, Undersampling
-Other mouse data sources
+% Machine learning methods
+%     SVM
+%     Natural Language Processing
+%     N-Grams
+%     LSTM Neural Networks
+%     Markov models
+% Deal with Imbalances in classes
+%     Sampling
+%     Oversampling, Undersampling
+% Other mouse data sources
+
+
+
 
 Applications
 A good system developed could be used for other tasks to monitor attention - E.g. Survey Monika made us do. Not just for joes ice-cream
@@ -142,6 +152,53 @@ Anything I've looked at with help for mouse data classification algorithms?
 %\section{Literature review}
 In this section I will review the literature on how to monitor attention.
 %This can pretty much be the review I did for the first assignment. 
+
+\subsection{User attention and characteristic.}
+
+
+\subsection{Eye tracking}
+% Copppied straight from CSCM10 Initial Report
+% TODO: Refernce with Bibtex
+
+As mentioned previously in the report non-verbal information can be used to detect a
+user’s level of engagement, eye tracking is a prime example of this (Lala et al, 2017).
+Vision is one of the most powerful human senses so it may give a good measure of user engagement. 
+The methodology of eye tracking is that we move our eyes to focus on particular areas that we want to see in more detail, and divert our attention to that area (Duchowski, 2007). 
+Thus tracking a user’s gaze can provide insight into which part of a system they’re engaged with, and how much so.
+
+\begin{figure}[ht]
+    \centering
+    \centerline{
+        \includegraphics[scale=1]{EyeHeatmap.PNG}
+    }
+    \caption{Heatmap showing the popular locations of users eyes on a webpage CITE.}
+    \label{fig:eyetrack}
+\end{figure}
+
+Eye tracking data can be used to show user interface elements that users focus their attention on as shown in Fig \ref{fig:eyetrack}. 
+From this researchers were able to predict the amount of attention elements of the page would receive. 
+By observing what parts of an interface users are interacting with we can determine what a user is engaging with (Buscher et al, 2009).
+Eye-tracking has been used, and found success novel applications such as recording the engagement of users when playing a game. 
+Tracking users eye movements helped game designers understand how users can recognise interactable game objects and could be used to investigate problematic game design issues (Renshaw et al, 2009).
+
+\subsection{Mouse cursor tracking}
+% Copppied straight from CSCM10 Initial Report
+% TODO: Refernce with Bibtex
+Mouse cursor tracking
+Eye tracking has historically had its limitations. 
+To track subjects eyes with a good degree of accuracy required the use of expensive, intrusive equipment that frequently needed recalibrating (Richardson and Spivey, 2004). 
+In contrast mouse movement data can be collected without the drawbacks of eye tracking and with more automatic methods, meaning more data can be collected, and on a larger scale (Demsar and Coltekin, 2017).
+Research has also found that there is a correlation between a user’s gaze and their cursor position. 
+The position can be considered a “poor man’s eye tracker” as it has been found that eye gaze match mouse position 69\% of the time (Cooke, 2006). 
+Therefore it can be said that mouse data can be used as a good alternative to eye tracking data.
+
+Mouse activity can be used as input to a neural network and output a quantifiable level of activity for a webpage. 
+By using mouse data it is possible to unobtrusively record a user’s normal use of a web browser without disturbing their experience (Goecks and Shavlik, 2000). 
+It has also been found that users tend to follow the text they’re reading with the mouse cursor (Liu and Chung, 2007), and similarly scientists were able to determine what paragraph of a page was being read with 79\% by using mouse cursor data (Hauger et al, 2011). 
+Methodologies mentioned above explore ways of classifying user engagement from eye and cursor data, however it is also possible to predict users attention and user frustration in complex webpages (Navalpakkam and Churchill, 2012).
+In contrast to the above literature some studies disagree that mouse cursor is always a good approximation for eye data. 
+Hauger et al found that distinct cursor behaviour exists depending on the task, and that the relationship between eye gaze and mouse position is more nuanced than measuring only mouse data (Huang et al, 2012).
+
 
 \section{Description of the project}
 
@@ -181,6 +238,7 @@ For that reason I will be following the Scrum software lifecycle methodology.
 TODO: reference 
 
 Figure \ref{fig:Gantt} shows the sprints I will be undertaking.
+The Gantt Chart was created with the free software Gantt Project \cite{GanttProject}.
 Each sprint starts with a supervisor meeting where the previous work, and the plan for the next sprint will be discussed.
 There will be three sprints in total, with each sprint being a fortnight long.
 Each sprint will consist of researching a method I may be able to use in my project.
@@ -195,7 +253,7 @@ The sprint plan would allow me to spend time implementing this network with my d
     \centerline{
         \includegraphics[scale=0.32]{GanttChart.PNG}
     }
-    \caption{A Gantt chart showing the planned milestones of the project. OR A Gantt chart created in the GanttProject free software}
+    \caption{Gantt chart showing the planned timeline and milestones of the project.}
     \label{fig:Gantt}
 \end{figure}
 
@@ -210,12 +268,6 @@ A mitigation plan is created in an attempt to prevent the risk from happening, a
 Below I have listed and analysed the risks and have ordered them from potentially the most dangerous to least dangerous. 
 
 
-
-
-% Please add the following required packages to your document preamble:
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-
 %REPLACE this table with an itemized list, like in the data visualisation module.
 % - Tom said that tables can make it too restrictive.
 % Just coppied from table here, make sure to flesh out later
@@ -227,7 +279,7 @@ Below I have listed and analysed the risks and have ordered them from potentiall
     \item 
     \begin{description}
         \item[Risk:]    
-        \underline{Unrealistic time plan and poor time management.}
+        \emph{Unrealistic time plan and poor time management.}
         \item[Likelihood and Impact:]
         Medium likelihood, Medium Impact
         \item[Explaination]
@@ -242,7 +294,7 @@ Below I have listed and analysed the risks and have ordered them from potentiall
     \item 
     \begin{description}
         \item[Risk:]
-        \underline{Coronavirus affects me or a close family member, negatively effecting my work.}
+        \emph{Coronavirus affects me or a close family member, negatively effecting my work.}
         \item[Likelihood and Impact:]
         Medium likelihood, High Risk
         \item[Explaination]
@@ -294,21 +346,22 @@ Below I have listed and analysed the risks and have ordered them from potentiall
     \end{description}
 \end{enumerate}
 
-\newpage
-\begin{table}[ht]
-    \small %small not needed
-    \caption{\label{table:individual} The top association rules between individual items.}
-    \makebox[\textwidth][c]{%
-        \begin{tabular}{|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{2cm}|p{2cm}|}
-            \hline 
-            { Risk}                                                                                                       & { Probability} & { Impact} & { Combined Risk} & { Mitigation Plan}                                                                                               & { Contingency Plan}                                                                                                                  \\
-            { Unrealistic time   plan and poor time management.}                                                          & { High}        & { High}   & { High}          & { Create work   schedule and stick to it.}                                                                       & { If I am unable to   stick to my work schedule, I must adapt my approach to work and create an   undated, more realistic schedule.} \\
-            { Coronavirus affects me or a close family member, negatively effecting my work.}                           & { Medium}      & { High}   & { High}          & { Stay   safe during the quarantine to keep everyone safe and mitigate any risks of me   catching anything.}     & { Inform   the University as soon as a situation develops so we can arrange something.}                                              \\
-            { Coronavirus has a greater impact on Swansea University and  effects the available support and deadlines.} & { Medium}      & { High}   & { Medium}        & { Keep   informed with the University College of Science and supervisor to any news   effecting the University.} & { Keep my   options open? Keep updated?}                                                                                             \\
-            { No correlation between attention and mouse tracking data can be found.}                                   & { Low}         & { High}   & { Medium}        & { Attempt   as many different methods of classification early before writing in depth about   them.}             & { If no   insights can be gained from the given dataset, I will attempt to find   correlations in other datasets.}                   \\                                                                                                                    
-        \end{tabular}
-    }
-\end{table}
+% OLD TABLE INCASE I WANT TO REVERT
+% \newpage
+% \begin{table}[ht]
+%     \small %small not needed
+%     \caption{\label{table:individual} The top association rules between individual items.}
+%     \makebox[\textwidth][c]{%
+%         \begin{tabular}{|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{2cm}|p{2cm}|}
+%             \hline 
+%             { Risk}                                                                                                       & { Probability} & { Impact} & { Combined Risk} & { Mitigation Plan}                                                                                               & { Contingency Plan}                                                                                                                  \\
+%             { Unrealistic time   plan and poor time management.}                                                          & { High}        & { High}   & { High}          & { Create work   schedule and stick to it.}                                                                       & { If I am unable to   stick to my work schedule, I must adapt my approach to work and create an   undated, more realistic schedule.} \\
+%             { Coronavirus affects me or a close family member, negatively effecting my work.}                           & { Medium}      & { High}   & { High}          & { Stay   safe during the quarantine to keep everyone safe and mitigate any risks of me   catching anything.}     & { Inform   the University as soon as a situation develops so we can arrange something.}                                              \\
+%             { Coronavirus has a greater impact on Swansea University and  effects the available support and deadlines.} & { Medium}      & { High}   & { Medium}        & { Keep   informed with the University College of Science and supervisor to any news   effecting the University.} & { Keep my   options open? Keep updated?}                                                                                             \\
+%             { No correlation between attention and mouse tracking data can be found.}                                   & { Low}         & { High}   & { Medium}        & { Attempt   as many different methods of classification early before writing in depth about   them.}             & { If no   insights can be gained from the given dataset, I will attempt to find   correlations in other datasets.}                   \\                                                                                                                    
+%         \end{tabular}
+%     }
+% \end{table}
 
 \section{Conclusion}
 

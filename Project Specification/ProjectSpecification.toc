@@ -2,20 +2,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Introduction}{1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Motivation}{1}%
+\contentsline {subsection}{\numberline {1.1}Motivation}{2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2}Aims of project}{2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Background Research}{2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Description of the project}{2}%
+\contentsline {subsection}{\numberline {2.1}User attention and characteristic.}{2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Components of project}{2}%
+\contentsline {subsection}{\numberline {2.2}Eye tracking}{2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Project plan}{3}%
+\contentsline {subsection}{\numberline {2.3}Mouse cursor tracking}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Development methodology}{3}%
+\contentsline {section}{\numberline {3}Description of the project}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Risk Analysis}{3}%
+\contentsline {subsection}{\numberline {3.1}Components of project}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusion}{6}%
+\contentsline {section}{\numberline {4}Project plan}{5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Development methodology}{5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Risk Analysis}{5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusion}{8}%
