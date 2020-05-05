@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  5 MAY 2020 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  5 MAY 2020 18:46
 entering extended mode
 **"c:/Users/jacqu/Masters-Project/Project Specification/ProjectSpecification.tex"
 ("c:/Users/jacqu/Masters-Project/Project Specification/ProjectSpecification.tex"
@@ -367,13 +367,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <EyeHeatmap.PNG, id=16, 446.41782pt x 359.09157pt>
 File: EyeHeatmap.PNG Graphic file (type png)
 <use EyeHeatmap.PNG>
-Package pdftex.def Info: EyeHeatmap.PNG  used on input line 173.
-(pdftex.def)             Requested size: 446.41672pt x 359.09068pt.
+Package pdftex.def Info: EyeHeatmap.PNG  used on input line 174.
+(pdftex.def)             Requested size: 312.49033pt x 251.36238pt.
  [3 <c:/Users/jacqu/Masters-Project/Project Specification/EyeHeatmap.PNG>] [4]
 <GanttChart.PNG, id=25, 1753.55125pt x 558.085pt>
 File: GanttChart.PNG Graphic file (type png)
 <use GanttChart.PNG>
-Package pdftex.def Info: GanttChart.PNG  used on input line 255.
+Package pdftex.def Info: GanttChart.PNG  used on input line 262.
 (pdftex.def)             Requested size: 561.14787pt x 178.59085pt.
  [5] [6 <c:/Users/jacqu/Masters-Project/Project Specification/GanttChart.PNG (PNG copy)>] [7] [8] ("c:/Users\jacqu\Masters-Project\Project Specification\ProjectSpecification.aux")
 Package logreq Info: Writing requests to 'ProjectSpecification.run.xml'.
@@ -381,15 +381,15 @@ Package logreq Info: Writing requests to 'ProjectSpecification.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8687 strings out of 480934
- 161933 string characters out of 2909682
- 786588 words of memory out of 3000000
- 24485 multiletter control sequences out of 15000+200000
+ 8715 strings out of 480934
+ 163180 string characters out of 2909682
+ 787348 words of memory out of 3000000
+ 24513 multiletter control sequences out of 15000+200000
  538350 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,6n,45p,895b,1222s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\jacqu\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users\jacqu\Masters-Project\Project Specification\ProjectSpecification.pdf" (8 pages, 609225 bytes).
+Output written on "c:/Users\jacqu\Masters-Project\Project Specification\ProjectSpecification.pdf" (8 pages, 614836 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

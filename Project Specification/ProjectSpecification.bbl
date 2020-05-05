@@ -89,6 +89,395 @@
       \field{pages}{64\bibrangedash 67}
       \range{pages}{4}
     \endentry
+    \entry{lala2017detection}{article}{}
+      \name{author}{4}{}{%
+        {{hash=23d903fedf637c8265a0e860648acd0c}{%
+           family={Lala},
+           familyi={L\bibinitperiod},
+           given={Divesh},
+           giveni={D\bibinitperiod}}}%
+        {{hash=25b69a9123def057f2b83a7461d165dd}{%
+           family={Inoue},
+           familyi={I\bibinitperiod},
+           given={Koji},
+           giveni={K\bibinitperiod}}}%
+        {{hash=298fedd4dfa33dd53b4466f78b69c81e}{%
+           family={Milhorat},
+           familyi={M\bibinitperiod},
+           given={Pierrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2d4e75deaaf504f1988520976f2ab00e}{%
+           family={Kawahara},
+           familyi={K\bibinitperiod},
+           given={Tatsuya},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{5dd01ce444a7c10d25d36f0a6c8f6a6e}
+      \strng{fullhash}{694f1dd8d7ec0e3fd9fc6f954ca6ce6f}
+      \strng{bibnamehash}{5dd01ce444a7c10d25d36f0a6c8f6a6e}
+      \strng{authorbibnamehash}{5dd01ce444a7c10d25d36f0a6c8f6a6e}
+      \strng{authornamehash}{5dd01ce444a7c10d25d36f0a6c8f6a6e}
+      \strng{authorfullhash}{694f1dd8d7ec0e3fd9fc6f954ca6ce6f}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1709.10257}
+      \field{title}{Detection of social signals for recognizing engagement in human-robot interaction}
+      \field{year}{2017}
+    \endentry
+    \entry{duchowski2007eye}{article}{}
+      \name{author}{1}{}{%
+        {{hash=414b91b82753a78198eb79e475f19e56}{%
+           family={Duchowski},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima T},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{414b91b82753a78198eb79e475f19e56}
+      \strng{fullhash}{414b91b82753a78198eb79e475f19e56}
+      \strng{bibnamehash}{414b91b82753a78198eb79e475f19e56}
+      \strng{authorbibnamehash}{414b91b82753a78198eb79e475f19e56}
+      \strng{authornamehash}{414b91b82753a78198eb79e475f19e56}
+      \strng{authorfullhash}{414b91b82753a78198eb79e475f19e56}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theory and practice}
+      \field{number}{614}
+      \field{title}{Eye tracking methodology}
+      \field{volume}{328}
+      \field{year}{2007}
+      \field{pages}{2\bibrangedash 3}
+      \range{pages}{2}
+    \endentry
+    \entry{buscher2009you}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=108497783e9ff04fd5072847834b0c7d}{%
+           family={Buscher},
+           familyi={B\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=434b5670e66211e1c68a58af75653567}{%
+           family={Cutrell},
+           familyi={C\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5283a53c5c081c04252a659743f886e1}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Meredith\bibnamedelima Ringel},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e5ea247700792ee38d154e488ecfe1a}
+      \strng{fullhash}{3e5ea247700792ee38d154e488ecfe1a}
+      \strng{bibnamehash}{3e5ea247700792ee38d154e488ecfe1a}
+      \strng{authorbibnamehash}{3e5ea247700792ee38d154e488ecfe1a}
+      \strng{authornamehash}{3e5ea247700792ee38d154e488ecfe1a}
+      \strng{authorfullhash}{3e5ea247700792ee38d154e488ecfe1a}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the SIGCHI conference on human factors in computing systems}
+      \field{title}{What do you see when you're surfing? Using eye tracking to predict salient regions of web pages}
+      \field{year}{2009}
+      \field{pages}{21\bibrangedash 30}
+      \range{pages}{10}
+    \endentry
+    \entry{renshaw2009towards}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d7e775563cd0c06b78a286afb053e95f}{%
+           family={Renshaw},
+           familyi={R\bibinitperiod},
+           given={Tony},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5a523ec049151cc0a4dd079a398da6f1}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1f87ab589c604e421fce95ecef1b55c1}{%
+           family={Denton},
+           familyi={D\bibinitperiod},
+           given={Paul\bibnamedelima D},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Emerald Group Publishing Limited}%
+      }
+      \strng{namehash}{a5c1d39e1f7d83316d4e35265ebea4ff}
+      \strng{fullhash}{a5c1d39e1f7d83316d4e35265ebea4ff}
+      \strng{bibnamehash}{a5c1d39e1f7d83316d4e35265ebea4ff}
+      \strng{authorbibnamehash}{a5c1d39e1f7d83316d4e35265ebea4ff}
+      \strng{authornamehash}{a5c1d39e1f7d83316d4e35265ebea4ff}
+      \strng{authorfullhash}{a5c1d39e1f7d83316d4e35265ebea4ff}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{On the Horizon}
+      \field{title}{Towards understanding engagement in games: an eye-tracking study}
+      \field{year}{2009}
+    \endentry
+    \entry{richardson2004eye}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1ad10031f445772530fb3e1e896a47a0}{%
+           family={Richardson},
+           familyi={R\bibinitperiod},
+           given={Daniel\bibnamedelima C},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c23eaaff267b42bebf78587f3dc56ed9}{%
+           family={Spivey},
+           familyi={S\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Informa Healthcare Publisher, New York}%
+      }
+      \strng{namehash}{486e68ea38900b233ba3e532833ebb7f}
+      \strng{fullhash}{486e68ea38900b233ba3e532833ebb7f}
+      \strng{bibnamehash}{486e68ea38900b233ba3e532833ebb7f}
+      \strng{authorbibnamehash}{486e68ea38900b233ba3e532833ebb7f}
+      \strng{authornamehash}{486e68ea38900b233ba3e532833ebb7f}
+      \strng{authorfullhash}{486e68ea38900b233ba3e532833ebb7f}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Encyclopedia of biomaterials and biomedical engineering}
+      \field{title}{Eye tracking: Characteristics and methods}
+      \field{volume}{3}
+      \field{year}{2004}
+      \field{pages}{1028\bibrangedash 1042}
+      \range{pages}{15}
+    \endentry
+    \entry{demvsar2017quantifying}{article}{}
+      \name{author}{2}{}{%
+        {{hash=046ed21a3a8dbacbe20398b879b5f423}{%
+           family={Dem{š}ar},
+           familyi={D\bibinitperiod},
+           given={Ur{š}ka},
+           giveni={U\bibinitperiod}}}%
+        {{hash=f266a7e9a0c9e5b6317f6d7d1779b664}{%
+           family={{Ç}{ö}ltekin},
+           familyi={Ç\bibinitperiod},
+           given={Arzu},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{81559132bae719b60d6a4e29ca8c27da}
+      \strng{fullhash}{81559132bae719b60d6a4e29ca8c27da}
+      \strng{bibnamehash}{81559132bae719b60d6a4e29ca8c27da}
+      \strng{authorbibnamehash}{81559132bae719b60d6a4e29ca8c27da}
+      \strng{authornamehash}{81559132bae719b60d6a4e29ca8c27da}
+      \strng{authorfullhash}{81559132bae719b60d6a4e29ca8c27da}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PloS one}
+      \field{number}{8}
+      \field{title}{Quantifying gaze and mouse interactions on spatial visual interfaces with a new movement analytics methodology}
+      \field{volume}{12}
+      \field{year}{2017}
+    \endentry
+    \entry{cooke2006mouse}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=cfe66c3113e48768748727eb081bfc21}{%
+           family={Cooke},
+           familyi={C\bibinitperiod},
+           given={Lynne},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cfe66c3113e48768748727eb081bfc21}
+      \strng{fullhash}{cfe66c3113e48768748727eb081bfc21}
+      \strng{bibnamehash}{cfe66c3113e48768748727eb081bfc21}
+      \strng{authorbibnamehash}{cfe66c3113e48768748727eb081bfc21}
+      \strng{authornamehash}{cfe66c3113e48768748727eb081bfc21}
+      \strng{authorfullhash}{cfe66c3113e48768748727eb081bfc21}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Annual Conference-Society for Technical Communication}
+      \field{title}{Is the Mouse a" Poor Man's Eye Tracker"?}
+      \field{volume}{53}
+      \field{year}{2006}
+      \field{pages}{252}
+      \range{pages}{1}
+    \endentry
+    \entry{goecks2000learning}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=0c479b6f95f66ec051847775e6b69b18}{%
+           family={Goecks},
+           familyi={G\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b9e25e84bba9c0b453dfaa3f5cd6127b}{%
+           family={Shavlik},
+           familyi={S\bibinitperiod},
+           given={Jude},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{43abb3edb0ecad54a5e25286c1541f16}
+      \strng{fullhash}{43abb3edb0ecad54a5e25286c1541f16}
+      \strng{bibnamehash}{43abb3edb0ecad54a5e25286c1541f16}
+      \strng{authorbibnamehash}{43abb3edb0ecad54a5e25286c1541f16}
+      \strng{authornamehash}{43abb3edb0ecad54a5e25286c1541f16}
+      \strng{authorfullhash}{43abb3edb0ecad54a5e25286c1541f16}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 5th international conference on Intelligent user interfaces}
+      \field{title}{Learning users' interests by unobtrusively observing their normal behavior}
+      \field{year}{2000}
+      \field{pages}{129\bibrangedash 132}
+      \range{pages}{4}
+    \endentry
+    \entry{liu2007detecting}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6d24f17aed60f44d1c2e331f2a567dd0}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chen-Chung},
+           giveni={C\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=6c5691113456888482a3e907ec46c732}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={Chen-Wei},
+           giveni={C\bibinithyphendelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {The Institute of Electronics, Information}%
+        {Communication Engineers}%
+      }
+      \strng{namehash}{1ee57bb7ad45ff6a132eb532f1972b3c}
+      \strng{fullhash}{1ee57bb7ad45ff6a132eb532f1972b3c}
+      \strng{bibnamehash}{1ee57bb7ad45ff6a132eb532f1972b3c}
+      \strng{authorbibnamehash}{1ee57bb7ad45ff6a132eb532f1972b3c}
+      \strng{authornamehash}{1ee57bb7ad45ff6a132eb532f1972b3c}
+      \strng{authorfullhash}{1ee57bb7ad45ff6a132eb532f1972b3c}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEICE transactions on information and systems}
+      \field{number}{10}
+      \field{title}{Detecting mouse movement with repeated visit patterns for retrieving noticed knowledge components on web pages}
+      \field{volume}{90}
+      \field{year}{2007}
+      \field{pages}{1687\bibrangedash 1696}
+      \range{pages}{10}
+    \endentry
+    \entry{hauger2011using}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=987342d015eca51c5d4b0dfcca7101e8}{%
+           family={Hauger},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=806319fd35cedcd2682e71f3fa0795f5}{%
+           family={Paramythis},
+           familyi={P\bibinitperiod},
+           given={Alexandros},
+           giveni={A\bibinitperiod}}}%
+        {{hash=528d87f100939dfd471cb767509f4257}{%
+           family={Weibelzahl},
+           familyi={W\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ae33d0090f736401bc661f1830e5aef3}
+      \strng{fullhash}{ae33d0090f736401bc661f1830e5aef3}
+      \strng{bibnamehash}{ae33d0090f736401bc661f1830e5aef3}
+      \strng{authorbibnamehash}{ae33d0090f736401bc661f1830e5aef3}
+      \strng{authornamehash}{ae33d0090f736401bc661f1830e5aef3}
+      \strng{authorfullhash}{ae33d0090f736401bc661f1830e5aef3}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on User Modeling, Adaptation, and Personalization}
+      \field{title}{Using browser interaction data to determine page reading behavior}
+      \field{year}{2011}
+      \field{pages}{147\bibrangedash 158}
+      \range{pages}{12}
+    \endentry
+    \entry{navalpakkam2012mouse}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=ab274a8a1d9a6917b20dcb830e9bc56a}{%
+           family={Navalpakkam},
+           familyi={N\bibinitperiod},
+           given={Vidhya},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a816cb3f977df7fafc49a373677a9c6d}{%
+           family={Churchill},
+           familyi={C\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{664c942bd3694d9a2096b5a4ca070a4e}
+      \strng{fullhash}{664c942bd3694d9a2096b5a4ca070a4e}
+      \strng{bibnamehash}{664c942bd3694d9a2096b5a4ca070a4e}
+      \strng{authorbibnamehash}{664c942bd3694d9a2096b5a4ca070a4e}
+      \strng{authornamehash}{664c942bd3694d9a2096b5a4ca070a4e}
+      \strng{authorfullhash}{664c942bd3694d9a2096b5a4ca070a4e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems}
+      \field{title}{Mouse tracking: measuring and predicting users' experience of web-based content}
+      \field{year}{2012}
+      \field{pages}{2963\bibrangedash 2972}
+      \range{pages}{10}
+    \endentry
+    \entry{huang2012user}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=500cc7438f13f409a2bd93a235a21469}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=db5051d13409e561328818763e038a55}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Ryen},
+           giveni={R\bibinitperiod}}}%
+        {{hash=108497783e9ff04fd5072847834b0c7d}{%
+           family={Buscher},
+           familyi={B\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a22eafd5fdf7b62b7d14bd54c147caf}
+      \strng{fullhash}{3a22eafd5fdf7b62b7d14bd54c147caf}
+      \strng{bibnamehash}{3a22eafd5fdf7b62b7d14bd54c147caf}
+      \strng{authorbibnamehash}{3a22eafd5fdf7b62b7d14bd54c147caf}
+      \strng{authornamehash}{3a22eafd5fdf7b62b7d14bd54c147caf}
+      \strng{authorfullhash}{3a22eafd5fdf7b62b7d14bd54c147caf}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems}
+      \field{title}{User see, user point: gaze and cursor alignment in web search}
+      \field{year}{2012}
+      \field{pages}{1341\bibrangedash 1350}
+      \range{pages}{10}
+    \endentry
     \entry{beck2001manifesto}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -150,8 +539,8 @@
       \strng{authorbibnamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
       \strng{authornamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
       \strng{authorfullhash}{4df8e492ed7b350a6cd5169f06c200f9}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Manifesto for agile software development}
@@ -171,8 +560,8 @@
       \strng{authorbibnamehash}{830d22e75187669aa8397bbad5d6bc05}
       \strng{authornamehash}{830d22e75187669aa8397bbad5d6bc05}
       \strng{authorfullhash}{830d22e75187669aa8397bbad5d6bc05}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{4}

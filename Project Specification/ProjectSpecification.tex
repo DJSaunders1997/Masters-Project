@@ -110,7 +110,7 @@ Mouse cursor position is strongly correlated with eye position.
 One paper calls it a “poor man's eye-tracker” [find]
 Bulky expensive equipment for eye tracking is expensive and very obtrusive.
 Hawthorn / observer effect - People react differently when being observed. 
-Less obtrusive mouse tracking can make people feel less tracked and act more naturally. 
+Less obtrusive mouse tracking can make people feel less tracked and act more naturally. % goecks2000learning talks about unobtrusively observing people. CITE/TALK ABOUT 
 Could even not tell them (legal ethical repercussions)!
 
 \subsection{Aims of project}
@@ -161,15 +161,16 @@ In this section I will review the literature on how to monitor attention.
 % TODO: Refernce with Bibtex
 
 As mentioned previously in the report non-verbal information can be used to detect a
-user’s level of engagement, eye tracking is a prime example of this (Lala et al, 2017).
+user’s level of engagement, eye tracking is a prime example of this \cite{lala2017detection}.
 Vision is one of the most powerful human senses so it may give a good measure of user engagement. 
-The methodology of eye tracking is that we move our eyes to focus on particular areas that we want to see in more detail, and divert our attention to that area (Duchowski, 2007). 
+The methodology of eye tracking is that we move our eyes to focus on particular areas that we want to see in more detail, and divert our attention to that area \cite{duchowski2007eye}. 
+% duchowski2007eye is a VERY important piece of literature for the field, over 4000 citations
 Thus tracking a user’s gaze can provide insight into which part of a system they’re engaged with, and how much so.
 
 \begin{figure}[ht]
     \centering
     \centerline{
-        \includegraphics[scale=1]{EyeHeatmap.PNG}
+        \includegraphics[scale=0.7]{EyeHeatmap.PNG}
     }
     \caption{Heatmap showing the popular locations of users eyes on a webpage CITE.}
     \label{fig:eyetrack}
@@ -177,27 +178,33 @@ Thus tracking a user’s gaze can provide insight into which part of a system th
 
 Eye tracking data can be used to show user interface elements that users focus their attention on as shown in Fig \ref{fig:eyetrack}. 
 From this researchers were able to predict the amount of attention elements of the page would receive. 
-By observing what parts of an interface users are interacting with we can determine what a user is engaging with (Buscher et al, 2009).
+By observing what parts of an interface users are interacting with we can determine what a user is engaging with \cite{buscher2009you}.
 Eye-tracking has been used, and found success novel applications such as recording the engagement of users when playing a game. 
-Tracking users eye movements helped game designers understand how users can recognise interactable game objects and could be used to investigate problematic game design issues (Renshaw et al, 2009).
+Tracking users eye movements helped game designers understand how users can recognise interactable game objects and could be used to investigate problematic game design issues \cite{renshaw2009towards}.
 
 \subsection{Mouse cursor tracking}
 % Copppied straight from CSCM10 Initial Report
 % TODO: Refernce with Bibtex
 Mouse cursor tracking
 Eye tracking has historically had its limitations. 
-To track subjects eyes with a good degree of accuracy required the use of expensive, intrusive equipment that frequently needed recalibrating (Richardson and Spivey, 2004). 
-In contrast mouse movement data can be collected without the drawbacks of eye tracking and with more automatic methods, meaning more data can be collected, and on a larger scale (Demsar and Coltekin, 2017).
+To track subjects eyes with a good degree of accuracy required the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
+In contrast mouse movement data can be collected without the drawbacks of eye tracking and with more automatic methods, meaning more data can be collected, and on a larger scale \cite{demvsar2017quantifying}.
 Research has also found that there is a correlation between a user’s gaze and their cursor position. 
-The position can be considered a “poor man’s eye tracker” as it has been found that eye gaze match mouse position 69\% of the time (Cooke, 2006). 
+The position can be considered a ``poor man’s eye tracker'' as it has been found that eye gaze match mouse position 69\% of the time \cite{cooke2006mouse}. 
 Therefore it can be said that mouse data can be used as a good alternative to eye tracking data.
 
 Mouse activity can be used as input to a neural network and output a quantifiable level of activity for a webpage. 
-By using mouse data it is possible to unobtrusively record a user’s normal use of a web browser without disturbing their experience (Goecks and Shavlik, 2000). 
-It has also been found that users tend to follow the text they’re reading with the mouse cursor (Liu and Chung, 2007), and similarly scientists were able to determine what paragraph of a page was being read with 79\% by using mouse cursor data (Hauger et al, 2011). 
-Methodologies mentioned above explore ways of classifying user engagement from eye and cursor data, however it is also possible to predict users attention and user frustration in complex webpages (Navalpakkam and Churchill, 2012).
+By using mouse data it is possible to unobtrusively record a user’s normal use of a web browser without disturbing their experience \cite{goecks2000learning}.
+% Above paper touches on one of the big advantages of measuring user engagement from mouse data, it is unobtrusive! We can monitior them in the background 
+It has also been found that users tend to follow the text they’re reading with the mouse cursor \cite{liu2007detecting}, and similarly scientists were able to determine what paragraph of a page was being read with an accuracy of 79\% by using mouse cursor data \cite{hauger2011using}. 
+Methodologies mentioned above explore ways of classifying user engagement from eye and cursor data, however it is also possible to predict users attention and user frustration in complex webpages \cite{navalpakkam2012mouse}.
 In contrast to the above literature some studies disagree that mouse cursor is always a good approximation for eye data. 
-Hauger et al found that distinct cursor behaviour exists depending on the task, and that the relationship between eye gaze and mouse position is more nuanced than measuring only mouse data (Huang et al, 2012).
+Hauger et al found that distinct cursor behaviour exists depending on the task, and that the relationship between eye gaze and mouse position is more nuanced than measuring only mouse data \cite{huang2012user}.
+
+\subsection{Machine learning techniques???}
+I've given a high level overview of the existing literature, here I will be more indepth as to the algorithms and techniques relevant to this project.
+
+
 
 
 \section{Description of the project}

@@ -2184,8 +2184,20 @@
   <bcf:section number="0">
     <bcf:citekey order="1">paolacci2010running</bcf:citekey>
     <bcf:citekey order="2">ipeirotis2010quality</bcf:citekey>
-    <bcf:citekey order="3">beck2001manifesto</bcf:citekey>
-    <bcf:citekey order="4">GanttProject</bcf:citekey>
+    <bcf:citekey order="3">lala2017detection</bcf:citekey>
+    <bcf:citekey order="4">duchowski2007eye</bcf:citekey>
+    <bcf:citekey order="5">buscher2009you</bcf:citekey>
+    <bcf:citekey order="6">renshaw2009towards</bcf:citekey>
+    <bcf:citekey order="7">richardson2004eye</bcf:citekey>
+    <bcf:citekey order="8">demvsar2017quantifying</bcf:citekey>
+    <bcf:citekey order="9">cooke2006mouse</bcf:citekey>
+    <bcf:citekey order="10">goecks2000learning</bcf:citekey>
+    <bcf:citekey order="11">liu2007detecting</bcf:citekey>
+    <bcf:citekey order="12">hauger2011using</bcf:citekey>
+    <bcf:citekey order="13">navalpakkam2012mouse</bcf:citekey>
+    <bcf:citekey order="14">huang2012user</bcf:citekey>
+    <bcf:citekey order="15">beck2001manifesto</bcf:citekey>
+    <bcf:citekey order="16">GanttProject</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
