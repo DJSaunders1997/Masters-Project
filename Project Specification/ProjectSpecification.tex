@@ -80,51 +80,89 @@
 % • Conclusion.
 % • Bibliography.
 
+% TODO: Send to Tom
+% Should I have a section talk about the previous work AKA study this is build on?
+% How do I cite?
+% Could include a section on the data like I did in the presentation.
+% 
+% 
 
-% \begin{figure}[ht]
-%     \centering
-%     \includegraphics[scale=0.35]{Test.JPG}
-%     \caption{This will be a figure showcasing some of my work}
-%     \label{fig:test}
-% \end{figure}
-% Write section 1 here \cite{torsney2011tuner} and talk about figure \ref{fig:test}.
 
 \section{Introduction}
 %Can copy from presentation slides but fill in so they're more wordy.
+% https://academia.stackexchange.com/questions/47564/what-is-the-difference-between-introduction-and-motivation-sections
+% INTRODUCTION IS WHAT
+
+% This project is other project.
+
+This project uses data from a previous study (Should I cite anything?) where participants were asked to perform a simple repetitive tasks.
+Data was gathered both with a closely monitored lab study, and using a crowd-sourcing website.
+We assume that participants in the lab study were paying attention, and that crowd sourced participants may or may not be paying attention.
+The task of this project is to classify crowd sourced participants to determine who were paying attention during the task.
+We hypothesise that a participants level of attention can be measured from their mouse movement data.
+The project will propose methods of identifying and quantifying user engagement by using machine learning and visual analytics techniques.
+
+\subsection{Motivation}
+% MOTOVATION IS WHY
+
+%https://academia.stackexchange.com/questions/44784/how-to-explain-things-in-the-motivation-section-of-a-mathematical-paper-without
+% People have wondered about how to better understand frobs ever 
+% since Richard Feynman first used them to pick the locks in Los Alamos. 
+% Although X, Y, and Z attempts have been made, none of them got very far
+%  because they were all green-colored. 
+%  In this dissertation, I examine an alternate path, reducing the problem
+%   of frobs to the simpler system of greebit-space by means of an 
+%   innovative application of wibbling. 
+%   These results bring us one step closer to solving the problem of frobs, 
+%   and how they can be better used to quickly and cheaply pick locks.
 
 % From Initial CSCM10 Report.
 Crowd-sourcing marketplaces like Amazon’s Mechanical Turk are a popular service that provides a way of gathering data from real participants for studies, and human intelligence tasks \cite{paolacci2010running}. 
 The level of user engagement, attention, and low quality responses can all be issues when gathering data from participants in such a distributed way \cite{ipeirotis2010quality}. 
-By using data gathered from a Mechanical Turk survey and lab tests, the project is to propose methods of identifying and quantifying user engagement by using machine learning and visual analytics techniques.
+Research has been conducted on how to increase the accuracy and attention of Turk tasks.
+% Look at these papers to see how they clasifyed attentions.
+Methods such as offering financial incentives \cite{ho2015incentivizing} and engaging a users curiosity \cite{law2016curiosity} have been found to motivate workers into performing better crowdsourced tasks. 
+However no work has been done to calculate if crowdsourced users are paying attention during tasks. 
 
-\subsection{Motivation}
 
+% People are lazy. 
+% Often don't pay much attention 
+% Is there any way of measuring people's attention?
 
-
-People are lazy. 
-Often don't pay much attention 
-Is there any way of measuring people's attention?
-
-Why mouse data?
-Mouse cursor position is strongly correlated with eye position. 
-One paper calls it a “poor man's eye-tracker” [find]
-Bulky expensive equipment for eye tracking is expensive and very obtrusive.
-Hawthorn / observer effect - People react differently when being observed. 
-Less obtrusive mouse tracking can make people feel less tracked and act more naturally. % goecks2000learning talks about unobtrusively observing people. CITE/TALK ABOUT 
-Could even not tell them (legal ethical repercussions)!
+% Why mouse data?
+% Mouse cursor position is strongly correlated with eye position. 
+% One paper calls it a “poor man's eye-tracker” [find]
+% Bulky expensive equipment for eye tracking is expensive and very obtrusive.
+% Hawthorn / observer effect - People react differently when being observed. 
+% Less obtrusive mouse tracking can make people feel less tracked and act more naturally. % goecks2000learning talks about unobtrusively observing people. CITE/TALK ABOUT 
+% Could even not tell them (legal ethical repercussions)!
 
 \subsection{Aims of project}
 
 The aims of what I want to achieve in the project will be as follows:
 \begin{itemize}
     \item Visualise, analyse and understand the data.
-    \item Use the data to train machine learning models to classify users between two groups.
+    \item Use the data to train machine learning models to classify users by their attention level.
+    \item Determine if there is a link between a users attention and task performance.
     \item Combine the data and methods from the study data with other datasets to create a more robust model.
-    \item Stretch goal? Test methods and models developed with other applications?
+    %\item Test any methods and models developed with other applications?
 \end{itemize}
 
-% Talk here about how I will achieve each aim, then describe the components of the project that I will need to complete.
+Here I detail how I will achieve each aim, and describe the components of the project that I will need to complete.
 % Try and link each component of the project to an aim.
+
+To visualise and understand the data I will use tools like tableau (CITE) and plot basic plots such as time taken to complete the task.
+If any interesting correlation or information is found in the data at this stage it can be more fully explored in depth at later stages.
+
+% Any correlations found here can be explored in depth later.
+
+Use semi supervised learning techniques to classify which of the crowdsourced participants were paying attention.
+Definitio of semi supervised is ``''.
+TODO: Find good definition
+This is what I will be doing as only a subset of the data is labelled, with the lab study participants are labels as definitely paying attention.
+
+To see if a users attention influences thei task performance relies on me being able to extract attention information beforehand.
+If not I can always just attempt this on the lab study data.
 
 % Machine learning methods
 %     SVM
@@ -172,7 +210,7 @@ Thus tracking a user’s gaze can provide insight into which part of a system th
     \centerline{
         \includegraphics[scale=0.7]{EyeHeatmap.PNG}
     }
-    \caption{Heatmap showing the popular locations of users eyes on a webpage CITE.}
+    \caption{Heatmap showing the popular locations of users eyes on a webpage \cite{buscher2009you}.}
     \label{fig:eyetrack}
 \end{figure}
 
@@ -184,8 +222,7 @@ Tracking users eye movements helped game designers understand how users can reco
 
 \subsection{Mouse cursor tracking}
 % Copppied straight from CSCM10 Initial Report
-% TODO: Refernce with Bibtex
-Mouse cursor tracking
+% Mouse cursor tracking
 Eye tracking has historically had its limitations. 
 To track subjects eyes with a good degree of accuracy required the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
 In contrast mouse movement data can be collected without the drawbacks of eye tracking and with more automatic methods, meaning more data can be collected, and on a larger scale \cite{demvsar2017quantifying}.
@@ -232,17 +269,19 @@ TODO: Look at the dissertation outline so I know what stuff needs to be included
 The different components of the work have been explained above.
 This section will specify the timeframe and order in which the modules will be carried out.
 
-I will be using an agile methodology as it will allow flexibility of my project and the iterative nature should help me to constantly improve it \cite{beck2001manifesto}. 
-
-Scrum will be used as the short scrum periods will encourage bursts of development over the long summer period.
-
 \subsection{Development methodology}
 %Discuss software life cycle methodologies with Jacques.
-An agile methodology such as scrum would probably be best but am I constrained  by this specification document?
+% An agile methodology such as scrum would probably be best but am I constrained  by this specification document?
 
-We want a methodology that has a final write up, but also has lots of iterative stuff in the middle for me to research, explore, and test new algorithms.
-For that reason I will be following the Scrum software lifecycle methodology.
-TODO: reference 
+% We want a methodology that has a final write up, but also has lots of iterative stuff in the middle for me to research, explore, and test new algorithms.
+% For that reason I will be following the Scrum software lifecycle methodology.
+% TODO: reference 
+
+
+I will be using an agile methodology as it will allow flexibility of my project and the iterative nature should help me to constantly improve it \cite{beck2001manifesto}. 
+
+Scrum will be used as the short scrum periods will encourage bursts of development over the long summer period \cite{schwaber1997scrum}.
+
 
 Figure \ref{fig:Gantt} shows the sprints I will be undertaking.
 The Gantt Chart was created with the free software Gantt Project \cite{GanttProject}.
@@ -251,6 +290,7 @@ There will be three sprints in total, with each sprint being a fortnight long.
 Each sprint will consist of researching a method I may be able to use in my project.
 Then I will spend time modifying and implementing the method so that it may be used in the context of this project.
 The latter half of a sprint will consist of analysing and visualising the results of the method and writing these down roughly in the dissertation document.
+The effectiveness of the method will be evaluated, and I will attempt to fix any failures or shortcomings of the method.
 For example I may come across a particular variant of an artificial neural network in my research that I believe may be useful in the project.
 The sprint plan would allow me to spend time implementing this network with my data and experiment with the parameters.  
 
@@ -344,13 +384,14 @@ Below I have listed and analysed the risks and have ordered them from potentiall
         Keep updated with the situation and follow whatever advice is recommended from the university.
     \end{description}
 
-    \item 
-    \begin{description}
-        \item[Risk:]    
-        \item[Likelihood and Impact:]
-        \item[Mitigation:]
-        \item[Contingency:]
-    \end{description}
+    % TO ADD ANOTHER RISK IF NECESSARY
+    % \item 
+    % \begin{description}
+    %     \item[Risk:]    
+    %     \item[Likelihood and Impact:]
+    %     \item[Mitigation:]
+    %     \item[Contingency:]
+    % \end{description}
 \end{enumerate}
 
 % OLD TABLE INCASE I WANT TO REVERT
@@ -372,14 +413,31 @@ Below I have listed and analysed the risks and have ordered them from potentiall
 
 \section{Conclusion}
 
-Measuring user engagement is challenging
-Mouse data can help us solve that issue by showing user attention
-Data Science techniques could be used to help classify the data (Not SVM)
+% Measuring user engagement is challenging
+% Mouse data can help us solve that issue by showing user attention
+% Data Science techniques could be used to help classify the data (Not SVM)
 
+This report has given an introduction to the work that will be conducted over the next few months.
+The background of the project has been presented, and existing methods researched.
+A detailed plan of the project details the timeline, and components of the project.
+% End with something nicer
 
 \printbibliography
 
 \end{document}
+
+% This report should give a literature review over your project and describe
+% any background research that you have carried out. 
+% You should state the motivation and aims of the project. 
+% It should include a complete specification of your project. 
+% It should describe the project clearly and the components
+% of the work which need to be developed. 
+% An outline project plan for the summer should be included. 
+% This plan should take into account the development methodology being used. 
+% You should provide a risk analysis for the project. 
+% You should view this document as providing the plan for the work
+% you expect to carry out over the summer.
+
 
 % Project meeting
 % ############## Programming Questions ############

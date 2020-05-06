@@ -1,19 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'ProjectSpecification.blg'
-[172] biber-MSWIN64:322> INFO - === 
-[211] Biber.pm:415> INFO - Reading 'ProjectSpecification.bcf'
-[418] Biber.pm:943> INFO - Found 16 citekeys in bib section 0
-[477] Biber.pm:4256> INFO - Processing section 0
-[477] Utils.pm:75> INFO - Globbing data source 'References.bib'
-[497] Utils.pm:91> INFO - Globbed data source 'References.bib' to References.bib
-[529] Biber.pm:4455> INFO - Looking for bibtex format file 'References.bib' for section 0
-[673] bibtex.pm:1653> INFO - LaTeX decoding ...
-[728] bibtex.pm:1471> INFO - Found BibTeX data source 'References.bib'
-[926] Utils.pm:304> WARN - month field 'April' in entry 'GanttProject' is not an integer - this will probably not sort properly.
-[1041] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1041] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1042] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1042] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[1075] bbl.pm:652> INFO - Writing 'ProjectSpecification.bbl' with encoding 'UTF-8'
-[1093] bbl.pm:755> INFO - Output to ProjectSpecification.bbl
-[1093] Biber.pm:128> INFO - WARNINGS: 1
+[118] biber-MSWIN64:322> INFO - === 
+[145] Biber.pm:415> INFO - Reading 'ProjectSpecification.bcf'
+[313] Biber.pm:943> INFO - Found 19 citekeys in bib section 0
+[349] Biber.pm:4256> INFO - Processing section 0
+[350] Utils.pm:75> INFO - Globbing data source 'References.bib'
+[371] Utils.pm:91> INFO - Globbed data source 'References.bib' to References.bib
+[414] Biber.pm:4455> INFO - Looking for bibtex format file 'References.bib' for section 0
+[418] bibtex.pm:1653> INFO - LaTeX decoding ...
+[514] bibtex.pm:1471> INFO - Found BibTeX data source 'References.bib'
+[889] Utils.pm:304> WARN - month field 'April' in entry 'GanttProject' is not an integer - this will probably not sort properly.
+[949] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[949] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[949] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[949] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1035] bbl.pm:652> INFO - Writing 'ProjectSpecification.bbl' with encoding 'UTF-8'
+[1061] bbl.pm:755> INFO - Output to ProjectSpecification.bbl
+[1067] Biber.pm:128> INFO - WARNINGS: 1

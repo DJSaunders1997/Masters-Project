@@ -89,6 +89,94 @@
       \field{pages}{64\bibrangedash 67}
       \range{pages}{4}
     \endentry
+    \entry{ho2015incentivizing}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=987dff40086dbb0cd8a0c9dee6223357}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Chien-Ju},
+           giveni={C\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=d9488c9456b1a887dfd741f2baf97414}{%
+           family={Slivkins},
+           familyi={S\bibinitperiod},
+           given={Aleksandrs},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c35eb0b953149e0b2e437658af62fee7}{%
+           family={Suri},
+           familyi={S\bibinitperiod},
+           given={Siddharth},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bbf18ba84dac890ff76b935f2de7a6a1}{%
+           family={Vaughan},
+           familyi={V\bibinitperiod},
+           given={Jennifer\bibnamedelima Wortman},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{36cd8cfa3450b48ffaac4d4cbae8ceae}
+      \strng{fullhash}{1e360f00dea6022752b20dc6c4d3c5a0}
+      \strng{bibnamehash}{36cd8cfa3450b48ffaac4d4cbae8ceae}
+      \strng{authorbibnamehash}{36cd8cfa3450b48ffaac4d4cbae8ceae}
+      \strng{authornamehash}{36cd8cfa3450b48ffaac4d4cbae8ceae}
+      \strng{authorfullhash}{1e360f00dea6022752b20dc6c4d3c5a0}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 24th International Conference on World Wide Web}
+      \field{title}{Incentivizing high quality crowdwork}
+      \field{year}{2015}
+      \field{pages}{419\bibrangedash 429}
+      \range{pages}{11}
+    \endentry
+    \entry{law2016curiosity}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=007ba44e70b670dab2ec28267b826633}{%
+           family={Law},
+           familyi={L\bibinitperiod},
+           given={Edith},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b69b51801a8bd2b21c1491f850c8e302}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ca0186f6d3af380246cd413eaf4d577e}{%
+           family={Goh},
+           familyi={G\bibinitperiod},
+           given={Joslin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=983d591f2f65ee1e0373cdf4378da02d}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=799fef95668fa9dfec5749a89fc3f128}{%
+           family={Terry},
+           familyi={T\bibinitperiod},
+           given={Michael\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2d159745900d84c62e84a5f3ce5e95d6}{%
+           family={Gajos},
+           familyi={G\bibinitperiod},
+           given={Krzysztof\bibnamedelima Z},
+           giveni={K\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc03438923f70d4c43aaf1b466d128bd}
+      \strng{fullhash}{dbf7eb87a781e7ec70e805efd21f2a0c}
+      \strng{bibnamehash}{cc03438923f70d4c43aaf1b466d128bd}
+      \strng{authorbibnamehash}{cc03438923f70d4c43aaf1b466d128bd}
+      \strng{authornamehash}{cc03438923f70d4c43aaf1b466d128bd}
+      \strng{authorfullhash}{dbf7eb87a781e7ec70e805efd21f2a0c}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems}
+      \field{title}{Curiosity killed the cat, but makes crowdwork better}
+      \field{year}{2016}
+      \field{pages}{4098\bibrangedash 4110}
+      \range{pages}{13}
+    \endentry
     \entry{lala2017detection}{article}{}
       \name{author}{4}{}{%
         {{hash=23d903fedf637c8265a0e860648acd0c}{%
@@ -118,8 +206,8 @@
       \strng{authorbibnamehash}{5dd01ce444a7c10d25d36f0a6c8f6a6e}
       \strng{authornamehash}{5dd01ce444a7c10d25d36f0a6c8f6a6e}
       \strng{authorfullhash}{694f1dd8d7ec0e3fd9fc6f954ca6ce6f}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1709.10257}
@@ -143,8 +231,8 @@
       \strng{authorbibnamehash}{414b91b82753a78198eb79e475f19e56}
       \strng{authornamehash}{414b91b82753a78198eb79e475f19e56}
       \strng{authorfullhash}{414b91b82753a78198eb79e475f19e56}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Theory and practice}
@@ -179,8 +267,8 @@
       \strng{authorbibnamehash}{3e5ea247700792ee38d154e488ecfe1a}
       \strng{authornamehash}{3e5ea247700792ee38d154e488ecfe1a}
       \strng{authorfullhash}{3e5ea247700792ee38d154e488ecfe1a}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the SIGCHI conference on human factors in computing systems}
@@ -216,8 +304,8 @@
       \strng{authorbibnamehash}{a5c1d39e1f7d83316d4e35265ebea4ff}
       \strng{authornamehash}{a5c1d39e1f7d83316d4e35265ebea4ff}
       \strng{authorfullhash}{a5c1d39e1f7d83316d4e35265ebea4ff}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{On the Horizon}
@@ -246,8 +334,8 @@
       \strng{authorbibnamehash}{486e68ea38900b233ba3e532833ebb7f}
       \strng{authornamehash}{486e68ea38900b233ba3e532833ebb7f}
       \strng{authorfullhash}{486e68ea38900b233ba3e532833ebb7f}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Encyclopedia of biomaterials and biomedical engineering}
@@ -279,8 +367,8 @@
       \strng{authorbibnamehash}{81559132bae719b60d6a4e29ca8c27da}
       \strng{authornamehash}{81559132bae719b60d6a4e29ca8c27da}
       \strng{authorfullhash}{81559132bae719b60d6a4e29ca8c27da}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{PloS one}
@@ -303,8 +391,8 @@
       \strng{authorbibnamehash}{cfe66c3113e48768748727eb081bfc21}
       \strng{authornamehash}{cfe66c3113e48768748727eb081bfc21}
       \strng{authorfullhash}{cfe66c3113e48768748727eb081bfc21}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Annual Conference-Society for Technical Communication}
@@ -546,6 +634,33 @@
       \field{title}{Manifesto for agile software development}
       \field{year}{2001}
     \endentry
+    \entry{schwaber1997scrum}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=ee6f08fcba839e09471a0bc69152b6a5}{%
+           family={Schwaber},
+           familyi={S\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ee6f08fcba839e09471a0bc69152b6a5}
+      \strng{fullhash}{ee6f08fcba839e09471a0bc69152b6a5}
+      \strng{bibnamehash}{ee6f08fcba839e09471a0bc69152b6a5}
+      \strng{authorbibnamehash}{ee6f08fcba839e09471a0bc69152b6a5}
+      \strng{authornamehash}{ee6f08fcba839e09471a0bc69152b6a5}
+      \strng{authorfullhash}{ee6f08fcba839e09471a0bc69152b6a5}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Business object design and implementation}
+      \field{title}{Scrum development process}
+      \field{year}{1997}
+      \field{pages}{117\bibrangedash 134}
+      \range{pages}{18}
+    \endentry
     \entry{GanttProject}{misc}{}
       \name{author}{1}{}{%
         {{hash=830d22e75187669aa8397bbad5d6bc05}{%
@@ -560,8 +675,8 @@
       \strng{authorbibnamehash}{830d22e75187669aa8397bbad5d6bc05}
       \strng{authornamehash}{830d22e75187669aa8397bbad5d6bc05}
       \strng{authorfullhash}{830d22e75187669aa8397bbad5d6bc05}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{4}
