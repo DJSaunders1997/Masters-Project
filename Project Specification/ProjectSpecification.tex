@@ -1,3 +1,4 @@
+
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -145,24 +146,39 @@ The aims of what I want to achieve in the project will be as follows:
     \item Use the data to train machine learning models to classify users by their attention level.
     \item Determine if there is a link between a users attention and task performance.
     \item Combine the data and methods from the study data with other datasets to create a more robust model.
+    \item Publicly share all data and any findings of this project.
     %\item Test any methods and models developed with other applications?
 \end{itemize}
 
 Here I detail how I will achieve each aim, and describe the components of the project that I will need to complete.
 % Try and link each component of the project to an aim.
 
-To visualise and understand the data I will use tools like tableau (CITE) and plot basic plots such as time taken to complete the task.
-If any interesting correlation or information is found in the data at this stage it can be more fully explored in depth at later stages.
+To visualise and understand the data I will use tools like tableau and plot basic plots such as histograms.
+If any interesting correlation or information is found in the data at this stage it can be more fully explored in depth later in the project.
 
 % Any correlations found here can be explored in depth later.
 
-Use semi supervised learning techniques to classify which of the crowdsourced participants were paying attention.
-Definitio of semi supervised is ``''.
-TODO: Find good definition
-This is what I will be doing as only a subset of the data is labelled, with the lab study participants are labels as definitely paying attention.
+Semi supervised learning techniques can be used to classify which of the crowdsourced participants were paying attention.
+The idea of semi supervised is combining labelled and unlabelled data to improve the learning behaviour of a machine learning technique \cite{zhu2009introduction}.
+This will be used in this project as only a subset of the data is labelled, where the lab study results are labelled as paying attention, and crowdsourced results are unlabelled.
 
-To see if a users attention influences thei task performance relies on me being able to extract attention information beforehand.
-If not I can always just attempt this on the lab study data.
+To see if a users attention influences their task performance relies on me being able to extract user attention information from the mouse data.
+If I am unable to do so I could attempt to use just the lab study data, however there is only a small number of datapoints, and not enough to make a significant
+
+
+Other datasets can be researched and explored.
+Similar datasets do exist online and are publicly available \cite{kaggleWorkerActivity}.
+Overfitting is a big issue with any machine learning technique, especially when there is not a large amount of data for training \cite{dietterich1995overfitting}.
+In an attempt to avoid this I can increase the quantity of data available to me by incorporating other sources and hopefully create a more robust model.
+% Applications
+% A good system developed could be used for other tasks to monitor attention - E.g. Survey Monika made us do. Not just for joes ice-cream
+% Have to decide on the trade off between a good narrow (is this the right word) classifier between attention or not and a more generalised model that can work on any task.
+% What I mean by that is I can model the html elements / sliders to see how users interacted to see the stock prices, or I can generalise to any such task involving mouse data.
+
+
+
+To publicly share the result of this project I will upload any work completed for it in a GitHub repository.
+Sharing data and results with the Data Science community is an important part of scientific research as it allow others to peer review and reproduce my results \cite{Birnholtz2003data}.
 
 % Machine learning methods
 %     SVM
@@ -174,14 +190,6 @@ If not I can always just attempt this on the lab study data.
 %     Sampling
 %     Oversampling, Undersampling
 % Other mouse data sources
-
-
-
-
-Applications
-A good system developed could be used for other tasks to monitor attention - E.g. Survey Monika made us do. Not just for joes ice-cream
-Have to decide on the trade off between a good narrow (is this the right word) classifier between attention or not and a more generalised model that can work on any task.
-What I mean by that is I can model the html elements / sliders to see how users interacted to see the stock prices, or I can generalise to any such task involving mouse data.
 
 
 \section{Background Research}
@@ -239,16 +247,26 @@ In contrast to the above literature some studies disagree that mouse cursor is a
 Hauger et al found that distinct cursor behaviour exists depending on the task, and that the relationship between eye gaze and mouse position is more nuanced than measuring only mouse data \cite{huang2012user}.
 
 \subsection{Machine learning techniques???}
-I've given a high level overview of the existing literature, here I will be more indepth as to the algorithms and techniques relevant to this project.
+I've given a high level overview of the existing literature, here I will be more in depth as to the algorithms and techniques relevant to this project.
 
-
+Machine learning methods
+    SVM,
+    Natural Language Processing,
+    \underline{N-Grams},
+    LSTM Neural Networks,
+    Markov models,
+Deal with Imbalances in classes,
+    Sampling,
+    Oversampling, Undersampling
 
 
 \section{Description of the project}
 
 \subsection{Components of project}
-Each of the following are separate sections that can be completed separately, but linearly.
 
+Each of the component's cannot be fully separated into unique sections as there is an order that they must be completed in.
+
+Firstly I need to create
 Repeat this process N times
 (
 Research of different algorithms and methods.
@@ -259,7 +277,7 @@ Write up of results.
 
 Compile results together into dissertation.
 
-TODO: Look at the dissertation outline so I know what stuff needs to be included so I can mention it here.
+%TODO: Look at the dissertation outline so I know what stuff needs to be included so I can mention it here.
 
 \section{Project plan}
 % Look into different software methodologies
@@ -283,7 +301,7 @@ I will be using an agile methodology as it will allow flexibility of my project 
 Scrum will be used as the short scrum periods will encourage bursts of development over the long summer period \cite{schwaber1997scrum}.
 
 
-Figure \ref{fig:Gantt} shows the sprints I will be undertaking.
+Fig \ref{fig:Gantt} shows the sprints I will be undertaking.
 The Gantt Chart was created with the free software Gantt Project \cite{GanttProject}.
 Each sprint starts with a supervisor meeting where the previous work, and the plan for the next sprint will be discussed.
 There will be three sprints in total, with each sprint being a fortnight long.
@@ -346,11 +364,11 @@ Below I have listed and analysed the risks and have ordered them from potentiall
         Medium likelihood, High Risk
         \item[Explaination]
         Coronavirus is very contagious. 
-        Dispute risks it is still likely that the I may become infected. 
+        in spite of protective measures it is still likely that the I may become infected with the virus. 
         \item[Mitigation:]
-        Stay safe indoors during the quarantine to keep everyone safe and mitigate any risks of me catching anything.
+        Stay safe indoors during the quarantine to keep everyone safe and mitigate any risks of me becoming infected.
         \item[Contingency:]
-        Inform the University as soon as a situation develops so that alternative assessments can be organised.
+        Inform the University as soon as any negatively situation develops so that alternative assessments can be organised.
     \end{description}
 
     \item 
@@ -361,6 +379,7 @@ Below I have listed and analysed the risks and have ordered them from potentiall
         Medium likelihood, High impact
         \item[Explaination:]
         The project will involve the use of many methods to find a link between mouse tracking data and user attention.
+        However the number of total data samples are in the hundreds so there is not a massive amount of information to draw conclusions from.
         It is possible that after all methods have been exhausted no correlation is ever discovered, or simply doesn't exist. 
         \item[Mitigation:]
         Attempt as many different methods of classification early before writing in depth about them.  
@@ -372,7 +391,7 @@ Below I have listed and analysed the risks and have ordered them from potentiall
     \item 
     \begin{description}
         \item[Risk:]    
-        \emph{Coronavirus has a greater impact on Swansea University and  effects the available support and deadlines.}
+        \emph{Coronavirus has a greater impact on Swansea University and effects my available support and deadlines.}
         \item[Likelihood and Impact:]
         Low likelihood, Low impact
         \item[Explaination:]
@@ -380,7 +399,6 @@ Below I have listed and analysed the risks and have ordered them from potentiall
         \item[Mitigation:]
         Keep informed with the University College of Science and supervisor to any news effecting the University.
         \item[Contingency:]
-        TODO: What is the plan? Keep my options open? Keep updated?
         Keep updated with the situation and follow whatever advice is recommended from the university.
     \end{description}
 

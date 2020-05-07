@@ -177,6 +177,149 @@
       \field{pages}{4098\bibrangedash 4110}
       \range{pages}{13}
     \endentry
+    \entry{zhu2009introduction}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c0589c96d31566f50f3aa4f931a33357}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xiaojin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=370519f4979694fcb9130362d3d54cf0}{%
+           family={Goldberg},
+           familyi={G\bibinitperiod},
+           given={Andrew\bibnamedelima B},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Morgan \& Claypool Publishers}%
+      }
+      \strng{namehash}{dc333841095599e71d5da8c8617e2588}
+      \strng{fullhash}{dc333841095599e71d5da8c8617e2588}
+      \strng{bibnamehash}{dc333841095599e71d5da8c8617e2588}
+      \strng{authorbibnamehash}{dc333841095599e71d5da8c8617e2588}
+      \strng{authornamehash}{dc333841095599e71d5da8c8617e2588}
+      \strng{authorfullhash}{dc333841095599e71d5da8c8617e2588}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Synthesis lectures on artificial intelligence and machine learning}
+      \field{number}{1}
+      \field{title}{Introduction to semi-supervised learning}
+      \field{volume}{3}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 130}
+      \range{pages}{130}
+    \endentry
+    \entry{kaggleWorkerActivity}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2b06c3d48b11c21069ebd0f962707011}{%
+           family={Computation},
+           familyi={C\bibinitperiod},
+           given={Human},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b06c3d48b11c21069ebd0f962707011}
+      \strng{fullhash}{2b06c3d48b11c21069ebd0f962707011}
+      \strng{bibnamehash}{2b06c3d48b11c21069ebd0f962707011}
+      \strng{authorbibnamehash}{2b06c3d48b11c21069ebd0f962707011}
+      \strng{authornamehash}{2b06c3d48b11c21069ebd0f962707011}
+      \strng{authorfullhash}{2b06c3d48b11c21069ebd0f962707011}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Kaggle}
+      \field{month}{10}
+      \field{title}{Workers Browser Activity in CrowdFlower Tasks}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.kaggle.com/humancomp/worker-activity-crowdflower
+      \endverb
+      \verb{url}
+      \verb https://www.kaggle.com/humancomp/worker-activity-crowdflower
+      \endverb
+    \endentry
+    \entry{dietterich1995overfitting}{article}{}
+      \name{author}{1}{}{%
+        {{hash=829d19d0b924abeadff48ade89ef46c4}{%
+           family={Dietterich},
+           familyi={D\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{829d19d0b924abeadff48ade89ef46c4}
+      \strng{fullhash}{829d19d0b924abeadff48ade89ef46c4}
+      \strng{bibnamehash}{829d19d0b924abeadff48ade89ef46c4}
+      \strng{authorbibnamehash}{829d19d0b924abeadff48ade89ef46c4}
+      \strng{authornamehash}{829d19d0b924abeadff48ade89ef46c4}
+      \strng{authorfullhash}{829d19d0b924abeadff48ade89ef46c4}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM computing surveys (CSUR)}
+      \field{number}{3}
+      \field{title}{Overfitting and undercomputing in machine learning}
+      \field{volume}{27}
+      \field{year}{1995}
+      \field{pages}{326\bibrangedash 327}
+      \range{pages}{2}
+    \endentry
+    \entry{Birnholtz2003data}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=45d1cee5ddecfd835ce895dba865369c}{%
+           family={Birnholtz},
+           familyi={B\bibinitperiod},
+           given={Jeremy\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e5d87b94761f6d3c5c50a3aa29770d59}{%
+           family={Bietz},
+           familyi={B\bibinitperiod},
+           given={Matthew\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sanibel Island, Florida, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{9f5c36d81da0306777c275b74a3177e3}
+      \strng{fullhash}{9f5c36d81da0306777c275b74a3177e3}
+      \strng{bibnamehash}{9f5c36d81da0306777c275b74a3177e3}
+      \strng{authorbibnamehash}{9f5c36d81da0306777c275b74a3177e3}
+      \strng{authornamehash}{9f5c36d81da0306777c275b74a3177e3}
+      \strng{authorfullhash}{9f5c36d81da0306777c275b74a3177e3}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2003 International ACM SIGGROUP Conference on Supporting Group Work}
+      \field{isbn}{1581136935}
+      \field{series}{GROUP ’03}
+      \field{title}{Data at Work: Supporting Sharing in Science and Engineering}
+      \field{year}{2003}
+      \field{pages}{339\bibrangedash 348}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/958160.958215
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/958160.958215
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/958160.958215
+      \endverb
+      \keyw{communities of practice,metadata,collaboratories,data sharing}
+    \endentry
     \entry{lala2017detection}{article}{}
       \name{author}{4}{}{%
         {{hash=23d903fedf637c8265a0e860648acd0c}{%
@@ -206,8 +349,8 @@
       \strng{authorbibnamehash}{5dd01ce444a7c10d25d36f0a6c8f6a6e}
       \strng{authornamehash}{5dd01ce444a7c10d25d36f0a6c8f6a6e}
       \strng{authorfullhash}{694f1dd8d7ec0e3fd9fc6f954ca6ce6f}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1709.10257}
@@ -231,8 +374,8 @@
       \strng{authorbibnamehash}{414b91b82753a78198eb79e475f19e56}
       \strng{authornamehash}{414b91b82753a78198eb79e475f19e56}
       \strng{authorfullhash}{414b91b82753a78198eb79e475f19e56}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Theory and practice}
@@ -267,8 +410,8 @@
       \strng{authorbibnamehash}{3e5ea247700792ee38d154e488ecfe1a}
       \strng{authornamehash}{3e5ea247700792ee38d154e488ecfe1a}
       \strng{authorfullhash}{3e5ea247700792ee38d154e488ecfe1a}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the SIGCHI conference on human factors in computing systems}
@@ -493,8 +636,8 @@
       \strng{authorbibnamehash}{ae33d0090f736401bc661f1830e5aef3}
       \strng{authornamehash}{ae33d0090f736401bc661f1830e5aef3}
       \strng{authorfullhash}{ae33d0090f736401bc661f1830e5aef3}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International Conference on User Modeling, Adaptation, and Personalization}
@@ -522,8 +665,8 @@
       \strng{authorbibnamehash}{664c942bd3694d9a2096b5a4ca070a4e}
       \strng{authornamehash}{664c942bd3694d9a2096b5a4ca070a4e}
       \strng{authorfullhash}{664c942bd3694d9a2096b5a4ca070a4e}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems}
@@ -556,8 +699,8 @@
       \strng{authorbibnamehash}{3a22eafd5fdf7b62b7d14bd54c147caf}
       \strng{authornamehash}{3a22eafd5fdf7b62b7d14bd54c147caf}
       \strng{authorfullhash}{3a22eafd5fdf7b62b7d14bd54c147caf}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems}
@@ -627,8 +770,8 @@
       \strng{authorbibnamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
       \strng{authornamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
       \strng{authorfullhash}{4df8e492ed7b350a6cd5169f06c200f9}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Manifesto for agile software development}

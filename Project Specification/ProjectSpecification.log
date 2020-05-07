@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  6 MAY 2020 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  7 MAY 2020 15:23
 entering extended mode
 **"c:/Users/DJSau/Masters-Project/Project Specification/ProjectSpecification.tex"
 ("c:/Users/DJSau/Masters-Project/Project Specification/ProjectSpecification.tex"
@@ -283,20 +283,20 @@ File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 ) ("c:/Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.aux")
 \openout1 = `ProjectSpecification.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
  ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count369
@@ -344,14 +344,14 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ProjectSpecification.bbl' found.
  ("c:/Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.bbl")
-Package biblatex Info: Reference section=0 on input line 16.
-Package biblatex Info: Reference segment=0 on input line 16.
+Package biblatex Info: Reference section=0 on input line 17.
+Package biblatex Info: Reference segment=0 on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 17.
+(Font)              <12> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 17.
+(Font)              <8> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 17.
+(Font)              <6> on input line 18.
  ("c:/Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 5.
@@ -367,29 +367,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <EyeHeatmap.PNG, id=16, 446.41782pt x 359.09157pt>
 File: EyeHeatmap.PNG Graphic file (type png)
 <use EyeHeatmap.PNG>
-Package pdftex.def Info: EyeHeatmap.PNG  used on input line 212.
+Package pdftex.def Info: EyeHeatmap.PNG  used on input line 220.
 (pdftex.def)             Requested size: 312.49033pt x 251.36238pt.
- [3] [4 <c:/Users/DJSau/Masters-Project/Project Specification/EyeHeatmap.PNG>]
-<GanttChart.PNG, id=25, 1753.55125pt x 558.085pt>
+ [3] [4 <c:/Users/DJSau/Masters-Project/Project Specification/EyeHeatmap.PNG>] [5]
+<GanttChart.PNG, id=28, 1753.55125pt x 558.085pt>
 File: GanttChart.PNG Graphic file (type png)
 <use GanttChart.PNG>
-Package pdftex.def Info: GanttChart.PNG  used on input line 302.
+Package pdftex.def Info: GanttChart.PNG  used on input line 320.
 (pdftex.def)             Requested size: 561.14787pt x 178.59085pt.
- [5] [6 <c:/Users/DJSau/Masters-Project/Project Specification/GanttChart.PNG (PNG copy)>] [7] [8] [9] ("c:/Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.aux")
+ [6 <c:/Users/DJSau/Masters-Project/Project Specification/GanttChart.PNG (PNG copy)>] [7]
+Overfull \hbox (7.21779pt too wide) in paragraph at lines 444--444
+\OT1/cmr/m/n/10 Oct. 2017. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : $\OT1/cmtt/m/n/10 https : / / www . kaggle . com / humancomp / worker -[] activity -[]
+ []
+
+[8] [9] ("c:/Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.aux")
 Package logreq Info: Writing requests to 'ProjectSpecification.run.xml'.
 \openout1 = `ProjectSpecification.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8722 strings out of 480934
- 163197 string characters out of 2909682
- 787542 words of memory out of 3000000
- 24520 multiletter control sequences out of 15000+200000
+ 8735 strings out of 480934
+ 163742 string characters out of 2909682
+ 787824 words of memory out of 3000000
+ 24533 multiletter control sequences out of 15000+200000
  538350 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,6n,46p,895b,1269s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\DJSau\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.pdf" (9 pages, 617007 bytes).
+Output written on "c:/Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.pdf" (9 pages, 624323 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
