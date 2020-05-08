@@ -102,6 +102,11 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
 OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.toc
 OUTPUT c:\Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.pdf
 INPUT C:\Users\DJSau\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\interface.png
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\interface.png
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\interface.png
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\interface.png
+INPUT c:\Users\DJSau\Masters-Project\Project Specification\interface.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT c:\Users\DJSau\Masters-Project\Project Specification\EyeHeatmap.PNG

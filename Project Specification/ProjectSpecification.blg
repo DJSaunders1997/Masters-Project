@@ -1,20 +1,20 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'ProjectSpecification.blg'
-[118] biber-MSWIN64:322> INFO - === 
-[147] Biber.pm:415> INFO - Reading 'ProjectSpecification.bcf'
-[316] Biber.pm:943> INFO - Found 23 citekeys in bib section 0
-[358] Biber.pm:4256> INFO - Processing section 0
-[359] Utils.pm:75> INFO - Globbing data source 'References.bib'
-[385] Utils.pm:91> INFO - Globbed data source 'References.bib' to References.bib
-[419] Biber.pm:4455> INFO - Looking for bibtex format file 'References.bib' for section 0
-[426] bibtex.pm:1653> INFO - LaTeX decoding ...
-[494] bibtex.pm:1471> INFO - Found BibTeX data source 'References.bib'
-[565] Utils.pm:304> WARN - month field 'October' in entry 'kaggleWorkerActivity' is not an integer - this will probably not sort properly.
-[727] Utils.pm:304> WARN - month field 'April' in entry 'GanttProject' is not an integer - this will probably not sort properly.
-[807] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[807] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[807] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[807] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[904] bbl.pm:652> INFO - Writing 'ProjectSpecification.bbl' with encoding 'UTF-8'
-[941] bbl.pm:755> INFO - Output to ProjectSpecification.bbl
-[955] Biber.pm:128> INFO - WARNINGS: 2
+[92] biber-MSWIN64:322> INFO - === 
+[115] Biber.pm:415> INFO - Reading 'ProjectSpecification.bcf'
+[329] Biber.pm:943> INFO - Found 24 citekeys in bib section 0
+[372] Biber.pm:4256> INFO - Processing section 0
+[373] Utils.pm:75> INFO - Globbing data source 'References.bib'
+[386] Utils.pm:91> INFO - Globbed data source 'References.bib' to References.bib
+[415] Biber.pm:4455> INFO - Looking for bibtex format file 'References.bib' for section 0
+[420] bibtex.pm:1653> INFO - LaTeX decoding ...
+[483] bibtex.pm:1471> INFO - Found BibTeX data source 'References.bib'
+[597] Utils.pm:304> WARN - month field 'October' in entry 'kaggleWorkerActivity' is not an integer - this will probably not sort properly.
+[732] Utils.pm:304> WARN - month field 'April' in entry 'GanttProject' is not an integer - this will probably not sort properly.
+[780] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[780] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[780] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[780] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[812] bbl.pm:652> INFO - Writing 'ProjectSpecification.bbl' with encoding 'UTF-8'
+[845] bbl.pm:755> INFO - Output to ProjectSpecification.bbl
+[854] Biber.pm:128> INFO - WARNINGS: 2
