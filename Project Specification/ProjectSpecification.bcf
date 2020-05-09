@@ -2197,8 +2197,8 @@
     <bcf:citekey order="13">duchowski2007eye</bcf:citekey>
     <bcf:citekey order="14">buscher2009you</bcf:citekey>
     <bcf:citekey order="15">buscher2009you</bcf:citekey>
-    <bcf:citekey order="16">buscher2009you</bcf:citekey>
-    <bcf:citekey order="17">renshaw2009towards</bcf:citekey>
+    <bcf:citekey order="16">renshaw2009towards</bcf:citekey>
+    <bcf:citekey order="17">eivazi2011predicting</bcf:citekey>
     <bcf:citekey order="18">richardson2004eye</bcf:citekey>
     <bcf:citekey order="19">demvsar2017quantifying</bcf:citekey>
     <bcf:citekey order="20">cooke2006mouse</bcf:citekey>
@@ -2207,9 +2207,11 @@
     <bcf:citekey order="23">hauger2011using</bcf:citekey>
     <bcf:citekey order="24">navalpakkam2012mouse</bcf:citekey>
     <bcf:citekey order="25">huang2012user</bcf:citekey>
-    <bcf:citekey order="26">beck2001manifesto</bcf:citekey>
-    <bcf:citekey order="27">schwaber1997scrum</bcf:citekey>
-    <bcf:citekey order="28">GanttProject</bcf:citekey>
+    <bcf:citekey order="26">langley1997machine</bcf:citekey>
+    <bcf:citekey order="27">eivazi2011predicting</bcf:citekey>
+    <bcf:citekey order="28">beck2001manifesto</bcf:citekey>
+    <bcf:citekey order="29">schwaber1997scrum</bcf:citekey>
+    <bcf:citekey order="30">GanttProject</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

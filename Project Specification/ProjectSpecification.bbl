@@ -553,6 +553,35 @@
       \field{title}{Towards understanding engagement in games: an eye-tracking study}
       \field{year}{2009}
     \endentry
+    \entry{eivazi2011predicting}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=98e576aca7f55428ceb5b468b47322b3}{%
+           family={Eivazi},
+           familyi={E\bibinitperiod},
+           given={Shahram},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bf1dd70aedd66549f08bbc04ff4274e9}{%
+           family={Bednarik},
+           familyi={B\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{bebe563b4fb070e91aea9e62df7b40f7}
+      \strng{fullhash}{bebe563b4fb070e91aea9e62df7b40f7}
+      \strng{bibnamehash}{bebe563b4fb070e91aea9e62df7b40f7}
+      \strng{authorbibnamehash}{bebe563b4fb070e91aea9e62df7b40f7}
+      \strng{authornamehash}{bebe563b4fb070e91aea9e62df7b40f7}
+      \strng{authorfullhash}{bebe563b4fb070e91aea9e62df7b40f7}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. Workshop on Eye Gaze in Intelligent Human Machine Interaction at IUI}
+      \field{title}{Predicting problem-solving behavior and performance levels from visual attention data}
+      \field{year}{2011}
+      \field{pages}{9\bibrangedash 16}
+      \range{pages}{8}
+    \endentry
     \entry{richardson2004eye}{article}{}
       \name{author}{2}{}{%
         {{hash=1ad10031f445772530fb3e1e896a47a0}{%
@@ -807,6 +836,33 @@
       \field{pages}{1341\bibrangedash 1350}
       \range{pages}{10}
     \endentry
+    \entry{langley1997machine}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=cb234967d439eca7bd966830f708c7a2}{%
+           family={Langley},
+           familyi={L\bibinitperiod},
+           given={Pat},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{cb234967d439eca7bd966830f708c7a2}
+      \strng{fullhash}{cb234967d439eca7bd966830f708c7a2}
+      \strng{bibnamehash}{cb234967d439eca7bd966830f708c7a2}
+      \strng{authorbibnamehash}{cb234967d439eca7bd966830f708c7a2}
+      \strng{authornamehash}{cb234967d439eca7bd966830f708c7a2}
+      \strng{authorfullhash}{cb234967d439eca7bd966830f708c7a2}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Annual Conference on Artificial Intelligence}
+      \field{title}{Machine learning for adaptive user interfaces}
+      \field{year}{1997}
+      \field{pages}{53\bibrangedash 62}
+      \range{pages}{10}
+    \endentry
     \entry{beck2001manifesto}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -916,8 +972,8 @@
       \strng{authorbibnamehash}{830d22e75187669aa8397bbad5d6bc05}
       \strng{authornamehash}{830d22e75187669aa8397bbad5d6bc05}
       \strng{authorfullhash}{830d22e75187669aa8397bbad5d6bc05}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{4}

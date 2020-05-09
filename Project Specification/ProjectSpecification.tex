@@ -136,6 +136,18 @@ Research has been conducted on how to increase the accuracy and attention of Tur
 Methods such as offering financial incentives \cite{ho2015incentivizing} and engaging a users curiosity \cite{law2016curiosity} have been found to motivate workers into performing better crowdsourced tasks. 
 However no work has been done to calculate if crowdsourced users are paying attention during tasks. 
 
+% Paragraph 1 - Initial motovation
+Low quality answers from research projects on Amazon's Mechanical Turk are a problem - describe process.
+If user engagement can be qualified it would help to increase reliability of research.
+
+% Paragraph 2 - Inter disciplinary
+Surveys are not only used by Amazon Mechanical Turk researchers they are a prevalent research technique across disciplines.
+To create an easy to implement and quantifiable method to measure user engagement.
+This would massively help researchers to increase reliability.
+
+% Paragraph 3 - Motivation
+Currently financial reword is offered to increase user engagement though there is little research into the benefits.
+If user engagement can be effectively recorded then the best method of intensifying user engagement could be found.
 
 % TODO: ACTUALLY ADD DONT JUST IGNORE
 % TODO: In the first sentence say how crowd sourcing is traditionally been used for tasks such as labelling image datasets for machine learning training data.  
@@ -261,6 +273,7 @@ In this section I will review the literature on how to monitor attention.
 
 \subsection{User attention and characteristic.}
 
+If I think of anything good to write put it here, else delete section.
 
 \subsection{Eye tracking}
 % Copppied straight from CSCM10 Initial Report
@@ -273,12 +286,12 @@ The methodology of eye tracking is that we move our eyes to focus on particular 
 % duchowski2007eye is a VERY important piece of literature for the field, over 4000 citations
 Thus tracking a user’s gaze can provide insight into which part of a system they’re engaged with, and how much so.
 
-\begin{figure}[ht]
+\begin{figure}[ht!]
     \centering
     \centerline{
         \includegraphics[scale=0.7]{EyeHeatmap.PNG}
     }
-    \caption{Heatmap showing the popular locations of users eyes on a webpage \cite{buscher2009you}.}
+    \caption{Heatmap showing popular locations of users eyes on a webpage \cite{buscher2009you}.}
     \label{fig:eyetrack}
 \end{figure}
 
@@ -287,6 +300,10 @@ From this researchers were able to predict the amount of attention elements of t
 By observing what parts of an interface users are interacting with we can determine what a user is engaging with \cite{buscher2009you}.
 Eye-tracking has been used, and found success novel applications such as recording the engagement of users when playing a game. 
 Tracking users eye movements helped game designers understand how users can recognise interactable game objects and could be used to investigate problematic game design issues \cite{renshaw2009towards}.
+
+Eivazi and Bednarik extracted features from a users eye tracking data to determine their cognitive state in a problem solving exercise \cite{eivazi2011predicting}.
+Features such as ``mean fixation duration'' and ``total path distances'' were engineered, and users were split into classes based on their performance. 
+Given a user feature set and their performance class it was able to classify their cognitive state during the task with a 87.5\% accuracy with a support vector machine.
 
 \subsection{Mouse cursor tracking}
 % Copppied straight from CSCM10 Initial Report
@@ -319,6 +336,10 @@ Deal with Imbalances in classes,
     Sampling,
     Oversampling, Undersampling
 
+Machine learning has been used before to measure user engagement and interface interaction.
+Langly developed a method in which machine learning was used to create a modified user interface for users that they interact with the best \cite{langley1997machine}.
+
+
 \subsection{Dealing with unbalanced classes}
 
 The purpose of crowdsourcing responses is to increase the number of participants in the study in an attempt to get a wider spread of data without bias.
@@ -344,6 +365,11 @@ After multiple different approaches have been explored the results should be pro
 % (aka feature sets) and different algorithms. You should list the options
 % explicitly (i.e. say "decision tree") rather than being vague. 
 
+Feature engineering can be approached in a similar was as Eivazi and Bednarik \cite{eivazi2011predicting}.
+Features such as total time, time for each step, total mouse distance, mouse movement speed, and time spend on different elements can be extracted.
+Each of these may be systematically investigated, modified, and evaluated until useful data is engineered.
+If there is too much variance between users I can attempt to split them into groups based on their task performance.
+A certain combination of features may revel attention levels in the badly performing group but the approach may not be successful with the well performing group. 
 
 %TODO: Look at the dissertation outline so I know what stuff needs to be included so I can mention it here.
 
@@ -399,9 +425,18 @@ This section will specify the timeframe and the order in which the modules will 
 I will be using an agile methodology as it will allow flexibility of my project and the iterative nature should help me to constantly improve it \cite{beck2001manifesto}. 
 Scrum will be used as the short scrum periods will encourage bursts of development over the long summer period \cite{schwaber1997scrum}.
 
+\begin{figure}[ht]
+    \centering
+    \centerline{
+        \includegraphics[scale=0.32]{GanttChart.PNG}
+    }
+    \caption{Gantt chart showing the planned timeline and milestones of the project.}
+    \label{fig:Gantt}
+\end{figure}
+
 Fig \ref{fig:Gantt} shows the sprints I will be undertaking.
 The Gantt Chart was created with the free software Gantt Project \cite{GanttProject}.
-Each sprint starts with a supervisor meeting where the previous work, and the plan for the next sprint will be discussed.
+A sprint will begin with a supervisor meeting where the previous work, and the plan for the next sprint will be discussed.
 There will be three sprints in total, with each sprint being a fortnight long.
 Each sprint will consist of researching a method I may be able to use in my project.
 Then I will spend time modifying and implementing the method so that it may be used in the context of this project.
@@ -411,14 +446,11 @@ For example I may come across a particular variant of an artificial neural netwo
 The sprint plan would allow me to spend time implementing this network with my data and experiment with the parameters.  
 
 
-\begin{figure}[ht]
-    \centering
-    \centerline{
-        \includegraphics[scale=0.32]{GanttChart.PNG}
-    }
-    \caption{Gantt chart showing the planned timeline and milestones of the project.}
-    \label{fig:Gantt}
-\end{figure}
+% TODO: Implement Toms email feedback
+% I think your gantt chart is fine, but you should give a bit more
+% information about what you're going to do in the sprints themselves. You
+% can talk about things like trying different representations of the data,
+% different algorithms, etc.
 
 
 \subsection{Risk analysis}
@@ -430,13 +462,7 @@ Each risk is explained with the likelihood of the risk occurring and impact to t
 A mitigation plan is created in an attempt to prevent the risk from happening, and a contingency plan is made so I can be prepared if the risk does occur.
 Below I have listed and analysed the risks and have ordered them from potentially the most dangerous to least dangerous. 
 
-
-%REPLACE this table with an itemized list, like in the data visualisation module.
-% - Tom said that tables can make it too restrictive.
-% Just coppied from table here, make sure to flesh out later
 % TODO: Flesh out risks 
-
-% Do I keep explaination or just expand risks in the risk item?
 
 \begin{enumerate}
     \item 
