@@ -123,6 +123,73 @@
       \field{pages}{64\bibrangedash 67}
       \range{pages}{4}
     \endentry
+    \entry{chandler2016conducting}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a2909bb72e25535c8339c440357c2fc5}{%
+           family={Chandler},
+           familyi={C\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+        {{hash=64959f8f4ad34221d2142a277c720266}{%
+           family={Shapiro},
+           familyi={S\bibinitperiod},
+           given={Danielle},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{847cc036feeadc9e2d849132874fd0fe}
+      \strng{fullhash}{847cc036feeadc9e2d849132874fd0fe}
+      \strng{bibnamehash}{847cc036feeadc9e2d849132874fd0fe}
+      \strng{authorbibnamehash}{847cc036feeadc9e2d849132874fd0fe}
+      \strng{authornamehash}{847cc036feeadc9e2d849132874fd0fe}
+      \strng{authorfullhash}{847cc036feeadc9e2d849132874fd0fe}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual review of clinical psychology}
+      \field{title}{Conducting clinical research using crowdsourced convenience samples}
+      \field{volume}{12}
+      \field{year}{2016}
+    \endentry
+    \entry{stewart2017crowdsourcing}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4ba857a3e0e931f2450629a5075e6612}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=a2909bb72e25535c8339c440357c2fc5}{%
+           family={Chandler},
+           familyi={C\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b5e04da82100a7ad3262299b071e8b8f}{%
+           family={Paolacci},
+           familyi={P\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6ebd04a72e76556ea173d76cbc88affd}
+      \strng{fullhash}{6ebd04a72e76556ea173d76cbc88affd}
+      \strng{bibnamehash}{6ebd04a72e76556ea173d76cbc88affd}
+      \strng{authorbibnamehash}{6ebd04a72e76556ea173d76cbc88affd}
+      \strng{authornamehash}{6ebd04a72e76556ea173d76cbc88affd}
+      \strng{authorfullhash}{6ebd04a72e76556ea173d76cbc88affd}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Trends in cognitive sciences}
+      \field{number}{10}
+      \field{title}{Crowdsourcing samples in cognitive science}
+      \field{volume}{21}
+      \field{year}{2017}
+      \field{pages}{736\bibrangedash 748}
+      \range{pages}{13}
+    \endentry
     \entry{ho2015incentivizing}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=987dff40086dbb0cd8a0c9dee6223357}{%
@@ -152,8 +219,8 @@
       \strng{authorbibnamehash}{36cd8cfa3450b48ffaac4d4cbae8ceae}
       \strng{authornamehash}{36cd8cfa3450b48ffaac4d4cbae8ceae}
       \strng{authorfullhash}{1e360f00dea6022752b20dc6c4d3c5a0}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 24th International Conference on World Wide Web}
@@ -201,8 +268,8 @@
       \strng{authorbibnamehash}{cc03438923f70d4c43aaf1b466d128bd}
       \strng{authornamehash}{cc03438923f70d4c43aaf1b466d128bd}
       \strng{authorfullhash}{dbf7eb87a781e7ec70e805efd21f2a0c}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems}
@@ -263,8 +330,8 @@
       \strng{editorbibnamehash}{8e56164bb996624af188d189ecca73ce}
       \strng{editornamehash}{8e56164bb996624af188d189ecca73ce}
       \strng{editorfullhash}{8e56164bb996624af188d189ecca73ce}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{EuroVis 2018 - Short Papers}
@@ -297,8 +364,8 @@
       \strng{authorbibnamehash}{dc333841095599e71d5da8c8617e2588}
       \strng{authornamehash}{dc333841095599e71d5da8c8617e2588}
       \strng{authorfullhash}{dc333841095599e71d5da8c8617e2588}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Synthesis lectures on artificial intelligence and machine learning}
@@ -323,8 +390,8 @@
       \strng{authorbibnamehash}{2b06c3d48b11c21069ebd0f962707011}
       \strng{authornamehash}{2b06c3d48b11c21069ebd0f962707011}
       \strng{authorfullhash}{2b06c3d48b11c21069ebd0f962707011}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Kaggle}
@@ -604,8 +671,8 @@
       \strng{authorbibnamehash}{486e68ea38900b233ba3e532833ebb7f}
       \strng{authornamehash}{486e68ea38900b233ba3e532833ebb7f}
       \strng{authorfullhash}{486e68ea38900b233ba3e532833ebb7f}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Encyclopedia of biomaterials and biomedical engineering}
@@ -637,8 +704,8 @@
       \strng{authorbibnamehash}{81559132bae719b60d6a4e29ca8c27da}
       \strng{authornamehash}{81559132bae719b60d6a4e29ca8c27da}
       \strng{authorfullhash}{81559132bae719b60d6a4e29ca8c27da}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{PloS one}
@@ -924,8 +991,8 @@
       \strng{authorbibnamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
       \strng{authornamehash}{e0e8f5a23c6124fea7c2eb7da286ea5e}
       \strng{authorfullhash}{4df8e492ed7b350a6cd5169f06c200f9}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Manifesto for agile software development}
@@ -948,8 +1015,8 @@
       \strng{authorbibnamehash}{ee6f08fcba839e09471a0bc69152b6a5}
       \strng{authornamehash}{ee6f08fcba839e09471a0bc69152b6a5}
       \strng{authorfullhash}{ee6f08fcba839e09471a0bc69152b6a5}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Business object design and implementation}

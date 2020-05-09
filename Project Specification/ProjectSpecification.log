@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  9 MAY 2020 21:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  9 MAY 2020 22:18
 entering extended mode
 **"c:/Users/DJSau/Masters-Project/Project Specification/ProjectSpecification.tex"
 ("c:/Users/DJSau/Masters-Project/Project Specification/ProjectSpecification.tex"
@@ -468,7 +468,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/Users/DJSau/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<interface.png, id=102, 1015.795pt x 497.86pt>
+<interface.png, id=104, 1015.795pt x 497.86pt>
 File: interface.png Graphic file (type png)
 <use interface.png>
 Package pdftex.def Info: interface.png  used on input line 186.
@@ -481,7 +481,7 @@ Overfull \hbox (25.87134pt too wide) in paragraph at lines 200--206
  []
 
 [2] [3 <c:/Users/DJSau/Masters-Project/Project Specification/interface.png (PNG copy)>]
-<EyeHeatmap.PNG, id=129, 446.41782pt x 359.09157pt>
+<EyeHeatmap.PNG, id=133, 446.41782pt x 359.09157pt>
 File: EyeHeatmap.PNG Graphic file (type png)
 <use EyeHeatmap.PNG>
 Package pdftex.def Info: EyeHeatmap.PNG  used on input line 293.
@@ -492,7 +492,7 @@ Overfull \hbox (22.97296pt too wide) in paragraph at lines 383--397
  []
 
 [7]
-<GanttChart.PNG, id=188, 1753.55125pt x 558.085pt>
+<GanttChart.PNG, id=192, 1753.55125pt x 558.085pt>
 File: GanttChart.PNG Graphic file (type png)
 <use GanttChart.PNG>
 Package pdftex.def Info: GanttChart.PNG  used on input line 432.
@@ -517,17 +517,17 @@ Package logreq Info: Writing requests to 'ProjectSpecification.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 569.
  ) 
 Here is how much of TeX's memory you used:
- 12462 strings out of 480934
- 222701 string characters out of 2909682
- 869516 words of memory out of 3000000
- 28112 multiletter control sequences out of 15000+200000
+ 12468 strings out of 480934
+ 222985 string characters out of 2909682
+ 869668 words of memory out of 3000000
+ 28116 multiletter control sequences out of 15000+200000
  538963 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,10n,46p,1011b,1320s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\DJSau\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.pdf" (12 pages, 682122 bytes).
+Output written on "c:/Users\DJSau\Masters-Project\Project Specification\ProjectSpecification.pdf" (12 pages, 683214 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
+ 287 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
  144 words of extra memory for PDF output out of 10000 (max. 10000000)
 
