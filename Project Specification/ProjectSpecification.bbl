@@ -55,6 +55,40 @@
       \field{pages}{411\bibrangedash 419}
       \range{pages}{9}
     \endentry
+    \entry{chang2017revolt}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=24e8efa35e619eb224da4eb6ff27997d}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Joseph\bibnamedelima Chee},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=7098a2847ed504c65ef57236d3a25cc9}{%
+           family={Amershi},
+           familyi={A\bibinitperiod},
+           given={Saleema},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8871bf8ac2d0e00b8d71c1929e1ef04c}{%
+           family={Kamar},
+           familyi={K\bibinitperiod},
+           given={Ece},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ffa087ae25e371ac95d04054a4198c9}
+      \strng{fullhash}{5ffa087ae25e371ac95d04054a4198c9}
+      \strng{bibnamehash}{5ffa087ae25e371ac95d04054a4198c9}
+      \strng{authorbibnamehash}{5ffa087ae25e371ac95d04054a4198c9}
+      \strng{authornamehash}{5ffa087ae25e371ac95d04054a4198c9}
+      \strng{authorfullhash}{5ffa087ae25e371ac95d04054a4198c9}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems}
+      \field{title}{Revolt: Collaborative crowdsourcing for labeling machine learning datasets}
+      \field{year}{2017}
+      \field{pages}{2334\bibrangedash 2346}
+      \range{pages}{13}
+    \endentry
     \entry{ipeirotis2010quality}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=3086e92f9d3bef4f89fcb6c8a5048672}{%
@@ -79,8 +113,8 @@
       \strng{authorbibnamehash}{44146bc6af25d9521d7371a251ffbca1}
       \strng{authornamehash}{44146bc6af25d9521d7371a251ffbca1}
       \strng{authorfullhash}{44146bc6af25d9521d7371a251ffbca1}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the ACM SIGKDD workshop on human computation}
@@ -118,8 +152,8 @@
       \strng{authorbibnamehash}{36cd8cfa3450b48ffaac4d4cbae8ceae}
       \strng{authornamehash}{36cd8cfa3450b48ffaac4d4cbae8ceae}
       \strng{authorfullhash}{1e360f00dea6022752b20dc6c4d3c5a0}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 24th International Conference on World Wide Web}
@@ -167,8 +201,8 @@
       \strng{authorbibnamehash}{cc03438923f70d4c43aaf1b466d128bd}
       \strng{authornamehash}{cc03438923f70d4c43aaf1b466d128bd}
       \strng{authorfullhash}{dbf7eb87a781e7ec70e805efd21f2a0c}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems}
@@ -229,8 +263,8 @@
       \strng{editorbibnamehash}{8e56164bb996624af188d189ecca73ce}
       \strng{editornamehash}{8e56164bb996624af188d189ecca73ce}
       \strng{editorfullhash}{8e56164bb996624af188d189ecca73ce}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{EuroVis 2018 - Short Papers}
@@ -263,8 +297,8 @@
       \strng{authorbibnamehash}{dc333841095599e71d5da8c8617e2588}
       \strng{authornamehash}{dc333841095599e71d5da8c8617e2588}
       \strng{authorfullhash}{dc333841095599e71d5da8c8617e2588}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Synthesis lectures on artificial intelligence and machine learning}
@@ -289,8 +323,8 @@
       \strng{authorbibnamehash}{2b06c3d48b11c21069ebd0f962707011}
       \strng{authornamehash}{2b06c3d48b11c21069ebd0f962707011}
       \strng{authorfullhash}{2b06c3d48b11c21069ebd0f962707011}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Kaggle}
@@ -325,8 +359,8 @@
       \strng{authorbibnamehash}{829d19d0b924abeadff48ade89ef46c4}
       \strng{authornamehash}{829d19d0b924abeadff48ade89ef46c4}
       \strng{authorfullhash}{829d19d0b924abeadff48ade89ef46c4}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM computing surveys (CSUR)}
@@ -598,8 +632,8 @@
       \strng{authorbibnamehash}{cfe66c3113e48768748727eb081bfc21}
       \strng{authornamehash}{cfe66c3113e48768748727eb081bfc21}
       \strng{authorfullhash}{cfe66c3113e48768748727eb081bfc21}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Annual Conference-Society for Technical Communication}

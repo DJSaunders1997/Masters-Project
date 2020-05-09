@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 % RENAME FILE TO 910995.pdf when I submit.
-
+\usepackage[colorlinks=true,allcolors=black]{hyperref}%
 % change reference style to [1], remove stupid sorting, language changed so date in ddmmyyyy
 \usepackage[backend=biber, style=numeric, sorting=none, language=australian]{biblatex}
 \addbibresource{References.bib}
@@ -12,7 +12,7 @@
     \large Project Specification
 }
 \author{David Saunders (910995)}
-\date{April 2020}
+\date{May 2020}
 
 \begin{document}
 \maketitle
@@ -83,12 +83,34 @@
 % • Conclusion.
 % • Bibliography.
 
-% TODO: Send to Tom
-% Should I have a section talk about the previous work AKA study this is build on?
-% How do I cite?
-% Could include a section on the data like I did in the presentation.
-% 
-% 
+% TODO: Tom email reply
+
+% TODO: Extend motivation lots.
+% TODO: More explanation of sprints.
+% TODO: Project components.
+
+% TODO: Machine learning techniques background research.
+% TODO: 'Beef up' Abstract and conclusion.
+
+% MOTIVATION
+% The motivation is probably one of the most important sections. 
+% That being, I think you can extend your motivation quite a bit. 
+% It's worth spending some space on why this
+% problem is hard and why any obvious solutions won't work.
+
+% GANTT CHART
+% I think your gantt chart is fine, but you should give a bit more
+% information about what you're going to do in the sprints themselves. 
+% You can talk about things like trying different representations 
+% of the data, different algorithms, etc.
+
+% Components of project
+% Ah, ok. So the different components in this case would be the 
+% different things to test. This would include different
+% representations of the data (aka feature sets) and different 
+% algorithms. You should list the options explicitly
+% (i.e. say "decision tree") rather than being vague. 
+
 
 \section{Motivation}
 % MOTOVATION IS WHY
@@ -105,13 +127,20 @@
 %   and how they can be better used to quickly and cheaply pick locks.
 
 % From Initial CSCM10 Report.
-Crowd-sourcing marketplaces like Amazon’s Mechanical Turk are a popular service that provides a way of gathering data from real participants for studies, and human intelligence tasks \cite{paolacci2010running}. 
+%Crowd-sourcing marketplaces like Amazon’s Mechanical Turk are a popular service that provides a way of gathering data from real participants for studies, and human intelligence tasks \cite{paolacci2010running}. 
+Crowd-sourcing marketplaces like Amazon’s Mechanical Turk are popular services that provide a method for researchers to get participants to complete human intelligence tasks \cite{paolacci2010running}. 
+They offer a cheap, scalable solution to label data for use in training for machine learning algorithms \cite{chang2017revolt}.
 The level of user engagement, attention, and low quality responses can all be issues when gathering data from participants in such a distributed way \cite{ipeirotis2010quality}. 
 Research has been conducted on how to increase the accuracy and attention of Turk tasks.
 % Look at these papers to see how they clasifyed attentions.
 Methods such as offering financial incentives \cite{ho2015incentivizing} and engaging a users curiosity \cite{law2016curiosity} have been found to motivate workers into performing better crowdsourced tasks. 
 However no work has been done to calculate if crowdsourced users are paying attention during tasks. 
 
+
+% TODO: ACTUALLY ADD DONT JUST IGNORE
+% TODO: In the first sentence say how crowd sourcing is traditionally been used for tasks such as labelling image datasets for machine learning training data.  
+% TODO: However recently scientists have become aware of the advantages crowdsourcing can have (high number ) when used to gather responses for scientific surveys.
+% Theyre even being used in the fight against Coronavirus
 
 % People are lazy. 
 % Often don't pay much attention 
@@ -133,7 +162,7 @@ However no work has been done to calculate if crowdsourced users are paying atte
 This project uses data from a previous study where participants were asked to perform a simple repetitive tasks \cite{tom2018risk}.
 Data was gathered both with a closely monitored lab study, and using a crowd-sourcing website.
 We assume that participants in the lab study were paying attention, and that crowd sourced participants may or may not be paying attention.
-The task of this project is to classify crowd sourced participants to determine who were paying attention during the task.
+The task of this project is to classify crowdsourced participants to determine who were paying attention during the task.
 We hypothesise that a participants level of attention can be measured from their mouse movement data.
 The project will propose methods of identifying and quantifying user engagement by using machine learning and visual analytics techniques.
 
@@ -148,10 +177,25 @@ The project will propose methods of identifying and quantifying user engagement 
 \end{figure}
 
 Fig \ref{fig:interface} is the design of the interface participants of the study interacted with.
-The aim of the task is to maximise the prophet made over a series of tasks.
+The aim of the task is to maximise the profit made over a series of tasks.
 Participants may interact with the stocks sliders to select how much of a stock they would like to buy.
 The return and risk is shown on the plot on the right of the figure, this plot updates when the sliders are changed in an attempt to inform participants of the stocks volatility.
 It is hypothesised that participants paying more attention will interact with the sliders more attempting to find the best combination, something their mouse data may reveal.
+
+\begin{table}[ht]
+    \caption{\label{table:studies} How responses were gathered in the study.}
+    \small
+    \begin{tabular}{lll}
+        \hline
+        Data collection method & Number of participants & Were participants paying attention? \\    \hline
+        Lab study              & 18                     & Yes                                 \\
+        Crowdsourced task      & 370                    & Unknown                             \\    \hline
+    \end{tabular}
+\end{table}
+
+Table \ref{table:studies} shows the two different ways in which data was collected.
+The difference in number of participants shows one of the reasons crowdsourcing is popular. 
+It is much easier to crowdsource responses than it is to organise an in person lab study.
 
 
 \subsection{Aims of project}
@@ -275,20 +319,31 @@ Deal with Imbalances in classes,
     Sampling,
     Oversampling, Undersampling
 
+\subsection{Dealing with unbalanced classes}
+
+The purpose of crowdsourcing responses is to increase the number of participants in the study in an attempt to get a wider spread of data without bias.
+As a result there are many more crowdsourced responses than lab study responses, as shown in Table .
 
 \section{Description of the project}
 
 \subsection{Components of project}
 
-Each of the component's cannot be fully separated into unique sections as there is an order that they must be completed in.
+The component's can be separated into individual sections, however there is still an order that they must be completed in.
 
 Now that the background for the project has been researched the more technical programming side of the project can begin.
 The data must first be extracted from the JSON format that its in to a more tabular format.
 After this the main bulk of the project can begin.
 This will consist of researching different algorithms and methods and attempting to implement them on the project data.
+Different methods of data extraction or feature engineering may be explored.
 Any results from this will then be analysed, visualised, and evaluated.
 These stages can be repeated multiple times as different methods are explored.
 After multiple different approaches have been explored the results should be properly documented and compiled in my dissertation.
+
+% Ah, ok. So the different components in this case would be the different
+% things to test. This would include different representations of the data
+% (aka feature sets) and different algorithms. You should list the options
+% explicitly (i.e. say "decision tree") rather than being vague. 
+
 
 %TODO: Look at the dissertation outline so I know what stuff needs to be included so I can mention it here.
 
@@ -296,7 +351,7 @@ After multiple different approaches have been explored the results should be pro
 
 The first component of the project has been completed, and data has been extracted form JSON format to a csv format.
 
-\begin{table}[]
+\begin{table}[ht]
     \caption{\label{table:data} The first 5 records of results of the crowdsourced task.}
 
     \begin{tabular}{llllllll}
@@ -318,8 +373,8 @@ The first component of the project has been completed, and data has been extract
 Table \ref{table:data} shows us the features of the data.
 The lab study data and the crowdsourced data have the same schema, except lab results have a different ID field.
 
-Target shows us which element in Fig \ref{fig:interface} a participant is interacting with, and event\_type details the type of interaction.
-The time field shows us the time taken in seconds since the first recorded mouse event.
+The target field shows us which element in Fig \ref{fig:interface} a participant is interacting with, and event\_type details the type of interaction.
+Time field shows the time taken in seconds since the first recorded mouse event.
 We can hypothesise that participants with a shorter time may have paid less attention than a participant who took much longer, thinking about their actions more.
 The x and y fields show the location of the mouse and step shows which stage of the task, from 1 to 5, a participant was in.
 
@@ -330,7 +385,7 @@ The x and y fields show the location of the mouse and step shows which stage of 
 % 
 
 The different components of the work have been explained above.
-This section will specify the timeframe and order in which the modules will be carried out.
+This section will specify the timeframe and the order in which the modules will be carried out.
 
 \subsection{Development methodology}
 %Discuss software life cycle methodologies with Jacques.
@@ -342,9 +397,7 @@ This section will specify the timeframe and order in which the modules will be c
 
 
 I will be using an agile methodology as it will allow flexibility of my project and the iterative nature should help me to constantly improve it \cite{beck2001manifesto}. 
-
 Scrum will be used as the short scrum periods will encourage bursts of development over the long summer period \cite{schwaber1997scrum}.
-
 
 Fig \ref{fig:Gantt} shows the sprints I will be undertaking.
 The Gantt Chart was created with the free software Gantt Project \cite{GanttProject}.
