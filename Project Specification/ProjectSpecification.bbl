@@ -712,6 +712,31 @@
       \field{pages}{1028\bibrangedash 1042}
       \range{pages}{15}
     \endentry
+    \entry{cooke2006mouse}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=cfe66c3113e48768748727eb081bfc21}{%
+           family={Cooke},
+           familyi={C\bibinitperiod},
+           given={Lynne},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cfe66c3113e48768748727eb081bfc21}
+      \strng{fullhash}{cfe66c3113e48768748727eb081bfc21}
+      \strng{bibnamehash}{cfe66c3113e48768748727eb081bfc21}
+      \strng{authorbibnamehash}{cfe66c3113e48768748727eb081bfc21}
+      \strng{authornamehash}{cfe66c3113e48768748727eb081bfc21}
+      \strng{authorfullhash}{cfe66c3113e48768748727eb081bfc21}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Annual Conference-Society for Technical Communication}
+      \field{title}{Is the Mouse a" Poor Man's Eye Tracker"?}
+      \field{volume}{53}
+      \field{year}{2006}
+      \field{pages}{252}
+      \range{pages}{1}
+    \endentry
     \entry{demvsar2017quantifying}{article}{}
       \name{author}{2}{}{%
         {{hash=046ed21a3a8dbacbe20398b879b5f423}{%
@@ -743,31 +768,6 @@
       \field{title}{Quantifying gaze and mouse interactions on spatial visual interfaces with a new movement analytics methodology}
       \field{volume}{12}
       \field{year}{2017}
-    \endentry
-    \entry{cooke2006mouse}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{hash=cfe66c3113e48768748727eb081bfc21}{%
-           family={Cooke},
-           familyi={C\bibinitperiod},
-           given={Lynne},
-           giveni={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{cfe66c3113e48768748727eb081bfc21}
-      \strng{fullhash}{cfe66c3113e48768748727eb081bfc21}
-      \strng{bibnamehash}{cfe66c3113e48768748727eb081bfc21}
-      \strng{authorbibnamehash}{cfe66c3113e48768748727eb081bfc21}
-      \strng{authornamehash}{cfe66c3113e48768748727eb081bfc21}
-      \strng{authorfullhash}{cfe66c3113e48768748727eb081bfc21}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Annual Conference-Society for Technical Communication}
-      \field{title}{Is the Mouse a" Poor Man's Eye Tracker"?}
-      \field{volume}{53}
-      \field{year}{2006}
-      \field{pages}{252}
-      \range{pages}{1}
     \endentry
     \entry{goecks2000learning}{inproceedings}{}
       \name{author}{2}{}{%

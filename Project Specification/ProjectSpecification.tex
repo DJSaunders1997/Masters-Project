@@ -283,17 +283,16 @@ Anything I've looked at with help for mouse data classification algorithms?
 In this section I will review the literature on how to monitor attention.
 %This can pretty much be the review I did for the first assignment. 
 
-\subsection{User attention and characteristic.}
+% \subsection{User attention and characteristic.}
 
-If I think of anything good to write put it here, else delete section.
+% If I think of anything good to write put it here, else delete section.
 
 \subsection{Eye tracking}
 % Copppied straight from CSCM10 Initial Report
 % TODO: Refernce with Bibtex
 
-As mentioned previously in the report non-verbal information can be used to detect a
-user’s level of engagement, eye tracking is a prime example of this \cite{lala2017detection}.
-Vision is one of the most powerful human senses so it may give a good measure of user engagement. 
+Non-verbal information such as eye tracking may be used to detect user’s level of engagement \cite{lala2017detection}.
+Vision is one of the most powerful human senses so it has the potential to give a good measure of user engagement. 
 The methodology of eye tracking is that we move our eyes to focus on particular areas that we want to see in more detail, and divert our attention to that area \cite{duchowski2007eye}. 
 % duchowski2007eye is a VERY important piece of literature for the field, over 4000 citations
 Thus tracking a user’s gaze can provide insight into which part of a system they’re engaged with, and how much so.
@@ -317,17 +316,20 @@ Eivazi and Bednarik extracted features from a users eye tracking data to determi
 Features such as ``mean fixation duration'' and ``total path distances'' were engineered, and users were split into classes based on their performance. 
 Given a user feature set and their performance class it was able to classify their cognitive state during the task with a 87.5\% accuracy with a support vector machine.
 
+Eye tracking is not however a perfect solution and its limitations have been well documented. 
+To track subjects eyes with a good degree of accuracy required the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
+
+
 \subsection{Mouse cursor tracking}
 % Copppied straight from CSCM10 Initial Report
 % Mouse cursor tracking
-Eye tracking has historically had its limitations. 
-To track subjects eyes with a good degree of accuracy required the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
-In contrast mouse movement data can be collected without the drawbacks of eye tracking and with more automatic methods, meaning more data can be collected, and on a larger scale \cite{demvsar2017quantifying}.
+
 Research has also found that there is a correlation between a user’s gaze and their cursor position. 
 The position can be considered a ``poor man’s eye tracker'' as it has been found that eye gaze match mouse position 69\% of the time \cite{cooke2006mouse}. 
+Mouse movement data can be collected without the drawbacks of eye tracking and with more automatic methods, meaning more data can be collected, and on a larger scale \cite{demvsar2017quantifying}.
 Therefore it can be said that mouse data can be used as a good alternative to eye tracking data.
 
-Mouse activity can be used as input to a neural network and output a quantifiable level of activity for a webpage. 
+%Mouse activity can be used as input to a neural network and output a quantifiable level of activity for a webpage. 
 By using mouse data it is possible to unobtrusively record a user’s normal use of a web browser without disturbing their experience \cite{goecks2000learning}.
 % Above paper touches on one of the big advantages of measuring user engagement from mouse data, it is unobtrusive! We can monitior them in the background 
 It has also been found that users tend to follow the text they’re reading with the mouse cursor \cite{liu2007detecting}, and similarly scientists were able to determine what paragraph of a page was being read with an accuracy of 79\% by using mouse cursor data \cite{hauger2011using}. 
@@ -356,6 +358,14 @@ Langly developed a method in which machine learning was used to create a modifie
 
 The purpose of crowdsourcing responses is to increase the number of participants in the study in an attempt to get a wider spread of data without bias.
 As a result there are many more crowdsourced responses than lab study responses, as shown in Table .
+
+\url{https://towardsdatascience.com/methods-for-dealing-with-imbalanced-data-5b761be45a18}
+
+The sparseness of samples definetly paying attention leades to massive imbalenced in the number of samples between tasks.
+\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.4487&rep=rep1&type=pdf}
+
+% Ladder networks are one method of semi-supervised learning.
+% https://rinuboney.github.io/2016/01/19/ladder-network.html
 
 \section{Description of the project}
 
@@ -572,10 +582,21 @@ Below I have listed and analysed the risks and have ordered them from potentiall
 % Mouse data can help us solve that issue by showing user attention
 % Data Science techniques could be used to help classify the data (Not SVM)
 
-This report has given an introduction to the work that will be conducted over the next few months.
-The background of the project has been presented, and existing methods researched.
-A detailed plan of the project details the timeline, and components of the project.
+
+
 % End with something nicer
+
+% TODO make work
+% The background of the project has been presented, and existing methods researched.
+%This report has given an introduction to the work that will be conducted over the next few months.
+In this report the motivation of why there is a need to detect user engagement in increasingly popular crowdsourcing services.
+%The backgroud of the project is given  mouse tracking data may be used to do so.
+The hard problem of detecting user engagement in crowdsourced responses has been explained and the need for a new solution is outlined.
+Existing methods of eye, and mouse tracking were researched.
+It was found that mouse data has many of the benefits of eye tracking data with none of the drawbacks, making it ideal for use in user engagement.
+A detailed plan of the project was shown, with a detailed breakdown of the timeline, and components of the project shown with a Gantt chart.
+Risk analysis of the project was completed so that no unexpected incident will disrupt the project.
+
 
 \printbibliography
 
