@@ -278,6 +278,36 @@
       \field{pages}{4098\bibrangedash 4110}
       \range{pages}{13}
     \endentry
+    \entry{peterson2008measuring}{article}{}
+      \name{author}{2}{}{%
+        {{hash=04f61d40c74bd6cf43f8b69e138a2243}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Eric\bibnamedelima T},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=aed6aeb4396a4205bae33ae9ed73908b}{%
+           family={Carrabis},
+           familyi={C\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fadeee11287ca4b6d9392f51747fdc1c}
+      \strng{fullhash}{fadeee11287ca4b6d9392f51747fdc1c}
+      \strng{bibnamehash}{fadeee11287ca4b6d9392f51747fdc1c}
+      \strng{authorbibnamehash}{fadeee11287ca4b6d9392f51747fdc1c}
+      \strng{authornamehash}{fadeee11287ca4b6d9392f51747fdc1c}
+      \strng{authorfullhash}{fadeee11287ca4b6d9392f51747fdc1c}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Web Analytics Demystified}
+      \field{title}{Measuring the immeasurable: Visitor engagement}
+      \field{volume}{14}
+      \field{year}{2008}
+      \field{pages}{16}
+      \range{pages}{1}
+    \endentry
     \entry{tom2018risk}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=e62cbc51788273a0ee6478e36b2d57b0}{%
@@ -330,8 +360,8 @@
       \strng{editorbibnamehash}{8e56164bb996624af188d189ecca73ce}
       \strng{editornamehash}{8e56164bb996624af188d189ecca73ce}
       \strng{editorfullhash}{8e56164bb996624af188d189ecca73ce}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{EuroVis 2018 - Short Papers}
@@ -639,8 +669,8 @@
       \strng{authorbibnamehash}{bebe563b4fb070e91aea9e62df7b40f7}
       \strng{authornamehash}{bebe563b4fb070e91aea9e62df7b40f7}
       \strng{authorfullhash}{bebe563b4fb070e91aea9e62df7b40f7}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. Workshop on Eye Gaze in Intelligent Human Machine Interaction at IUI}
