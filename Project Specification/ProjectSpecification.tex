@@ -354,6 +354,34 @@ Machine learning has been used before to measure user engagement and interface i
 Langly developed a method in which machine learning was used to create a modified user interface for users that they interact with the best \cite{langley1997machine}.
 
 
+Szafir and Mutlu identified a plethora of verbal and non-verbal behavioural cues used by teachers in an educational setting, with gaze being identified as one of them \cite{szafir2012pay}.
+However these cues could not be recorded by a computer so instead EEG signals measured from a headset was used to measure engagement.
+
+\subsection{Text classification}
+
+Text classification is an increasingly popular task in the field of data mining.
+This typically involves labelling a document into categories by analysing their text content.
+Examples of this include new filtering where articles are assigned a category or spam filtering where emails can be classified as spam \cite{aggarwal2012survey}.
+
+Nigam et al shows how a the use of Expectation-Maximization and naive Bayes classifier can be used to classify text documents into categories by looking at the distribution of words in a document \cite{nigam2000text}.
+% Add sentence explaining method more
+A classifier is trained on labelled data which is then used to label unlabelled data.
+This method of combining supervised and unsupervised learning was found to work better than solely using labelled data.
+This is especially important with text classification as unlabelled data is much more plentiful than unlabelled data.
+
+
+In this paper a document is defined as an ``ordered list of word events'', however their approach could be applied to other forms of data.
+We can define a users mouse data as an ordered lists of mouse events.
+Therefore a similar approach could be used in this project where the frequencies of events are recorded and used in combination with a 
+
+\subsubsection{N-Grams}
+
+The above method would be considered an uni-gram model of natural language processing.
+N-grams where n are the number of words.
+
+Different n-grams can be combined together to better perform a task.
+A mixture of unigrams, bigrams, and trigrams can extract different levels of text complexity and perform well with document classification \cite{aggarwal2012survey}.
+
 \subsection{Dealing with unbalanced classes}
 
 The purpose of crowdsourcing responses is to increase the number of participants in the study in an attempt to get a wider spread of data without bias.
@@ -361,7 +389,7 @@ As a result there are many more crowdsourced responses than lab study responses,
 
 \url{https://towardsdatascience.com/methods-for-dealing-with-imbalanced-data-5b761be45a18}
 
-The sparseness of samples definetly paying attention leades to massive imbalenced in the number of samples between tasks.
+The sparseness of samples definitely paying attention leades to massive imbalenced in the number of samples between tasks.
 \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.4487&rep=rep1&type=pdf}
 
 % Ladder networks are one method of semi-supervised learning.

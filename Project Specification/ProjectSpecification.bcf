@@ -2211,10 +2211,14 @@
     <bcf:citekey order="27">navalpakkam2012mouse</bcf:citekey>
     <bcf:citekey order="28">huang2012user</bcf:citekey>
     <bcf:citekey order="29">langley1997machine</bcf:citekey>
-    <bcf:citekey order="30">eivazi2011predicting</bcf:citekey>
-    <bcf:citekey order="31">beck2001manifesto</bcf:citekey>
-    <bcf:citekey order="32">schwaber1997scrum</bcf:citekey>
-    <bcf:citekey order="33">GanttProject</bcf:citekey>
+    <bcf:citekey order="30">szafir2012pay</bcf:citekey>
+    <bcf:citekey order="31">aggarwal2012survey</bcf:citekey>
+    <bcf:citekey order="32">nigam2000text</bcf:citekey>
+    <bcf:citekey order="33">aggarwal2012survey</bcf:citekey>
+    <bcf:citekey order="34">eivazi2011predicting</bcf:citekey>
+    <bcf:citekey order="35">beck2001manifesto</bcf:citekey>
+    <bcf:citekey order="36">schwaber1997scrum</bcf:citekey>
+    <bcf:citekey order="37">GanttProject</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

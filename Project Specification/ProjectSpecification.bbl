@@ -960,6 +960,111 @@
       \field{pages}{53\bibrangedash 62}
       \range{pages}{10}
     \endentry
+    \entry{szafir2012pay}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=4f8f0638e180ee3a1e7abff8850b0ab8}{%
+           family={Szafir},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bd9710ee000b3d54328965e97bed40c1}{%
+           family={Mutlu},
+           familyi={M\bibinitperiod},
+           given={Bilge},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{14563f4ea4553a94a819a63eb0a4097d}
+      \strng{fullhash}{14563f4ea4553a94a819a63eb0a4097d}
+      \strng{bibnamehash}{14563f4ea4553a94a819a63eb0a4097d}
+      \strng{authorbibnamehash}{14563f4ea4553a94a819a63eb0a4097d}
+      \strng{authornamehash}{14563f4ea4553a94a819a63eb0a4097d}
+      \strng{authorfullhash}{14563f4ea4553a94a819a63eb0a4097d}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the SIGCHI conference on human factors in computing systems}
+      \field{title}{Pay attention! Designing adaptive agents that monitor and improve user engagement}
+      \field{year}{2012}
+      \field{pages}{11\bibrangedash 20}
+      \range{pages}{10}
+    \endentry
+    \entry{aggarwal2012survey}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=86d11a07b1bfeac58dc68f7a419b3039}{%
+           family={Aggarwal},
+           familyi={A\bibinitperiod},
+           given={Charu\bibnamedelima C},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=4ea38b05f3ab367265bad8159b9911ef}{%
+           family={Zhai},
+           familyi={Z\bibinitperiod},
+           given={ChengXiang},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{77ba48b8e319bd403a3949320d6c63b6}
+      \strng{fullhash}{77ba48b8e319bd403a3949320d6c63b6}
+      \strng{bibnamehash}{77ba48b8e319bd403a3949320d6c63b6}
+      \strng{authorbibnamehash}{77ba48b8e319bd403a3949320d6c63b6}
+      \strng{authornamehash}{77ba48b8e319bd403a3949320d6c63b6}
+      \strng{authorfullhash}{77ba48b8e319bd403a3949320d6c63b6}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Mining text data}
+      \field{title}{A survey of text classification algorithms}
+      \field{year}{2012}
+      \field{pages}{163\bibrangedash 222}
+      \range{pages}{60}
+    \endentry
+    \entry{nigam2000text}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b69fc1ad440b0bf65dce845ca65e44a2}{%
+           family={Nigam},
+           familyi={N\bibinitperiod},
+           given={Kamal},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a2ab605a87294cc2675f46e6364d4afe}{%
+           family={McCallum},
+           familyi={M\bibinitperiod},
+           given={Andrew\bibnamedelima Kachites},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=5112ea130eadef0764fce0145b8b9f91}{%
+           family={Thrun},
+           familyi={T\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6b1b95cdca60865947b9a309e5e904f6}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{954c1bd6ca840219eb40452880d37a18}
+      \strng{fullhash}{c4f317f402e1659034320ad682703cd1}
+      \strng{bibnamehash}{954c1bd6ca840219eb40452880d37a18}
+      \strng{authorbibnamehash}{954c1bd6ca840219eb40452880d37a18}
+      \strng{authornamehash}{954c1bd6ca840219eb40452880d37a18}
+      \strng{authorfullhash}{c4f317f402e1659034320ad682703cd1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine learning}
+      \field{number}{2-3}
+      \field{title}{Text classification from labeled and unlabeled documents using EM}
+      \field{volume}{39}
+      \field{year}{2000}
+      \field{pages}{103\bibrangedash 134}
+      \range{pages}{32}
+    \endentry
     \entry{beck2001manifesto}{article}{}
       \true{moreauthor}
       \true{morelabelname}
