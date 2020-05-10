@@ -147,8 +147,7 @@ Research has been conducted on how the accuracy and attention of crowdsourced ta
 % Look at these papers to see how they classified attentions.
 Methods such as offering financial incentives \cite{ho2015incentivizing} and engaging a users curiosity \cite{law2016curiosity} have been found to motivate workers into performing better at crowdsourced tasks.
 Despite the research there is still debate as to which method is superior.
-If user engagement can be effectively identified then the best method of intensifying user engagement could be found using this method.
-
+If user engagement can be effectively identified then the best method of ensuring user engagement could be found using this method.
 
 % Paragraph 4 - Why measuring attention is hard and why obvious solutions wont work. 
 % It's worth spending some space on why this problem is hard and why any obvious solutions won't work
@@ -194,20 +193,20 @@ The project will propose methods of identifying and quantifying user engagement 
 \begin{figure}[ht]
     \centering
     \centerline{
-        \frame{\includegraphics[scale=0.3]{interface.png}}
+        \frame{\includegraphics[scale=0.5]{interface.png}}
     }
-    \caption{Interface for the study \cite{tom2018risk}.}
+    \caption{The user interface for the study \cite{tom2018risk}.}
     \label{fig:interface}
 \end{figure}
 
 Fig \ref{fig:interface} is the design of the interface participants of the study interacted with.
-The aim of the task is to maximise the profit made over a series of tasks.
+THe study modelled an investment scenario where participants were asked to maximise profit made over a series of steps.
 Participants may interact with the stocks sliders to select how much of a stock they would like to buy.
 The return and risk is shown on the plot on the right of the figure, this plot updates when the sliders are changed in an attempt to inform participants of the stocks volatility.
 It is hypothesised that participants paying more attention will interact with the sliders more attempting to find the best combination, something their mouse data may reveal.
 
 \begin{table}[ht]
-    \caption{\label{table:studies} How responses were gathered in the study.}
+    \caption{\label{table:studies} Data collection methods used in the study \cite{tom2018risk}.}
     \small
     \begin{tabular}{lll}
         \hline
@@ -218,6 +217,7 @@ It is hypothesised that participants paying more attention will interact with th
 \end{table}
 
 Table \ref{table:studies} shows the two different ways in which data was collected.
+Only 4.6\% of the data was gathered in person, with the vast majority of responses being crowdsourced.
 The difference in number of participants shows one of the reasons crowdsourcing is popular. 
 It is much easier to crowdsource responses than it is to organise an in person lab study.
 
@@ -226,25 +226,25 @@ It is much easier to crowdsource responses than it is to organise an in person l
 
 The aims of what I want to achieve in the project will be as follows:
 \begin{itemize}
-    \item Visualise, analyse and understand the data.
+    \item Visualise, analyse and understand the data.   % data from the previous study
     \item Use the data to train machine learning models to classify users by their attention level.
     \item Determine if there is a link between a users attention and task performance.
-    \item Combine the data and methods from the study data with other datasets to create a more robust model.
-    \item Publicly share all data and any findings of this project.
+    \item Combine the data and methods from the study data with other crowdsourced datasets to create a more robust model.
+    \item Publicly share all data and findings of this project.
     %\item Test any methods and models developed with other applications?
 \end{itemize}
 
 Here I detail how I will achieve each aim, and describe the components of the project that I will need to complete.
 % Try and link each component of the project to an aim.
 
-To visualise and understand the data I will use tools like tableau and plot basic plots such as histograms.
+To visualise and understand the data I will use tools like Tableau to create basic plots such as histograms.
 If any interesting correlation or information is found in the data at this stage it can be more fully explored in depth later in the project.
 
 % Any correlations found here can be explored in depth later.
 
 Semi supervised learning techniques can be used to classify which of the crowdsourced participants were paying attention.
-The idea of semi supervised is combining labelled and unlabelled data to improve the learning behaviour of a machine learning technique \cite{zhu2009introduction}.
-This will be used in this project as only a subset of the data is labelled, where the lab study results are labelled as paying attention, and crowdsourced results are unlabelled.
+The idea of semi-supervised learning is combining labelled and unlabelled data to improve the learning behaviour of a machine learning technique \cite{zhu2009introduction}.
+This will be used in this project as only a subset of the data is labelled, where the lab study results are labelled as paying attention and crowdsourced results are unlabelled.
 
 To see if a users attention influences their task performance relies on me being able to extract user attention information from the mouse data.
 If I am unable to do so I could attempt to use just the lab study data, however there is only a small number of datapoints, and not enough to make a significant
@@ -277,19 +277,22 @@ Sharing data and results with the Data Science community is an important part of
 
 
 \section{Background Research}
-Anything I've looked at with help for mouse data classification algorithms? 
 
-%\section{Literature review}
-In this section I will review the literature on how to monitor attention.
-%This can pretty much be the review I did for the first assignment. 
+% Anything I've looked at with help for mouse data classification algorithms? 
+% %\section{Literature review}
+% In this section I will review the literature on how to monitor attention.
+% %This can pretty much be the review I did for the first assignment. 
+
+I have introduced the background as to why it is important to detect user engagement.
+Now the existing literature will be examined to see how others have proposed to solve this problems and explore any methods that may be used in this project.
+
 
 % \subsection{User attention and characteristic.}
 
 % If I think of anything good to write put it here, else delete section.
 
+% Dont really link to engagement 
 \subsection{Eye tracking}
-% Copppied straight from CSCM10 Initial Report
-% TODO: Refernce with Bibtex
 
 Non-verbal information such as eye tracking may be used to detect user’s level of engagement \cite{lala2017detection}.
 Vision is one of the most powerful human senses so it has the potential to give a good measure of user engagement. 
@@ -300,14 +303,14 @@ Thus tracking a user’s gaze can provide insight into which part of a system th
 \begin{figure}[ht!]
     \centering
     \centerline{
-        \includegraphics[scale=0.7]{EyeHeatmap.PNG}
+        \includegraphics[scale=0.8]{EyeHeatmap.PNG}
     }
     \caption{Heatmap showing popular locations of users eyes on a webpage \cite{buscher2009you}.}
     \label{fig:eyetrack}
 \end{figure}
 
 Eye tracking data can be used to show user interface elements that users focus their attention on as shown in Fig \ref{fig:eyetrack}. 
-From this researchers were able to predict the amount of attention elements of the page would receive. 
+From this researchers were able to predict the amount of attention elements of the page would receive.
 By observing what parts of an interface users are interacting with we can determine what a user is engaging with \cite{buscher2009you}.
 Eye-tracking has been used, and found success novel applications such as recording the engagement of users when playing a game. 
 Tracking users eye movements helped game designers understand how users can recognise interactable game objects and could be used to investigate problematic game design issues \cite{renshaw2009towards}.
@@ -317,11 +320,11 @@ Features such as ``mean fixation duration'' and ``total path distances'' were en
 Given a user feature set and their performance class it was able to classify their cognitive state during the task with a 87.5\% accuracy with a support vector machine.
 
 Eye tracking is not however a perfect solution and its limitations have been well documented. 
-To track subjects eyes with a good degree of accuracy required the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
+Track subjects eyes with a good degree of accuracy requires the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
 
 
 \subsection{Mouse cursor tracking}
-% Copppied straight from CSCM10 Initial Report
+% Copied straight from CSCM10 Initial Report
 % Mouse cursor tracking
 
 Research has also found that there is a correlation between a user’s gaze and their cursor position. 
@@ -332,30 +335,32 @@ Therefore it can be said that mouse data can be used as a good alternative to ey
 %Mouse activity can be used as input to a neural network and output a quantifiable level of activity for a webpage. 
 By using mouse data it is possible to unobtrusively record a user’s normal use of a web browser without disturbing their experience \cite{goecks2000learning}.
 % Above paper touches on one of the big advantages of measuring user engagement from mouse data, it is unobtrusive! We can monitior them in the background 
-It has also been found that users tend to follow the text they’re reading with the mouse cursor \cite{liu2007detecting}, and similarly scientists were able to determine what paragraph of a page was being read with an accuracy of 79\% by using mouse cursor data \cite{hauger2011using}. 
-Methodologies mentioned above explore ways of classifying user engagement from eye and cursor data, however it is also possible to predict users attention and user frustration in complex webpages \cite{navalpakkam2012mouse}.
-In contrast to the above literature some studies disagree that mouse cursor is always a good approximation for eye data. 
+It has also been found that users tend to follow the text they are reading with the mouse cursor \cite{liu2007detecting}. 
+It can be determine what paragraph of a page was being read with an accuracy of 79\% by using mouse cursor data \cite{hauger2011using}. 
+
+Other methodologies explored ways of classifying user engagement from eye and cursor data, however it is also possible to predict users attention and user frustration in complex webpages \cite{navalpakkam2012mouse}.
+Not all studies agree that mouse cursor is always a good approximation for eye data. 
 Hauger et al found that distinct cursor behaviour exists depending on the task, and that the relationship between eye gaze and mouse position is more nuanced than measuring only mouse data \cite{huang2012user}.
 
-\subsection{Machine learning techniques}
-I've given a high level overview of the existing literature, here I will be more in depth as to the algorithms and techniques relevant to this project.
+% \subsection{Machine learning techniques}
+% I've given a high level overview of the existing literature, here I will be more in depth as to the algorithms and techniques relevant to this project.
 
-Machine learning methods
-    SVM,
-    Natural Language Processing,
-    \underline{N-Grams},
-    LSTM Neural Networks,
-    Markov models,
-Deal with Imbalances in classes,
-    Sampling,
-    Oversampling, Undersampling
+% Machine learning methods
+%     SVM,
+%     Natural Language Processing,
+%     \underline{N-Grams},
+%     LSTM Neural Networks,
+%     Markov models,
+% Deal with Imbalances in classes,
+%     Sampling,
+%     Oversampling, Undersampling
 
-Machine learning has been used before to measure user engagement and interface interaction.
-Langly developed a method in which machine learning was used to create a modified user interface for users that they interact with the best \cite{langley1997machine}.
+% Machine learning has been used before to measure user engagement and interface interaction.
+% Langly developed a method in which machine learning was used to create a modified user interface for users that they interact with the best \cite{langley1997machine}.
 
 
-Szafir and Mutlu identified a plethora of verbal and non-verbal behavioural cues used by teachers in an educational setting, with gaze being identified as one of them \cite{szafir2012pay}.
-However these cues could not be recorded by a computer so instead EEG signals measured from a headset was used to measure engagement.
+% Szafir and Mutlu identified a plethora of verbal and non-verbal behavioural cues used by teachers in an educational setting, with gaze being identified as one of them \cite{szafir2012pay}.
+% However these cues could not be recorded by a computer so instead EEG signals measured from a headset was used to measure engagement.
 
 \subsection{Text classification}
 
@@ -367,30 +372,28 @@ Nigam et al shows how a the use of Expectation-Maximization and naive Bayes clas
 % Add sentence explaining method more
 A classifier is trained on labelled data which is then used to label unlabelled data.
 This method of combining supervised and unsupervised learning was found to work better than solely using labelled data.
-This is especially important with text classification as unlabelled data is much more plentiful than unlabelled data.
-
+This is especially important with text classification as unlabelled data is much more plentiful than labelled data.
 
 In this paper a document is defined as an ``ordered list of word events'', however their approach could be applied to other forms of data.
 We can define a users mouse data as an ordered lists of mouse events.
-Therefore a similar approach could be used in this project where the frequencies of events are recorded and used in combination with a 
+Therefore a similar approach could be used in this project where the frequencies of mouse events are recorded and used in combination with a classification algorithm.
 
 \subsubsection{N-Grams}
 
-The above method would be considered an uni-gram model of natural language processing.
-N-grams where n are the number of words.
+The method by Nigam et al would be considered an unigram model of natural language processing.
+An n-grams is a series of n words, with unigrams being one word, and bigrams being two word pairs \cite{keselj2009speech}.
 
-Different n-grams can be combined together to better perform a task.
+Different n-grams can be combined together to better understand the complexities of a text document.
 A mixture of unigrams, bigrams, and trigrams can extract different levels of text complexity and perform well with document classification \cite{aggarwal2012survey}.
+% \subsection{Dealing with unbalanced classes}
 
-\subsection{Dealing with unbalanced classes}
+% The purpose of crowdsourcing responses is to increase the number of participants in the study in an attempt to get a wider spread of data without bias.
+% As a result there are many more crowdsourced responses than lab study responses, as shown in Table .
 
-The purpose of crowdsourcing responses is to increase the number of participants in the study in an attempt to get a wider spread of data without bias.
-As a result there are many more crowdsourced responses than lab study responses, as shown in Table .
+% \url{https://towardsdatascience.com/methods-for-dealing-with-imbalanced-data-5b761be45a18}
 
-\url{https://towardsdatascience.com/methods-for-dealing-with-imbalanced-data-5b761be45a18}
-
-The sparseness of samples definitely paying attention leades to massive imbalenced in the number of samples between tasks.
-\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.4487&rep=rep1&type=pdf}
+% The sparseness of samples definitely paying attention leades to massive imbalenced in the number of samples between tasks.
+% \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.4487&rep=rep1&type=pdf}
 
 % Ladder networks are one method of semi-supervised learning.
 % https://rinuboney.github.io/2016/01/19/ladder-network.html
@@ -401,10 +404,11 @@ The sparseness of samples definitely paying attention leades to massive imbalenc
 
 The component's can be separated into individual sections, however there is still an order that they must be completed in.
 
-Now that the background for the project has been researched the more technical programming side of the project can begin.
+% MEG says to delete.
+%Now that the background for the project has been researched the more technical programming side of the project can begin.
 The data must first be extracted from the JSON format that its in to a more tabular format.
-After this the main bulk of the project can begin.
-This will consist of researching different algorithms and methods and attempting to implement them on the project data.
+The project will then consist of researching different algorithms and methods and attempting to implement them on the project data.
+
 Different methods of data extraction or feature engineering may be explored.
 Any results from this will then be analysed, visualised, and evaluated.
 These stages can be repeated multiple times as different methods are explored.
@@ -449,9 +453,9 @@ The first component of the project has been completed, and data has been extract
 Table \ref{table:data} shows us the features of the data.
 The lab study data and the crowdsourced data have the same schema, except lab results have a different ID field.
 
-The target field shows us which element in Fig \ref{fig:interface} a participant is interacting with, and event\_type details the type of interaction.
+The target field shows us which element in Fig \ref{fig:interface} a participant is interacting with and event\_type details the type of interaction.
 Time field shows the time taken in seconds since the first recorded mouse event.
-We can hypothesise that participants with a shorter time may have paid less attention than a participant who took much longer, thinking about their actions more.
+We can hypothesise that participants with a shorter time paid less attention than a participant who took much longer, thinking about their actions more.
 The x and y fields show the location of the mouse and step shows which stage of the task, from 1 to 5, a participant was in.
 
 
@@ -471,6 +475,7 @@ This section will specify the timeframe and the order in which the modules will 
 % For that reason I will be following the Scrum software lifecycle methodology.
 % TODO: reference 
 
+% Give a breif explaination of Agile.
 
 I will be using an agile methodology as it will allow flexibility of my project and the iterative nature should help me to constantly improve it \cite{beck2001manifesto}. 
 Scrum will be used as the short scrum periods will encourage bursts of development over the long summer period \cite{schwaber1997scrum}.
@@ -490,10 +495,12 @@ The Gantt Chart was created with the free software Gantt Project \cite{GanttProj
 A sprint will begin with a supervisor meeting where the previous work, and the plan for the next sprint will be discussed.
 There will be three sprints in total, with each sprint being a fortnight long.
 Each sprint will consist of researching a method such as a certain machine learning algorithm or different feature engineering techniques I may be able to use in my project.
-Then I will spend time modifying and implementing the method so that it may be used in the context of this project.
+
+Time will be spent modifying and implementing the method so that it may be used in the context of this project.
 The latter half of a sprint will consist of analysing and visualising the results of the method and writing these down roughly in the dissertation document.
-The effectiveness of the method will be evaluated, and I will attempt to fix any failures or shortcomings of the method.
-For example I may come across a particular variant of an artificial neural network in my research that I believe may be useful in the project.
+
+The effectiveness of the method will be evaluated and I will attempt to fix any failures or shortcomings of the method.
+For example I may research variants of artificial neural networks that show promising potential.
 The sprint plan would allow me to spend time implementing this network with my data and experiment with the parameters.  
 
 
@@ -507,10 +514,14 @@ The sprint plan would allow me to spend time implementing this network with my d
 \subsection{Risk analysis}
 % Copy risk analysis from last year.
 When creating a project there is always potential risks that the project might encounter and hinder its chances of success. 
-In order to prepare and to hopefully avoid these risks I will now list and analyse the risks of my project. 
-By analysing each risk individually I will be prepared in case I come across any of the potential risks and I will have developed a plan of action of what to do and how to manage myself in case of encountering them. 
+In order to prepare and to hopefully avoid these risks I will now list and analyse the risks of my project.
+
 Each risk is explained with the likelihood of the risk occurring and impact to the project the risk would have.
 A mitigation plan is created in an attempt to prevent the risk from happening, and a contingency plan is made so I can be prepared if the risk does occur.
+The likelihood of a risk occurring is measured from low to high.
+Low likelihood risks are unlikely to happen and high is very probable to happen. 
+Impact is measured on the same scale.
+A low impact risk will have little influence, where as a high project would massively effect it.
 Below I have listed and analysed the risks and have ordered them from potentially the most dangerous to least dangerous. 
 
 % TODO: Flesh out risks 
@@ -539,7 +550,7 @@ Below I have listed and analysed the risks and have ordered them from potentiall
         Medium likelihood, High Risk
         \item[Explaination]
         Coronavirus is very contagious. 
-        in spite of protective measures it is still likely that the I may become infected with the virus. 
+        In spite of protective measures it is still likely that I may become infected with the virus. 
         \item[Mitigation:]
         Stay safe indoors during the quarantine to keep everyone safe and mitigate any risks of me becoming infected.
         \item[Contingency:]
@@ -548,7 +559,7 @@ Below I have listed and analysed the risks and have ordered them from potentiall
 
     \item 
     \begin{description}
-        \item[Risk:]    
+        \item[Risk:]    % TODO: Emphasise I mean in the data and not at all?
         \emph{No correlation between attention and mouse tracking data can be found.}    
         \item[Likelihood and Impact:]
         Medium likelihood, High impact
@@ -619,12 +630,14 @@ Below I have listed and analysed the risks and have ordered them from potentiall
 %This report has given an introduction to the work that will be conducted over the next few months.
 In this report the motivation of why there is a need to detect user engagement in increasingly popular crowdsourcing services.
 %The backgroud of the project is given  mouse tracking data may be used to do so.
-The hard problem of detecting user engagement in crowdsourced responses has been explained and the need for a new solution is outlined.
-Existing methods of eye, and mouse tracking were researched.
+The problem of detecting user engagement in crowdsourced responses has been explained and the need for a new solution is outlined.
+
+The existing methods of eye, and mouse tracking have been researched.
 It was found that mouse data has many of the benefits of eye tracking data with none of the drawbacks, making it ideal for use in user engagement.
+% TODO: Add something about n-grams
+
 A detailed plan of the project was shown, with a detailed breakdown of the timeline, and components of the project shown with a Gantt chart.
 Risk analysis of the project was completed so that no unexpected incident will disrupt the project.
-
 
 \printbibliography
 

@@ -642,8 +642,8 @@
       \strng{authorbibnamehash}{a5c1d39e1f7d83316d4e35265ebea4ff}
       \strng{authornamehash}{a5c1d39e1f7d83316d4e35265ebea4ff}
       \strng{authorfullhash}{a5c1d39e1f7d83316d4e35265ebea4ff}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{On the Horizon}
@@ -933,62 +933,6 @@
       \field{pages}{1341\bibrangedash 1350}
       \range{pages}{10}
     \endentry
-    \entry{langley1997machine}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{hash=cb234967d439eca7bd966830f708c7a2}{%
-           family={Langley},
-           familyi={L\bibinitperiod},
-           given={Pat},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{cb234967d439eca7bd966830f708c7a2}
-      \strng{fullhash}{cb234967d439eca7bd966830f708c7a2}
-      \strng{bibnamehash}{cb234967d439eca7bd966830f708c7a2}
-      \strng{authorbibnamehash}{cb234967d439eca7bd966830f708c7a2}
-      \strng{authornamehash}{cb234967d439eca7bd966830f708c7a2}
-      \strng{authorfullhash}{cb234967d439eca7bd966830f708c7a2}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Annual Conference on Artificial Intelligence}
-      \field{title}{Machine learning for adaptive user interfaces}
-      \field{year}{1997}
-      \field{pages}{53\bibrangedash 62}
-      \range{pages}{10}
-    \endentry
-    \entry{szafir2012pay}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=4f8f0638e180ee3a1e7abff8850b0ab8}{%
-           family={Szafir},
-           familyi={S\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=bd9710ee000b3d54328965e97bed40c1}{%
-           family={Mutlu},
-           familyi={M\bibinitperiod},
-           given={Bilge},
-           giveni={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{14563f4ea4553a94a819a63eb0a4097d}
-      \strng{fullhash}{14563f4ea4553a94a819a63eb0a4097d}
-      \strng{bibnamehash}{14563f4ea4553a94a819a63eb0a4097d}
-      \strng{authorbibnamehash}{14563f4ea4553a94a819a63eb0a4097d}
-      \strng{authornamehash}{14563f4ea4553a94a819a63eb0a4097d}
-      \strng{authorfullhash}{14563f4ea4553a94a819a63eb0a4097d}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the SIGCHI conference on human factors in computing systems}
-      \field{title}{Pay attention! Designing adaptive agents that monitor and improve user engagement}
-      \field{year}{2012}
-      \field{pages}{11\bibrangedash 20}
-      \range{pages}{10}
-    \endentry
     \entry{aggarwal2012survey}{incollection}{}
       \name{author}{2}{}{%
         {{hash=86d11a07b1bfeac58dc68f7a419b3039}{%
@@ -1064,6 +1008,30 @@
       \field{year}{2000}
       \field{pages}{103\bibrangedash 134}
       \range{pages}{32}
+    \endentry
+    \entry{keselj2009speech}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=de1f4d44d1639d2e88b7f01ac9ed530e}{%
+           family={Daniel\bibnamedelima Jurafsky},
+           familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={James\bibnamedelima Martin},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{de1f4d44d1639d2e88b7f01ac9ed530e}
+      \strng{fullhash}{de1f4d44d1639d2e88b7f01ac9ed530e}
+      \strng{bibnamehash}{de1f4d44d1639d2e88b7f01ac9ed530e}
+      \strng{authorbibnamehash}{de1f4d44d1639d2e88b7f01ac9ed530e}
+      \strng{authornamehash}{de1f4d44d1639d2e88b7f01ac9ed530e}
+      \strng{authorfullhash}{de1f4d44d1639d2e88b7f01ac9ed530e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Speech and Language Processing}
+      \field{year}{2009}
     \endentry
     \entry{beck2001manifesto}{article}{}
       \true{moreauthor}
