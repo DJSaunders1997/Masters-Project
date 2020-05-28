@@ -193,7 +193,7 @@ The project will propose methods of identifying and quantifying user engagement 
 \begin{figure}[ht]
     \centering
     \centerline{
-        \frame{\includegraphics[scale=0.5]{interface.png}}
+        \frame{\includegraphics[scale=0.45]{interface.png}}
     }
     \caption{The user interface for the study \cite{tom2018risk}.}
     \label{fig:interface}
@@ -303,7 +303,7 @@ Thus tracking a user’s gaze can provide insight into which part of a system th
 \begin{figure}[ht!]
     \centering
     \centerline{
-        \includegraphics[scale=0.8]{EyeHeatmap.PNG}
+        \includegraphics[scale=0.85]{EyeHeatmap.PNG}
     }
     \caption{Heatmap showing popular locations of users eyes on a webpage \cite{buscher2009you}.}
     \label{fig:eyetrack}
@@ -318,6 +318,9 @@ Tracking users eye movements helped game designers understand how users can reco
 Eivazi and Bednarik extracted features from a users eye tracking data to determine their cognitive state in a problem solving exercise \cite{eivazi2011predicting}.
 Features such as ``mean fixation duration'' and ``total path distances'' were engineered, and users were split into classes based on their performance. 
 Given a user feature set and their performance class it was able to classify their cognitive state during the task with a 87.5\% accuracy with a support vector machine.
+
+Szafir and Mutlu identified a plethora of verbal and non-verbal behavioural cues used by teachers in an educational setting, with gaze being identified as one of them \cite{szafir2012pay}.
+The behavioural cues could not be recorded directly by a computer, instead EEG signals measured from a headset were used to measure engagement.
 
 Eye tracking is not however a perfect solution and its limitations have been well documented. 
 Track subjects eyes with a good degree of accuracy requires the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
@@ -359,8 +362,7 @@ Hauger et al found that distinct cursor behaviour exists depending on the task, 
 % Langly developed a method in which machine learning was used to create a modified user interface for users that they interact with the best \cite{langley1997machine}.
 
 
-% Szafir and Mutlu identified a plethora of verbal and non-verbal behavioural cues used by teachers in an educational setting, with gaze being identified as one of them \cite{szafir2012pay}.
-% However these cues could not be recorded by a computer so instead EEG signals measured from a headset was used to measure engagement.
+
 
 \subsection{Text classification}
 
@@ -385,20 +387,24 @@ An n-grams is a series of n words, with unigrams being one word, and bigrams bei
 
 Different n-grams can be combined together to better understand the complexities of a text document.
 A mixture of unigrams, bigrams, and trigrams can extract different levels of text complexity and perform well with document classification \cite{aggarwal2012survey}.
+
+
 % \subsection{Dealing with unbalanced classes}
 
 % The purpose of crowdsourcing responses is to increase the number of participants in the study in an attempt to get a wider spread of data without bias.
-% As a result there are many more crowdsourced responses than lab study responses, as shown in Table .
+% As a result there are many more crowdsourced responses than lab study responses, as shown in Table \ref{table:studies}.
+% The sparseness of samples definitely paying attention leads to massive imbalances in the number of samples between tasks.
+% \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.4487&rep=rep1&type=pdf}
+
 
 % \url{https://towardsdatascience.com/methods-for-dealing-with-imbalanced-data-5b761be45a18}
 
-% The sparseness of samples definitely paying attention leades to massive imbalenced in the number of samples between tasks.
-% \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.4487&rep=rep1&type=pdf}
 
-% Ladder networks are one method of semi-supervised learning.
-% https://rinuboney.github.io/2016/01/19/ladder-network.html
+
 
 \section{Description of the project}
+
+The high level aims of the project have been given, this section will more concretely detail what work must be done. 
 
 \subsection{Components of project}
 
@@ -424,6 +430,16 @@ Features such as total time, time for each step, total mouse distance, mouse mov
 Each of these may be systematically investigated, modified, and evaluated until useful data is engineered.
 If there is too much variance between users I can attempt to split them into groups based on their task performance.
 A certain combination of features may revel attention levels in the badly performing group but the approach may not be successful with the well performing group. 
+
+The purpose of crowdsourcing responses is to increase the number of participants in the study in an attempt to get a wider spread of data without bias.
+As a result there are many more crowdsourced responses than lab study responses, as shown in Table \ref{table:studies}.
+Therefore methods of dealing with data with imbalanced classes are another component of work that must be completed. 
+If this is not addressed the the sparseness of data from users definitely engaged in the task may lead to erroneous results when classifying crowdsourced data \cite{kubat1997addressing}.
+The sampling methods of over and under sampling data can solve this problem.
+Oversampling is where new data are created from the sparse class and with undersampling data is removed from the abundant class \cite{drummond2003c4}.
+
+% Ladder networks are one method of semi-supervised learning.
+% https://rinuboney.github.io/2016/01/19/ladder-network.html
 
 %TODO: Look at the dissertation outline so I know what stuff needs to be included so I can mention it here.
 

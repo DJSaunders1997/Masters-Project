@@ -679,6 +679,35 @@
       \field{pages}{9\bibrangedash 16}
       \range{pages}{8}
     \endentry
+    \entry{szafir2012pay}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=4f8f0638e180ee3a1e7abff8850b0ab8}{%
+           family={Szafir},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bd9710ee000b3d54328965e97bed40c1}{%
+           family={Mutlu},
+           familyi={M\bibinitperiod},
+           given={Bilge},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{14563f4ea4553a94a819a63eb0a4097d}
+      \strng{fullhash}{14563f4ea4553a94a819a63eb0a4097d}
+      \strng{bibnamehash}{14563f4ea4553a94a819a63eb0a4097d}
+      \strng{authorbibnamehash}{14563f4ea4553a94a819a63eb0a4097d}
+      \strng{authornamehash}{14563f4ea4553a94a819a63eb0a4097d}
+      \strng{authorfullhash}{14563f4ea4553a94a819a63eb0a4097d}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the SIGCHI conference on human factors in computing systems}
+      \field{title}{Pay attention! Designing adaptive agents that monitor and improve user engagement}
+      \field{year}{2012}
+      \field{pages}{11\bibrangedash 20}
+      \range{pages}{10}
+    \endentry
     \entry{richardson2004eye}{article}{}
       \name{author}{2}{}{%
         {{hash=1ad10031f445772530fb3e1e896a47a0}{%
@@ -923,8 +952,8 @@
       \strng{authorbibnamehash}{3a22eafd5fdf7b62b7d14bd54c147caf}
       \strng{authornamehash}{3a22eafd5fdf7b62b7d14bd54c147caf}
       \strng{authorfullhash}{3a22eafd5fdf7b62b7d14bd54c147caf}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems}
@@ -1032,6 +1061,76 @@
       \field{labeltitlesource}{title}
       \field{title}{Speech and Language Processing}
       \field{year}{2009}
+    \endentry
+    \entry{kubat1997addressing}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=8f60abd2b08832c8184f7679d1884230}{%
+           family={Kubat},
+           familyi={K\bibinitperiod},
+           given={Miroslav},
+           giveni={M\bibinitperiod}}}%
+        {{hash=104f2eda5c4afa015b91946b8b3d2c13}{%
+           family={Matwin},
+           familyi={M\bibinitperiod},
+           given={Stan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{cdd0654f72f602059fcc3889f4c042af}
+      \strng{fullhash}{cdd0654f72f602059fcc3889f4c042af}
+      \strng{bibnamehash}{cdd0654f72f602059fcc3889f4c042af}
+      \strng{authorbibnamehash}{cdd0654f72f602059fcc3889f4c042af}
+      \strng{authornamehash}{cdd0654f72f602059fcc3889f4c042af}
+      \strng{authorfullhash}{cdd0654f72f602059fcc3889f4c042af}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Icml}
+      \field{title}{Addressing the curse of imbalanced training sets: one-sided selection}
+      \field{volume}{97}
+      \field{year}{1997}
+      \field{pages}{179\bibrangedash 186}
+      \range{pages}{8}
+    \endentry
+    \entry{drummond2003c4}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=cfe90807bb047011818affb278de6f61}{%
+           family={Drummond},
+           familyi={D\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=95a1ef8495735118ece888dcaea75c6f}{%
+           family={Holte},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{55d527ff97aebe8022a5ad0ef28da2d1}
+      \strng{fullhash}{55d527ff97aebe8022a5ad0ef28da2d1}
+      \strng{bibnamehash}{55d527ff97aebe8022a5ad0ef28da2d1}
+      \strng{authorbibnamehash}{55d527ff97aebe8022a5ad0ef28da2d1}
+      \strng{authornamehash}{55d527ff97aebe8022a5ad0ef28da2d1}
+      \strng{authorfullhash}{55d527ff97aebe8022a5ad0ef28da2d1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Workshop on learning from imbalanced datasets II}
+      \field{title}{C4. 5, class imbalance, and cost sensitivity: why under-sampling beats over-sampling}
+      \field{volume}{11}
+      \field{year}{2003}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
     \endentry
     \entry{beck2001manifesto}{article}{}
       \true{moreauthor}
@@ -1142,8 +1241,8 @@
       \strng{authorbibnamehash}{830d22e75187669aa8397bbad5d6bc05}
       \strng{authornamehash}{830d22e75187669aa8397bbad5d6bc05}
       \strng{authorfullhash}{830d22e75187669aa8397bbad5d6bc05}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{4}
