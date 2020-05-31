@@ -1,0 +1,64 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{tomovic2006n}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c4c9aec67c6075357e81adbfd8fda150}{%
+           family={Tomovi{ć}},
+           familyi={T\bibinitperiod},
+           given={Andrija},
+           giveni={A\bibinitperiod}}}%
+        {{hash=13a5a2827fcacbd217024357e3b91d40}{%
+           family={Jani{č}i{ć}},
+           familyi={J\bibinitperiod},
+           given={Predrag},
+           giveni={P\bibinitperiod}}}%
+        {{hash=09b82685746d43ab22255622e637af9d}{%
+           family={Ke{š}elj},
+           familyi={K\bibinitperiod},
+           given={Vlado},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{71aec0b93524d23f1d11b4a8209d1c1d}
+      \strng{fullhash}{71aec0b93524d23f1d11b4a8209d1c1d}
+      \strng{bibnamehash}{71aec0b93524d23f1d11b4a8209d1c1d}
+      \strng{authorbibnamehash}{71aec0b93524d23f1d11b4a8209d1c1d}
+      \strng{authornamehash}{71aec0b93524d23f1d11b4a8209d1c1d}
+      \strng{authorfullhash}{71aec0b93524d23f1d11b4a8209d1c1d}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer methods and programs in biomedicine}
+      \field{number}{2}
+      \field{title}{n-Gram-based classification and unsupervised hierarchical clustering of genome sequences}
+      \field{volume}{81}
+      \field{year}{2006}
+      \field{pages}{137\bibrangedash 153}
+      \range{pages}{17}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

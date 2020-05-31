@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+% change reference style to [1], remove stupid sorting, language changed so date in ddmmyyyy
+\usepackage[backend=biber, style=numeric, sorting=none, language=australian]{biblatex}
+\addbibresource{References.bib}
+
+\title{Dissertation}
+\author{David Saunders (910995)}
+\date{September 2020}
+
+\begin{document}
+\maketitle
+
+\begin{abstract} 
+    Write abstract here
+\end{abstract}
+
+\tableofcontents
+
+\section{Section 1}
+
+This paper has a nice scientific explanation of n-grams \cite{tomovic2006n}.
+Either cite this paper or more likely look at their reference for n-grams and cite that.
+
+
+
+
+\printbibliography
+
+\end{document}
