@@ -74,7 +74,9 @@ def list_JSON_dicts2string_np(list_json_dicts):
         for item in events_items:
             mouse_events_array.append(item)
 
-        print('{} / {} completed'.format(i+1, length), list_json_dicts[i]['turkId'])
+        # Print update every 10,000 records
+        if (i % 10000 == 0):
+            print('{} / {} completed'.format(i+1, length), list_json_dicts[i]['turkId'])
 
     return mouse_events_array
 
@@ -83,11 +85,13 @@ def convert_json_to_csv(json_filename, csv_filename):
     '''
     Input json_filename must end in .json
     Input csv_filename must end in .csv
-    Function will output a csv representation of the JSON data
-    '''
-    start_time = time.time()
 
-    with open(filename) as json_file:
+    Function both saves a csv representation of the JSON data, 
+     and returns a pandas dataframe. 
+    '''
+    debug_start_time = time.time()
+
+    with open(json_filename) as json_file:
         mouse_events = json.load(json_file)
 
     mouse_events_list = list_JSON_dicts2string_np(mouse_events)
@@ -101,8 +105,10 @@ def convert_json_to_csv(json_filename, csv_filename):
                                                                          7 : "turkId"})
 
     mouse_events_dataframe.to_csv( csv_filename )
-    end_time = time.time()
-    print("Time taken: {} s".format(int(end_time-start_time)))	
+    debug_end_time = time.time()
+    print("Time taken: {} s".format(int(debug_end_time - debug_start_time)))	
+
+    return mouse_events_dataframe
 
 ################# Test ###################
 #convert_json_to_csv('mouse_events.json')
