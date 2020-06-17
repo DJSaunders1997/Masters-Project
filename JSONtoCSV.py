@@ -79,9 +79,11 @@ def list_JSON_dicts2string_np(list_json_dicts):
     return mouse_events_array
 
 
-def convert_json_to_csv(filename):
+def convert_json_to_csv(json_filename, csv_filename):
     '''
-    Filename must end in .json
+    Input json_filename must end in .json
+    Input csv_filename must end in .csv
+    Function will output a csv representation of the JSON data
     '''
     start_time = time.time()
 
@@ -98,9 +100,9 @@ def convert_json_to_csv(filename):
                                                                          6 : "step",
                                                                          7 : "turkId"})
 
-    mouse_events_dataframe.to_csv('All-Turk-Data.csv')
+    mouse_events_dataframe.to_csv( csv_filename )
     end_time = time.time()
     print("Time taken: {} s".format(int(end_time-start_time)))	
 
-################# Run ###################
-convert_json_to_csv('mouse_events.json')
+################# Test ###################
+#convert_json_to_csv('mouse_events.json')
