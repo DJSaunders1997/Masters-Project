@@ -112,6 +112,10 @@ def convert_json_to_csv(json_filename, csv_filename):
                                                                          6 : "step",
                                                                          7 : "turkId"})
 
+    # Ensure step is int not object type
+    # Pandas automatically selects the others to be the right datatype
+    mouse_events_dataframe = mouse_events_dataframe.astype({'step': 'int64'}) 
+
     mouse_events_dataframe.to_csv( csv_filename )
     debug_end_time = time.time()
     print("Time taken: {} s".format(int(debug_end_time - debug_start_time)))	
@@ -218,6 +222,10 @@ def lab_convert_json_to_csv(data_directory, csv_filename):
                                                                 6 : "step",
                                                                 7 : "turkId",
                                                                 8 : "file"})
+
+    # Ensure step is int not object type
+    # Pandas automatically selects the others to be the right datatype
+    dataframe = dataframe.astype({'step': 'int64'})
 
     dataframe.to_csv( csv_filename )
     debug_end_time = time.time()
