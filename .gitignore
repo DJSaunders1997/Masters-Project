@@ -3,3 +3,6 @@ Original-Data/
 VSCode-Workspace.code-workspace
 Lab-Data.csv
 Turk-Data.csv
+.idea/
+.vscode/
+__pycache__/
