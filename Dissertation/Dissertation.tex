@@ -6,7 +6,7 @@
 \usepackage[backend=biber, style=numeric, sorting=none, language=australian]{biblatex}
 \addbibresource{References.bib}
 
-\title{Dissertation}
+\title{Dissertation - Detecting User Engagement Using Mouse Tracking Data}
 \author{David Saunders (910995)}
 \date{September 2020}
 
@@ -19,23 +19,76 @@
 
 \tableofcontents
 
-\section{Section 1}
+% Toms layout
 
+% Motivation
+% Related Work
+% Implementation
+% Results
+% Conclusion
+
+\section{Motivation}
+
+% Why is it important
+% Why is it a hard problem/problems
+% Why other authors have failed
+% My contributions are - bullet list
+% My idea to fix it
+
+Detecting use engagement is an important science across multiple disciplines.
+
+It is a hard problem because, among other things I will touch on, it is hard to quantify exactly what user engagement is exactly.
+One author defined it as 'XYZ' [look at my previous work for references].
+
+However the previous authors have failed to detect and measure user engagement as X,Y,Z.
+
+\subsection{Contributions}
+% The contributions are 1,2,3 (everyone likes 3s)
+% Take aways of how it will help them.
+
+In this project my contributions to fix it are, -a system to classify users, a way of visualising their mouse paths, ways to directly and quantitatively compare different users, and a multistage semi-supervised based binary classification output to answer the question of 'are users engaged'.
+
+\section{Related Work}
+
+% Convince the reader you've done enough work and research in the area.
+% Convince them it was hard and the topic is hard so you need to help.
+% You've tried other peoples techniques.
+
+All related work about actual other attempts to detect user engagement from mouse tracking data.
+Other subsections will be like miniature literature reviews or something?
+
+\subsection{Semi Supervised Learning}
+This will be a key aspect of the project as we only have definitive labels for part of our data.
+This reflects the challenges of real world data, by some estimates only 2\% (made up number) of all data is structured and labelled, the rest is unstructured [find reference].
+
+% Do a literature review type of thing where I review semi supervised learning, talk about methods and how they can be applied to what I'm trying to do.
+
+\subsection{N-Grams}
 This paper has a nice scientific explanation of n-grams \cite{tomovic2006n}.
 Either cite this paper or more likely look at their reference for n-grams and cite that.
+
+\section{Implementation}
+
+% Talk about all different steps you took?
 
 \section{Data Pipeline}
 
 When planning and completing this project many decisions were made about the steps taken to convert the raw data to a finished product/classification.
+This section may act as an overview of the project, detailing the different sections of work, what they may contain, and the order in which they will be completed.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.55]{Images/Data-Pipeline.png}
-    \caption{Diagram of the Data pipeline of the project.}
+    \caption{Diagram of the Data Pipeline of the project.}
     \label{fig:test}
 \end{figure}
 
+% Everyone is a question
+
 \subsection{Data}
+
+% Duplicate or remove to deal with imbalances.
+% Probably less effective focusing on this rather than features.
 
 Here I will summarise what I have done to the data.
 As previously mentioned the data was gathered through a lab study and an online study.
@@ -57,6 +110,54 @@ Another method is to copy the points, altering them slightly, this was considere
 Each lab study data sample was copied 40 times to even out the classes.
 
 \subsection{Features}
+
+% Tom said something about this being where I should spend the most time of my project.
+% Spending time here will be more time effective than other sections.
+% This is what people wanna see?
+% Evaluating effectiveness of different features.
+
+% What do I so to the raw data.
+
+% What are good features? Big/Good question split into smaller sections.
+
+This part of the pipeline refers to what features I am going to extract from the data.
+Features of data can be defined as 'attributes or interesting things from the data'. [reference]
+These will consist of both raw and created features, but what do I mean by this?
+Raw features will consist of the the number of mouse events recorded, while a created feature could be comparing the trace of users cursor data when using the program.
+
+\subsection{Machine Learning}
+
+% What ML will I do and what algorithm.
+% MAybe clustering algorithm but on what data?
+
+Once we have insightful features from the data we can consider what machine learning algorithm would be most appropriate to use on the data.
+This will obviously be highly dependent on what form the final features are in.
+For example if the features are numerical values such as time taken to complete task and number of mouse events then an algorithm such as a Support Vector Machine would be a good choice.
+If the data is in the form of sequential data such as a list of all mouse events then something like a LSTM or RNN network would be best suited.
+If the features output was an image such as a trace of mouse position over time then a CNN could be a good choice as they're designed for image data.
+It is likely that text classification algorithms will be used when comparing the targets of mouse events.
+Comparing n-grams can be done with algorithms such as XYZ [reference].
+Other text classification algorithms such as cosine similarity or sentiment analysis could also be used.
+
+
+\subsection{Labels}
+
+% Who's paying attention
+
+Lastly an important section of the pipeline, as it reflects the final outputs of the system.
+Labels will refer to which users are classified as paying attention and which users are not.
+A key aspect of this project will be semi-supervised learning.
+That is we have some data points we can confirm were paying attention, and others where they're level of attention was questionable.
+Once we have an algorithm that can classify some users as paying attention or not we can rerun the algorithm with these preliminary outputs as new training data.
+If this is done recursively then we can end up with a system that can split all data points into the 2 classes, perhaps with a degree of confidence given as a percentage.
+
+\section{Results}
+
+% talk about results
+
+\subsection{Table or graph of results}
+
+\section{Conclusion}
 
 
 

@@ -100,14 +100,14 @@ INPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.toc
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.toc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
 OUTPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.toc
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
-OUTPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+OUTPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf
 INPUT C:\Users\DJSau\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.aux
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.run.xml
