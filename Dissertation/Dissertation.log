@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  31 MAY 2020 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  19 JUL 2020 21:56
 entering extended mode
-**c:/Users/jacqu/Masters-Project/Dissertation/Dissertation.tex
-(c:/Users/jacqu/Masters-Project/Dissertation/Dissertation.tex
+**c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
+(c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -45,11 +45,11 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
  ("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/infwarerr\infwarerr.sty
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty"
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ) ("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-) (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/ltxcmds\ltxcmds.sty
+) ("C:\Program Files\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -58,14 +58,14 @@ Package pdftexcmds Info: \pdfdraftmode found.
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count175
-) (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/kvoptions\kvoptions.sty
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
- (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/kvsetkeys\kvsetkeys.sty
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.sty
+)) ("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count176
- (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.def
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -280,7 +280,7 @@ File: biblatex.cfg
 File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count368
 \l__pdf_internal_box=\box45
-) (c:/Users\jacqu\Masters-Project\Dissertation\Dissertation.aux)
+) (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.aux)
 \openout1 = `Dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -312,9 +312,9 @@ LaTeX Font Info:    ... okay on input line 13.
 \everyMPtoPDFconversion=\toks19
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/latex/grfext\grfext.sty
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/grfext\grfext.sty"
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
- (C:\Users\jacqu\AppData\Roaming\MiKTeX\2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty"
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -343,7 +343,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Dissertation.bbl' found.
- (c:/Users\jacqu\Masters-Project\Dissertation\Dissertation.bbl)
+ (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.bbl)
 Package biblatex Info: Reference section=0 on input line 13.
 Package biblatex Info: Reference segment=0 on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -352,29 +352,44 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 14.
- (c:/Users\jacqu\Masters-Project\Dissertation\Dissertation.toc)
+ (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+)
 \tf@toc=\write4
 \openout4 = `Dissertation.toc'.
 
- [1
+<Images/Data-Pipeline.png, id=1, 734.745pt x 182.6825pt>
+File: Images/Data-Pipeline.png Graphic file (type png)
+<use Images/Data-Pipeline.png>
+Package pdftex.def Info: Images/Data-Pipeline.png  used on input line 33.
+(pdftex.def)             Requested size: 404.111pt x 100.47568pt.
 
-{C:/Users/jacqu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (c:/Users\jacqu\Masters-Project\Dissertation\Dissertation.aux)
+Overfull \hbox (59.111pt too wide) in paragraph at lines 33--34
+ [][] 
+ []
+
+[1
+
+{C:/Users/DJSau/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <c:/Users/DJSau/Masters-Project/Dissertation/Images/Data-Pipeline.png>] [2] (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.aux)
 Package logreq Info: Writing requests to 'Dissertation.run.xml'.
 \openout1 = `Dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8654 strings out of 480934
- 160945 string characters out of 2909682
- 782283 words of memory out of 3000000
- 24458 multiletter control sequences out of 15000+200000
- 537239 words of font info for 40 fonts, out of 3000000 for 9000
+ 8666 strings out of 480934
+ 160857 string characters out of 2909682
+ 784291 words of memory out of 3000000
+ 24467 multiletter control sequences out of 15000+200000
+ 537546 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,45p,876b,1162s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,6n,45p,876b,1164s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on c:/Users\jacqu\Masters-Project\Dissertation\Dissertation.pdf (1 page, 94701 bytes).
+Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (2 pages, 113855 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
+ 44 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
