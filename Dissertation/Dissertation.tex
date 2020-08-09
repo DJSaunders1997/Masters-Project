@@ -67,6 +67,34 @@ This reflects the challenges of real world data, by some estimates only 2\% (mad
 This paper has a nice scientific explanation of n-grams \cite{tomovic2006n}.
 Either cite this paper or more likely look at their reference for n-grams and cite that.
 
+\subsection{Hidden Markov Models}
+
+% explanation from scratch: https://towardsdatascience.com/hidden-markov-model-implemented-from-scratch-72865bda430e
+
+Paper Tom send me about HMM for text classification that I might be able to use \cite{collins2016tagging}.
+
+Paper claims to use HMM for spam detection, I think they actually just use it to detect misspellings of words or something which is used by spam to hide from filters \cite{gordillo2007hmm}.
+Probably could find a better spam detecting HMM, I just like how this almost does something different from the title, which my diss will end up doing.
+
+This paper was recommended by someone on stack overflow as an old influential paper in the field with tens of thousands of references \cite{rabiner1989tutorial}.
+Called a tutorial on HMM and its so old so original source. 
+Would definitely be good to reference if I include any of the mathematics behind HMMs. 
+
+Someone's dissertation on the topic of generating synthetic data with HMMs.
+This can be a good way to create synthetic data \cite{ferrando2018generating}.
+
+Maybe this would belong under implementation?
+%HMM-Example-Diagram.png
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.55]{HMM-Example-Diagram.png}
+    \caption{Diagram of a Markov Chain model representing a users mouse position}
+    \label{fig:Markov}
+\end{figure}
+
+Figure \ref{fig:Markov} shows the states of a markov model of my system with states A-E representing sliders 1-5 and state F representing an html element.
+In the top right we can see a possible transition matrix of our system.
+
 \section{Implementation}
 
 % Talk about all different steps you took?
@@ -94,6 +122,10 @@ Here I will summarise what I have done to the data.
 As previously mentioned the data was gathered through a lab study and an online study.
 The purpose of the online study was to gather a larger amount of data that was possible to do so in person.
 The aim of this was to make any results more statically significant.
+Data was recorded in a big JSON dump with lots of irrelevant and repealed data relating to the users background and not their mouse movements.
+Pythons JSON couldn't directly convert the data as mouse events were stored as a nested JSON dictionary and there were errors in the way it was written making it invalid JSON.
+Took ages and should explain more indepth, but then finally got data into a tabular data format of a csv which I am more comfortable working with.
+Ended up with over 100,000 lines? Might have been more. 
 
 This leads to the problem of imbalanced data samples.
 There were approximately 11 lab data and 400 online data, meaning that there were 40x as many data samples from one class compared to the other.

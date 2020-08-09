@@ -58,6 +58,111 @@
       \field{pages}{137\bibrangedash 153}
       \range{pages}{17}
     \endentry
+    \entry{collins2016tagging}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b8bbd832353d6b8ffa73123369d39d55}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8bbd832353d6b8ffa73123369d39d55}
+      \strng{fullhash}{b8bbd832353d6b8ffa73123369d39d55}
+      \strng{bibnamehash}{b8bbd832353d6b8ffa73123369d39d55}
+      \strng{authorbibnamehash}{b8bbd832353d6b8ffa73123369d39d55}
+      \strng{authornamehash}{b8bbd832353d6b8ffa73123369d39d55}
+      \strng{authorfullhash}{b8bbd832353d6b8ffa73123369d39d55}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tagging with Hidden Markov Models}
+      \field{year}{2016}
+    \endentry
+    \entry{gordillo2007hmm}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2f977ca7853e2130a42c38bcdef1ff29}{%
+           family={Gordillo},
+           familyi={G\bibinitperiod},
+           given={Jos{é}},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ef93851bbcca3f7060136e2ae073becb}{%
+           family={Conde},
+           familyi={C\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0111a06758d42f33f75cfdd0d599769f}
+      \strng{fullhash}{0111a06758d42f33f75cfdd0d599769f}
+      \strng{bibnamehash}{0111a06758d42f33f75cfdd0d599769f}
+      \strng{authorbibnamehash}{0111a06758d42f33f75cfdd0d599769f}
+      \strng{authornamehash}{0111a06758d42f33f75cfdd0d599769f}
+      \strng{authorfullhash}{0111a06758d42f33f75cfdd0d599769f}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Expert systems with applications}
+      \field{number}{3}
+      \field{title}{An HMM for detecting spam mail}
+      \field{volume}{33}
+      \field{year}{2007}
+      \field{pages}{667\bibrangedash 682}
+      \range{pages}{16}
+    \endentry
+    \entry{rabiner1989tutorial}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fc5e10874f928d24803009f43a119ad9}{%
+           family={Rabiner},
+           familyi={R\bibinitperiod},
+           given={Lawrence\bibnamedelima R},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ieee}%
+      }
+      \strng{namehash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{fullhash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{bibnamehash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{authorbibnamehash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{authornamehash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{authorfullhash}{fc5e10874f928d24803009f43a119ad9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{2}
+      \field{title}{A tutorial on hidden Markov models and selected applications in speech recognition}
+      \field{volume}{77}
+      \field{year}{1989}
+      \field{pages}{257\bibrangedash 286}
+      \range{pages}{30}
+    \endentry
+    \entry{ferrando2018generating}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7004f49232c176b36196321705001e06}{%
+           family={Ferrando\bibnamedelima Huertas},
+           familyi={F\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Jaime},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7004f49232c176b36196321705001e06}
+      \strng{fullhash}{7004f49232c176b36196321705001e06}
+      \strng{bibnamehash}{7004f49232c176b36196321705001e06}
+      \strng{authorbibnamehash}{7004f49232c176b36196321705001e06}
+      \strng{authornamehash}{7004f49232c176b36196321705001e06}
+      \strng{authorfullhash}{7004f49232c176b36196321705001e06}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Generating synthetic data through Hidden Markov Models}
+      \field{year}{2018}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
