@@ -37,6 +37,9 @@
 
 Detecting use engagement is an important science across multiple disciplines.
 
+Find a study that says during any task / any crowdsourced task X\% of people are not paying attention.
+This could jeopardise the results from any online if we cannot be sure users are actually paying attention to the task they are being paid to complete. 
+
 It is a hard problem because, among other things I will touch on, it is hard to quantify exactly what user engagement is exactly.
 One author defined it as 'XYZ' [look at my previous work for references].
 
@@ -61,6 +64,14 @@ Other subsections will be like miniature literature reviews or something?
 This will be a key aspect of the project as we only have definitive labels for part of our data.
 This reflects the challenges of real world data, by some estimates only 2\% (made up number) of all data is structured and labelled, the rest is unstructured [find reference].
 
+In a sense the data here is labelled.
+All day belongs to 2 classes, online turk user, or in person lab study user.
+However on the other hand the data is not labelled for the task I would like to explore.
+The goal of this project is to identity which users were paying attention.
+We have assumed that we can infer that lab study users will be paying attention, so we can say that those samples are labelled.
+However the rest of the samples we have which are all of the online data are unlabelled.
+Therefore this is a kind of semi supervised learning problem where we only have a small percentage of our samples labelled, and only confident labels for one class.
+(See if a paper on this exists, semi supervised binary classification with only labels for one class.)
 % Do a literature review type of thing where I review semi supervised learning, talk about methods and how they can be applied to what I'm trying to do.
 
 \subsection{N-Grams}
@@ -98,6 +109,17 @@ In the top right we can see a possible transition matrix of our system.
 \section{Implementation}
 
 % Talk about all different steps you took?
+
+\section{Methodology}
+
+%(1/2 page to 1 page)
+%(maybe in methodology)
+ The assumption of this project is that labs are paying attention and turks are not. Therefore if we get any outliers from the turk data, but that are similar to the lab data, then we will say that that online turk user was paying more attention than his peers, and that they were paying attention.
+
+This study (ref) says that only 10\% of all people / turk users pay attention during a task.
+We will look at the 10\% (30ish) of the turk data that looks like it is lab data and day that they were paying attention.
+This is just the assumption we have made for the project, 
+unfortunately the dataset isn't extensive enough for us to fully test this hypothesis.
 
 \section{Data Pipeline}
 
@@ -182,6 +204,8 @@ A key aspect of this project will be semi-supervised learning.
 That is we have some data points we can confirm were paying attention, and others where they're level of attention was questionable.
 Once we have an algorithm that can classify some users as paying attention or not we can rerun the algorithm with these preliminary outputs as new training data.
 If this is done recursively then we can end up with a system that can split all data points into the 2 classes, perhaps with a degree of confidence given as a percentage.
+
+
 
 \section{Results}
 

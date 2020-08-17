@@ -10,22 +10,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}N-Grams}{2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Hidden Markov Models}{2}%
+\contentsline {subsection}{\numberline {2.3}Hidden Markov Models}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Implementation}{3}%
+\contentsline {section}{\numberline {3}Implementation}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Data Pipeline}{3}%
+\contentsline {section}{\numberline {4}Methodology}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Data}{3}%
+\contentsline {section}{\numberline {5}Data Pipeline}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Features}{4}%
+\contentsline {subsection}{\numberline {5.1}Data}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Machine Learning}{5}%
+\contentsline {subsection}{\numberline {5.2}Features}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Labels}{5}%
+\contentsline {subsection}{\numberline {5.3}Machine Learning}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Results}{5}%
+\contentsline {subsection}{\numberline {5.4}Labels}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Table or graph of results}{5}%
+\contentsline {section}{\numberline {6}Results}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{5}%
+\contentsline {subsection}{\numberline {6.1}Table or graph of results}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Conclusion}{6}%
