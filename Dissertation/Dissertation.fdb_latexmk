@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber Dissertation"] 1597675208 "Dissertation.bcf" "Dissertation.bbl" "Dissertation" 1597675458
-  "Dissertation.bcf" 1597675419 100974 b0b90c47c9a97669e3f3274262ec20ef "pdflatex"
+["biber Dissertation"] 1597702813 "Dissertation.bcf" "Dissertation.bbl" "Dissertation" 1597703927
+  "Dissertation.bcf" 1597703916 100974 b0b90c47c9a97669e3f3274262ec20ef "pdflatex"
   "References.bib" 1596960164 1210 37d4c6c2cd67732688ad0ba3d0d45779 ""
   (generated)
   "Dissertation.bbl"
   "Dissertation.blg"
-["pdflatex"] 1597675416 "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex" "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.pdf" "Dissertation" 1597675458
+["pdflatex"] 1597703913 "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex" "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.pdf" "Dissertation" 1597703927
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx9.tfm" 1136768653 1328 5442e22a7072966dbaf88ca900acf3f0 ""
@@ -70,21 +70,22 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/DJSau/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1583833084 9894154 4c3c2232b28fb803134aa3233bae02d4 ""
   "C:/Users/DJSau/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1583831260 1652931 78da75e4040b383dca809cf0ff12bb80 ""
-  "Dissertation.aux" 1597675419 5781 3b9e2063a04e0af461a69198ad17473e "pdflatex"
-  "Dissertation.bbl" 1597675211 6622 0a6aa1b70d213066af049953bee18145 "biber Dissertation"
-  "Dissertation.run.xml" 1597675419 2426 25f04488cdb7d48e2420b681aabb4621 "pdflatex"
-  "Dissertation.tex" 1597675457 19587 1a01645d267ebbee77f7a4c82cf60086 ""
-  "Dissertation.toc" 1597675419 2700 723753a386220c0d1f7ba8cac563d89e "pdflatex"
+  "Dissertation.aux" 1597703915 6194 c43821a1a4ad85bc6ed09a964bc7f040 "pdflatex"
+  "Dissertation.bbl" 1597702818 6622 0a6aa1b70d213066af049953bee18145 "biber Dissertation"
+  "Dissertation.run.xml" 1597703916 2426 25f04488cdb7d48e2420b681aabb4621 "pdflatex"
+  "Dissertation.tex" 1597703927 22247 eb5e1117682d8e378aa16c4c8114eb73 ""
+  "Dissertation.toc" 1597703916 2809 5ea0d87986aab4f85cececa133f1974a "pdflatex"
   "HMM-Example-Diagram.png" 1596960411 125249 d4be71a491122798fdbf827acc39f328 ""
   "Images/Data-Pipeline.png" 1595183337 10872 a6ae56b994f382b6232865de5ed4218b ""
-  "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.aux" 1597675419 5781 3b9e2063a04e0af461a69198ad17473e ""
-  "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex" 1597675457 19587 1a01645d267ebbee77f7a4c82cf60086 ""
+  "Lengths-Histogram.png" 1597702640 25217 a028255a558008085dbd315989f82cc6 ""
+  "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.aux" 1597703915 6194 c43821a1a4ad85bc6ed09a964bc7f040 ""
+  "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex" 1597703927 22247 eb5e1117682d8e378aa16c4c8114eb73 ""
   (generated)
   "Dissertation.run.xml"
-  "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.pdf"
   "Dissertation.toc"
-  "Dissertation.log"
+  "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.pdf"
   "Dissertation.aux"
+  "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.log"
+  "Dissertation.log"
   "Dissertation.pdf"
   "Dissertation.bcf"
-  "c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.log"

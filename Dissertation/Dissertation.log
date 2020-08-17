@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  17 AUG 2020 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  17 AUG 2020 23:38
 entering extended mode
 **c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
 (c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
@@ -405,23 +405,28 @@ Overfull \hbox (3.68579pt too wide) in paragraph at lines 291--293
 \OT1/cmr/m/n/10 hmm-be-used-as-a-binary-classifier). Say theyre used to gen-er-ate sam-ples, maybe
  []
 
-[8] [9] (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.aux)
+<Lengths-Histogram.png, id=39, 528.97626pt x 353.32pt>
+File: Lengths-Histogram.png Graphic file (type png)
+<use Lengths-Histogram.png>
+Package pdftex.def Info: Lengths-Histogram.png  used on input line 311.
+(pdftex.def)             Requested size: 264.48747pt x 176.65956pt.
+[8] [9 <c:/Users/DJSau/Masters-Project/Dissertation/Lengths-Histogram.png>] [10] (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.aux)
 Package logreq Info: Writing requests to 'Dissertation.run.xml'.
 \openout1 = `Dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8683 strings out of 480934
- 161461 string characters out of 2909682
- 786621 words of memory out of 3000000
- 24483 multiletter control sequences out of 15000+200000
+ 8690 strings out of 480934
+ 161621 string characters out of 2909682
+ 786629 words of memory out of 3000000
+ 24489 multiletter control sequences out of 15000+200000
  537546 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,45p,876b,1162s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (9 pages, 265127 bytes).
+Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (10 pages, 280343 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

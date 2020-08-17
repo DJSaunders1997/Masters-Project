@@ -303,12 +303,48 @@ This means they can be used to create new data.
 The above methods of SVM, KNN, and Naive Bayes failed due to the imbalances of classes.
 Now the trained HMMs could be used to generate new data points, to reduce the imbalances, and make these methods effective.
 
-\section{Results}
+The HMM can generate a probable sequence of n observed states, however to generate new samples we must decide what length n must be.
 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{Lengths-Histogram.png}
+    \caption{Histogram of length of mouse events for turker and lab data.}
+    \label{fig:normaldis}
+\end{figure}
+
+Figure \ref{fig:normaldis} shows a the frequency of different mouse events lengths.
+In red we can see a positively skewed normal distribution which matches the distribution fairly well.
+When determining n for the new sequence data, we will sample from a gaussian distribution with a mean of 1688 and a standard deviation of 1232.
+This should generate a realistic distribution of lengths, and when combined with the trained HMM model, a realistic sequence of data.
+
+% TODO: model with the actual distribution, such as a log normal, or find a way to deal with the negative values.
+
+
+\subsubsection{Revisiting methods}
+
+With the generated lab study data we can now revisited some of the methods that failed due to imbalanced classes.
+With the naive bayes of counts of different mouse targets, there was little improvement, with an accuracy and f1 score of 49\% and 46\% respectively.
+However there was a big improvement when the bi-grams of events were fed into the model.
+The accuracy and f1 scores increased to 94\%, a dramatic increase.
+This shows that there is enough difference in the data for a classification algorithm to distinguish the points. 
+
+\section{Results}
 % talk about results
 % Should I talk about all the results, or just the end results that I feel are conclusive.
 
+Now the real aim of the project can begin, attempting to classify users as paying attention or not.
+We will take the 2 HMMs and feed it in the existing mouse data.
+This will tell use the likelihood that that sequence of mouse events belongs to each class.
+If there are any points that appear to be outliers, then we can say that they were doing something differently to the majority of the turkers.
+If the same outlier also has a higher likelihood of belonging to the HMM trained on lab data then we can say that that outlier sample appears to belong to the wrong group.
+Or at least that outlier is doing something different to their peers, which may be a higher level of attention given to the task. 
+
 \subsection{Table or graph of results}
+
+% Plot histogram of likelihoods for both classes on both HMM models.
+% Examine outliers.
+% TODO: Idea, use a 2d histogram, or scatter plot lab likelihood against turk likelihood.
 
 \section{Conclusion}
 
@@ -318,13 +354,16 @@ Additionally the data was heavily imbalanced.
 All of the conclusions I have made from the lab data are relying on only a handful (13 maybe) of datapoints which is not statistically significant.
 Additionally there was not a lot of data from the other class of online data either.
 Typically data science and machine learning uses big data, where as this project used only 400ish records in total which came to only 500mb of data (MAYBE).
+Any bias in any of these original samples will be magnified as this was used to classify more points, which would again spread this bias.
+This would become a self fulfilling prophecy as more similar points would be labelled and spread the belief.
+
 
 Biggest flaw of the project is the first assumption, that the lab people were all paying attention.
-While they were monitored and we can be sure they were not distracted by phones or tellevisions, many of them may have 'zoned out' and not have been given it their full effort and attention.
+While they were monitored and we can be sure they were not distracted by phones or televisions, many of them may have 'zoned out' and not have been given it their full effort and attention.
 
 \section{Future work}
 It would be interesting to see if any of the methods here would reveal anything interesting in other datasets.
-A kaggle crowdflower dataset seems like an idea candidate and I would be interested if we could determin if any of these users were paying attention. 
+A kaggle crowdflower dataset seems like an idea candidate and I would be interested if we could determine if any of these users were paying attention. 
 
 \printbibliography
 

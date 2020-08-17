@@ -44,10 +44,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.4}Imbalanced classes}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Results}{8}%
+\contentsline {subsubsection}{\numberline {6.4.1}Revisiting methods}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Table or graph of results}{8}%
+\contentsline {section}{\numberline {7}Results}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Conclusion}{8}%
+\contentsline {subsection}{\numberline {7.1}Table or graph of results}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Future work}{9}%
+\contentsline {section}{\numberline {8}Conclusion}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Future work}{10}%
