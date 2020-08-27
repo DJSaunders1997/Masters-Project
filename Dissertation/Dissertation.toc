@@ -50,6 +50,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1}Table or graph of results}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Conclusion}{9}%
+\contentsline {subsection}{\numberline {7.2}Likelihood length correlation}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Future work}{10}%
+\contentsline {section}{\numberline {8}Conclusion}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Future work}{12}%

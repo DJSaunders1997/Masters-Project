@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  17 AUG 2020 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  27 AUG 2020 14:54
 entering extended mode
 **c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
 (c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
@@ -410,23 +410,40 @@ File: Lengths-Histogram.png Graphic file (type png)
 <use Lengths-Histogram.png>
 Package pdftex.def Info: Lengths-Histogram.png  used on input line 311.
 (pdftex.def)             Requested size: 264.48747pt x 176.65956pt.
-[8] [9 <c:/Users/DJSau/Masters-Project/Dissertation/Lengths-Histogram.png>] [10] (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.aux)
+[8]
+<Turk-Lab-Liklihoods.png, id=43, 540.0175pt x 371.3875pt>
+File: Turk-Lab-Liklihoods.png Graphic file (type png)
+<use Turk-Lab-Liklihoods.png>
+Package pdftex.def Info: Turk-Lab-Liklihoods.png  used on input line 352.
+(pdftex.def)             Requested size: 270.00809pt x 185.69328pt.
+<Reclassified-Data.png, id=44, 540.0175pt x 371.3875pt>
+File: Reclassified-Data.png Graphic file (type png)
+<use Reclassified-Data.png>
+Package pdftex.def Info: Reclassified-Data.png  used on input line 371.
+(pdftex.def)             Requested size: 270.00809pt x 185.69328pt.
+ [9 <c:/Users/DJSau/Masters-Project/Dissertation/Lengths-Histogram.png>] [10 <c:/Users/DJSau/Masters-Project/Dissertation/Turk-Lab-Liklihoods.png> <c:/Users/DJSau/Masters-Project/Dissertation/Reclassified-Data.png>]
+<likelihood-lengths.png, id=54, 298.716pt x 428.802pt>
+File: likelihood-lengths.png Graphic file (type png)
+<use likelihood-lengths.png>
+Package pdftex.def Info: likelihood-lengths.png  used on input line 389.
+(pdftex.def)             Requested size: 209.09976pt x 300.15935pt.
+ [11 <c:/Users/DJSau/Masters-Project/Dissertation/likelihood-lengths.png>] [12] (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.aux)
 Package logreq Info: Writing requests to 'Dissertation.run.xml'.
 \openout1 = `Dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8690 strings out of 480934
- 161621 string characters out of 2909682
- 786629 words of memory out of 3000000
- 24489 multiletter control sequences out of 15000+200000
+ 8711 strings out of 480934
+ 162133 string characters out of 2909682
+ 786656 words of memory out of 3000000
+ 24507 multiletter control sequences out of 15000+200000
  537546 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,45p,876b,1162s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (10 pages, 280343 bytes).
+Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (12 pages, 424990 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
