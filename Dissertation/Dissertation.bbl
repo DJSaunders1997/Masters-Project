@@ -163,6 +163,78 @@
       \field{title}{Generating synthetic data through Hidden Markov Models}
       \field{year}{2018}
     \endentry
+    \entry{hmmlearn}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=776bdde073ff3bf8ef5b78679647b24f}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           given={Hmmlearn},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{776bdde073ff3bf8ef5b78679647b24f}
+      \strng{fullhash}{776bdde073ff3bf8ef5b78679647b24f}
+      \strng{bibnamehash}{776bdde073ff3bf8ef5b78679647b24f}
+      \strng{authorbibnamehash}{776bdde073ff3bf8ef5b78679647b24f}
+      \strng{authornamehash}{776bdde073ff3bf8ef5b78679647b24f}
+      \strng{authorfullhash}{776bdde073ff3bf8ef5b78679647b24f}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/hmmlearn/hmmlearn}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{hmmlearn}
+      \field{year}{2020}
+    \endentry
+    \entry{pohle2017selecting}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bea953a1a3e509d0ec16ac331c9f6bf4}{%
+           family={Pohle},
+           familyi={P\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+        {{hash=34be512d9e230f658c3f8032621ea10f}{%
+           family={Langrock},
+           familyi={L\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+        {{hash=56a8afbe1dc085bd1493e106c5426d88}{%
+           family={Beest},
+           familyi={B\bibinitperiod},
+           given={Floris\bibnamedelima M},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=7596491048781b9ed6bb94570b8d90d9}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Niels\bibnamedelima Martin},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3ce8ac809a8d0d8ef25380a15c7900f8}
+      \strng{fullhash}{4e1ae5dea6db0df1c5744971bcc8a449}
+      \strng{bibnamehash}{3ce8ac809a8d0d8ef25380a15c7900f8}
+      \strng{authorbibnamehash}{3ce8ac809a8d0d8ef25380a15c7900f8}
+      \strng{authornamehash}{3ce8ac809a8d0d8ef25380a15c7900f8}
+      \strng{authorfullhash}{4e1ae5dea6db0df1c5744971bcc8a449}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Agricultural, Biological and Environmental Statistics}
+      \field{number}{3}
+      \field{title}{Selecting the number of states in hidden Markov models: pragmatic solutions illustrated using animal movement}
+      \field{volume}{22}
+      \field{year}{2017}
+      \field{pages}{270\bibrangedash 293}
+      \range{pages}{24}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

@@ -2187,6 +2187,8 @@
     <bcf:citekey order="3">gordillo2007hmm</bcf:citekey>
     <bcf:citekey order="4">rabiner1989tutorial</bcf:citekey>
     <bcf:citekey order="5">ferrando2018generating</bcf:citekey>
+    <bcf:citekey order="6">hmmlearn</bcf:citekey>
+    <bcf:citekey order="7">pohle2017selecting</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -108,6 +108,11 @@ INPUT c:\Users\DJSau\Masters-Project\Dissertation\HMM-Example-Diagram.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\HMM-Example-Diagram.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\HMM-Example-Diagram.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\HMM-Example-Diagram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\ModelEvaluation.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\ModelEvaluation.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\ModelEvaluation.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\ModelEvaluation.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\ModelEvaluation.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
@@ -134,6 +139,7 @@ INPUT c:\Users\DJSau\Masters-Project\Dissertation\likelihood-lengths.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\likelihood-lengths.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\likelihood-lengths.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.aux
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.run.xml
 OUTPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.run.xml
@@ -159,3 +165,5 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb

@@ -98,7 +98,7 @@ Maybe this would belong under implementation?
 %HMM-Example-Diagram.png
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.55]{HMM-Example-Diagram.png}
+    \includegraphics[scale=0.4]{HMM-Example-Diagram.png}
     \caption{Diagram of a Markov Chain model representing a users mouse position}
     \label{fig:Markov}
 \end{figure}
@@ -109,6 +109,40 @@ In the top right we can see a possible transition matrix of our system.
 \section{Implementation}
 
 % Talk about all different steps you took?
+To implement a HMM the python library HMMLearn was used \cite{hmmlearn}.
+The sequence data used to train the models was the order of mouse targets.
+The temporal aspect of the data was ignored, but earlier research showed that number of mouse events and time were heavily correlated.
+Therefore using just the order of mouse events should capture the temporal aspect of the data.
+
+When implementing a Hidden Markov model on the actual data there are lots of parameters that must be considered. 
+Given a sequence of input data the HMM model can calculate most of the parameters such as the transition matrix by using the Forwards-Backwards algorithm.
+The most prominent parameter that must be given is the number of hidden states to use.
+
+The paper \cite{pohle2017selecting} addresses this issue on similar data.
+The authors use a HMM to model animal movement behaviour, where they hope the hidden states would roughly relate to the behaviour of the animal.
+For example a 2 state HMM on this model may relate to "foraging/resting” and “travelling".
+Humans can be more complex than animals but we can think of potential states of being "inquisitive" and "bored"
+They trained models with 2, 3, 4, and 5 hidden states and compared the criterion's of AIC, BIC, ICL.
+Similarity to evaluate Lab and Turk models models were trained with number of hidden states ranging from 1 to 11.
+Generally an increase in states should increase the effectiveness, however it will also take longer to train.
+All models used for this comparison was trained to 50 iterations for a fair comparison. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.55]{ModelEvaluation.png}
+    \caption{Line plot of evaluation of different HMM architectures.}
+    \label{fig:ModleEval}
+\end{figure}
+
+Figure \ref{fig:ModleEval} shows a different criterion of the total log likelihood of the training data of the model.
+This value is normalised by dividing by the number of data samples, to give a per-sample total likelihood.
+The evaluation of each HMM model does fluctuate based on the random state used, which is why there are drops in the evaluation criterion even when more hidden states are used.
+We can see that the criterion for both models stop improving after 9 states.
+Therefore a 10 state model was used.
+
+% https://projecteuclid.org/download/pdfview_1/euclid.aoas/1491616885
+% paper A MULTIVARIATE MIXED HIDDEN MARKOV MODEL FOR BLUE WHALE BEHAVIOUR AND RESPONSES TO SOUND EXPOSURE
+% interesting reference
 
 \section{Methodology}
 
