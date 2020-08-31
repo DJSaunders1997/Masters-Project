@@ -14,7 +14,14 @@
 \maketitle
 
 \begin{abstract} 
-    Write abstract here
+    Potential abstract.
+    This project explores the use of Hidden Markov Models to explore users mouse cursor data while performing a task.
+    The users are split into 2 distinct groups, online crowdsourced users, and lab study users.
+    We propose that the lab study users were paying attention, and the crowdsourced users may or may not be paying attention.
+    By using observed data recorded from the users mouse we are able to model both groups interaction with the system with Hidden Markov Models.
+    Some users interaction seem misplaced compared to their groups.
+    These are reclassified with the aim of changing the groups of user from lab study or crowdsourced, to users paying attention and not paying attention.     
+
 \end{abstract}
 
 \tableofcontents
@@ -81,6 +88,13 @@ Either cite this paper or more likely look at their reference for n-grams and ci
 \subsection{Hidden Markov Models}
 
 % explanation from scratch: https://towardsdatascience.com/hidden-markov-model-implemented-from-scratch-72865bda430e
+
+"Hidden Markov Model (HMM) is a statistical Markov model in which the system being modeled is assumed to be a Markov process – call it X – with unobservable ("hidden") states. 
+HMM assumes that there is another process Y whose behaviour "depends" on X.
+The goal is to learn about X by observing Y." Wikipedia
+
+In the case of this project, the hidden states X would be the users thought processes including whether or not they're paying attention.
+The observations, Y, are the data that has been collected from the users such as mouse location over time and sequence of interface elements.
 
 Paper Tom send me about HMM for text classification that I might be able to use \cite{collins2016tagging}.
 
