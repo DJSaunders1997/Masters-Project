@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  31 AUG 2020 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  2 SEP 2020 23:09
 entering extended mode
 **c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
 (c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
@@ -41,6 +41,27 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption3.sty"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen137
+\captionmargin@=\dimen138
+\captionwidth=\dimen139
+\caption@tempdima=\dimen140
+\caption@indent=\dimen141
+\caption@parindent=\dimen142
+\caption@hangindent=\dimen143
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count175
+\c@continuedfloat=\count176
+)
+\c@subfigure=\count177
+\c@subtable=\count178
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
  ("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
@@ -57,14 +78,14 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count175
+\etb@tempcnta=\count179
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
  ("C:\Program Files\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )) ("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count176
+\lrq@indent=\count180
  ("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
@@ -73,47 +94,47 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count177
-\c@listtotal=\count178
-\c@listcount=\count179
-\c@liststart=\count180
-\c@liststop=\count181
-\c@citecount=\count182
-\c@citetotal=\count183
-\c@multicitecount=\count184
-\c@multicitetotal=\count185
-\c@instcount=\count186
-\c@maxnames=\count187
-\c@minnames=\count188
-\c@maxitems=\count189
-\c@minitems=\count190
-\c@citecounter=\count191
-\c@maxcitecounter=\count192
-\c@savedcitecounter=\count193
-\c@uniquelist=\count194
-\c@uniquename=\count195
-\c@refsection=\count196
-\c@refsegment=\count197
-\c@maxextratitle=\count198
-\c@maxextratitleyear=\count199
-\c@maxextraname=\count266
-\c@maxextradate=\count267
-\c@maxextraalpha=\count268
-\c@abbrvpenalty=\count269
-\c@highnamepenalty=\count270
-\c@lownamepenalty=\count271
-\c@maxparens=\count272
-\c@parenlevel=\count273
-\blx@tempcnta=\count274
-\blx@tempcntb=\count275
-\blx@tempcntc=\count276
-\blx@maxsection=\count277
-\blx@maxsegment@0=\count278
-\blx@notetype=\count279
-\blx@parenlevel@text=\count280
-\blx@parenlevel@foot=\count281
-\blx@sectionciteorder@0=\count282
-\blx@entrysetcounter=\count283
+\c@tabx@nest=\count181
+\c@listtotal=\count182
+\c@listcount=\count183
+\c@liststart=\count184
+\c@liststop=\count185
+\c@citecount=\count186
+\c@citetotal=\count187
+\c@multicitecount=\count188
+\c@multicitetotal=\count189
+\c@instcount=\count190
+\c@maxnames=\count191
+\c@minnames=\count192
+\c@maxitems=\count193
+\c@minitems=\count194
+\c@citecounter=\count195
+\c@maxcitecounter=\count196
+\c@savedcitecounter=\count197
+\c@uniquelist=\count198
+\c@uniquename=\count199
+\c@refsection=\count266
+\c@refsegment=\count267
+\c@maxextratitle=\count268
+\c@maxextratitleyear=\count269
+\c@maxextraname=\count270
+\c@maxextradate=\count271
+\c@maxextraalpha=\count272
+\c@abbrvpenalty=\count273
+\c@highnamepenalty=\count274
+\c@lownamepenalty=\count275
+\c@maxparens=\count276
+\c@parenlevel=\count277
+\blx@tempcnta=\count278
+\blx@tempcntb=\count279
+\blx@tempcntc=\count280
+\blx@maxsection=\count281
+\blx@maxsegment@0=\count282
+\blx@notetype=\count283
+\blx@parenlevel@text=\count284
+\blx@parenlevel@foot=\count285
+\blx@sectionciteorder@0=\count286
+\blx@entrysetcounter=\count287
 \labelnumberwidth=\skip49
 \labelalphawidth=\skip50
 \biblabelsep=\skip51
@@ -125,9 +146,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language78
-\c@mincomprange=\count284
-\c@maxcomprange=\count285
-\c@mincompwidth=\count286
+\c@mincomprange=\count288
+\c@maxcomprange=\count289
+\c@mincompwidth=\count290
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def"
@@ -137,74 +158,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count287
-\c@savedafterword=\count288
-\c@annotator=\count289
-\c@savedannotator=\count290
-\c@author=\count291
-\c@savedauthor=\count292
-\c@bookauthor=\count293
-\c@savedbookauthor=\count294
-\c@commentator=\count295
-\c@savedcommentator=\count296
-\c@editor=\count297
-\c@savededitor=\count298
-\c@editora=\count299
-\c@savededitora=\count300
-\c@editorb=\count301
-\c@savededitorb=\count302
-\c@editorc=\count303
-\c@savededitorc=\count304
-\c@foreword=\count305
-\c@savedforeword=\count306
-\c@holder=\count307
-\c@savedholder=\count308
-\c@introduction=\count309
-\c@savedintroduction=\count310
-\c@namea=\count311
-\c@savednamea=\count312
-\c@nameb=\count313
-\c@savednameb=\count314
-\c@namec=\count315
-\c@savednamec=\count316
-\c@translator=\count317
-\c@savedtranslator=\count318
-\c@shortauthor=\count319
-\c@savedshortauthor=\count320
-\c@shorteditor=\count321
-\c@savedshorteditor=\count322
-\c@labelname=\count323
-\c@savedlabelname=\count324
-\c@institution=\count325
-\c@savedinstitution=\count326
-\c@lista=\count327
-\c@savedlista=\count328
-\c@listb=\count329
-\c@savedlistb=\count330
-\c@listc=\count331
-\c@savedlistc=\count332
-\c@listd=\count333
-\c@savedlistd=\count334
-\c@liste=\count335
-\c@savedliste=\count336
-\c@listf=\count337
-\c@savedlistf=\count338
-\c@location=\count339
-\c@savedlocation=\count340
-\c@organization=\count341
-\c@savedorganization=\count342
-\c@origlocation=\count343
-\c@savedoriglocation=\count344
-\c@origpublisher=\count345
-\c@savedorigpublisher=\count346
-\c@publisher=\count347
-\c@savedpublisher=\count348
-\c@language=\count349
-\c@savedlanguage=\count350
-\c@origlanguage=\count351
-\c@savedoriglanguage=\count352
-\c@pageref=\count353
-\c@savedpageref=\count354
+\c@afterword=\count291
+\c@savedafterword=\count292
+\c@annotator=\count293
+\c@savedannotator=\count294
+\c@author=\count295
+\c@savedauthor=\count296
+\c@bookauthor=\count297
+\c@savedbookauthor=\count298
+\c@commentator=\count299
+\c@savedcommentator=\count300
+\c@editor=\count301
+\c@savededitor=\count302
+\c@editora=\count303
+\c@savededitora=\count304
+\c@editorb=\count305
+\c@savededitorb=\count306
+\c@editorc=\count307
+\c@savededitorc=\count308
+\c@foreword=\count309
+\c@savedforeword=\count310
+\c@holder=\count311
+\c@savedholder=\count312
+\c@introduction=\count313
+\c@savedintroduction=\count314
+\c@namea=\count315
+\c@savednamea=\count316
+\c@nameb=\count317
+\c@savednameb=\count318
+\c@namec=\count319
+\c@savednamec=\count320
+\c@translator=\count321
+\c@savedtranslator=\count322
+\c@shortauthor=\count323
+\c@savedshortauthor=\count324
+\c@shorteditor=\count325
+\c@savedshorteditor=\count326
+\c@labelname=\count327
+\c@savedlabelname=\count328
+\c@institution=\count329
+\c@savedinstitution=\count330
+\c@lista=\count331
+\c@savedlista=\count332
+\c@listb=\count333
+\c@savedlistb=\count334
+\c@listc=\count335
+\c@savedlistc=\count336
+\c@listd=\count337
+\c@savedlistd=\count338
+\c@liste=\count339
+\c@savedliste=\count340
+\c@listf=\count341
+\c@savedlistf=\count342
+\c@location=\count343
+\c@savedlocation=\count344
+\c@organization=\count345
+\c@savedorganization=\count346
+\c@origlocation=\count347
+\c@savedoriglocation=\count348
+\c@origpublisher=\count349
+\c@savedorigpublisher=\count350
+\c@publisher=\count351
+\c@savedpublisher=\count352
+\c@language=\count353
+\c@savedlanguage=\count354
+\c@origlanguage=\count355
+\c@savedoriglanguage=\count356
+\c@pageref=\count357
+\c@savedpageref=\count358
 \shorthandwidth=\skip57
 \shortjournalwidth=\skip58
 \shortserieswidth=\skip59
@@ -228,19 +249,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count355
-\c@textcitetotal=\count356
-\c@textcitemaxnames=\count357
-\c@biburlbigbreakpenalty=\count358
-\c@biburlbreakpenalty=\count359
-\c@biburlnumpenalty=\count360
-\c@biburlucpenalty=\count361
-\c@biburllcpenalty=\count362
+\c@textcitecount=\count359
+\c@textcitetotal=\count360
+\c@textcitemaxnames=\count361
+\c@biburlbigbreakpenalty=\count362
+\c@biburlbreakpenalty=\count363
+\c@biburlnumpenalty=\count364
+\c@biburlucpenalty=\count365
+\c@biburllcpenalty=\count366
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count363
+\c@smartand=\count367
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -250,8 +271,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count364
-\c@bbx:relatedtotal=\count365
+\c@bbx:relatedcount=\count368
+\c@bbx:relatedtotal=\count369
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -274,41 +295,41 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.cfg"
 File: biblatex.cfg 
 ))
-\@quotelevel=\count366
-\@quotereset=\count367
+\@quotelevel=\count370
+\@quotereset=\count371
  ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count368
+\l__kernel_color_stack_int=\count372
 \l__pdf_internal_box=\box45
 ) (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.aux)
 \openout1 = `Dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
  ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count369
-\scratchdimen=\dimen137
+\scratchcounter=\count373
+\scratchdimen=\dimen144
 \scratchbox=\box46
-\nofMPsegments=\count370
-\nofMParguments=\count371
+\nofMPsegments=\count374
+\nofMParguments=\count375
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count372
-\MPscratchDim=\dimen138
-\MPnumerator=\count373
-\makeMPintoPDFobject=\count374
+\MPscratchCnt=\count376
+\MPscratchDim=\dimen145
+\MPnumerator=\count377
+\makeMPintoPDFobject=\count378
 \everyMPtoPDFconversion=\toks19
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -322,6 +343,8 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'australian'...
 Package biblatex Info: ... file 'australian.lbx' found.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/lbx\australian.lbx"
@@ -344,14 +367,14 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Dissertation.bbl' found.
  (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.bbl)
-Package biblatex Info: Reference section=0 on input line 13.
-Package biblatex Info: Reference segment=0 on input line 13.
+Package biblatex Info: Reference section=0 on input line 14.
+Package biblatex Info: Reference segment=0 on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 14.
+(Font)              <12> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 14.
+(Font)              <8> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 14.
+(Font)              <6> on input line 15.
  (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 5.
@@ -364,96 +387,118 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout4 = `Dissertation.toc'.
 
  [2]
-<HMM-Example-Diagram.png, id=15, 522.15076pt x 457.71pt>
-File: HMM-Example-Diagram.png Graphic file (type png)
-<use HMM-Example-Diagram.png>
-Package pdftex.def Info: HMM-Example-Diagram.png  used on input line 117.
+<Images/HMM-Example-Diagram.png, id=15, 522.15076pt x 457.71pt>
+File: Images/HMM-Example-Diagram.png Graphic file (type png)
+<use Images/HMM-Example-Diagram.png>
+Package pdftex.def Info: Images/HMM-Example-Diagram.png  used on input line 118.
 (pdftex.def)             Requested size: 208.8566pt x 183.08075pt.
- [3] [4 <c:/Users/DJSau/Masters-Project/Dissertation/HMM-Example-Diagram.png>]
-<ModelEvaluation.png, id=24, 540.0175pt x 371.3875pt>
-File: ModelEvaluation.png Graphic file (type png)
-<use ModelEvaluation.png>
-Package pdftex.def Info: ModelEvaluation.png  used on input line 148.
+ [3] [4 <c:/Users/DJSau/Masters-Project/Dissertation/Images/HMM-Example-Diagram.png>]
+<Images/ModelEvaluation.png, id=24, 540.0175pt x 371.3875pt>
+File: Images/ModelEvaluation.png Graphic file (type png)
+<use Images/ModelEvaluation.png>
+Package pdftex.def Info: Images/ModelEvaluation.png  used on input line 149.
 (pdftex.def)             Requested size: 297.01054pt x 204.26375pt.
- [5 <c:/Users/DJSau/Masters-Project/Dissertation/ModelEvaluation.png>]
+ [5 <c:/Users/DJSau/Masters-Project/Dissertation/Images/ModelEvaluation.png>]
 <Images/Data-Pipeline.png, id=29, 734.745pt x 182.6825pt>
 File: Images/Data-Pipeline.png Graphic file (type png)
 <use Images/Data-Pipeline.png>
-Package pdftex.def Info: Images/Data-Pipeline.png  used on input line 181.
+Package pdftex.def Info: Images/Data-Pipeline.png  used on input line 182.
 (pdftex.def)             Requested size: 404.111pt x 100.47568pt.
 
-Overfull \hbox (59.111pt too wide) in paragraph at lines 181--182
+Overfull \hbox (59.111pt too wide) in paragraph at lines 182--183
  [][] 
  []
 
 [6 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Data-Pipeline.png>] [7]
-Overfull \hbox (3.81952pt too wide) in paragraph at lines 271--271
+Overfull \hbox (3.81952pt too wide) in paragraph at lines 272--272
 []\OT1/cmr/bx/n/12 Distance Based Meth-ods / Spa-cial Clas-si-fi-ca-tion Meth-
  []
 
 
-Overfull \hbox (26.10248pt too wide) in paragraph at lines 305--307
+Overfull \hbox (26.10248pt too wide) in paragraph at lines 306--308
 \OT1/cmr/m/n/10 count of each word for each email and bayes it. https://towardsdatascience.com/spam-
  []
 
 [8]
-Overfull \hbox (10.63957pt too wide) in paragraph at lines 310--314
+Overfull \hbox (10.63957pt too wide) in paragraph at lines 311--315
 []\OT1/cmr/m/n/10 https://machinelearningmastery.com/failure-of-accuracy-for-imbalanced-class-
  []
 
 
-Overfull \hbox (193.22311pt too wide) in paragraph at lines 341--343
+Overfull \hbox (193.22311pt too wide) in paragraph at lines 342--344
 []\OT1/cmr/m/n/10 These can be used for bi-nary clas-si-fi-ca-tion as de-scribed here (https://datascience.stackexchange.com/questions/8560/can-
  []
 
 
-Overfull \hbox (3.68579pt too wide) in paragraph at lines 341--343
+Overfull \hbox (3.68579pt too wide) in paragraph at lines 342--344
 \OT1/cmr/m/n/10 hmm-be-used-as-a-binary-classifier). Say theyre used to gen-er-ate sam-ples, maybe
  []
 
-<Lengths-Histogram.png, id=44, 528.97626pt x 353.32pt>
-File: Lengths-Histogram.png Graphic file (type png)
-<use Lengths-Histogram.png>
-Package pdftex.def Info: Lengths-Histogram.png  used on input line 361.
+<Images/Lengths-Histogram.png, id=44, 528.97626pt x 353.32pt>
+File: Images/Lengths-Histogram.png Graphic file (type png)
+<use Images/Lengths-Histogram.png>
+Package pdftex.def Info: Images/Lengths-Histogram.png  used on input line 362.
 (pdftex.def)             Requested size: 264.48747pt x 176.65956pt.
-[9] [10 <c:/Users/DJSau/Masters-Project/Dissertation/Lengths-Histogram.png>]
-<Turk-Lab-Liklihoods.png, id=52, 540.0175pt x 371.3875pt>
-File: Turk-Lab-Liklihoods.png Graphic file (type png)
-<use Turk-Lab-Liklihoods.png>
-Package pdftex.def Info: Turk-Lab-Liklihoods.png  used on input line 402.
+[9] [10 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Lengths-Histogram.png>]
+<Images/Turk-Lab-Liklihoods.png, id=52, 540.0175pt x 371.3875pt>
+File: Images/Turk-Lab-Liklihoods.png Graphic file (type png)
+<use Images/Turk-Lab-Liklihoods.png>
+Package pdftex.def Info: Images/Turk-Lab-Liklihoods.png  used on input line 403.
 (pdftex.def)             Requested size: 270.00809pt x 185.69328pt.
-<Reclassified-Data.png, id=53, 540.0175pt x 371.3875pt>
-File: Reclassified-Data.png Graphic file (type png)
-<use Reclassified-Data.png>
-Package pdftex.def Info: Reclassified-Data.png  used on input line 421.
+<Images/Reclassified-Data.png, id=53, 540.0175pt x 371.3875pt>
+File: Images/Reclassified-Data.png Graphic file (type png)
+<use Images/Reclassified-Data.png>
+Package pdftex.def Info: Images/Reclassified-Data.png  used on input line 422.
 (pdftex.def)             Requested size: 270.00809pt x 185.69328pt.
-<likelihood-lengths.png, id=54, 298.716pt x 428.802pt>
-File: likelihood-lengths.png Graphic file (type png)
-<use likelihood-lengths.png>
-Package pdftex.def Info: likelihood-lengths.png  used on input line 439.
-(pdftex.def)             Requested size: 209.09976pt x 300.15935pt.
- [11 <c:/Users/DJSau/Masters-Project/Dissertation/Turk-Lab-Liklihoods.png>] [12 <c:/Users/DJSau/Masters-Project/Dissertation/Reclassified-Data.png>] [13 <c:/Users/DJSau/Masters-Project/Dissertation/likelihood-lengths.png>]
-Overfull \hbox (13.85046pt too wide) in paragraph at lines 466--466
+<Images/Turk-Liklihood-Length.png, id=54, 540.0175pt x 371.3875pt>
+File: Images/Turk-Liklihood-Length.png Graphic file (type png)
+<use Images/Turk-Liklihood-Length.png>
+Package pdftex.def Info: Images/Turk-Liklihood-Length.png  used on input line 442.
+(pdftex.def)             Requested size: 216.00316pt x 148.55235pt.
+
+Overfull \hbox (78.00526pt too wide) in paragraph at lines 442--443
+ [][] 
+ []
+
+<Images/Lab-Liklihood-Length.png, id=55, 540.0175pt x 371.3875pt>
+File: Images/Lab-Liklihood-Length.png Graphic file (type png)
+<use Images/Lab-Liklihood-Length.png>
+Package pdftex.def Info: Images/Lab-Liklihood-Length.png  used on input line 448.
+(pdftex.def)             Requested size: 216.00316pt x 148.55235pt.
+
+Overfull \hbox (78.00526pt too wide) in paragraph at lines 448--449
+ [][] 
+ []
+
+[11 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Turk-Lab-Liklihoods.png>]
+
+LaTeX Warning: Reference `fig:liklihood-lengths' on page 12 undefined on input line 454.
+
+[12 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Reclassified-Data.png> <c:/Users/DJSau/Masters-Project/Dissertation/Images/Turk-Liklihood-Length.png> <c:/Users/DJSau/Masters-Project/Dissertation/Images/Lab-Liklihood-Length.png>]
+Overfull \hbox (13.85046pt too wide) in paragraph at lines 476--476
 []\OT1/cmr/m/n/10 Hmmlearn de-vel-op-ers. \OT1/cmr/m/it/10 hmm-learn\OT1/cmr/m/n/10 . $\OT1/cmtt/m/n/10 https : / / github . com / hmmlearn / hmmlearn$\OT1/cmr/m/n/10 .
  []
 
-[14] (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.aux)
+[13] [14] (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'Dissertation.run.xml'.
 \openout1 = `Dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8724 strings out of 480934
- 162486 string characters out of 2909682
- 786777 words of memory out of 3000000
- 24518 multiletter control sequences out of 15000+200000
+ 9898 strings out of 480934
+ 183993 string characters out of 2909682
+ 801188 words of memory out of 3000000
+ 25682 multiletter control sequences out of 15000+200000
  537714 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,45p,876b,1202s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,8n,46p,876b,1202s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (14 pages, 478926 bytes).
+Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (14 pages, 447199 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
+ 113 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

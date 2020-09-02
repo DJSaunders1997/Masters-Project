@@ -20,6 +20,12 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
@@ -103,41 +109,46 @@ OUTPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf
 INPUT C:\Users\DJSau\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 OUTPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.toc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\HMM-Example-Diagram.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\HMM-Example-Diagram.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\HMM-Example-Diagram.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\HMM-Example-Diagram.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\HMM-Example-Diagram.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\ModelEvaluation.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\ModelEvaluation.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\ModelEvaluation.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\ModelEvaluation.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\ModelEvaluation.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\HMM-Example-Diagram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\HMM-Example-Diagram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\HMM-Example-Diagram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\HMM-Example-Diagram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\HMM-Example-Diagram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\ModelEvaluation.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\ModelEvaluation.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\ModelEvaluation.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\ModelEvaluation.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\ModelEvaluation.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Data-Pipeline.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Lengths-Histogram.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Lengths-Histogram.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Lengths-Histogram.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Lengths-Histogram.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Lengths-Histogram.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Turk-Lab-Liklihoods.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Turk-Lab-Liklihoods.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Turk-Lab-Liklihoods.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Turk-Lab-Liklihoods.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Turk-Lab-Liklihoods.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Reclassified-Data.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Reclassified-Data.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Reclassified-Data.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Reclassified-Data.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\Reclassified-Data.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\likelihood-lengths.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\likelihood-lengths.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\likelihood-lengths.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\likelihood-lengths.png
-INPUT c:\Users\DJSau\Masters-Project\Dissertation\likelihood-lengths.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Lengths-Histogram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Lengths-Histogram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Lengths-Histogram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Lengths-Histogram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Lengths-Histogram.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Turk-Lab-Liklihoods.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Turk-Lab-Liklihoods.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Turk-Lab-Liklihoods.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Turk-Lab-Liklihoods.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Turk-Lab-Liklihoods.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Reclassified-Data.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Reclassified-Data.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Reclassified-Data.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Reclassified-Data.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Reclassified-Data.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Turk-Liklihood-Length.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Turk-Liklihood-Length.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Turk-Liklihood-Length.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Turk-Liklihood-Length.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Turk-Liklihood-Length.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Lab-Liklihood-Length.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Lab-Liklihood-Length.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Lab-Liklihood-Length.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Lab-Liklihood-Length.png
+INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Lab-Liklihood-Length.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.aux

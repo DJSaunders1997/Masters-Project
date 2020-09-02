@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{subcaption} 
 
 % change reference style to [1], remove stupid sorting, language changed so date in ddmmyyyy
 \usepackage[backend=biber, style=numeric, sorting=none, language=australian]{biblatex}
@@ -14,7 +15,7 @@
 \maketitle
 
 \begin{abstract} 
-    Potential abstract.
+    %Potential abstract.
     This project explores the use of Hidden Markov Models to explore users mouse cursor data while performing a task.
     The users are split into 2 distinct groups, online crowdsourced users, and lab study users.
     We propose that the lab study users were paying attention, and the crowdsourced users may or may not be paying attention.
@@ -114,7 +115,7 @@ Maybe this would belong under implementation?
 %HMM-Example-Diagram.png
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.4]{HMM-Example-Diagram.png}
+    \includegraphics[scale=0.4]{Images/HMM-Example-Diagram.png}
     \caption{Diagram of a Markov Chain model representing a users mouse position}
     \label{fig:Markov}
 \end{figure}
@@ -145,7 +146,7 @@ All models used for this comparison was trained to 50 iterations for a fair comp
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.55]{ModelEvaluation.png}
+    \includegraphics[scale=0.55]{Images/ModelEvaluation.png}
     \caption{Line plot of evaluation of different HMM architectures.}
     \label{fig:ModleEval}
 \end{figure}
@@ -358,7 +359,7 @@ The HMM can generate a probable sequence of n observed states, however to genera
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.5]{Lengths-Histogram.png}
+    \includegraphics[scale=0.5]{Images/Lengths-Histogram.png}
     \caption{Histogram of length of mouse events for turker and lab data.}
     \label{fig:normaldis}
 \end{figure}
@@ -399,7 +400,7 @@ Or at least that outlier is doing something different to their peers, which may 
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[scale=0.5]{Turk-Lab-Liklihoods.png}
+    \includegraphics[scale=0.5]{Images/Turk-Lab-Liklihoods.png}
     \caption{The comparative likelihoods of users classifiers with the Turk and Lab data. }
     \label{fig:TurkLabLikli}
 \end{figure}
@@ -418,7 +419,7 @@ Thus this regression line forms a sort of pareto frontier, with points above it 
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[scale=0.5]{Reclassified-Data.png}
+    \includegraphics[scale=0.5]{Images/Reclassified-Data.png}
     \caption{Plot showing the turk users that have been reclassified as behaving more like lab users. }
     \label{fig:Reclassified}
 \end{figure}
@@ -434,11 +435,20 @@ The exact distribution of these points change based on the initial random state 
 
 \subsection{Likelihood length correlation}
 
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[scale=0.7]{likelihood-lengths.png}
-    \caption{Plots showing correlation between likelihood of different mosules and teh length of mouse events.}
-    \label{fig:liklihood-lengths}
+\begin{figure}[h!]
+    
+    \begin{subfigure}[c]{0.4\linewidth}
+        \centering
+        \includegraphics[scale=0.4]{Images/Turk-Liklihood-Length.png}
+        \caption{Turk HMM Model}
+    \end{subfigure}    
+    \hfill
+    \begin{subfigure}[c]{0.4\linewidth}
+        \centering
+        \includegraphics[scale=0.4]{Images/Lab-Liklihood-Length.png}
+        \caption{Lab HMM Model}
+    \end{subfigure}  
+    \caption{Plots showing correlation between likelihood of different models and the length of mouse events.}
 \end{figure}
 
 Figure \ref{fig:liklihood-lengths}
