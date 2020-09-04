@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{subcaption} 
+\usepackage[export]{adjustbox}
 
 % change reference style to [1], remove stupid sorting, language changed so date in ddmmyyyy
 \usepackage[backend=biber, style=numeric, sorting=none, language=australian]{biblatex}
@@ -45,6 +46,7 @@
 % My contributions are - bullet list
 % My idea to fix it
 
+
 Detecting use engagement is an important science across multiple disciplines.
 
 Find a study that says during any task / any crowdsourced task X\% of people are not paying attention.
@@ -54,6 +56,49 @@ It is a hard problem because, among other things I will touch on, it is hard to 
 One author defined it as 'XYZ' [look at my previous work for references].
 
 However the previous authors have failed to detect and measure user engagement as X,Y,Z.
+
+% TODO talk about some of the papers Tom links in his paper, such as  
+% Finding Waldo: Learning about users from their interactions
+% His paper literally outlines my project so defo worth exploring what he says.
+
+\subsection{Background}
+% TODO Find the Gruber thesis and the paper written by Tom.
+
+% TODO Have this section finished soon and have Meg look over it: 04/09/20
+
+The work in this project is build on an existing study;
+\textit{``Risk fixers and sweet spotters: A study of the different approaches
+to using visual sensitivity analysis in an investment scenario''}\cite{torsney2018risk}.
+
+The study was centred in the field of visualisation.
+The paper explored a new visualisation glyph that could be used help improve a users effectiveness at completing a task.
+The users task simulated an investment scenario, the aim was to maximise the return of a collection of stocks, while minimising the risk. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.3, frame]{Images/interface.png}
+    % TODO: Find the right interface, current interface doesn't match whats in his paper.
+    \caption{The user interface of the lab study, showing the risk and return of stocks to the left and allocation sliders to the right.}
+    \label{fig:interface}
+\end{figure}
+
+The experiment identified two users groups, risk fixers and sweet spotters, based on their response in a questionnaire.
+Figure \ref{fig:interface} shows the interface of the lab study.
+
+We divided the participants based on their response to a question
+about how they chose their final portfolio. 
+
+\subsection{Initial attempt}
+
+One naive assumption might be that a users attention level might be inferred from the time taken to complete the tasks.
+Exploration of the data showed that the division of users may not be so straightforward.
+% TODO add plot of lengths vs time for different groups.
+
+Figure plot shows how the lab and turk user classes cannot be separated by a simple metric of their data, such as length of events sequence and time to complete task.
+This rules out distance based machine learning approaches such as K Nearest Neighbours or a Support Vector Machine as there is no relationship there.
+Should be noted that length of events sequence and time are very correlated with a pearson's correlation of X.
+This means that one of these features should be a good substitute for the other and that having both may be redundant.
+
 
 \subsection{Contributions}
 % The contributions are 1,2,3 (everyone likes 3s)
@@ -436,7 +481,7 @@ The exact distribution of these points change based on the initial random state 
 \subsection{Likelihood length correlation}
 
 \begin{figure}[h!]
-    
+    \centering
     \begin{subfigure}[c]{0.4\linewidth}
         \centering
         \includegraphics[scale=0.4]{Images/Turk-Liklihood-Length.png}

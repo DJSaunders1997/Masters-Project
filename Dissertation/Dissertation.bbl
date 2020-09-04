@@ -19,6 +19,45 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{torsney2018risk}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e62cbc51788273a0ee6478e36b2d57b0}{%
+           family={Torsney-Weir},
+           familyi={T\bibinithyphendelim W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bacc2120c8f8d5e483c4e6138b171f21}{%
+           family={Afroozeh},
+           familyi={A\bibinitperiod},
+           given={Shahrzad},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7613acc9e67abb0fc4d410f2803f868c}{%
+           family={Sedlmair},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4c753904fcc0be70476ecdf48fde3b71}{%
+           family={M{ö}ller},
+           familyi={M\bibinitperiod},
+           given={Torsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Eurographics Association}%
+      }
+      \strng{namehash}{0eae2bef488728f992598cbce9ff3ec6}
+      \strng{fullhash}{64f7049b9d9af5268e13678efb56db60}
+      \strng{bibnamehash}{0eae2bef488728f992598cbce9ff3ec6}
+      \strng{authorbibnamehash}{0eae2bef488728f992598cbce9ff3ec6}
+      \strng{authornamehash}{0eae2bef488728f992598cbce9ff3ec6}
+      \strng{authorfullhash}{64f7049b9d9af5268e13678efb56db60}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Risk fixers and sweet spotters: A study of the different approaches to using visual sensitivity analysis in an investment scenario}
+      \field{year}{2018}
+    \endentry
     \entry{tomovic2006n}{article}{}
       \name{author}{3}{}{%
         {{hash=c4c9aec67c6075357e81adbfd8fda150}{%
@@ -46,8 +85,8 @@
       \strng{authorbibnamehash}{71aec0b93524d23f1d11b4a8209d1c1d}
       \strng{authornamehash}{71aec0b93524d23f1d11b4a8209d1c1d}
       \strng{authorfullhash}{71aec0b93524d23f1d11b4a8209d1c1d}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computer methods and programs in biomedicine}
@@ -72,8 +111,8 @@
       \strng{authorbibnamehash}{b8bbd832353d6b8ffa73123369d39d55}
       \strng{authornamehash}{b8bbd832353d6b8ffa73123369d39d55}
       \strng{authorfullhash}{b8bbd832353d6b8ffa73123369d39d55}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Tagging with Hidden Markov Models}
@@ -101,8 +140,8 @@
       \strng{authorbibnamehash}{0111a06758d42f33f75cfdd0d599769f}
       \strng{authornamehash}{0111a06758d42f33f75cfdd0d599769f}
       \strng{authorfullhash}{0111a06758d42f33f75cfdd0d599769f}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Expert systems with applications}
@@ -130,8 +169,8 @@
       \strng{authorbibnamehash}{fc5e10874f928d24803009f43a119ad9}
       \strng{authornamehash}{fc5e10874f928d24803009f43a119ad9}
       \strng{authorfullhash}{fc5e10874f928d24803009f43a119ad9}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the IEEE}
@@ -156,8 +195,8 @@
       \strng{authorbibnamehash}{7004f49232c176b36196321705001e06}
       \strng{authornamehash}{7004f49232c176b36196321705001e06}
       \strng{authorfullhash}{7004f49232c176b36196321705001e06}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Generating synthetic data through Hidden Markov Models}
@@ -180,8 +219,8 @@
       \strng{authorbibnamehash}{776bdde073ff3bf8ef5b78679647b24f}
       \strng{authornamehash}{776bdde073ff3bf8ef5b78679647b24f}
       \strng{authorfullhash}{776bdde073ff3bf8ef5b78679647b24f}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/hmmlearn/hmmlearn}}
@@ -223,8 +262,8 @@
       \strng{authorbibnamehash}{3ce8ac809a8d0d8ef25380a15c7900f8}
       \strng{authornamehash}{3ce8ac809a8d0d8ef25380a15c7900f8}
       \strng{authorfullhash}{4e1ae5dea6db0df1c5744971bcc8a449}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Agricultural, Biological and Environmental Statistics}
