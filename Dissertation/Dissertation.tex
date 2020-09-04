@@ -134,17 +134,45 @@ Figure \ref{fig:interface} shows the interface of the lab study.
 We divided the participants based on their response to a question
 about how they chose their final portfolio. 
 
+
+\begin{table}[ht]
+    \caption{\label{table:studies} Data collection methods used in the study \cite{torsney2018risk}.}
+    \small
+    \begin{tabular}{lll}
+        \hline
+        Data collection method & Number of participants & Were participants paying attention? \\    \hline
+        Lab study              & 18                     & Yes                                 \\
+        Crowdsourced task      & 370                    & Unknown                             \\    \hline
+    \end{tabular}
+\end{table}
+
+Table \ref{table:studies} shows the two different ways in which data was collected.
+Only 4.6\% of the data was gathered in person, with the vast majority of responses being crowdsourced.
+The difference in number of participants shows one of the reasons crowdsourcing is popular. 
+It is much easier to crowdsource responses than it is to organise an in person lab study.
+
+
 \subsection{Initial attempt}
 
 One naive assumption might be that a users attention level might be inferred from the time taken to complete the tasks.
-Exploration of the data showed that the division of users may not be so straightforward.
+Exploration of the data showed that the division of users may not be so straightforward, shown in Figure~\ref{fig:scatterplot}.
 % TODO add plot of lengths vs time for different groups.
 
-Figure plot shows how the lab and turk user classes cannot be separated by a simple metric of their data, such as length of events sequence and time to complete task.
-This rules out distance based machine learning approaches such as K Nearest Neighbours or a Support Vector Machine as there is no relationship there.
-Should be noted that length of events sequence and time are very correlated with a pearson's correlation of X.
-This means that one of these features should be a good substitute for the other and that having both may be redundant.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{Images/TimeTaken-Mouse-Events.png}
+    % TODO: Find the right interface, current interface doesn't match whats in his paper.
+    \caption{Scatterplot of users.}
+    \label{fig:scatterplot}
+\end{figure}
 
+The lab and turk user classes cannot be separated by a simple metric of their data, such as length of events sequence and time to complete task.
+This rules out distance based machine learning approaches such as K Nearest Neighbours or a Support Vector Machine as there is no relationship there.
+It should be noted that length of events sequence and time are correlated with a pearson's correlation of $0.344$.
+
+As a rule of thumb we can say that correlations below 0.3 have no relationship, and values between 0.3 and 0.5 have a weak relationship \cite{mindrila2017scatterplots}.
+This means the 2 features are weakly correlated, but correlated nonetheless.
+This means that one of these features may be a good substitute for the other and that having both may be redundant.
 
 \subsection{Contributions}
 % The contributions are 1,2,3 (everyone likes 3s)
@@ -160,6 +188,68 @@ In this project my contributions to fix it are, -a system to classify users, a w
 
 All related work about actual other attempts to detect user engagement from mouse tracking data.
 Other subsections will be like miniature literature reviews or something?
+
+% Taken from project specification
+
+% Dont really link to engagement 
+\subsection{Eye tracking}
+
+Non-verbal information such as eye tracking may be used to detect user’s level of engagement \cite{lala2017detection}.
+Vision is one of the most powerful human senses so it has the potential to give a good measure of user engagement. 
+The methodology of eye tracking is that we move our eyes to focus on particular areas that we want to see in more detail, and divert our attention to that area \cite{duchowski2007eye}. 
+% duchowski2007eye is a VERY important piece of literature for the field, over 4000 citations
+Thus tracking a user’s gaze can provide insight into which part of a system they’re engaged with, and how much so.
+
+\begin{figure}[ht!]
+    \centering
+    \centerline{
+        \includegraphics[scale=0.7]{Images/EyeHeatmap.PNG}
+    }
+    \caption{Heatmap showing popular locations of users eyes on a webpage \cite{buscher2009you}.}
+    \label{fig:eyetrack}
+\end{figure}
+
+Eye tracking data can be used to show user interface elements that users focus their attention on as shown in Fig \ref{fig:eyetrack}. 
+From this researchers were able to predict the amount of attention elements of the page would receive.
+By observing what parts of an interface users are interacting with we can determine what a user is engaging with \cite{buscher2009you}.
+Eye-tracking has been used, and found success novel applications such as recording the engagement of users when playing a game. 
+Tracking users eye movements helped game designers understand how users can recognise interactable game objects and could be used to investigate problematic game design issues \cite{renshaw2009towards}.
+
+Eivazi and Bednarik extracted features from a users eye tracking data to determine their cognitive state in a problem solving exercise \cite{eivazi2011predicting}.
+Features such as ``mean fixation duration'' and ``total path distances'' were engineered, and users were split into classes based on their performance. 
+Given a user feature set and their performance class it was able to classify their cognitive state during the task with a 87.5\% accuracy with a support vector machine.
+
+Szafir and Mutlu identified a plethora of verbal and non-verbal behavioural cues used by teachers in an educational setting, with gaze being identified as one of them \cite{szafir2012pay}.
+The behavioural cues could not be recorded directly by a computer, instead EEG signals measured from a headset were used to measure engagement.
+
+Eye tracking is not however a perfect solution and its limitations have been well documented. 
+Track subjects eyes with a good degree of accuracy requires the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
+
+
+\subsection{Mouse cursor tracking}
+% Copied straight from CSCM10 Initial Report
+% Mouse cursor tracking
+
+Research has also found that there is a correlation between a user’s gaze and their cursor position. 
+The position can be considered a ``poor man’s eye tracker'' as it has been found that eye gaze match mouse position 69\% of the time \cite{cooke2006mouse}. 
+Mouse movement data can be collected without the drawbacks of eye tracking and with more automatic methods, meaning more data can be collected, and on a larger scale \cite{demvsar2017quantifying}.
+Therefore it can be said that mouse data can be used as a good alternative to eye tracking data.
+
+%Mouse activity can be used as input to a neural network and output a quantifiable level of activity for a webpage. 
+By using mouse data it is possible to unobtrusively record a user’s normal use of a web browser without disturbing their experience \cite{goecks2000learning}.
+% Above paper touches on one of the big advantages of measuring user engagement from mouse data, it is unobtrusive! We can monitior them in the background 
+It has also been found that users tend to follow the text they are reading with the mouse cursor \cite{liu2007detecting}. 
+It can be determine what paragraph of a page was being read with an accuracy of 79\% by using mouse cursor data \cite{hauger2011using}. 
+
+Other methodologies explored ways of classifying user engagement from eye and cursor data, however it is also possible to predict users attention and user frustration in complex webpages \cite{navalpakkam2012mouse}.
+Not all studies agree that mouse cursor is always a good approximation for eye data. 
+Hauger et al found that distinct cursor behaviour exists depending on the task, and that the relationship between eye gaze and mouse position is more nuanced than measuring only mouse data \cite{huang2012user}.
+
+% \subsection{Machine learning techniques}
+% I've given a high level overview of the existing literature, here I will be more in depth as to the algorithms and techniques relevant to this project.
+
+% these subsections below are old
+% probably pointless as theyre just some ML techniques and not backgroud
 
 \subsection{Semi Supervised Learning}
 This will be a key aspect of the project as we only have definitive labels for part of our data.
@@ -500,12 +590,12 @@ Figure \ref{fig:TurkLabLikli} shows how closely each users mouse sequences match
 
 The model likelihoods are the the log likelihoods that each user belongs to the lab or turk models. 
 One way of attempting to classify users is to identify any users with a higher lab likelihood as being more similar to a lab user than a turk user
-, however all the points have a higher lab likelihood than turk likelihood (shown by the green line y=x).
+, however all the points have a higher lab likelihood than turk likelihood shown by the black line y=x.
 
-An alternative solution is to plot a regression line of the lab users likelihoods (shown in orange). 
-We can see that the lab data points form an almost straight line. 
-Any points above this line have a higher likelihood of being a lab user or a lower likelihood of being a turk user than the actual lab data. 
-Thus this regression line forms a sort of pareto frontier, with points above it a more feasible choice of lab-like data than points beneath it.  
+% An alternative solution is to plot a regression line of the lab users likelihoods (shown in orange). 
+% We can see that the lab data points form an almost straight line. 
+% Any points above this line have a higher likelihood of being a lab user or a lower likelihood of being a turk user than the actual lab data. 
+% Thus this regression line forms a sort of pareto frontier, with points above it a more feasible choice of lab-like data than points beneath it.  
 
 
 \begin{figure}[ht!]
@@ -526,6 +616,9 @@ The exact distribution of these points change based on the initial random state 
 
 \subsection{Likelihood length correlation}
 
+Examination of the extreme points with the highest and lowest likelihoods revealed a potential correlation likelihoods and length of mouse events sequences.
+I decided to plot this data to understand if there was actually a link between these features.
+
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[c]{0.4\linewidth}
@@ -540,9 +633,11 @@ The exact distribution of these points change based on the initial random state 
         \caption{Lab HMM Model}
     \end{subfigure}  
     \caption{Plots showing correlation between likelihood of different models and the length of mouse events.}
+    \label{fig:liklihoodlengths}
 \end{figure}
 
-Figure \ref{fig:liklihood-lengths}
+Figure \ref{fig:liklihoodlengths} show that the log liklihood and length of a users mouse sequence are highly inversely correlated. 
+
 
 \section{Conclusion}
 
