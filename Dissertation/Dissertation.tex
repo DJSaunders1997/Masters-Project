@@ -636,8 +636,22 @@ I decided to plot this data to understand if there was actually a link between t
     \label{fig:liklihoodlengths}
 \end{figure}
 
-Figure \ref{fig:liklihoodlengths} show that the log liklihood and length of a users mouse sequence are highly inversely correlated. 
+Figure \ref{fig:liklihoodlengths} show that the log likelihood from both models and length of a users mouse sequence are highly inversely correlated. 
+The Lab model likelihood and length have a correlation of -0.982, and similarly the Turk model has a correlation of -0.976.
+A value less than $-0.7$ would indicate a strong negative correlation, therefore Figure ~\ref{fig:liklihoodlengths} shows an extremely strong negative correlation \cite{mindrila2017scatterplots}.
+Such a strong correlation could indicate the models are doing nothing, other that looking at the length of a sequence.
+However looking at the reclassified Turk data we can see that there doesn't appear to be any correlation between length, and whether the data has been reclassified.
+Therefore such a strong correlation between the length and likelihood is of no concern. 
 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[scale=0.4]{Images/Difference-Liklihood-Length.png}
+    \caption{Plot showing difference in likelihood between the models against length of mouse events sequence. }
+    \label{fig:diffliklihoodlengths}
+\end{figure}
+
+Figure ~\ref{fig:diffliklihoodlengths} removes the concern that length of mouse events sequence is the only feature being used in the models.
+The difference in likelihoods and length of mouse events sequence has a correlation of $0.176$, meaning the relationship between the features is non-existant.
 
 \section{Conclusion}
 
@@ -650,6 +664,8 @@ Typically data science and machine learning uses big data, where as this project
 Any bias in any of these original samples will be magnified as this was used to classify more points, which would again spread this bias.
 This would become a self fulfilling prophecy as more similar points would be labelled and spread the belief.
 
+Any concern that the models have learned of a simple feature such as sequence event has been disproven
+, showing the reclassification algorithm has nonesuch simple relationship.
 
 Biggest flaw of the project is the first assumption, that the lab people were all paying attention.
 While they were monitored and we can be sure they were not distracted by phones or televisions, many of them may have 'zoned out' and not have been given it their full effort and attention.
