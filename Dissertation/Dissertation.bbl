@@ -1037,6 +1037,31 @@
       \field{pages}{270\bibrangedash 293}
       \range{pages}{24}
     \endentry
+    \entry{ronk2014structured}{article}{}
+      \name{author}{1}{}{%
+        {{hash=54d2bad14da4955dea59ea88d2c03ab0}{%
+           family={Ronk},
+           familyi={R\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{54d2bad14da4955dea59ea88d2c03ab0}
+      \strng{fullhash}{54d2bad14da4955dea59ea88d2c03ab0}
+      \strng{bibnamehash}{54d2bad14da4955dea59ea88d2c03ab0}
+      \strng{authorbibnamehash}{54d2bad14da4955dea59ea88d2c03ab0}
+      \strng{authornamehash}{54d2bad14da4955dea59ea88d2c03ab0}
+      \strng{authorfullhash}{54d2bad14da4955dea59ea88d2c03ab0}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Retrieved November}
+      \field{title}{Structured, semi structured and unstructured data}
+      \field{volume}{21}
+      \field{year}{2014}
+      \field{pages}{2015}
+      \range{pages}{1}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

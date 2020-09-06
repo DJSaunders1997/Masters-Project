@@ -369,31 +369,74 @@ This section may act as an overview of the project, detailing the different sect
 
 \subsection{Data}
 
+% OLD FROM PROJECT-SPEC
+
+
+The first component of the project has been completed, and data has been extracted form JSON format to a csv format.
+
+\begin{table}[ht]
+    \caption{\label{table:data} The first 5 records of results of the crowdsourced task.}
+
+    \begin{tabular}{llllllll}
+        \hline
+        event\_type    & target         & time  & x   & y   & step & turkId         \\ \hline
+        mousedown      & alloc-slider-1 & 0     & 477 & 405 & 1    & A35YFAFWP33C70 \\
+        mouseup        & alloc-slider-1 & 0.111 & 478 & 405 & 1    & A35YFAFWP33C70 \\
+        click          & alloc-slider-1 & 0.111 & 478 & 405 & 1    & A35YFAFWP33C70 \\
+        mousedown      & alloc-slider-1 & 1.516 & 479 & 405 & 1    & A35YFAFWP33C70 \\
+        mousedirchange & alloc-slider-1 & 2.395 & 543 & 403 & 1    & A35YFAFWP33C70 \\
+        mousedirchange & alloc-slider-1 & 3.161 & 594 & 402 & 1    & A35YFAFWP33C70 \\
+        mouseup        & alloc-slider-1 & 5.048 & 514 & 407 & 1    & A35YFAFWP33C70 \\
+        click          & alloc-slider-1 & 5.048 & 514 & 407 & 1    & A35YFAFWP33C70 \\
+        mousedown      & alloc-slider-2 & 5.461 & 494 & 441 & 1    & A35YFAFWP33C70 \\
+        mouseup        & alloc-slider-2 & 5.513 & 494 & 441 & 1    & A35YFAFWP33C70 \\ \hline
+    \end{tabular}
+\end{table}
+
+Table \ref{table:data} shows us the features of the data.
+The lab study data and the crowdsourced data have the same schema, except lab results have a different ID field.
+
+The target field shows us which element in Fig \ref{fig:interface} a participant is interacting with and event\_type details the type of interaction.
+Time field shows the time taken in seconds since the first recorded mouse event.
+We can hypothesise that participants with a shorter time paid less attention than a participant who took much longer, thinking about their actions more.
+The x and y fields show the location of the mouse and step shows which stage of the task, from 1 to 5, a participant was in.
+
+% NEW STUFF
+
 % Duplicate or remove to deal with imbalances.
 % Probably less effective focusing on this rather than features.
 
+\subsubsection{Data Manipulation}
+
 Here I will summarise what I have done to the data.
-As previously mentioned the data was gathered through a lab study and an online study.
+As previously mentioned the data was gathered through a lab study and an online crowdsourced study.
 The purpose of the online study was to gather a larger amount of data that was possible to do so in person.
-The aim of this was to make any results more statically significant.
-Data was recorded in a big JSON dump with lots of irrelevant and repealed data relating to the users background and not their mouse movements.
-Pythons JSON couldn't directly convert the data as mouse events were stored as a nested JSON dictionary and there were errors in the way it was written making it invalid JSON.
-Took ages and should explain more indepth, but then finally got data into a tabular data format of a csv which I am more comfortable working with.
-Ended up with over 100,000 lines? Might have been more. 
+% The aim of this was to make any results more statically significant.
+Data was recorded in a JSON formate with lots of irrelevant and duplicate data relating to the users background and not their mouse movements.
+JSON is a form of unstructured data, meaning it is not fully structures but has some organisation to it \cite{ronk2014structured}.
+To use the data in this project it first had to be processed into structured data.
+This was challenging and time consuming as Python's JSON library was unable to directly convert the data.
+This was because the mouse events were stored as a nested JSON dictionary and there were additionally errors with the way the data was logged causing it to be invalid JSON.
+After these challenges were addressed the data was converted and saved to a Pandas DataFrame, and then to a csv with over 100,000 lines.
+Errors were found in some of the data and so the final number of usable data is less than the figures shown in \ref{table:data}.
+Example errors include missing mouse events, or time to complete task being recorded incorrectly as 
+$1.4 \times 10^{12}$ seconds or $31,688$ years, obviously incorrect.
 
 This leads to the problem of imbalanced data samples.
-There were approximately 11 lab data and 400 online data, meaning that there were 40x as many data samples from one class compared to the other.
+After erroneous data was removed there were only 14 lab data samples and 461 online data samples.
+This means that there were over 30x as many data samples from one class compared to the other.
 As stated in my assumptions, we can say that the lab participants were paying attention, where as the online participants may or may not have been paying attention.
 
 If the classes were balanced then simple approach may be to treat this problem as binary classification problem.
 Using something like a Support Vector Machine we could classify a given point as lab or online / paying attention or possibly paying attention based on their proximity to other data points.
 To do so we would need to have balanced classes otherwise the algorithm would have a high accuracy from just classifying everything as possibly paying attention as that is the most frequent class.
-There are two main methods of dealing with class imbalances, removing data samples and creating new data samples.
+However due to the imbalances, alternative methods are required.
 
-It was decided that creating new data samples would be best as there is not a whole lot of data to work with, so there would be a strong preference to keep the data we have.
-New points can be created by sampling from a distribution (reference) but here it was decided just to duplicate the samples as there was no discernible distribution of the data.
-Another method is to copy the points, altering them slightly, this was considered but not used in the end.
-Each lab study data sample was copied 40 times to even out the classes.
+% Traditionally there are two main methods of dealing with class imbalances, removing data samples and creating new data samples.
+% It was decided that creating new data samples would be best as there is not a whole lot of data to work with, so there would be a strong preference to keep the data we have.
+% New points can be created by sampling from a distribution (reference) but here it was decided just to duplicate the samples as there was no discernible distribution of the data.
+% Another method is to copy the points, altering them slightly, this was considered but not used in the end.
+% Each lab study data sample was copied 40 times to even out the classes.
 
 \subsection{Features}
 
