@@ -79,7 +79,7 @@
 % Paragraph 1 - Initial motovation
 Crowd-sourcing marketplaces like Amazon’s Mechanical Turk are popular services that provide a method for researchers to get participants to complete human intelligence tasks \cite{paolacci2010running}. 
 A common use for this technology is to label data for use in training for machine learning algorithms \cite{chang2017revolt}.
-However, they can also provide a cheap, scalable method for scientists to gather responses in research.
+They can also provide a cheap, scalable method for scientists to gather responses in research.
 The level of user engagement, attention, and low quality responses can all be issues when gathering data from participants with distributed approaches \cite{ipeirotis2010quality}.
 The primary motivation of this project is to develop a system of potentially identifying if a crowdsourced user is paying attention during a task.
 
@@ -255,6 +255,11 @@ Hauger et al found that distinct cursor behaviour exists depending on the task, 
 This will be a key aspect of the project as we only have definitive labels for part of our data.
 This reflects the challenges of real world data, by some estimates only 2\% (made up number) of all data is structured and labelled, the rest is unstructured [find reference].
 
+Reference \cite{zhu2005semi} as it looks to be massively influential with 4,000 google scholar citations.
+Mention semi-supervosed SVMs here. 
+And the abbreviation semi supervised learning (SSL)
+
+
 In a sense the data here is labelled.
 All day belongs to 2 classes, online turk user, or in person lab study user.
 However on the other hand the data is not labelled for the task I would like to explore.
@@ -264,6 +269,20 @@ However the rest of the samples we have which are all of the online data are unl
 Therefore this is a kind of semi supervised learning problem where we only have a small percentage of our samples labelled, and only confident labels for one class.
 (See if a paper on this exists, semi supervised binary classification with only labels for one class.)
 % Do a literature review type of thing where I review semi supervised learning, talk about methods and how they can be applied to what I'm trying to do.
+
+Semi supervised learning has already been applied successfully to the field of user engagement.
+During a 2017 study video data of secondary school children was recorded during a set of tasks, with the aim of classifying pupils between the states of `Engaged' and `Disengaged' \cite{nezami2017semi}.
+Rather than annotate all data by hand which would be very time intensive, 1000 frames of video were selected at random and hand labelled.
+This led to a split of data labelled 563 engaged and 437 disengaged.
+AU facial recognition features were extracted from the pupils faces in the video frames, and important features decided with a Principal Component Analysis method to keep features totalling 95\% of the variance.
+
+Their chosen method of semi supervised learning is a safe semi-supervised support vector machine.
+This variant of a semi supervised support vector machine finds a better separator when there is a small volume of labelled data, but a large volume of unlabelled data.
+The SSL model was trained with numbers of labelled data from 50 to 500, and and equal number of samples from both classes.
+The AUC metric ranged from 0.65 to 0.733 depending on the quantity of labelled dta used, outperforming a traditional SVM.
+
+Unfortunately as shown in figure \ref{fig:scatterplot} the data here cannot be spatially separated and therefore any SVM would not be successful on the data. 
+It is still useful however to see how semi-supervised learning has been applied to the field of detecting user engagement and how it has been successful.
 
 \subsection{N-Grams}
 This paper has a nice scientific explanation of n-grams \cite{tomovic2006n}.

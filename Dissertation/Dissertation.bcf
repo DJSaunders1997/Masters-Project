@@ -2210,15 +2210,17 @@
     <bcf:citekey order="26">hauger2011using</bcf:citekey>
     <bcf:citekey order="27">navalpakkam2012mouse</bcf:citekey>
     <bcf:citekey order="28">huang2012user</bcf:citekey>
-    <bcf:citekey order="29">tomovic2006n</bcf:citekey>
-    <bcf:citekey order="30">collins2016tagging</bcf:citekey>
-    <bcf:citekey order="31">gordillo2007hmm</bcf:citekey>
-    <bcf:citekey order="32">rabiner1989tutorial</bcf:citekey>
-    <bcf:citekey order="33">ferrando2018generating</bcf:citekey>
-    <bcf:citekey order="34">hmmlearn</bcf:citekey>
-    <bcf:citekey order="35">pohle2017selecting</bcf:citekey>
-    <bcf:citekey order="36">ronk2014structured</bcf:citekey>
-    <bcf:citekey order="37">mindrila2017scatterplots</bcf:citekey>
+    <bcf:citekey order="29">zhu2005semi</bcf:citekey>
+    <bcf:citekey order="30">nezami2017semi</bcf:citekey>
+    <bcf:citekey order="31">tomovic2006n</bcf:citekey>
+    <bcf:citekey order="32">collins2016tagging</bcf:citekey>
+    <bcf:citekey order="33">gordillo2007hmm</bcf:citekey>
+    <bcf:citekey order="34">rabiner1989tutorial</bcf:citekey>
+    <bcf:citekey order="35">ferrando2018generating</bcf:citekey>
+    <bcf:citekey order="36">hmmlearn</bcf:citekey>
+    <bcf:citekey order="37">pohle2017selecting</bcf:citekey>
+    <bcf:citekey order="38">ronk2014structured</bcf:citekey>
+    <bcf:citekey order="39">mindrila2017scatterplots</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

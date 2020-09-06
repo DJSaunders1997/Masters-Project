@@ -821,6 +821,65 @@
       \field{pages}{1341\bibrangedash 1350}
       \range{pages}{10}
     \endentry
+    \entry{zhu2005semi}{report}{}
+      \name{author}{1}{}{%
+        {{hash=2c1be19288e2f02778ee1943bc08b36b}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xiaojin\bibnamedelima Jerry},
+           giveni={X\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Wisconsin-Madison Department of Computer Sciences}%
+      }
+      \strng{namehash}{2c1be19288e2f02778ee1943bc08b36b}
+      \strng{fullhash}{2c1be19288e2f02778ee1943bc08b36b}
+      \strng{bibnamehash}{2c1be19288e2f02778ee1943bc08b36b}
+      \strng{authorbibnamehash}{2c1be19288e2f02778ee1943bc08b36b}
+      \strng{authornamehash}{2c1be19288e2f02778ee1943bc08b36b}
+      \strng{authorfullhash}{2c1be19288e2f02778ee1943bc08b36b}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Semi-supervised learning literature survey}
+      \field{type}{techreport}
+      \field{year}{2005}
+    \endentry
+    \entry{nezami2017semi}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=5fc66386c63c509b42d8e2049b2e9b83}{%
+           family={Nezami},
+           familyi={N\bibinitperiod},
+           given={Omid\bibnamedelima Mohamad},
+           giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7b3f94bd6dd92ee82fbdd1ea5624f746}{%
+           family={Richards},
+           familyi={R\bibinitperiod},
+           given={Debbie},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fc92c2f462b6bd41a1c017c951ab2814}{%
+           family={Hamey},
+           familyi={H\bibinitperiod},
+           given={Len},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{374675a0787e2e04da23d2de4588c69c}
+      \strng{fullhash}{374675a0787e2e04da23d2de4588c69c}
+      \strng{bibnamehash}{374675a0787e2e04da23d2de4588c69c}
+      \strng{authorbibnamehash}{374675a0787e2e04da23d2de4588c69c}
+      \strng{authornamehash}{374675a0787e2e04da23d2de4588c69c}
+      \strng{authorfullhash}{374675a0787e2e04da23d2de4588c69c}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{PACIS}
+      \field{title}{Semi-Supervised Detection of Student Engagement.}
+      \field{year}{2017}
+      \field{pages}{157}
+      \range{pages}{1}
+    \endentry
     \entry{tomovic2006n}{article}{}
       \name{author}{3}{}{%
         {{hash=c4c9aec67c6075357e81adbfd8fda150}{%
@@ -848,8 +907,8 @@
       \strng{authorbibnamehash}{71aec0b93524d23f1d11b4a8209d1c1d}
       \strng{authornamehash}{71aec0b93524d23f1d11b4a8209d1c1d}
       \strng{authorfullhash}{71aec0b93524d23f1d11b4a8209d1c1d}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computer methods and programs in biomedicine}

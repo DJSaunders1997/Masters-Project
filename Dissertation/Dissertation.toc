@@ -16,13 +16,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Semi Supervised Learning}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}N-Grams}{7}%
+\contentsline {subsection}{\numberline {2.4}N-Grams}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Hidden Markov Models}{7}%
+\contentsline {subsection}{\numberline {2.5}Hidden Markov Models}{8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Implementation}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Methodology}{9}%
+\contentsline {section}{\numberline {4}Methodology}{10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Data Pipeline}{10}%
 \defcounter {refsection}{0}\relax 
@@ -34,34 +34,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3}Machine Learning}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Labels}{12}%
+\contentsline {subsection}{\numberline {5.4}Labels}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Repeated Experiments}{12}%
+\contentsline {section}{\numberline {6}Repeated Experiments}{13}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Distance Based Methods / Spacial Classification Methods}{13}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.1.1}SVM separation methods}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2}Clustering}{13}%
+\contentsline {subsubsection}{\numberline {6.1.2}Clustering}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Bag-Of-Words Methods}{13}%
+\contentsline {subsection}{\numberline {6.2}Bag-Of-Words Methods}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1}Naive Bayes}{13}%
+\contentsline {subsubsection}{\numberline {6.2.1}Naive Bayes}{14}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.2.2}Naive Bayes with N-Grams}{14}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.3}Hidden Markov Models}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Imbalanced classes}{14}%
+\contentsline {subsection}{\numberline {6.4}Imbalanced classes}{15}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.4.1}Revisiting methods}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Results}{15}%
+\contentsline {section}{\numberline {7}Results}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Table or graph of results}{15}%
+\contentsline {subsection}{\numberline {7.1}Table or graph of results}{16}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.2}Likelihood length correlation}{17}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8}Conclusion}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Future work}{18}%
+\contentsline {section}{\numberline {9}Future work}{19}%

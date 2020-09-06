@@ -1,17 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'Dissertation.blg'
-[94] biber-MSWIN64:322> INFO - === 
-[119] Biber.pm:415> INFO - Reading 'Dissertation.bcf'
-[281] Biber.pm:943> INFO - Found 32 citekeys in bib section 0
-[302] Biber.pm:4256> INFO - Processing section 0
-[302] Utils.pm:75> INFO - Globbing data source 'References.bib'
-[316] Utils.pm:91> INFO - Globbed data source 'References.bib' to References.bib
-[340] Biber.pm:4455> INFO - Looking for bibtex format file 'References.bib' for section 0
-[355] bibtex.pm:1653> INFO - LaTeX decoding ...
-[432] bibtex.pm:1471> INFO - Found BibTeX data source 'References.bib'
-[684] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[684] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[684] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[684] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[713] bbl.pm:652> INFO - Writing 'Dissertation.bbl' with encoding 'UTF-8'
-[765] bbl.pm:755> INFO - Output to Dissertation.bbl
+[91] biber-MSWIN64:322> INFO - === 
+[116] Biber.pm:415> INFO - Reading 'Dissertation.bcf'
+[260] Biber.pm:943> INFO - Found 34 citekeys in bib section 0
+[282] Biber.pm:4256> INFO - Processing section 0
+[282] Utils.pm:75> INFO - Globbing data source 'References.bib'
+[294] Utils.pm:91> INFO - Globbed data source 'References.bib' to References.bib
+[314] Biber.pm:4455> INFO - Looking for bibtex format file 'References.bib' for section 0
+[325] bibtex.pm:1653> INFO - LaTeX decoding ...
+[410] bibtex.pm:1471> INFO - Found BibTeX data source 'References.bib'
+[683] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[683] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[683] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[683] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[712] bbl.pm:652> INFO - Writing 'Dissertation.bbl' with encoding 'UTF-8'
+[736] bbl.pm:755> INFO - Output to Dissertation.bbl
