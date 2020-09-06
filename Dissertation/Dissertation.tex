@@ -23,7 +23,7 @@
     By using observed data recorded from the users mouse we are able to model both groups interaction with the system with Hidden Markov Models.
     Some users interaction seem misplaced compared to their groups.
     These are reclassified with the aim of changing the groups of user from lab study or crowdsourced, to users paying attention and not paying attention.     
-    It was found that 26\% turk users were paying attention, and 20\% of lab study users were not paying attention.
+    It was found that potentially 9.8\% of turk users were paying attention, and 43\% of lab study users may not have been paying attention.
     These results require further research with a properly labelled dataset to confirm any findings.
 
 \end{abstract}
@@ -254,6 +254,8 @@ Hauger et al found that distinct cursor behaviour exists depending on the task, 
 \subsection{Semi Supervised Learning}
 This will be a key aspect of the project as we only have definitive labels for part of our data.
 This reflects the challenges of real world data, by some estimates only 2\% (made up number) of all data is structured and labelled, the rest is unstructured [find reference].
+
+SSL is the study of combining both labelled and unlabelled data to improve machine learning techniques.
 
 Reference \cite{zhu2005semi} as it looks to be massively influential with 4,000 google scholar citations.
 Mention semi-supervosed SVMs here. 
@@ -659,7 +661,7 @@ One way of attempting to classify users is to identify any users with a higher l
 % Any points above this line have a higher likelihood of being a lab user or a lower likelihood of being a turk user than the actual lab data. 
 % Thus this regression line forms a sort of pareto frontier, with points above it a more feasible choice of lab-like data than points beneath it.  
 
-
+% TODO: Update with newer graph so reclassified is green
 \begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.5]{Images/Reclassified-Data.png}
@@ -671,10 +673,24 @@ Figure \ref{fig:Reclassified} shows which of the turk users are more similar to 
 , than other turk users. 
 This plot shows the same datapoints and axis
 , but the points above the line are recoloured yellow to show their difference from the actual lab data (green) and normal turk data (purple). 
-120 of the 461 (26\%) turk users are above this threshold. 
+45 of the 461 (9.8\%) turk users are above this threshold. 
 Which seems like a reasonable percentage of the population to be paying attention. 
+Additionally 6 out of 14 (43\%)of the lab data samples has been reclassified by the algorithm as being more similar to the turk data.
+
 % TODO see if I can find any references that say how many turkers/anyone pay attention at a given time.
 The exact distribution of these points change based on the initial random state when training the model.
+
+Figure~\ref{fig:scatterplot} showed a naive simple attempt to separate the classes of turk users and lab users.
+It was concluded that a spacial based technique such as a SVM would be unsuitable as the data didn't seem to form any patterns or clusters.
+Figure~\ref{fig:Reclassified-Scatterplot} shows how the reclassified datapoints are not linearly separable.
+This proves that my initial hypothesis was correct and that data could not be reclassified purely by looking at simple feature of time taken and just number of mouse events.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[scale=0.5]{Images/TimeTaken-Mouse-Events-Reclassified.png}
+    \caption{Plot showing features of the reclassified points. }
+    \label{fig:Reclassified-Scatterplot}
+\end{figure}
 
 \subsection{Likelihood length correlation}
 
