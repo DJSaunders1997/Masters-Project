@@ -1121,6 +1121,39 @@
       \field{pages}{2015}
       \range{pages}{1}
     \endentry
+    \entry{kaggleWorkerActivity}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2b06c3d48b11c21069ebd0f962707011}{%
+           family={Computation},
+           familyi={C\bibinitperiod},
+           given={Human},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b06c3d48b11c21069ebd0f962707011}
+      \strng{fullhash}{2b06c3d48b11c21069ebd0f962707011}
+      \strng{bibnamehash}{2b06c3d48b11c21069ebd0f962707011}
+      \strng{authorbibnamehash}{2b06c3d48b11c21069ebd0f962707011}
+      \strng{authornamehash}{2b06c3d48b11c21069ebd0f962707011}
+      \strng{authorfullhash}{2b06c3d48b11c21069ebd0f962707011}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Kaggle}
+      \field{month}{10}
+      \field{title}{Workers Browser Activity in CrowdFlower Tasks}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.kaggle.com/humancomp/worker-activity-crowdflower
+      \endverb
+      \verb{url}
+      \verb https://www.kaggle.com/humancomp/worker-activity-crowdflower
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

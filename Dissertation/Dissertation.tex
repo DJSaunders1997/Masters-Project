@@ -15,17 +15,25 @@
 \begin{document}
 \maketitle
 
+% The abstract is a good start. It's better to be more specific about
+% what your thesis is about. So, the first sentence should be something
+% like "this project explores the use of HMMs to determine if users are
+% paying attention during a crowdsourced study." I would also remove the
+% last sentence. That's more of a future work idea.
+
+
 \begin{abstract} 
     %Potential abstract.
-    This project explores the use of Hidden Markov Models to explore users mouse cursor data while performing a task.
+    %This project explores the use of Hidden Markov Models to explore users mouse cursor data while performing a task.
+    This project explores the use of Hidden Markov Models to determine if users are paying attention during a crowdsourced study.
     The users are split into 2 distinct groups, online crowdsourced users, and lab study users.
     We propose that the lab study users were paying attention, and the crowdsourced users may or may not be paying attention.
-    By using observed data recorded from the users mouse we are able to model both groups interaction with the system with Hidden Markov Models.
+    By using observed data recorded from the users mouse cursor we are able to model both groups interaction with the system with separate Hidden Markov Models.
     Some users interaction seem misplaced compared to their groups.
     These are reclassified with the aim of changing the groups of user from lab study or crowdsourced, to users paying attention and not paying attention.     
     It was found that potentially 9.8\% of turk users were paying attention, and 43\% of lab study users may not have been paying attention.
-    These results require further research with a properly labelled dataset to confirm any findings.
-
+    % These results require further research with a properly labelled dataset to confirm any findings.
+    % I would also remove the last sentence. That's more of a future work idea.
 \end{abstract}
 
 \tableofcontents
@@ -255,10 +263,12 @@ Hauger et al found that distinct cursor behaviour exists depending on the task, 
 This will be a key aspect of the project as we only have definitive labels for part of our data.
 This reflects the challenges of real world data, by some estimates only 2\% (made up number) of all data is structured and labelled, the rest is unstructured [find reference].
 
+https://sci-hub.tw/10.2200/s00196ed1v01y200906aim006
+
 SSL is the study of combining both labelled and unlabelled data to improve machine learning techniques.
 
 Reference \cite{zhu2005semi} as it looks to be massively influential with 4,000 google scholar citations.
-Mention semi-supervosed SVMs here. 
+Mention semi-supervised SVMs here. 
 And the abbreviation semi supervised learning (SSL)
 
 
@@ -748,9 +758,19 @@ Any concern that the models have learned of a simple feature such as sequence ev
 Biggest flaw of the project is the first assumption, that the lab people were all paying attention.
 While they were monitored and we can be sure they were not distracted by phones or televisions, many of them may have 'zoned out' and not have been given it their full effort and attention.
 
+
 \section{Future work}
-It would be interesting to see if any of the methods here would reveal anything interesting in other datasets.
-A kaggle crowdflower dataset seems like an idea candidate and I would be interested if we could determine if any of these users were paying attention. 
+
+All the problems addressed in the conclusion have potential to be addressed in future work.
+% TODO: Write order of future work based on the order of the conclusion.
+As stated the main flaw of this project is that the label is not labelled for the task I am trying to perform.
+% Taken from abstract
+Therefore to fully evaluate any of these results would require further research with a properly labelled dataset.
+
+Another area of future work would be to see if any of the methods developed here could be applied to other similar datasets.
+A kaggle crowdflower dataset seems like an idea candidate \cite{kaggleWorkerActivity}.
+While it is still not labelled with attention and non-attention, it does contain mouse data of crowdsourced users.
+Additionally the dataset contains the users results from 3 different tasks, a users success at a task may prove to be a reasonable proxy for engagement. 
 
 \printbibliography
 

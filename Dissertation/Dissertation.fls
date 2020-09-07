@@ -198,6 +198,7 @@ INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Difference-Liklihood-Le
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Difference-Liklihood-Length.png
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Images\Difference-Liklihood-Length.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.aux
 INPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.run.xml
 OUTPUT c:\Users\DJSau\Masters-Project\Dissertation\Dissertation.run.xml
@@ -207,6 +208,8 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx9.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb

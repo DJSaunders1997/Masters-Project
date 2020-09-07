@@ -2221,6 +2221,7 @@
     <bcf:citekey order="37">pohle2017selecting</bcf:citekey>
     <bcf:citekey order="38">ronk2014structured</bcf:citekey>
     <bcf:citekey order="39">mindrila2017scatterplots</bcf:citekey>
+    <bcf:citekey order="40">kaggleWorkerActivity</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
