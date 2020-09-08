@@ -302,6 +302,28 @@ Either cite this paper or more likely look at their reference for n-grams and ci
 
 \subsection{Hidden Markov Models}
 
+% Cut from repeated experiments section.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Hidden Markov Models}
+% % Useful Background reading and potential references.
+% %https://towardsdatascience.com/hidden-markov-models-for-time-series-classification-basic-overview-a59b74e5e65b Normally towardsdatascience is really good but this makes no sense to me at all.
+
+% %This article is more complicated, but also indepth and explains stuff more. - https://towardsdatascience.com/markov-chains-and-hmms-ceaf2c854788
+% %Some guys github repository using HMM for binary sentimental analysis of tweets - https://github.com/FantacherJOY/Hidden-Markov-Model-for-NLP
+% %"In the case one label is way more frequent than the other (say Class B appears for every 100 samples of Class A), or in the case one category is broader than the other (have more variance, i.e. Class A is an expected behavior of a process and Class B is all the cases that are abnormal), then we might want to train a unique HMM for Class A. For each new sample, we compute the likelihood to the model, and if it falls below a pre-defined threshold (that can be chosen with respect to some validation sample, or in the worst case, from the training samples themselves) we assign this sample to Class B. If the likelihood is above the threshold, we assign the sample to Class A." - https://datascience.stackexchange.com/questions/8560/can-hmm-be-used-as-a-binary-classifier
+
+% HMMs are typically used with time series data.
+% Here I just used the series of mouse events and ignored the timestamps of the event.
+% It was found earlier that the length of mouse events and time are positively correlatied with a pearsons correlation of ?? 0.6,
+%  and so just the sequence of mouse events should still hold the detail that time data would.
+
+% These can be used for binary classification as described here 
+% (https://datascience.stackexchange.com/questions/8560/can-hmm-be-used-as-a-binary-classifier). Say theyre used to generate samples, maybe in another part as that will probably need more explanation.
+
+% With the bag of words model we ignored all order to the sequences looking only at the frequency of each item.
+% This is a different approach, here the order is the most important thing.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % explanation from scratch: https://towardsdatascience.com/hidden-markov-model-implemented-from-scratch-72865bda430e
 
 A Hidden Markov Model will be the main statistical modelling technique used in this paper.
@@ -396,7 +418,7 @@ This section may act as an overview of the project, detailing the different sect
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.55]{Images/Data-Pipeline.png}
+    \includegraphics[scale=0.5]{Images/Data-Pipeline.png}
     \caption{Diagram of the Data Pipeline of the project.}
     \label{fig:test}
 \end{figure}
@@ -589,25 +611,6 @@ If this is done recursively then we can end up with a system that can split all 
 % TODO: Plot of ngrams for both classes. Create side by side bar plot.
 
 % html seems to be higher with turkers rather than lab users, this may be because they were fidgeting and not paying attention?
-
-% \subsection{Hidden Markov Models}
-% % Useful Background reading and potential references.
-% %https://towardsdatascience.com/hidden-markov-models-for-time-series-classification-basic-overview-a59b74e5e65b Normally towardsdatascience is really good but this makes no sense to me at all.
-
-% %This article is more complicated, but also indepth and explains stuff more. - https://towardsdatascience.com/markov-chains-and-hmms-ceaf2c854788
-% %Some guys github repository using HMM for binary sentimental analysis of tweets - https://github.com/FantacherJOY/Hidden-Markov-Model-for-NLP
-% %"In the case one label is way more frequent than the other (say Class B appears for every 100 samples of Class A), or in the case one category is broader than the other (have more variance, i.e. Class A is an expected behavior of a process and Class B is all the cases that are abnormal), then we might want to train a unique HMM for Class A. For each new sample, we compute the likelihood to the model, and if it falls below a pre-defined threshold (that can be chosen with respect to some validation sample, or in the worst case, from the training samples themselves) we assign this sample to Class B. If the likelihood is above the threshold, we assign the sample to Class A." - https://datascience.stackexchange.com/questions/8560/can-hmm-be-used-as-a-binary-classifier
-
-% HMMs are typically used with time series data.
-% Here I just used the series of mouse events and ignored the timestamps of the event.
-% It was found earlier that the length of mouse events and time are positively correlatied with a pearsons correlation of ?? 0.6,
-%  and so just the sequence of mouse events should still hold the detail that time data would.
-
-% These can be used for binary classification as described here 
-% (https://datascience.stackexchange.com/questions/8560/can-hmm-be-used-as-a-binary-classifier). Say theyre used to generate samples, maybe in another part as that will probably need more explanation.
-
-% With the bag of words model we ignored all order to the sequences looking only at the frequency of each item.
-% This is a different approach, here the order is the most important thing.
 
 % EXPLAIN EVERYTHING IVE DONE.
 
