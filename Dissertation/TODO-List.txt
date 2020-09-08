@@ -1,0 +1,6 @@
+TODO: List
+08/09/20
+
+Finish Semi-Supervised Learning section with references.
+
+Properly reference and talk about previous study mine is based off.
