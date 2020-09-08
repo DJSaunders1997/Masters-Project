@@ -1,67 +1,47 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Motivation}{2}%
+\contentsline {section}{\numberline {1}Motivation}{2}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Background}{3}%
+\contentsline {subsection}{\numberline {1.1}Background}{3}{subsection.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Initial attempt}{4}%
+\contentsline {subsection}{\numberline {1.2}Initial attempt}{4}{subsection.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Contributions}{5}%
+\contentsline {subsection}{\numberline {1.3}Contributions}{4}{subsection.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Related Work}{5}%
+\contentsline {section}{\numberline {2}Related Work}{5}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Eye tracking}{5}%
+\contentsline {subsection}{\numberline {2.1}Eye tracking}{5}{subsection.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Mouse cursor tracking}{6}%
+\contentsline {subsection}{\numberline {2.2}Mouse cursor tracking}{6}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Semi Supervised Learning}{7}%
+\contentsline {subsection}{\numberline {2.3}Semi Supervised Learning}{6}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}N-Grams}{8}%
+\contentsline {subsection}{\numberline {2.4}N-Grams}{7}{subsection.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Hidden Markov Models}{8}%
+\contentsline {subsection}{\numberline {2.5}Hidden Markov Models}{8}{subsection.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Implementation}{8}%
+\contentsline {section}{\numberline {3}Implementation}{9}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Methodology}{10}%
+\contentsline {section}{\numberline {4}Methodology}{10}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Data Pipeline}{10}%
+\contentsline {section}{\numberline {5}Data Pipeline}{10}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Data}{10}%
+\contentsline {subsection}{\numberline {5.1}Data}{10}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1}Data Manipulation}{11}%
+\contentsline {subsubsection}{\numberline {5.1.1}Data Manipulation}{11}{subsubsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Features}{12}%
+\contentsline {subsection}{\numberline {5.2}Features}{12}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Machine Learning}{12}%
+\contentsline {subsection}{\numberline {5.3}Machine Learning}{12}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Labels}{13}%
+\contentsline {subsection}{\numberline {5.4}Labels}{12}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Repeated Experiments}{13}%
+\contentsline {section}{\numberline {6}Results}{13}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Distance Based Methods / Spacial Classification Methods}{13}%
+\contentsline {subsection}{\numberline {6.1}Table or graph of results}{13}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}SVM separation methods}{13}%
+\contentsline {subsection}{\numberline {6.2}Likelihood length correlation}{14}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2}Clustering}{14}%
+\contentsline {section}{\numberline {7}Conclusion}{16}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Bag-Of-Words Methods}{14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1}Naive Bayes}{14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.2}Naive Bayes with N-Grams}{14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Hidden Markov Models}{14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Imbalanced classes}{15}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.4.1}Revisiting methods}{15}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Results}{16}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Table or graph of results}{16}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Likelihood length correlation}{17}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Conclusion}{19}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Future work}{20}%
+\contentsline {section}{\numberline {8}Future work}{17}{section.8}%
