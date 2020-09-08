@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  8 SEP 2020 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  8 SEP 2020 10:20
 entering extended mode
 **c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
 (c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
@@ -453,96 +453,98 @@ Package pdftex.def Info: Images/TimeTaken-Mouse-Events.png  used on input line 1
 File: Images/EyeHeatmap.PNG Graphic file (type png)
 <use Images/EyeHeatmap.PNG>
 Package pdftex.def Info: Images/EyeHeatmap.PNG  used on input line 215.
-(pdftex.def)             Requested size: 312.49033pt x 251.36238pt.
+(pdftex.def)             Requested size: 267.85275pt x 215.45659pt.
  [5 <c:/Users/DJSau/Masters-Project/Dissertation/Images/EyeHeatmap.PNG>] [6] [7]
-<Images/HMM-Example-Diagram.png, id=39, 522.15076pt x 457.71pt>
-File: Images/HMM-Example-Diagram.png Graphic file (type png)
-<use Images/HMM-Example-Diagram.png>
-Package pdftex.def Info: Images/HMM-Example-Diagram.png  used on input line 330.
-(pdftex.def)             Requested size: 208.8566pt x 183.08075pt.
- [8]
+<Images/HMM-Paper-Diagram.png, id=39, 215.1293pt x 99.4973pt>
+File: Images/HMM-Paper-Diagram.png Graphic file (type png)
+<use Images/HMM-Paper-Diagram.png>
+Package pdftex.def Info: Images/HMM-Paper-Diagram.png  used on input line 334.
+(pdftex.def)             Requested size: 322.69315pt x 149.24557pt.
+ [8 <c:/Users/DJSau/Masters-Project/Dissertation/Images/HMM-Paper-Diagram.png>]
 <Images/ModelEvaluation.png, id=43, 540.0175pt x 371.3875pt>
 File: Images/ModelEvaluation.png Graphic file (type png)
 <use Images/ModelEvaluation.png>
-Package pdftex.def Info: Images/ModelEvaluation.png  used on input line 361.
+Package pdftex.def Info: Images/ModelEvaluation.png  used on input line 366.
 (pdftex.def)             Requested size: 297.01054pt x 204.26375pt.
- [9 <c:/Users/DJSau/Masters-Project/Dissertation/Images/HMM-Example-Diagram.png>]
+ [9 <c:/Users/DJSau/Masters-Project/Dissertation/Images/ModelEvaluation.png>]
 <Images/Data-Pipeline.png, id=48, 734.745pt x 182.6825pt>
 File: Images/Data-Pipeline.png Graphic file (type png)
 <use Images/Data-Pipeline.png>
-Package pdftex.def Info: Images/Data-Pipeline.png  used on input line 394.
+Package pdftex.def Info: Images/Data-Pipeline.png  used on input line 399.
 (pdftex.def)             Requested size: 404.111pt x 100.47568pt.
 
-Overfull \hbox (59.111pt too wide) in paragraph at lines 394--395
+Overfull \hbox (59.111pt too wide) in paragraph at lines 399--400
  [][] 
  []
 
 
-Overfull \hbox (22.97296pt too wide) in paragraph at lines 411--425
+Overfull \hbox (22.97296pt too wide) in paragraph at lines 416--430
 [][] 
  []
 
-[10 <c:/Users/DJSau/Masters-Project/Dissertation/Images/ModelEvaluation.png> <c:/Users/DJSau/Masters-Project/Dissertation/Images/Data-Pipeline.png>] [11] [12]
-<Images/Turk-Lab-Liklihoods.png, id=62, 540.0175pt x 371.3875pt>
+[10 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Data-Pipeline.png>] [11] [12]
+<Images/Turk-Lab-Liklihoods.png, id=61, 540.0175pt x 371.3875pt>
 File: Images/Turk-Lab-Liklihoods.png Graphic file (type png)
 <use Images/Turk-Lab-Liklihoods.png>
-Package pdftex.def Info: Images/Turk-Lab-Liklihoods.png  used on input line 662.
+Package pdftex.def Info: Images/Turk-Lab-Liklihoods.png  used on input line 667.
 (pdftex.def)             Requested size: 270.00809pt x 185.69328pt.
- [13 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Turk-Lab-Liklihoods.png>]
-<Images/Reclassified-Data.png, id=68, 540.0175pt x 371.3875pt>
+<Images/Reclassified-Data.png, id=62, 540.0175pt x 371.3875pt>
 File: Images/Reclassified-Data.png Graphic file (type png)
 <use Images/Reclassified-Data.png>
-Package pdftex.def Info: Images/Reclassified-Data.png  used on input line 681.
+Package pdftex.def Info: Images/Reclassified-Data.png  used on input line 686.
 (pdftex.def)             Requested size: 270.00809pt x 185.69328pt.
-<Images/TimeTaken-Mouse-Events-Reclassified.png, id=69, 528.97626pt x 371.3875pt>
+ [13 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Turk-Lab-Liklihoods.png>]
+<Images/TimeTaken-Mouse-Events-Reclassified.png, id=68, 528.97626pt x 371.3875pt>
 File: Images/TimeTaken-Mouse-Events-Reclassified.png Graphic file (type png)
 <use Images/TimeTaken-Mouse-Events-Reclassified.png>
-Package pdftex.def Info: Images/TimeTaken-Mouse-Events-Reclassified.png  used on input line 704.
+Package pdftex.def Info: Images/TimeTaken-Mouse-Events-Reclassified.png  used on input line 709.
 (pdftex.def)             Requested size: 264.48747pt x 185.69328pt.
- [14 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Reclassified-Data.png>]
-<Images/Turk-Liklihood-Length.png, id=74, 540.0175pt x 371.3875pt>
+<Images/Turk-Liklihood-Length.png, id=69, 540.0175pt x 371.3875pt>
 File: Images/Turk-Liklihood-Length.png Graphic file (type png)
 <use Images/Turk-Liklihood-Length.png>
-Package pdftex.def Info: Images/Turk-Liklihood-Length.png  used on input line 718.
+Package pdftex.def Info: Images/Turk-Liklihood-Length.png  used on input line 723.
 (pdftex.def)             Requested size: 216.00316pt x 148.55235pt.
 
-Overfull \hbox (78.00526pt too wide) in paragraph at lines 718--719
+Overfull \hbox (78.00526pt too wide) in paragraph at lines 723--724
  [][] 
  []
 
-<Images/Lab-Liklihood-Length.png, id=75, 540.0175pt x 371.3875pt>
+<Images/Lab-Liklihood-Length.png, id=70, 540.0175pt x 371.3875pt>
 File: Images/Lab-Liklihood-Length.png Graphic file (type png)
 <use Images/Lab-Liklihood-Length.png>
-Package pdftex.def Info: Images/Lab-Liklihood-Length.png  used on input line 724.
+Package pdftex.def Info: Images/Lab-Liklihood-Length.png  used on input line 729.
 (pdftex.def)             Requested size: 216.00316pt x 148.55235pt.
 
-Overfull \hbox (78.00526pt too wide) in paragraph at lines 724--725
+Overfull \hbox (78.00526pt too wide) in paragraph at lines 729--730
  [][] 
  []
 
-[15 <c:/Users/DJSau/Masters-Project/Dissertation/Images/TimeTaken-Mouse-Events-Reclassified.png> <c:/Users/DJSau/Masters-Project/Dissertation/Images/Turk-Liklihood-Length.png> <c:/Users/DJSau/Masters-Project/Dissertation/Images/Lab-Liklihood-Length.png>]
-<Images/Difference-Liklihood-Length.png, id=82, 522.95375pt x 379.4175pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Reclassified-Data.png>]
+<Images/Difference-Liklihood-Length.png, id=75, 522.95375pt x 379.4175pt>
 File: Images/Difference-Liklihood-Length.png Graphic file (type png)
 <use Images/Difference-Liklihood-Length.png>
-Package pdftex.def Info: Images/Difference-Liklihood-Length.png  used on input line 740.
+Package pdftex.def Info: Images/Difference-Liklihood-Length.png  used on input line 745.
 (pdftex.def)             Requested size: 209.1778pt x 151.7643pt.
- [16 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Difference-Liklihood-Length.png>] [17]
-Overfull \hbox (3.14235pt too wide) in paragraph at lines 780--780
+ [15 <c:/Users/DJSau/Masters-Project/Dissertation/Images/TimeTaken-Mouse-Events-Reclassified.png> <c:/Users/DJSau/Masters-Project/Dissertation/Images/Turk-Liklihood-Length.png> <c:/Users/DJSau/Masters-Project/Dissertation/Images/Lab-Liklihood-Length.png>] [16 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Difference-Liklihood-Length.png>] [17]
+Overfull \hbox (3.14235pt too wide) in paragraph at lines 785--785
 \OT1/cmr/m/n/10 that mon-i-tor and im-prove user en-gage-ment''. In: \OT1/cmr/m/it/10 Pro-ceed-ings of the SIGCHI
  []
 
 [18]
-Overfull \hbox (12.81621pt too wide) in paragraph at lines 780--780
+Overfull \hbox (12.81621pt too wide) in paragraph at lines 785--785
 []\OT1/cmr/m/n/10 Omid Mo-hamad Nezami, Deb-bie Richards and Len Hamey. ``Semi-Supervised
  []
 
 
-Overfull \hbox (2.91931pt too wide) in paragraph at lines 780--780
+Overfull \hbox (2.91931pt too wide) in paragraph at lines 785--785
 []\OT1/cmr/m/n/10 Jaime Fer-rando Huer-tas. \OT1/cmr/m/it/10 Gen-er-at-ing syn-thetic data through Hid-den Markov
  []
 
 
-Overfull \hbox (7.21779pt too wide) in paragraph at lines 780--780
+Overfull \hbox (7.21779pt too wide) in paragraph at lines 785--785
 \OT1/cmr/m/n/10 Oct. 2017. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : $\OT1/cmtt/m/n/10 https : / / www . kaggle . com / humancomp / worker -[] activity -[]
  []
 
@@ -553,16 +555,16 @@ Package logreq Info: Writing requests to 'Dissertation.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  11050 strings out of 480934
- 205213 string characters out of 2909682
- 823453 words of memory out of 3000000
+ 205201 string characters out of 2909682
+ 823452 words of memory out of 3000000
  26792 multiletter control sequences out of 15000+200000
  538628 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,8n,77p,876b,1425s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (19 pages, 1015371 bytes).
+Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (19 pages, 954358 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
+ 139 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

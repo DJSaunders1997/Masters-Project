@@ -211,7 +211,7 @@ Thus tracking a user’s gaze can provide insight into which part of a system th
 \begin{figure}[ht!]
     \centering
     \centerline{
-        \includegraphics[scale=0.7]{Images/EyeHeatmap.PNG}
+        \includegraphics[scale=0.6]{Images/EyeHeatmap.PNG}
     }
     \caption{Heatmap showing popular locations of users eyes on a webpage \cite{buscher2009you}.}
     \label{fig:eyetrack}
@@ -304,6 +304,8 @@ Either cite this paper or more likely look at their reference for n-grams and ci
 
 % explanation from scratch: https://towardsdatascience.com/hidden-markov-model-implemented-from-scratch-72865bda430e
 
+A Hidden Markov Model will be the main statistical modelling technique used in this paper.
+
 "Hidden Markov Model (HMM) is a statistical Markov model in which the system being modeled is assumed to be a Markov process – call it X – with unobservable ("hidden") states. 
 HMM assumes that there is another process Y whose behaviour "depends" on X.
 The goal is to learn about X by observing Y." Wikipedia
@@ -323,14 +325,17 @@ Would definitely be good to reference if I include any of the mathematics behind
 Someone's dissertation on the topic of generating synthetic data with HMMs.
 This can be a good way to create synthetic data \cite{ferrando2018generating}.
 
-Maybe this would belong under implementation?
-%HMM-Example-Diagram.png
+% Have figure caption like this, looks professional and really good.
+% https://miro.medium.com/max/556/0*s4wQ8nTIb2122-9s.png
+
+%Cite diagram from here https://www.researchgate.net/publication/245563174_State_Dependence_in_Lane-Changing_Models/figures?lo=1
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.4]{Images/HMM-Example-Diagram.png}
+    \includegraphics[scale=1.5]{Images/HMM-Paper-Diagram.png}
     \caption{Diagram of a Markov Chain model representing a users mouse position}
     \label{fig:Markov}
 \end{figure}
+% Alternatively make a similar looking diagram from scratch in Google drawings.
 
 Figure \ref{fig:Markov} shows the states of a markov model of my system with states A-E representing sliders 1-5 and state F representing an html element.
 In the top right we can see a possible transition matrix of our system.
