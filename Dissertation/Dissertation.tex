@@ -295,9 +295,11 @@ The AUC metric ranged from 0.65 to 0.733 depending on the quantity of labelled d
 Unfortunately as shown in figure \ref{fig:scatterplot} the data here cannot be spatially separated and therefore any SVM would not be successful on the data. 
 It is still useful however to see how semi-supervised learning has been applied to the field of detecting user engagement and how it has been successful.
 
-\subsection{N-Grams}
-This paper has a nice scientific explanation of n-grams \cite{tomovic2006n}.
-Either cite this paper or more likely look at their reference for n-grams and cite that.
+% Removed N-Grams section as wasn't used in the final product. 
+%\subsection{N-Grams}
+%This paper has a nice scientific explanation of n-grams \cite{tomovic2006n}.
+%Either cite this paper or more likely look at their reference for n-grams and cite that.
+%   
 
 \subsection{Hidden Markov Models}
 
@@ -663,19 +665,10 @@ Or at least that outlier is doing something different to their peers, which may 
 % Examine outliers.
 % TODO: Idea, use a 2d histogram, or scatter plot lab likelihood against turk likelihood.
 
-
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[scale=0.5]{Images/Turk-Lab-Liklihoods.png}
-    \caption{The comparative likelihoods of users classifiers with the Turk and Lab data. }
-    \label{fig:TurkLabLikli}
-\end{figure}
-
-Figure \ref{fig:TurkLabLikli} shows how closely each users mouse sequences match the different HMM models.
-
-The model likelihoods are the the log likelihoods that each user belongs to the lab or turk models. 
+T
 One way of attempting to classify users is to identify any users with a higher lab likelihood as being more similar to a lab user than a turk user
 , however all the points have a higher lab likelihood than turk likelihood shown by the black line y=x.
+he model likelihoods are the the log likelihoods that each user belongs to the lab or turk models. 
 
 % An alternative solution is to plot a regression line of the lab users likelihoods (shown in orange). 
 % We can see that the lab data points form an almost straight line. 

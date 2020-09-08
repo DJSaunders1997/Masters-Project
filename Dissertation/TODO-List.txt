@@ -4,3 +4,8 @@ TODO: List
 Finish Semi-Supervised Learning section with references.
 
 Properly reference and talk about previous study mine is based off.
+
+Contributions, try and rephrase what's mentioned everywhere else.
+
+Change Hidden Markov Model section from notes to actual written stuff.
+

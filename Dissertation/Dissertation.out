@@ -6,18 +6,17 @@
 \BOOKMARK [2][-]{subsection.2.1}{Eye tracking}{section.2}% 6
 \BOOKMARK [2][-]{subsection.2.2}{Mouse cursor tracking}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.3}{Semi Supervised Learning}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.4}{N-Grams}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.5}{Hidden Markov Models}{section.2}% 10
-\BOOKMARK [1][-]{section.3}{Implementation}{}% 11
-\BOOKMARK [1][-]{section.4}{Methodology}{}% 12
-\BOOKMARK [1][-]{section.5}{Data Pipeline}{}% 13
-\BOOKMARK [2][-]{subsection.5.1}{Data}{section.5}% 14
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Data Manipulation}{subsection.5.1}% 15
-\BOOKMARK [2][-]{subsection.5.2}{Features}{section.5}% 16
-\BOOKMARK [2][-]{subsection.5.3}{Machine Learning}{section.5}% 17
-\BOOKMARK [2][-]{subsection.5.4}{Labels}{section.5}% 18
-\BOOKMARK [1][-]{section.6}{Results}{}% 19
-\BOOKMARK [2][-]{subsection.6.1}{Table or graph of results}{section.6}% 20
-\BOOKMARK [2][-]{subsection.6.2}{Likelihood length correlation}{section.6}% 21
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 22
-\BOOKMARK [1][-]{section.8}{Future work}{}% 23
+\BOOKMARK [2][-]{subsection.2.4}{Hidden Markov Models}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{Implementation}{}% 10
+\BOOKMARK [1][-]{section.4}{Methodology}{}% 11
+\BOOKMARK [1][-]{section.5}{Data Pipeline}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Data}{section.5}% 13
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Data Manipulation}{subsection.5.1}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Features}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Machine Learning}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.4}{Labels}{section.5}% 17
+\BOOKMARK [1][-]{section.6}{Results}{}% 18
+\BOOKMARK [2][-]{subsection.6.1}{Table or graph of results}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.2}{Likelihood length correlation}{section.6}% 20
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 21
+\BOOKMARK [1][-]{section.8}{Future work}{}% 22

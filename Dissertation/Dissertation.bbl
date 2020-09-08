@@ -880,45 +880,6 @@
       \field{pages}{157}
       \range{pages}{1}
     \endentry
-    \entry{tomovic2006n}{article}{}
-      \name{author}{3}{}{%
-        {{hash=c4c9aec67c6075357e81adbfd8fda150}{%
-           family={Tomovi{ć}},
-           familyi={T\bibinitperiod},
-           given={Andrija},
-           giveni={A\bibinitperiod}}}%
-        {{hash=13a5a2827fcacbd217024357e3b91d40}{%
-           family={Jani{č}i{ć}},
-           familyi={J\bibinitperiod},
-           given={Predrag},
-           giveni={P\bibinitperiod}}}%
-        {{hash=09b82685746d43ab22255622e637af9d}{%
-           family={Ke{š}elj},
-           familyi={K\bibinitperiod},
-           given={Vlado},
-           giveni={V\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{71aec0b93524d23f1d11b4a8209d1c1d}
-      \strng{fullhash}{71aec0b93524d23f1d11b4a8209d1c1d}
-      \strng{bibnamehash}{71aec0b93524d23f1d11b4a8209d1c1d}
-      \strng{authorbibnamehash}{71aec0b93524d23f1d11b4a8209d1c1d}
-      \strng{authornamehash}{71aec0b93524d23f1d11b4a8209d1c1d}
-      \strng{authorfullhash}{71aec0b93524d23f1d11b4a8209d1c1d}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Computer methods and programs in biomedicine}
-      \field{number}{2}
-      \field{title}{n-Gram-based classification and unsupervised hierarchical clustering of genome sequences}
-      \field{volume}{81}
-      \field{year}{2006}
-      \field{pages}{137\bibrangedash 153}
-      \range{pages}{17}
-    \endentry
     \entry{collins2016tagging}{article}{}
       \name{author}{1}{}{%
         {{hash=b8bbd832353d6b8ffa73123369d39d55}{%
@@ -1135,8 +1096,8 @@
       \strng{authorbibnamehash}{2b06c3d48b11c21069ebd0f962707011}
       \strng{authornamehash}{2b06c3d48b11c21069ebd0f962707011}
       \strng{authorfullhash}{2b06c3d48b11c21069ebd0f962707011}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Kaggle}

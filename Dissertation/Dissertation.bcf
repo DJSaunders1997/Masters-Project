@@ -2212,16 +2212,15 @@
     <bcf:citekey order="28">huang2012user</bcf:citekey>
     <bcf:citekey order="29">zhu2005semi</bcf:citekey>
     <bcf:citekey order="30">nezami2017semi</bcf:citekey>
-    <bcf:citekey order="31">tomovic2006n</bcf:citekey>
-    <bcf:citekey order="32">collins2016tagging</bcf:citekey>
-    <bcf:citekey order="33">gordillo2007hmm</bcf:citekey>
-    <bcf:citekey order="34">rabiner1989tutorial</bcf:citekey>
-    <bcf:citekey order="35">ferrando2018generating</bcf:citekey>
-    <bcf:citekey order="36">hmmlearn</bcf:citekey>
-    <bcf:citekey order="37">pohle2017selecting</bcf:citekey>
-    <bcf:citekey order="38">ronk2014structured</bcf:citekey>
-    <bcf:citekey order="39">mindrila2017scatterplots</bcf:citekey>
-    <bcf:citekey order="40">kaggleWorkerActivity</bcf:citekey>
+    <bcf:citekey order="31">collins2016tagging</bcf:citekey>
+    <bcf:citekey order="32">gordillo2007hmm</bcf:citekey>
+    <bcf:citekey order="33">rabiner1989tutorial</bcf:citekey>
+    <bcf:citekey order="34">ferrando2018generating</bcf:citekey>
+    <bcf:citekey order="35">hmmlearn</bcf:citekey>
+    <bcf:citekey order="36">pohle2017selecting</bcf:citekey>
+    <bcf:citekey order="37">ronk2014structured</bcf:citekey>
+    <bcf:citekey order="38">mindrila2017scatterplots</bcf:citekey>
+    <bcf:citekey order="39">kaggleWorkerActivity</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
