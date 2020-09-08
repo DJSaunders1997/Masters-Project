@@ -139,6 +139,12 @@ The task simulated an investment scenario, the aim was to maximise the return of
 
 The experiment identified two users groups, risk fixers and sweet spotters, based on their response in a questionnaire.
 Figure \ref{fig:interface} shows the interface of the lab study.
+Users were asked to invest their money by putting it into varying amounts of stocks.
+The 5 stocks were labelled from A to E.
+Depending on the makeup of the users stock portfolio, the plot would update showing the return and risk of their portfolio.
+They were then asked to confirm their choice by buying these stocks.
+This process was repeated for 5 steps.
+
 Participants from the lab study were heavily monitored to ensure they were engaged, focusing on the task.
 The crowdsourced participants were not monitor so we're unable to say that they were engaged with the task, and not looking at another screen. 
 
@@ -512,6 +518,23 @@ This part of the pipeline refers to what features I am going to extract from the
 Features of data can be defined as 'attributes or interesting things from the data'. [reference]
 These will consist of both raw and created features, but what do I mean by this?
 Raw features will consist of the the number of mouse events recorded, while a created feature could be comparing the trace of users cursor data when using the program.
+
+% TODO: Maybe add a sample of training data here.
+% TODO: Properly explain how we renamed targets, why
+% , and show histograms showing similar distributions of targets.
+One such feature recorded in the data is mouse target.
+This refers to the HTML element that a users mouse was over at any given time.
+As shown in \ref{fig:interface} the most prominent part of the interface that users will interact with is the 5 stock allocation sliders.
+% Plot showing alloc-slider-1-5 and other.
+It is hypothesised that users who are paying attention may spend more time fine tuning their stock allocation and therefore would have more mouse events with the sliders as the target.
+% TODO:
+% Talk about how we had to rename the mouse targets with stuff like anything containing the words alloc-slider-1 was renamed.
+% Issue with Lab and Turk data having a different naming scheme.
+% TODO: Maybe have a table showing the elements name before and after renaming.
+An attempt to pick up on different parts of the interface was achieved, however the html elements were not clearly named and thus this aim was unachievable.
+
+
+The features chosen to be used by the HMM is the target of 
 
 \subsection{Machine Learning}
 

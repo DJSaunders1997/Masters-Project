@@ -9,3 +9,11 @@ Contributions, try and rephrase what's mentioned everywhere else.
 
 Change Hidden Markov Model section from notes to actual written stuff.
 
+Fully update results to reclassifying if they're above line y=x, not regression.
+
+Talk about how we had to rename the mouse targets with stuff like anything containing the words alloc-slider-1 was renamed.
+Issue with Lab and Turk data having a different naming scheme.
+Maybe have a table showing the elements name before and after renaming.
+
+Maybe double check with other HMM using mouse location data.
+Stretch goal as I don't think this adds much other than saying I can make another HMM but with completely different results.

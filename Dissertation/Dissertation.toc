@@ -6,7 +6,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2}Initial attempt}{4}{subsection.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Contributions}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.3}Contributions}{5}{subsection.1.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Related Work}{5}{section.2}%
 \defcounter {refsection}{0}\relax 
@@ -14,11 +14,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Mouse cursor tracking}{6}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Semi Supervised Learning}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Semi Supervised Learning}{7}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Hidden Markov Models}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Hidden Markov Models}{8}{subsection.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Implementation}{8}{section.3}%
+\contentsline {section}{\numberline {3}Implementation}{9}{section.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Methodology}{10}{section.4}%
 \defcounter {refsection}{0}\relax 
@@ -32,13 +32,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3}Machine Learning}{12}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Labels}{12}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.4}Labels}{13}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Results}{12}{section.6}%
+\contentsline {section}{\numberline {6}Results}{13}{section.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Table or graph of results}{13}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Likelihood length correlation}{14}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}Likelihood length correlation}{15}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Conclusion}{15}{section.7}%
 \defcounter {refsection}{0}\relax 
