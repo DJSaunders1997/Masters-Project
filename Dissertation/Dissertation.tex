@@ -675,13 +675,14 @@ If this is done recursively then we can end up with a system that can split all 
 % talk about results
 % Should I talk about all the results, or just the end results that I feel are conclusive.
 
-Now the real aim of the project can begin, attempting to classify users as paying attention or not.
-We will take the 2 HMMs and feed it in the existing mouse data.
-This will tell use the likelihood that that sequence of mouse events belongs to each class.
-If there are any points that appear to be outliers, then we can say that they were doing something differently to the majority of the turkers.
-If the same outlier also has a higher likelihood of belonging to the HMM trained on lab data then we can say that that outlier sample appears to belong to the wrong group.
+%Now the real aim of the project can begin, attempting to classify users as paying attention or not.
+Hidden Markov Models were trained on both lab study users mouse data and online crowdsourced mechanical turk mouse data.
+Then each users mouse data was evaluated by each HMM, and the log Likelihood of that sequence belonging to that model was recorded. 
+This will tell use the likelihood that that sequence of mouse events belongs to either of the classes.
+If there are any points that appear to be outliers, then we can say that they were doing something differently to the majority of their peers.
+Outliers with a higher likelihood of belonging to the HMM trained on data from the other group then we can say that that outlier sample appears to belong to the wrong group.
 Or at least that outlier is doing something different to their peers, which may be a higher level of attention given to the task. 
-
+These points were labelled Reclassified Lab data and Reclassified Turk Data.
 
 \subsection{Table or graph of results}
 % Plot histogram of likelihoods for both classes on both HMM models.
@@ -722,6 +723,7 @@ It was concluded that a spacial based technique such as a SVM would be unsuitabl
 Figure~\ref{fig:Reclassified-Scatterplot} shows how the reclassified datapoints are not linearly separable.
 This proves that my initial hypothesis was correct and that data could not be reclassified purely by looking at simple feature of time taken and just number of mouse events.
 
+% TODO fix labels, this shows reclassified turk/lab data and the unclassified samples.
 \begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.5]{Images/TimeTaken-Mouse-Events-Reclassified.png}
