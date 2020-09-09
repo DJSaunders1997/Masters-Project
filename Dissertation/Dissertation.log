@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  9 SEP 2020 20:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  9 SEP 2020 20:28
 entering extended mode
 **c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
 (c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
@@ -532,10 +532,11 @@ File: Images/interface.png Graphic file (type png)
 <use Images/interface.png>
 Package pdftex.def Info: Images/interface.png  used on input line 134.
 (pdftex.def)             Requested size: 304.74084pt x 149.35915pt.
-File: Images/interface.png Graphic file (type png)
-<use Images/interface.png>
-Package pdftex.def Info: Images/interface.png  used on input line 151.
-(pdftex.def)             Requested size: 304.74084pt x 149.35915pt.
+<Images/interfaceSA.png, id=149, 753.41475pt x 323.40825pt>
+File: Images/interfaceSA.png Graphic file (type png)
+<use Images/interfaceSA.png>
+Package pdftex.def Info: Images/interfaceSA.png  used on input line 151.
+(pdftex.def)             Requested size: 339.03351pt x 145.53235pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 168.
 
@@ -544,31 +545,31 @@ Overfull \hbox (25.87134pt too wide) in paragraph at lines 168--174
  []
 
 [3 <c:/Users/DJSau/Masters-Project/Dissertation/Images/interface.png (PNG copy)>]
-<Images/TimeTaken-Mouse-Events.png, id=162, 528.97626pt x 371.3875pt>
+<Images/TimeTaken-Mouse-Events.png, id=164, 528.97626pt x 371.3875pt>
 File: Images/TimeTaken-Mouse-Events.png Graphic file (type png)
 <use Images/TimeTaken-Mouse-Events.png>
 Package pdftex.def Info: Images/TimeTaken-Mouse-Events.png  used on input line 196.
 (pdftex.def)             Requested size: 317.3882pt x 222.83421pt.
- [4] [5 <c:/Users/DJSau/Masters-Project/Dissertation/Images/TimeTaken-Mouse-Events.png>]
-<Images/EyeHeatmap.PNG, id=181, 446.41782pt x 359.09157pt>
+ [4 <c:/Users/DJSau/Masters-Project/Dissertation/Images/interfaceSA.png>] [5 <c:/Users/DJSau/Masters-Project/Dissertation/Images/TimeTaken-Mouse-Events.png>]
+<Images/EyeHeatmap.PNG, id=183, 446.41782pt x 359.09157pt>
 File: Images/EyeHeatmap.PNG Graphic file (type png)
 <use Images/EyeHeatmap.PNG>
 Package pdftex.def Info: Images/EyeHeatmap.PNG  used on input line 240.
 (pdftex.def)             Requested size: 267.85275pt x 215.45659pt.
  [6 <c:/Users/DJSau/Masters-Project/Dissertation/Images/EyeHeatmap.PNG>] [7] [8]
-<Images/HMM-Paper-Diagram.png, id=236, 215.1293pt x 99.4973pt>
+<Images/HMM-Paper-Diagram.png, id=238, 215.1293pt x 99.4973pt>
 File: Images/HMM-Paper-Diagram.png Graphic file (type png)
 <use Images/HMM-Paper-Diagram.png>
 Package pdftex.def Info: Images/HMM-Paper-Diagram.png  used on input line 383.
 (pdftex.def)             Requested size: 322.69315pt x 149.24557pt.
  [9 <c:/Users/DJSau/Masters-Project/Dissertation/Images/HMM-Paper-Diagram.png>]
-<Images/ModelEvaluation.png, id=250, 540.0175pt x 371.3875pt>
+<Images/ModelEvaluation.png, id=252, 540.0175pt x 371.3875pt>
 File: Images/ModelEvaluation.png Graphic file (type png)
 <use Images/ModelEvaluation.png>
 Package pdftex.def Info: Images/ModelEvaluation.png  used on input line 415.
 (pdftex.def)             Requested size: 297.01054pt x 204.26375pt.
  [10 <c:/Users/DJSau/Masters-Project/Dissertation/Images/ModelEvaluation.png>]
-<Images/Data-Pipeline.png, id=258, 734.745pt x 182.6825pt>
+<Images/Data-Pipeline.png, id=260, 734.745pt x 182.6825pt>
 File: Images/Data-Pipeline.png Graphic file (type png)
 <use Images/Data-Pipeline.png>
 Package pdftex.def Info: Images/Data-Pipeline.png  used on input line 448.
@@ -584,18 +585,18 @@ Overfull \hbox (22.97296pt too wide) in paragraph at lines 465--479
  []
 
 [11 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Data-Pipeline.png>] [12] [13]
-<Images/Reclassified-Data.png, id=283, 540.0175pt x 371.3875pt>
+<Images/Reclassified-Data.png, id=285, 540.0175pt x 371.3875pt>
 File: Images/Reclassified-Data.png Graphic file (type png)
 <use Images/Reclassified-Data.png>
 Package pdftex.def Info: Images/Reclassified-Data.png  used on input line 725.
 (pdftex.def)             Requested size: 270.00809pt x 185.69328pt.
  [14 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Reclassified-Data.png>]
-<Images/TimeTaken-Mouse-Events-Reclassified.png, id=293, 528.97626pt x 371.3875pt>
+<Images/TimeTaken-Mouse-Events-Reclassified.png, id=295, 528.97626pt x 371.3875pt>
 File: Images/TimeTaken-Mouse-Events-Reclassified.png Graphic file (type png)
 <use Images/TimeTaken-Mouse-Events-Reclassified.png>
 Package pdftex.def Info: Images/TimeTaken-Mouse-Events-Reclassified.png  used on input line 749.
 (pdftex.def)             Requested size: 264.48747pt x 185.69328pt.
-<Images/Turk-Liklihood-Length.png, id=294, 540.0175pt x 371.3875pt>
+<Images/Turk-Liklihood-Length.png, id=296, 540.0175pt x 371.3875pt>
 File: Images/Turk-Liklihood-Length.png Graphic file (type png)
 <use Images/Turk-Liklihood-Length.png>
 Package pdftex.def Info: Images/Turk-Liklihood-Length.png  used on input line 763.
@@ -605,7 +606,7 @@ Overfull \hbox (78.00526pt too wide) in paragraph at lines 763--764
  [][] 
  []
 
-<Images/Lab-Liklihood-Length.png, id=295, 540.0175pt x 371.3875pt>
+<Images/Lab-Liklihood-Length.png, id=297, 540.0175pt x 371.3875pt>
 File: Images/Lab-Liklihood-Length.png Graphic file (type png)
 <use Images/Lab-Liklihood-Length.png>
 Package pdftex.def Info: Images/Lab-Liklihood-Length.png  used on input line 769.
@@ -618,7 +619,7 @@ Overfull \hbox (78.00526pt too wide) in paragraph at lines 769--770
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/Difference-Liklihood-Length.png, id=299, 522.95375pt x 379.4175pt>
+<Images/Difference-Liklihood-Length.png, id=301, 522.95375pt x 379.4175pt>
 File: Images/Difference-Liklihood-Length.png Graphic file (type png)
 <use Images/Difference-Liklihood-Length.png>
 Package pdftex.def Info: Images/Difference-Liklihood-Length.png  used on input line 785.
@@ -657,17 +658,17 @@ Package logreq Info: Writing requests to 'Dissertation.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 832.
  ) 
 Here is how much of TeX's memory you used:
- 14699 strings out of 480934
- 262648 string characters out of 2909682
+ 14705 strings out of 480934
+ 262792 string characters out of 2909682
  901948 words of memory out of 3000000
- 30277 multiletter control sequences out of 15000+200000
+ 30282 multiletter control sequences out of 15000+200000
  538628 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,8n,77p,992b,1455s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (20 pages, 958749 bytes).
+Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (20 pages, 1035352 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
+ 408 PDF objects out of 1000 (max. 8388607)
  93 named destinations out of 1000 (max. 500000)
- 232 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 
