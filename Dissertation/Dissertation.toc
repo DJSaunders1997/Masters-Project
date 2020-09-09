@@ -10,9 +10,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Related Work}{5}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Eye tracking}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.1}Eye tracking}{6}{subsection.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Mouse cursor tracking}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Mouse cursor tracking}{7}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Semi Supervised Learning}{7}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
@@ -22,24 +22,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Methodology}{10}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Data Pipeline}{10}{section.5}%
+\contentsline {section}{\numberline {5}Data Pipeline}{11}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Data}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Data}{11}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1}Data Manipulation}{11}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Data Manipulation}{12}{subsubsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2}Features}{12}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Machine Learning}{12}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Machine Learning}{13}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4}Labels}{13}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Results}{13}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Table or graph of results}{13}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.1}Table or graph of results}{14}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2}Likelihood length correlation}{15}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Conclusion}{15}{section.7}%
+\contentsline {section}{\numberline {7}Conclusion}{16}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Future work}{16}{section.8}%
+\contentsline {section}{\numberline {8}Future work}{17}{section.8}%

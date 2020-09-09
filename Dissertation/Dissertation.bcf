@@ -2190,7 +2190,7 @@
     <bcf:citekey order="6">ho2015incentivizing</bcf:citekey>
     <bcf:citekey order="7">law2016curiosity</bcf:citekey>
     <bcf:citekey order="8">peterson2008measuring</bcf:citekey>
-    <bcf:citekey order="9">torsney2018risk</bcf:citekey>
+    <bcf:citekey order="9">gruber2017thesis</bcf:citekey>
     <bcf:citekey order="10">torsney2018risk</bcf:citekey>
     <bcf:citekey order="11">torsney2018risk</bcf:citekey>
     <bcf:citekey order="12">mindrila2017scatterplots</bcf:citekey>
@@ -2220,7 +2220,8 @@
     <bcf:citekey order="36">pohle2017selecting</bcf:citekey>
     <bcf:citekey order="37">ronk2014structured</bcf:citekey>
     <bcf:citekey order="38">mindrila2017scatterplots</bcf:citekey>
-    <bcf:citekey order="39">kaggleWorkerActivity</bcf:citekey>
+    <bcf:citekey order="39">gruber2017thesis</bcf:citekey>
+    <bcf:citekey order="40">kaggleWorkerActivity</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

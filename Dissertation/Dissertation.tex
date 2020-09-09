@@ -117,33 +117,47 @@ Therefore existing solutions will not work and now methods must be evolved.
 
 
 \subsection{Background}
-% TODO Find the Gruber thesis and the paper written by Tom.
+% TODO: Maybe link to Toms paper too
 
 % TODO Have this section finished soon and have Meg look over it: 04/09/20
 
-The work in this project is build on an existing study;
-\textit{``Risk fixers and sweet spotters: A study of the different approaches
-to using visual sensitivity analysis in an investment scenario''}\cite{torsney2018risk}.
+The work in this project is build on data gathered from a previous study;
+\textit{``A comparison of user interactions in lab and crowdsourced
+studies''}\cite{gruber2017thesis}.
 
 The study was centred in the field of visualisation.
-The paper explored a new visualisation glyph that could be used help improve a users effectiveness at completing a task.
-The task simulated an investment scenario, the aim was to maximise the return of a collection of stocks, while minimising the risk. 
+The paper explored whether an alternative more detailed interface could be used help improve a users effectiveness at completing a task.
+The task simulated an investment scenario, the aim was to maximise the return of a collection of stocks over a number of iterations. 
 
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.3, frame]{Images/interface.png}
     % TODO: Find the right interface, current interface doesn't match whats in his paper.
-    \caption{The user interface of the lab study, showing the risk and return of stocks to the left and allocation sliders to the right.}
+    \caption{The user interface of the lab study.}
     \label{fig:interface}
 \end{figure}
 
-The experiment identified two users groups, risk fixers and sweet spotters, based on their response in a questionnaire.
-Figure \ref{fig:interface} shows the interface of the lab study.
+%The experiment identified two users groups, risk fixers and sweet spotters, based on their response in a questionnaire.
+Figure \ref{fig:interface} shows the main interface of the lab study, with the risk and return of stocks to the right and allocation sliders to the left.
 Users were asked to invest their money by putting it into varying amounts of stocks.
 The 5 stocks were labelled from A to E.
 Depending on the makeup of the users stock portfolio, the plot would update showing the return and risk of their portfolio.
 They were then asked to confirm their choice by buying these stocks.
-This process was repeated for 5 steps.
+This process was repeated for 5 steps, where after each step the users portfolio value with increase based on their previous investment decisions. 
+
+% TODO get picture of global sa sl both
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.3, frame]{Images/interface.png}
+    % TODO: Find the right interface, current interface doesn't match whats in his paper.
+    \caption{The alternative user interface of the lab study.}
+    \label{fig:interfaceSA}
+\end{figure}
+
+Figure~\ref{fig:interfaceSA} shows the alternative interface design for the study.
+The slider representing each stock was split into 2 separate sliders, showing the return and the risk of the stock.
+Additionally the sliders are no longer 1 dimensional, both sliders are 2 dimensional line charts.
+The assumption of the study was that these extra visualisations would help users to maximise the value of their portfolio.
 
 Participants from the lab study were heavily monitored to ensure they were engaged, focusing on the task.
 The crowdsourced participants were not monitor so we're unable to say that they were engaged with the task, and not looking at another screen. 
@@ -164,6 +178,12 @@ Only 4.6\% of the data was gathered in person, with the vast majority of respons
 The difference in number of participants shows one of the reasons crowdsourcing is popular. 
 It is much easier to crowd source responses than it is to organise an in person lab study.
 
+For the purpose of this project the distinction of which interface a user was using ignored.
+The study was inconclusive in proving that the alternative interface design had an meaningful effect on the success of a users portfolio. 
+Additionally rationalise of this is that regardless of which variant of the interface a lab study user was using they would be paying attention.
+There is likely to have crowdsourced users who are engaged and some that are not engaged regardless of which interface is used.
+While there will be differences in users mouse data depending on the interface
+    , I hypothesise that the difference will not be as large as the difference between users that are engaged or not engaged. 
 
 \subsection{Initial attempt}
 
@@ -795,6 +815,12 @@ All the problems addressed in the conclusion have potential to be addressed in f
 As stated the main flaw of this project is that the label is not labelled for the task I am trying to perform.
 % Taken from abstract
 Therefore to fully evaluate any of these results would require further research with a properly labelled dataset.
+
+% While it was hypothesised that differences in mouse data from users using both 
+
+It was hypothesised that a users mouse data would not be significantly different depending on which version of the study interface they were using.
+This hypothesis was based on the findings of the previous study, where the different interfaces had little to no impact on a users success at the investment scenario \cite{gruber2017thesis}.
+Perhaps an investigation into users mouse data might show more of a difference between the behaviours of users using both interfaces.
 
 Another area of future work would be to see if any of the methods developed here could be applied to other similar datasets.
 A kaggle crowdflower dataset seems like an idea candidate \cite{kaggleWorkerActivity}.

@@ -308,6 +308,30 @@
       \field{pages}{16}
       \range{pages}{1}
     \endentry
+    \entry{gruber2017thesis}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=66be27785f712c6ab4ede1369eb19333}{%
+           family={Julian},
+           familyi={J\bibinitperiod},
+           given={Gruber},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Vienna}%
+      }
+      \strng{namehash}{66be27785f712c6ab4ede1369eb19333}
+      \strng{fullhash}{66be27785f712c6ab4ede1369eb19333}
+      \strng{bibnamehash}{66be27785f712c6ab4ede1369eb19333}
+      \strng{authorbibnamehash}{66be27785f712c6ab4ede1369eb19333}
+      \strng{authornamehash}{66be27785f712c6ab4ede1369eb19333}
+      \strng{authorfullhash}{66be27785f712c6ab4ede1369eb19333}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A comparison of user interactions in lab and crowdsourced studies}
+      \field{year}{2017}
+    \endentry
     \entry{torsney2018risk}{article}{}
       \name{author}{4}{}{%
         {{hash=e62cbc51788273a0ee6478e36b2d57b0}{%
@@ -340,8 +364,8 @@
       \strng{authorbibnamehash}{0eae2bef488728f992598cbce9ff3ec6}
       \strng{authornamehash}{0eae2bef488728f992598cbce9ff3ec6}
       \strng{authorfullhash}{64f7049b9d9af5268e13678efb56db60}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Risk fixers and sweet spotters: A study of the different approaches to using visual sensitivity analysis in an investment scenario}
@@ -1096,8 +1120,8 @@
       \strng{authorbibnamehash}{2b06c3d48b11c21069ebd0f962707011}
       \strng{authornamehash}{2b06c3d48b11c21069ebd0f962707011}
       \strng{authorfullhash}{2b06c3d48b11c21069ebd0f962707011}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Kaggle}
