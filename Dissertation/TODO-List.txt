@@ -1,19 +1,29 @@
 TODO: List
 08/09/20
 
+1.
 Finish Semi-Supervised Learning section with references.
 
+2.
 Properly reference and talk about previous study mine is based off.
+Partly Done
 
+3.
 Contributions, try and rephrase what's mentioned everywhere else.
 
+4.
 Change Hidden Markov Model section from notes to actual written stuff.
 
+5.
 Fully update results to reclassifying if they're above line y=x, not regression.
 
+6.
 Talk about how we had to rename the mouse targets with stuff like anything containing the words alloc-slider-1 was renamed.
 Issue with Lab and Turk data having a different naming scheme.
 Maybe have a table showing the elements name before and after renaming.
 
+7.
 Maybe double check with other HMM using mouse location data.
 Stretch goal as I don't think this adds much other than saying I can make another HMM but with completely different results.
+HOWEVER, this could be a 'Further/extra results' section.
+This section says the above is still the final results, but these 6 users are of particular interest. 
