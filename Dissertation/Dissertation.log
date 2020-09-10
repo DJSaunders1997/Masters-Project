@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  10 SEP 2020 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.10)  10 SEP 2020 19:41
 entering extended mode
 **c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
 (c:/Users/DJSau/Masters-Project/Dissertation/Dissertation.tex
@@ -659,51 +659,57 @@ Overfull \hbox (16.35278pt too wide) in paragraph at lines 831--832
  [][] 
  []
 
-[20 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Difference-Liklihood-Length.png>] [21 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Mouse-Path-Data.png>] [22]
-Overfull \hbox (3.14235pt too wide) in paragraph at lines 910--910
+<Images/Spatial-Reclassified-Data.png, id=402, 549.05125pt x 371.3875pt>
+File: Images/Spatial-Reclassified-Data.png Graphic file (type png)
+<use Images/Spatial-Reclassified-Data.png>
+Package pdftex.def Info: Images/Spatial-Reclassified-Data.png  used on input line 847.
+(pdftex.def)             Requested size: 274.52495pt x 185.69328pt.
+[20 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Difference-Liklihood-Length.png>] [21 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Mouse-Path-Data.png>] [22 <c:/Users/DJSau/Masters-Project/Dissertation/Images/Spatial-Reclassified-Data.png>] [23]
+Overfull \hbox (3.14235pt too wide) in paragraph at lines 935--935
 \OT1/cmr/m/n/10 that mon-i-tor and im-prove user en-gage-ment''. In: \OT1/cmr/m/it/10 Pro-ceed-ings of the SIGCHI
  []
 
-[23]
-Overfull \hbox (12.81621pt too wide) in paragraph at lines 910--910
+[24]
+Overfull \hbox (12.81621pt too wide) in paragraph at lines 935--935
 []\OT1/cmr/m/n/10 Omid Mo-hamad Nezami, Deb-bie Richards and Len Hamey. ``Semi-Supervised
  []
 
 
-Overfull \hbox (2.91931pt too wide) in paragraph at lines 910--910
+Overfull \hbox (2.91931pt too wide) in paragraph at lines 935--935
 []\OT1/cmr/m/n/10 Jaime Fer-rando Huer-tas. \OT1/cmr/m/it/10 Gen-er-at-ing syn-thetic data through Hid-den Markov
  []
 
-[24]
-Overfull \hbox (7.21779pt too wide) in paragraph at lines 910--910
+
+Overfull \hbox (7.21779pt too wide) in paragraph at lines 935--935
 \OT1/cmr/m/n/10 Oct. 2017. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : []$\OT1/cmtt/m/n/10 https : / / www . kaggle . com / humancomp / worker -[] activity -[]
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 911.
 [25]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 911.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 936.
+ [26]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 936.
  (c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 911.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 911.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 936.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 936.
 Package rerunfilecheck Info: File `Dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: A9A6DE0934A003479A9EE4A3C9D31730;2234.
 Package logreq Info: Writing requests to 'Dissertation.run.xml'.
 \openout1 = `Dissertation.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 911.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 936.
  ) 
 Here is how much of TeX's memory you used:
- 14752 strings out of 480934
- 263662 string characters out of 2909682
- 903150 words of memory out of 3000000
- 30307 multiletter control sequences out of 15000+200000
+ 14761 strings out of 480934
+ 263934 string characters out of 2909682
+ 903225 words of memory out of 3000000
+ 30313 multiletter control sequences out of 15000+200000
  538628 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,8n,77p,992b,1455s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (25 pages, 1635846 bytes).
+Output written on c:/Users\DJSau\Masters-Project\Dissertation\Dissertation.pdf (26 pages, 1664413 bytes).
 PDF statistics:
- 510 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 351 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 519 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 356 words of extra memory for PDF output out of 10000 (max. 10000000)
 

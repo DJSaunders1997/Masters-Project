@@ -9,7 +9,7 @@
 \usepackage[backend=biber, style=numeric, sorting=none, language=australian]{biblatex}
 \addbibresource{References.bib}
 
-\title{Dissertation - Detecting User Engagement Using Mouse Tracking Data}
+\title{Detecting User Engagement Using Mouse Tracking Data}
 \author{David Saunders (910995)}
 \date{September 2020}
 
@@ -841,22 +841,47 @@ This difference is mouse data was not addressed, this may cause some of the user
 % P
 
 \subsection{Results}
-The new HMMs reclassified none of the lab data and 22 of the crowdsourced turk users.
-The previous HMM classified 45 of the crowdsourced users.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[scale=0.5]{Images/Spatial-Reclassified-Data.png}
+    \caption{Graph of reclassified datapoints from spatial data HMMs.}
+    \label{fig:SpatialRecData}
+\end{figure}
+
+
+Figure~\ref{fig:SpatialRecData} shows how the new HMMs reclassified 80 of the crowdsourced turk users as belonging more to the lab study.
+It is worth noting that the likelihoods of each user belonging to the model is much lower when the spatial data is used, compared to when the mouse trget data was used.
+This is because there is much more variance in the continuous spatial data rather than the categorical target data.
+The original previous HMM classified 45 of the crowdsourced users.
 Taking an intersection of the sets of users will show us how consistent the results are.
 If there is a large intersection of users then the results are consistent with before, however if there is little to no intersection then it would indicate that there is no consistency between models. 
 
 ${Previous Reclassified Users} \cap {New Reclassified Users}$
 
-There is no intersection between the two sets of users.
-This indicates either that there is no consistency in the results.
-
-However this result is only if we look at the users that were reclassified, meaning their different in likelihoods of belonging to the Lab model and Turk model was positive.
-If we amend the definition of a reclassified user to be the top 100 users with a positive difference in Likelihood then we get a different result.
-The intersection between the top 100 reclassified users and the original set of reclassified users is 22.
-This is much more promising as it shows that the majority of the reclassified users are shared between both methods.
+There is an intersection of 12 users between the two sets of users.
+This indicates either that there is some consistency in the results.
+27\% of the originally reclassified users were identified by the secondary model. 
+% TODO: Maybe do some research into how to compare 2 subsets of the same data.
+% 80/461 = 0.174
+This is promising as it shows that a number of the reclassified users are shared between both methods.
 % Say what I'm trying to say much better.
-The inconsistency in the mouse location data identified could be causing the slight differences in methods. 
+The inconsistency in the mouse location data identified could be causing the differences in reclassified users between the methods.
+Therefore I would predict that the results from the spatial models to be less accurate and representative of the real world processes that the models trained with mouse target data. 
+
+If we take the union of both sets of reclassified users we get a set of 200 reclassified users.
+This allows us to have a few different sets of users that we may reclassify as belonging to the wrong group, with different confidence levels.
+I am most confident in saying that the 12 users reclassified by both versions of the models seem more similar to the lab study users than the other crowdsourced users.
+I am next most confident in the 120 users reclassified by the HMM trained with mouse target data.
+This is because data used in those models was more properly cleaned and had less variation in data.
+The users I am least most confident in reclassifying is the union of users from both sets of models.
+This consists of 200 crowdsourced users which is 43\% of the total population.
+
+Alternatively inverting this gives us users which we can assume are not engaged in the tasks, to different degrees.
+I am most confident in saying that 261 of the crowdsourced users not reclassified form the union of the models belong with their class and should not be reclassified.
+I have next most confidence in the 341 users that were identified with the mouse target data models.
+Lastly we have the 449 users not identified by the intersection of the models.
+I am least confident in saying that these users were not engaged in the task.
 
 
 \subsection{Revisiting methods}

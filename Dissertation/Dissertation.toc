@@ -64,8 +64,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.1}Results}{20}{subsection.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Revisiting methods}{21}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}Revisiting methods}{22}{subsection.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Conclusion}{21}{section.9}%
+\contentsline {section}{\numberline {9}Conclusion}{22}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Future work}{22}{section.10}%
+\contentsline {section}{\numberline {10}Future work}{23}{section.10}%
