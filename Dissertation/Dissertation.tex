@@ -329,28 +329,6 @@ It is still useful however to see how semi-supervised learning has been applied 
 
 \subsection{Hidden Markov Models}
 
-% Cut from repeated experiments section.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{Hidden Markov Models}
-% % Useful Background reading and potential references.
-% %https://towardsdatascience.com/hidden-markov-models-for-time-series-classification-basic-overview-a59b74e5e65b Normally towardsdatascience is really good but this makes no sense to me at all.
-
-% %This article is more complicated, but also indepth and explains stuff more. - https://towardsdatascience.com/markov-chains-and-hmms-ceaf2c854788
-% %Some guys github repository using HMM for binary sentimental analysis of tweets - https://github.com/FantacherJOY/Hidden-Markov-Model-for-NLP
-% %"In the case one label is way more frequent than the other (say Class B appears for every 100 samples of Class A), or in the case one category is broader than the other (have more variance, i.e. Class A is an expected behavior of a process and Class B is all the cases that are abnormal), then we might want to train a unique HMM for Class A. For each new sample, we compute the likelihood to the model, and if it falls below a pre-defined threshold (that can be chosen with respect to some validation sample, or in the worst case, from the training samples themselves) we assign this sample to Class B. If the likelihood is above the threshold, we assign the sample to Class A." - https://datascience.stackexchange.com/questions/8560/can-hmm-be-used-as-a-binary-classifier
-
-% HMMs are typically used with time series data.
-% Here I just used the series of mouse events and ignored the timestamps of the event.
-% It was found earlier that the length of mouse events and time are positively correlatied with a pearsons correlation of ?? 0.6,
-%  and so just the sequence of mouse events should still hold the detail that time data would.
-
-% These can be used for binary classification as described here 
-% (https://datascience.stackexchange.com/questions/8560/can-hmm-be-used-as-a-binary-classifier). Say theyre used to generate samples, maybe in another part as that will probably need more explanation.
-
-% With the bag of words model we ignored all order to the sequences looking only at the frequency of each item.
-% This is a different approach, here the order is the most important thing.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % explanation from scratch: https://towardsdatascience.com/hidden-markov-model-implemented-from-scratch-72865bda430e
 
 A Hidden Markov Model will be the main statistical modelling technique used in this paper.
@@ -389,7 +367,35 @@ This can be a good way to create synthetic data \cite{ferrando2018generating}.
 Figure \ref{fig:Markov} shows the states of a markov model of my system with states A-E representing sliders 1-5 and state F representing an html element.
 In the top right we can see a possible transition matrix of our system.
 
-\section{Implementation}
+
+
+Cut from repeated experiments section.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Hidden Markov Models}
+% Useful Background reading and potential references.
+%https://towardsdatascience.com/hidden-markov-models-for-time-series-classification-basic-overview-a59b74e5e65b Normally towardsdatascience is really good but this makes no sense to me at all.
+
+%This article is more complicated, but also indepth and explains stuff more. - https://towardsdatascience.com/markov-chains-and-hmms-ceaf2c854788
+%Some guys github repository using HMM for binary sentimental analysis of tweets - https://github.com/FantacherJOY/Hidden-Markov-Model-for-NLP
+%"In the case one label is way more frequent than the other (say Class B appears for every 100 samples of Class A), or in the case one category is broader than the other (have more variance, i.e. Class A is an expected behavior of a process and Class B is all the cases that are abnormal), then we might want to train a unique HMM for Class A. For each new sample, we compute the likelihood to the model, and if it falls below a pre-defined threshold (that can be chosen with respect to some validation sample, or in the worst case, from the training samples themselves) we assign this sample to Class B. If the likelihood is above the threshold, we assign the sample to Class A." - https://datascience.stackexchange.com/questions/8560/can-hmm-be-used-as-a-binary-classifier
+
+HMMs are typically used with time series data.
+Here I just used the series of mouse events and ignored the timestamps of the event.
+It was found earlier that the length of mouse events and time are positively correlatied with a pearsons correlation of ?? 0.6,
+ and so just the sequence of mouse events should still hold the detail that time data would.
+
+These can be used for binary classification as described here 
+
+(https://datascience.stackexchange.com/questions/8560/can-hmm-be-used-as-a-binary-classifier). Say theyre used to generate samples, maybe in another part as that will probably need more explanation.
+
+With the bag of words model we ignored all order to the sequences looking only at the frequency of each item.
+This is a different approach, here the order is the most important thing.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Final Implementation}
+% Changed from Implementation to Final Implementation
+
 
 % Talk about all different steps you took?
 To implement a HMM the python library HMMLearn was used \cite{hmmlearn}.
@@ -563,13 +569,12 @@ The features chosen to be used by the HMM is the target of
 
 Once we have insightful features from the data we can consider what machine learning algorithm would be most appropriate to use on the data.
 This will obviously be highly dependent on what form the final features are in.
-For example if the features are numerical values such as time taken to complete task and number of mouse events then an algorithm such as a Support Vector Machine would be a good choice.
-If the data is in the form of sequential data such as a list of all mouse events then something like a LSTM or RNN network would be best suited.
+For example if the features are numerical values such as time taken to complete task and number of mouse events then an algorithm such as a Support Vector Machine could be a good choice.
+If the data is in the form of sequential data such as a list of all mouse events then alternative techniques such as LSTM or RNN networks or HMMs would be more appropriate choices.
 If the features output was an image such as a trace of mouse position over time then a CNN could be a good choice as they're designed for image data.
 It is likely that text classification algorithms will be used when comparing the targets of mouse events.
 Comparing n-grams can be done with algorithms such as XYZ [reference].
 Other text classification algorithms such as cosine similarity or sentiment analysis could also be used.
-
 
 \subsection{Labels}
 
@@ -586,110 +591,122 @@ If this is done recursively then we can end up with a system that can split all 
 % Commented out all of Repeated Experiments section.
 % Not deleted as we might want to take bits from this and copy into other places.
 % TODO: Move HMM section out because that section is pretty good.
-
-% \section{Repeated Experiments}
-% % Suggested by Tom as an overview of all the work I've done. 
-% % Lots of it will probably need adjusting and deleting.
-
-% This section will give an overview of the work I have completed during this project.
-% Each sub section offers a unique approach to tackling the problem.
-% The different methods were tried sequentially, and the pipeline had to be amended for each one as the input requirements changed.
-
-% Approach of this project was to try many different methods of looking through, classifying, and predicting attentiveness of this data.
-
-% (Get the actual exploration and ml/data science steps by looking at notebooks.)
-
-% \subsection{Distance Based Methods / Spacial Classification Methods}
-
-% Not sure if this is the best name for it.
-% These experiments attempted to separate the data samples for turkers, and lab participants by plotting samples in space.
-% The aim is that this might reveal information about the features of different users.
-% If there was a clear distinction between the classes then we could potentially reclassify some points based on their euclidean distance to one another.
-
-% \subsubsection{SVM separation methods}
-% Here we look at if a simple hyperplane could separate the data when looking at similar features the number of mouse events and the total time taken to do the task. 
-% It was found that a linear, or hyperbolic(wasn't hyperplane was something else) was unable to separate data. 
-% This was mainly die to the unbalanced classes.
-
-% Here simple features of the data was used, the time taken to complete the task, and the number of mouse event taken to complete the task.
+% NOTE: put back in on 10/09/2020.
+% This gave another 1,000 words and will give maybe 2/3x as much as that when all completed.
 
 
-% \subsubsection{Clustering}
-% Didn't do this but its an example point.
-% (Might have tried kNN).
+\section{Repeated Experiments}
+% Suggested by Tom as an overview of all the work I've done. 
+% Lots of it will probably need adjusting and deleting.
 
-% \subsection{Bag-Of-Words Methods}
+This section will give an overview of the work I have completed during this project.
+Each sub section offers a unique approach to tackling the problem.
+The different methods were tried sequentially, and the pipeline had to be amended for each one as the input requirements changed.
 
-% (Maybe mention bag-of-words models in background research?)
+Approach of this project was to try many different methods of looking through, classifying, and predicting attentiveness of this data.
+These experiments enabled me to get a better understanding of the data, and to explore which methods would be most appropriate.
+While these results did not end up directly contributing to the main goal of this paper, they were important stepping stones of the project.
 
-% Can treat each target as a word as use NLP methods such as bag-of-words. 
-% With with method we will lose data regarding order but that can be analysed later with HMMs.
-% "In this model, a text (such as a sentence or a document) is represented as the bag (multiset) of its words,
-%  disregarding grammar and even word order but keeping multiplicity.
-%   The bag-of-words model has also been used for computer vision." 
-%   - ($wikipedia.org/wiki/Bag-of-words_model$)
+Before any users were reclassified based on their engagement an alternative aim was established.
+This was to create a method of identifying whether a user was from the lab study or if they were a crowdsourced turk user based on some input data.
+While this is not the ambition of this dissertation, it would reveal interesting information about the two user groups.
+If it was trivial to tell these groups apart then it would suggest that there may have been an error in how the data was recorded, or some other unintentional feature a classifier may be identifying.
+If any machine learning method was unable to classify a given user then it may suggest that there is little to no difference between the users data.
+This could additionally indicate that there is no link between a users mouse data and their engagement, which would be a huge and surprising discovery. 
 
-% Disregarding grammar is a big weakness of traditional uses of BoW but the concept of grammar is meaningless in the case of a sequence of mouse targets.
+% TODO (Get the actual exploration and ml/data science steps by looking at notebooks.)
 
-% \subsubsection{Naive Bayes}
+\subsection{Distance Based Methods / Spacial Classification Methods}
 
-% Another idea from SPAM detection is using a naive bayes, here they get the count of each word for each email and bayes it. 
-%  https://towardsdatascience.com/spam-filtering-using-naive-bayes-98a341224038
+Not sure if this is the best name for it.
+These experiments attempted to separate the data samples for turkers, and lab participants by plotting samples in space.
+The aim is that this might reveal information about the features of different users.
+If there was a clear distinction between the classes then we could potentially reclassify some points based on their euclidean distance to one another.
 
-% Not very good, when balanced data used cross validation average of 50ish%.
+\subsubsection{SVM separation methods}
+Here we look at if a simple hyperplane could separate the data when looking at similar features the number of mouse events and the total time taken to do the task. 
+It was found that a linear, or hyperbolic(wasn't hyperplane was something else) was unable to separate data. 
+This was mainly die to the unbalanced classes.
 
-% https://machinelearningmastery.com/failure-of-accuracy-for-imbalanced-class-distributions/
-% This website has some nice references about imbalanced class distributions.
-% ( TODO: use in diss)
-% data sampling – customized algorithms– cost sensitive algorithms– one class algorithms – threshold moving – probability calibration
-
-
-% $https://machinelearningmastery.com/tour-of-evaluation-metrics-for-imbalanced-classification/$
-% Better ways of dealing with imbalenced data
-
-% \subsubsection{Naive Bayes with N-Grams}
-% Could even use this to get the counts of 2/3-grams to compare?
-% More successful but suffered from same issues.
-
-% Include image of n-grams distributions?
-% TODO: Plot of ngrams for both classes. Create side by side bar plot.
-
-% html seems to be higher with turkers rather than lab users, this may be because they were fidgeting and not paying attention?
-
-% EXPLAIN EVERYTHING IVE DONE.
-
-% \subsection{Imbalanced classes}
-
-% HMMs can be used for classification as shown above, but they are also known as generative models.
-% This means they can be used to create new data.
-% The above methods of SVM, KNN, and Naive Bayes failed due to the imbalances of classes.
-% Now the trained HMMs could be used to generate new data points, to reduce the imbalances, and make these methods effective.
-
-% The HMM can generate a probable sequence of n observed states, however to generate new samples we must decide what length n must be.
+Here simple features of the data was used, the time taken to complete the task, and the number of mouse event taken to complete the task.
 
 
-% \begin{figure}[ht]
-%     \centering
-%     \includegraphics[scale=0.5]{Images/Lengths-Histogram.png}
-%     \caption{Histogram of length of mouse events for turker and lab data.}
-%     \label{fig:normaldis}
-% \end{figure}
+\subsubsection{Clustering}
+Didn't do this but its an example point.
+(Might have tried kNN).
 
-% Figure \ref{fig:normaldis} shows a the frequency of different mouse events lengths.
-% In red we can see a positively skewed normal distribution which matches the distribution fairly well.
-% When determining n for the new sequence data, we will sample from a gaussian distribution with a mean of 1688 and a standard deviation of 1232.
-% This should generate a realistic distribution of lengths, and when combined with the trained HMM model, a realistic sequence of data.
+\subsection{Bag-Of-Words Methods}
 
-% % TODO: model with the actual distribution, such as a log normal, or find a way to deal with the negative values.
+(Maybe mention bag-of-words models in background research?)
+
+Can treat each target as a word as use NLP methods such as bag-of-words. 
+With with method we will lose data regarding order but that can be analysed later with HMMs.
+"In this model, a text (such as a sentence or a document) is represented as the bag (multiset) of its words,
+ disregarding grammar and even word order but keeping multiplicity.
+  The bag-of-words model has also been used for computer vision." 
+  - ($wikipedia.org/wiki/Bag-of-words_model$)
+
+Disregarding grammar is a big weakness of traditional uses of BoW but the concept of grammar is meaningless in the case of a sequence of mouse targets.
+
+\subsubsection{Naive Bayes}
+
+Another idea from SPAM detection is using a naive bayes, here they get the count of each word for each email and bayes it. 
+ https://towardsdatascience.com/spam-filtering-using-naive-bayes-98a341224038
+
+Not very good, when balanced data used cross validation average of 50ish%.
+
+https://machinelearningmastery.com/failure-of-accuracy-for-imbalanced-class-distributions/
+This website has some nice references about imbalanced class distributions.
+( TODO: use in diss)
+data sampling – customized algorithms– cost sensitive algorithms– one class algorithms – threshold moving – probability calibration
 
 
-% \subsubsection{Revisiting methods}
+$https://machinelearningmastery.com/tour-of-evaluation-metrics-for-imbalanced-classification/$
+Better ways of dealing with imbalenced data
 
-% With the generated lab study data we can now revisited some of the methods that failed due to imbalanced classes.
-% With the naive bayes of counts of different mouse targets, there was little improvement, with an accuracy and f1 score of 49\% and 46\% respectively.
-% However there was a big improvement when the bi-grams of events were fed into the model.
-% The accuracy and f1 scores increased to 94\%, a dramatic increase.
-% This shows that there is enough difference in the data for a classification algorithm to distinguish the points. 
+\subsubsection{Naive Bayes with N-Grams}
+Could even use this to get the counts of 2/3-grams to compare?
+More successful but suffered from same issues.
+
+Include image of n-grams distributions?
+TODO: Plot of ngrams for both classes. Create side by side bar plot.
+
+html seems to be higher with turkers rather than lab users, this may be because they were fidgeting and not paying attention?
+
+EXPLAIN EVERYTHING IVE DONE.
+
+\subsection{Imbalanced classes}
+
+HMMs can be used for classification as shown above, but they are also known as generative models.
+This means they can be used to create new data.
+The above methods of SVM, KNN, and Naive Bayes failed due to the imbalances of classes.
+Now the trained HMMs could be used to generate new data points, to reduce the imbalances, and make these methods effective.
+
+The HMM can generate a probable sequence of n observed states, however to generate new samples we must decide what length n must be.
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{Images/Lengths-Histogram.png}
+    \caption{Histogram of length of mouse events for turker and lab data.}
+    \label{fig:normaldis}
+\end{figure}
+
+Figure \ref{fig:normaldis} shows a the frequency of different mouse events lengths.
+In red we can see a positively skewed normal distribution which matches the distribution fairly well.
+When determining n for the new sequence data, we will sample from a gaussian distribution with a mean of 1688 and a standard deviation of 1232.
+This should generate a realistic distribution of lengths, and when combined with the trained HMM model, a realistic sequence of data.
+
+% TODO: model with the actual distribution, such as a log normal, or find a way to deal with the negative values.
+
+
+\subsubsection{Revisiting methods}
+
+With the generated lab study data we can now revisited some of the methods that failed due to imbalanced classes.
+With the naive bayes of counts of different mouse targets, there was little improvement, with an accuracy and f1 score of 49\% and 46\% respectively.
+However there was a big improvement when the bi-grams of events were fed into the model.
+The accuracy and f1 scores increased to 94\%, a dramatic increase.
+This shows that there is enough difference in the data for a classification algorithm to distinguish the points. 
 
 \section{Results}
 % talk about results
@@ -709,7 +726,6 @@ These points were labelled Reclassified Lab data and Reclassified Turk Data.
 % Examine outliers.
 % TODO: Idea, use a 2d histogram, or scatter plot lab likelihood against turk likelihood.
 
-T
 One way of attempting to classify users is to identify any users with a higher lab likelihood as being more similar to a lab user than a turk user
 , however all the points have a higher lab likelihood than turk likelihood shown by the black line y=x.
 he model likelihoods are the the log likelihoods that each user belongs to the lab or turk models. 
@@ -795,7 +811,7 @@ The difference in likelihoods and length of mouse events sequence has a correlat
 To evaluate the results I would not be too confident in my findings.
 The data was incorrectly labelled for the task I wanted to perform.
 Additionally the data was heavily imbalanced.
-All of the conclusions I have made from the lab data are relying on only a handful (13 maybe) of datapoints which is not statistically significant.
+All of the conclusions I have made from the lab data are relying on only a handful (14) of datapoints which is not statistically significant.
 Additionally there was not a lot of data from the other class of online data either.
 Typically data science and machine learning uses big data, where as this project used only 400ish records in total which came to only 500mb of data (MAYBE).
 Any bias in any of these original samples will be magnified as this was used to classify more points, which would again spread this bias.

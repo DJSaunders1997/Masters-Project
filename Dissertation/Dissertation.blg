@@ -1,19 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'Dissertation.blg'
-[93] biber-MSWIN64:322> INFO - === 
-[125] Biber.pm:415> INFO - Reading 'Dissertation.bcf'
-[332] Biber.pm:943> INFO - Found 35 citekeys in bib section 0
-[352] Biber.pm:4256> INFO - Processing section 0
-[353] Utils.pm:75> INFO - Globbing data source 'References.bib'
-[366] Utils.pm:91> INFO - Globbed data source 'References.bib' to References.bib
-[385] Biber.pm:4455> INFO - Looking for bibtex format file 'References.bib' for section 0
-[396] bibtex.pm:1653> INFO - LaTeX decoding ...
-[493] bibtex.pm:1471> INFO - Found BibTeX data source 'References.bib'
-[707] Utils.pm:304> WARN - month field 'October' in entry 'kaggleWorkerActivity' is not an integer - this will probably not sort properly.
-[760] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[760] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[760] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[760] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[797] bbl.pm:652> INFO - Writing 'Dissertation.bbl' with encoding 'UTF-8'
-[823] bbl.pm:755> INFO - Output to Dissertation.bbl
-[831] Biber.pm:128> INFO - WARNINGS: 1
+[181] biber-MSWIN64:322> INFO - === 
+[235] Biber.pm:415> INFO - Reading 'Dissertation.bcf'
+[510] Biber.pm:943> INFO - Found 35 citekeys in bib section 0
+[578] Biber.pm:4256> INFO - Processing section 0
+[579] Utils.pm:75> INFO - Globbing data source 'References.bib'
+[601] Utils.pm:91> INFO - Globbed data source 'References.bib' to References.bib
+[623] Biber.pm:4455> INFO - Looking for bibtex format file 'References.bib' for section 0
+[636] bibtex.pm:1653> INFO - LaTeX decoding ...
+[769] bibtex.pm:1471> INFO - Found BibTeX data source 'References.bib'
+[1233] Utils.pm:304> WARN - month field 'October' in entry 'kaggleWorkerActivity' is not an integer - this will probably not sort properly.
+[1334] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1334] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1334] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1334] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1450] bbl.pm:652> INFO - Writing 'Dissertation.bbl' with encoding 'UTF-8'
+[1547] bbl.pm:755> INFO - Output to Dissertation.bbl
+[1577] Biber.pm:128> INFO - WARNINGS: 1

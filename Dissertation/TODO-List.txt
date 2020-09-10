@@ -1,6 +1,9 @@
 TODO: List
 08/09/20
 
+0.
+Find out what should be in Methodology and massively bulk up.
+
 1.
 Finish Semi-Supervised Learning section with references.
 

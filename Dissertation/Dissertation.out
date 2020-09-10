@@ -7,16 +7,26 @@
 \BOOKMARK [2][-]{subsection.2.2}{Mouse cursor tracking}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.3}{Semi Supervised Learning}{section.2}% 8
 \BOOKMARK [2][-]{subsection.2.4}{Hidden Markov Models}{section.2}% 9
-\BOOKMARK [1][-]{section.3}{Implementation}{}% 10
-\BOOKMARK [1][-]{section.4}{Methodology}{}% 11
-\BOOKMARK [1][-]{section.5}{Data Pipeline}{}% 12
-\BOOKMARK [2][-]{subsection.5.1}{Data}{section.5}% 13
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Data Manipulation}{subsection.5.1}% 14
-\BOOKMARK [2][-]{subsection.5.2}{Features}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.3}{Machine Learning}{section.5}% 16
-\BOOKMARK [2][-]{subsection.5.4}{Labels}{section.5}% 17
-\BOOKMARK [1][-]{section.6}{Results}{}% 18
-\BOOKMARK [2][-]{subsection.6.1}{Table or graph of results}{section.6}% 19
-\BOOKMARK [2][-]{subsection.6.2}{Likelihood length correlation}{section.6}% 20
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 21
-\BOOKMARK [1][-]{section.8}{Future work}{}% 22
+\BOOKMARK [2][-]{subsection.2.5}{Hidden Markov Models}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{Final Implementation}{}% 11
+\BOOKMARK [1][-]{section.4}{Methodology}{}% 12
+\BOOKMARK [1][-]{section.5}{Data Pipeline}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Data}{section.5}% 14
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Data Manipulation}{subsection.5.1}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Features}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.3}{Machine Learning}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.4}{Labels}{section.5}% 18
+\BOOKMARK [1][-]{section.6}{Repeated Experiments}{}% 19
+\BOOKMARK [2][-]{subsection.6.1}{Distance Based Methods / Spacial Classification Methods}{section.6}% 20
+\BOOKMARK [3][-]{subsubsection.6.1.1}{SVM separation methods}{subsection.6.1}% 21
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Clustering}{subsection.6.1}% 22
+\BOOKMARK [2][-]{subsection.6.2}{Bag-Of-Words Methods}{section.6}% 23
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Naive Bayes}{subsection.6.2}% 24
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Naive Bayes with N-Grams}{subsection.6.2}% 25
+\BOOKMARK [2][-]{subsection.6.3}{Imbalanced classes}{section.6}% 26
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Revisiting methods}{subsection.6.3}% 27
+\BOOKMARK [1][-]{section.7}{Results}{}% 28
+\BOOKMARK [2][-]{subsection.7.1}{Table or graph of results}{section.7}% 29
+\BOOKMARK [2][-]{subsection.7.2}{Likelihood length correlation}{section.7}% 30
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 31
+\BOOKMARK [1][-]{section.9}{Future work}{}% 32
