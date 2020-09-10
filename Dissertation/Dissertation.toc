@@ -60,10 +60,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.2}Likelihood length correlation}{19}{subsection.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Further Results}{20}{section.8}%
+\contentsline {section}{\numberline {8}Further Results}{19}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Revisiting methods}{20}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.1}Results}{20}{subsection.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Conclusion}{20}{section.9}%
+\contentsline {subsection}{\numberline {8.2}Revisiting methods}{21}{subsection.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Future work}{21}{section.10}%
+\contentsline {section}{\numberline {9}Conclusion}{21}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Future work}{22}{section.10}%

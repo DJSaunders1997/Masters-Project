@@ -812,6 +812,53 @@ The difference in likelihoods and length of mouse events sequence has a correlat
 % Stretch goal as I don't think this adds much other than saying I can make another HMM but with completely different results.
 % This section says the above is still the final results, but these 6 users are of particular interest. 
 
+% Information copied from HMM cursor location
+
+In order to confirm any findings it was decided to attempt another experiment using similarly designed HMMs.
+The key difference is that these models will be trained with different data than the previous models.
+If models are created with different data, but they identify the same users as potentially belonging to the wrong group then it would be a confirmation that those users are indeed outliers.
+If the models predict a completely different group of users then it would indicate there is no consistency within the data and that the models may not be reflecting the actual processes.  
+
+These confirmation models will be trained on spatial data, of which HMMs are a known classification method. 
+% TODO:fFind reference that HMMS are good at spatial data.
+The exact makeup of data will be a sequence of tuples of users mouse cursor location, $(x, y)$.
+
+There were concerns with the mouse location data, mainly being that the data does not seem to be calibrated correctly.
+Figure~\ref{fig:MousePaths} shows the issues with the mouse path data.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[scale=0.6]{Images/Mouse-Path-Data.png}
+    \caption{Graph of spatial coordinates of all users mouse path data.}
+    \label{fig:MousePaths}
+\end{figure}
+
+Ideally the start and end points of all users should be identical, with the majority of events happening with the same y coordinates because of the horizontal sliders. 
+However we can see that there is a massive range in mouse data, some users have a small range of x and y coordinates, others have a range much larger up to a y value of over 1800.
+This difference is mouse data was not addressed, this may cause some of the users data to be unlikely to belong to any model as they’re such a large outlier.
+
+% Talk about how there was conserns with the mouse data not being centred on the same points or sliders.
+% P
+
+\subsection{Results}
+The new HMMs reclassified none of the lab data and 22 of the crowdsourced turk users.
+The previous HMM classified 45 of the crowdsourced users.
+Taking an intersection of the sets of users will show us how consistent the results are.
+If there is a large intersection of users then the results are consistent with before, however if there is little to no intersection then it would indicate that there is no consistency between models. 
+
+${Previous Reclassified Users} \cap {New Reclassified Users}$
+
+There is no intersection between the two sets of users.
+This indicates either that there is no consistency in the results.
+
+However this result is only if we look at the users that were reclassified, meaning their different in likelihoods of belonging to the Lab model and Turk model was positive.
+If we amend the definition of a reclassified user to be the top 100 users with a positive difference in Likelihood then we get a different result.
+The intersection between the top 100 reclassified users and the original set of reclassified users is 22.
+This is much more promising as it shows that the majority of the reclassified users are shared between both methods.
+% Say what I'm trying to say much better.
+The inconsistency in the mouse location data identified could be causing the slight differences in methods. 
+
+
 \subsection{Revisiting methods}
 % This section will discuss the generative properties of a HMM.
 % Explain how the lengths were modelled as a gaussian and points sampled form there.
