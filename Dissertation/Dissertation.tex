@@ -15,8 +15,12 @@
 % \date{September 2020}
 
 \begin{document}
+\pagenumbering{gobble}  % Turn off page numbering
 \maketitle
-\newpage
+\pagebreak
+
+\include{Declaration/declaration}
+\pagebreak
 
 % The abstract is a good start. It's better to be more specific about
 % what your thesis is about. So, the first sentence should be something
@@ -38,9 +42,10 @@
     % These results require further research with a properly labelled dataset to confirm any findings.
     % I would also remove the last sentence. That's more of a future work idea.
 \end{abstract}
+\pagebreak
 
 \tableofcontents
-
+\pagebreak
 % Toms layout
 
 % Motivation
@@ -50,6 +55,7 @@
 % Conclusion
 
 \section{Motivation}
+\pagenumbering{arabic}
 
 % Why is it important
 % Why is it a hard problem/problems
