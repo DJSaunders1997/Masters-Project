@@ -30,3 +30,11 @@ Maybe double check with other HMM using mouse location data.
 Stretch goal as I don't think this adds much other than saying I can make another HMM but with completely different results.
 HOWEVER, this could be a 'Further/extra results' section.
 This section says the above is still the final results, but these 6 users are of particular interest. 
+(Partially done) - Need to update conclusion and stuff with it.
+
+8. 
+Fill in the Repeated Experiments section.
+This should allow me to bulk up as A lot was done, and it was well documented.
+TODO: Find if there is any way of doing cross validation on imbalanced data.
+
+9. Write about how HMMs are generative and can be used to improve our prior classification methods.

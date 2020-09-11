@@ -634,22 +634,43 @@ This could additionally indicate that there is no link between a users mouse dat
 
 \subsection{Distance Based Methods / Spacial Classification Methods}
 
-Not sure if this is the best name for it.
+% Not sure if this is the best name for it.
+This section provided the initial exploration into the problem.
 These experiments attempted to separate the data samples for turkers, and lab participants by plotting samples in space.
 The aim is that this might reveal information about the features of different users.
 If there was a clear distinction between the classes then we could potentially reclassify some points based on their euclidean distance to one another.
 
 \subsubsection{SVM separation methods}
 Here we look at if a simple hyperplane could separate the data when looking at similar features the number of mouse events and the total time taken to do the task. 
-It was found that a linear, or hyperbolic(wasn't hyperplane was something else) was unable to separate data. 
-This was mainly die to the unbalanced classes.
 
-Here simple features of the data was used, the time taken to complete the task, and the number of mouse event taken to complete the task.
+It was found that a linear, or non-linear classification with a kernel trick was unable to separate the data.
+However as shown in Figure~\ref{fig:scatterplot}, the data does not appear to be linearly separable.
+Regardless this method was still attempted.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.7]{Images/SVM-Decision-Region-Boundary.png}
+    \caption{Plot of the SVM, showing the decision region boundary.}
+    \label{fig:SVM}
+\end{figure}
+
+Figure~\ref{fig:SVM} shows the unsuccessful attempts of this method, and shows the sheer imbalance of the dataset.
+Only 53\% of the lab data was within the relating decision boundary, where as 86\% of the turk data was in its respective region.
+This highlights how this method will be ineffective on the dataset.
+While the SVM has created this central band of lab data, this region doesn't accurately model all of the data. 
+
+Additionally this method highlights a reoccurring problem of this project
+, the unbalanced data classes.
+This can make the accuracy of the model high, even if it misclassified most data points.
+%[[  8   6]
+% [ 53 325]]
+
+%Here simple features of the data was used, the time taken to complete the task, and the number of mouse event taken to complete the task.
 
 
-\subsubsection{Clustering}
-Didn't do this but its an example point.
-(Might have tried kNN).
+% \subsubsection{Clustering}
+% Didn't do this but its an example point.
+% (Might have tried kNN).
 
 \subsection{Bag-Of-Words Methods}
 
