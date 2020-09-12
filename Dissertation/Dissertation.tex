@@ -639,16 +639,16 @@ This could additionally indicate that there is no link between a users mouse dat
 
 % TODO (Get the actual exploration and ml/data science steps by looking at notebooks.)
 
-\subsection{Distance Based Methods / Spacial Classification Methods}
+\subsection{SVM separation method}
 
 % Not sure if this is the best name for it.
 This section provided the initial exploration into the problem.
-These experiments attempted to separate the data samples for turkers, and lab participants by plotting samples in space.
+These experiments attempted to separate the data samples for crowdsourced turker users, and lab participants by plotting samples in space.
 The aim is that this might reveal information about the features of different users.
 If there was a clear distinction between the classes then we could potentially reclassify some points based on their euclidean distance to one another.
 
-\subsubsection{SVM separation methods}
-Here we look at if a simple hyperplane could separate the data when looking at similar features the number of mouse events and the total time taken to do the task. 
+A Support Vector Machine (SVM) is a common supervised machine learning technique \cite{noble2006support}.
+Here we look at if a simple hyperplane could separate the data when looking at the simple features of the number of mouse events and the total time taken to do the task. 
 
 It was found that a linear, or non-linear classification with a kernel trick was unable to separate the data.
 However as shown in Figure~\ref{fig:scatterplot}, the data does not appear to be linearly separable.
@@ -697,7 +697,6 @@ This data will have a very limited lexicon of only 6 ``words'', the sliders from
 Therefore this data will have much lower dimensionality than typical text data.
 Additionally every user has interacted with every target, therefore the data is not sparse but dense.
 
-% TODO: here now describe some of the methods that exist to classify text data.
 % TODO: I decided on some methods that are used for SPAM detection.
 
 
@@ -710,7 +709,9 @@ Additionally every user has interacted with every target, therefore the data is 
 \end{pmatrix}
 \]    % <-- end of math environment
 
+\bigskip % to skip a line
 This matrix shows the first 3 rows of the bag of words representations of each users data.
+The matrix has 6 columns representing each of the mouse targets or ``words''.
 
 % FROM THE CODE
 % TODO: Add to this section if I want more depth in this section.
@@ -721,44 +722,55 @@ This matrix shows the first 3 rows of the bag of words representations of each u
 % TF-IDF will not work due to small vocabulary.
 % Word hashing is used to help complexity but this is simple enough that we dont need it.
 
+% TODO: Add plot of number of targets normalised for both groups
+% df_lab['target'].value_counts().plot(kind = 'bar') divided by num of users.
 
-One popular text classification method is with a Naïve Bayes classifier.
-This is known as a Bag-Of-Words model, since the grammar and order of the words is ignored and only the counts of each word is used as a feature \cite{jurafsky2015text}.
+One popular text classification method is with a Bag-Of-Words model, called such because the grammar and order of the words is ignored and only the counts of each word is used as a feature \cite{jurafsky2015text}.
 Grammar is meaningless in the context of mouse data, however the sequence of the words may hold crucial information regarding what class a user is in.
 Disregarding the sequence may be a big limitation of this method as we can imagine a user switching between sliders frequently may be very engaged in the task.
 Therefore disregarding the order of targets could be detrimental to the model.
+The Bag-Of-Words representation of the data can be used as input to a Naïve Bayes classifier \cite{jurafsky2015text}.
 A Naïve Bayes classifier predicts a class based on the probability of seeing the counts of words in a document.  
 It can potentially be used here to classify users as lab study or crowdsourced based on their counts of targets.
 For example it may be found that crowdsourced turk users may have a higher lower counts for the later targets, potentially showing how they got tired of the task and stopped putting effort into it.
 
-
-
-\subsubsection{Naive Bayes}
-
-Another idea from SPAM detection is using a naive bayes, here they get the count of each word for each email and bayes it. 
- https://towardsdatascience.com/spam-filtering-using-naive-bayes-98a341224038
+% TODO: Model results here.
+% TODO: Do k-fold cross validation to keep class size the same.
 
 Not very good, when balanced data used cross validation average of 50ish%.
 
-https://machinelearningmastery.com/failure-of-accuracy-for-imbalanced-class-distributions/
-This website has some nice references about imbalanced class distributions.
-( TODO: use in diss)
-data sampling – customized algorithms– cost sensitive algorithms– one class algorithms – threshold moving – probability calibration
+% TODO: Use these references about dealing with imbalanced data in diss.
+% https://machinelearningmastery.com/failure-of-accuracy-for-imbalanced-class-distributions/
+% This website has some nice references about imbalanced class distributions.
+% ( TODO: use in diss)
+% data sampling – customized algorithms– cost sensitive algorithms– one class algorithms – threshold moving – probability calibration
 
+% $https://machinelearningmastery.com/tour-of-evaluation-metrics-for-imbalanced-classification/$
+% Better ways of dealing with imbalanced data
 
-$https://machinelearningmastery.com/tour-of-evaluation-metrics-for-imbalanced-classification/$
-Better ways of dealing with imbalenced data
+\subsubsection{N-Grams}
 
-\subsubsection{Naive Bayes with N-Grams}
-Could even use this to get the counts of 2/3-grams to compare?
+The previous Bag-Of-Words method would be considered an unigram model of natural language processing.
+An n-grams is a series of n words, with unigrams being one word, and bigrams being two word pairs \cite{keselj2009speech}.
+
+Different n-grams can be combined together to better understand the complexities of a text document.
+A mixture of unigrams, bigrams, and trigrams are used extract different levels of text complexity and perform well with document classification \cite{aggarwal2012survey}.
+The same technique can be applied to this mouse dataset.
+Bigrams will be of particular interest as they show the transitions from one target to another.
+However higher n n-grams could reveal information about a users approach to the tasks.
+A user who has many n-grams of different sliders would mean they often changed between sliders, potentially looking for the optimum slider values.
+
+% TODO: Do with n-grams from 1-3 and see how many columns there are.
+With a combination of 1-grams, 2-grams, and 3-grams we now have X number of feature columns.
+
+TODO: Add results 
+
 More successful but suffered from same issues.
 
 Include image of n-grams distributions?
 TODO: Plot of ngrams for both classes. Create side by side bar plot.
 
-html seems to be higher with turkers rather than lab users, this may be because they were fidgeting and not paying attention?
-
-EXPLAIN EVERYTHING IVE DONE.
+%html seems to be higher with turkers rather than lab users, this may be because they were fidgeting and not paying attention?
 
 \subsection{Imbalanced classes}
 
@@ -792,6 +804,7 @@ With the naive bayes of counts of different mouse targets, there was little impr
 However there was a big improvement when the bi-grams of events were fed into the model.
 The accuracy and f1 scores increased to 94\%, a dramatic increase.
 This shows that there is enough difference in the data for a classification algorithm to distinguish the points. 
+
 
 \section{Results}
 % talk about results
