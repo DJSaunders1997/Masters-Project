@@ -1,7 +1,8 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{subcaption} 
+\usepackage{subcaption}
+\usepackage{amsmath} % For matricies 
 \usepackage[export]{adjustbox}
 \usepackage[hidelinks]{hyperref}
 
@@ -699,22 +700,20 @@ Additionally every user has interacted with every target, therefore the data is 
 % TODO: here now describe some of the methods that exist to classify text data.
 % TODO: I decided on some methods that are used for SPAM detection.
 
-One popular text classification method is with a Naïve Bayes classifier.
-This is known as a Bag-Of-Words model, since the grammar and order of the words is ignored and only the counts of each word is used as a feature \cite{jurafsky2015text}.
-%Disregarding grammar is a big weakness of traditional uses of BoW but the concept of grammar is meaningless in the case of a sequence of mouse targets.
-Grammar is meaningless in the context of mouse data, however the sequence of the words may hold crucial information regarding what class a user is in.
-A Naïve Bayes classifier predicts a class based on the probability of seeing the counts of words in a document.  
-It can potentially be used here to classify users as lab study or crowdsourced based on their counts of targets.
-For example it may be found that crowdsourced turk users may have a higher lower counts for the later targets, potentially showing how they got tired of the task and stopped putting effort into it.
 
-% Can treat each target as a word as use NLP methods such as bag-of-words. 
-% With with method we will lose data regarding order but that can be analysed later with HMMs.
-% "In this model, a text (such as a sentence or a document) is represented as the bag (multiset) of its words,
-%  disregarding grammar and even word order but keeping multiplicity.
-%   The bag-of-words model has also been used for computer vision." 
-%   - ($wikipedia.org/wiki/Bag-of-words_model$)
+\[    % <-- start math environment
+\begin{pmatrix}
+    322 & 430 & 464 & 308 & 230 & 1317 \\
+    332 & 120 & 112 & 123 & 59 & 164 \\
+    41 & 367 & 173 & 565 & 278 & 449 \\
+    \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+\end{pmatrix}
+\]    % <-- end of math environment
+
+This matrix shows the first 3 rows of the bag of words representations of each users data.
 
 % FROM THE CODE
+% TODO: Add to this section if I want more depth in this section.
 % Normally with Bag-Of-Words models we end up with a spare matrix of mainly 0s. 
 % https://machinelearningmastery.com/gentle-introduction-bag-words-model/
 % However becuase our vocabulary is so limited (only 6 'words') the martix is full 
@@ -722,11 +721,15 @@ For example it may be found that crowdsourced turk users may have a higher lower
 % TF-IDF will not work due to small vocabulary.
 % Word hashing is used to help complexity but this is simple enough that we dont need it.
 
-Limitations of bag of words are - need a carefuly designed vocabulary 
-- Matrix can get very sparse - Context lost.
-First 2 limitations dont apply to this data
-, last limitation is very relevant tho because we can imagine a user switching between sliders 
-will have interesting order of targets that could be used in a model.
+
+One popular text classification method is with a Naïve Bayes classifier.
+This is known as a Bag-Of-Words model, since the grammar and order of the words is ignored and only the counts of each word is used as a feature \cite{jurafsky2015text}.
+Grammar is meaningless in the context of mouse data, however the sequence of the words may hold crucial information regarding what class a user is in.
+Disregarding the sequence may be a big limitation of this method as we can imagine a user switching between sliders frequently may be very engaged in the task.
+Therefore disregarding the order of targets could be detrimental to the model.
+A Naïve Bayes classifier predicts a class based on the probability of seeing the counts of words in a document.  
+It can potentially be used here to classify users as lab study or crowdsourced based on their counts of targets.
+For example it may be found that crowdsourced turk users may have a higher lower counts for the later targets, potentially showing how they got tired of the task and stopped putting effort into it.
 
 
 
