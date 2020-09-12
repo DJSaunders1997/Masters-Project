@@ -408,6 +408,10 @@ With the bag of words model we ignored all order to the sequences looking only a
 This is a different approach, here the order is the most important thing.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% file:///C:/Users/DJSau/Downloads/588dfc2633c3cd86ab3faba2a44a8e4ceb63.pdf
+% AN INTRODUCTION TO TEXT MINING
+% 2.2.1 Hidden Markov Models has a nice concise description.
+
 
 \section{Final Implementation}
 % Changed from Implementation to Final Implementation
@@ -681,7 +685,7 @@ This can make the accuracy of the model high, even if it misclassified most data
 This section of experiments is inspired by text classification algorithms.
 Text mining is becoming increasingly popular, due to the large increases in available text data from the web and social media.
 Such data is typically unstructured, and contains very large amounts of information.
-Such data is also sparse and high dimensional  \cite{aggarwal2012introduction}.
+Such data is also sparse and high dimensional \cite{aggarwal2012introduction}.
 The high dimensionality of text data stems from the large lexicon of words a document may contain, just the English language has over 170,000 words \cite{BBC2018How}.
 Text data is usually sparse because a given document is unlikely to contain anywhere near that many unique words.
 
@@ -695,14 +699,36 @@ Additionally every user has interacted with every target, therefore the data is 
 % TODO: here now describe some of the methods that exist to classify text data.
 % TODO: I decided on some methods that are used for SPAM detection.
 
-Can treat each target as a word as use NLP methods such as bag-of-words. 
-With with method we will lose data regarding order but that can be analysed later with HMMs.
-"In this model, a text (such as a sentence or a document) is represented as the bag (multiset) of its words,
- disregarding grammar and even word order but keeping multiplicity.
-  The bag-of-words model has also been used for computer vision." 
-  - ($wikipedia.org/wiki/Bag-of-words_model$)
+One popular text classification method is with a Naïve Bayes classifier.
+This is known as a Bag-Of-Words model, since the grammar and order of the words is ignored and only the counts of each word is used as a feature \cite{jurafsky2015text}.
+%Disregarding grammar is a big weakness of traditional uses of BoW but the concept of grammar is meaningless in the case of a sequence of mouse targets.
+Grammar is meaningless in the context of mouse data, however the sequence of the words may hold crucial information regarding what class a user is in.
+A Naïve Bayes classifier predicts a class based on the probability of seeing the counts of words in a document.  
+It can potentially be used here to classify users as lab study or crowdsourced based on their counts of targets.
+For example it may be found that crowdsourced turk users may have a higher lower counts for the later targets, potentially showing how they got tired of the task and stopped putting effort into it.
 
-Disregarding grammar is a big weakness of traditional uses of BoW but the concept of grammar is meaningless in the case of a sequence of mouse targets.
+% Can treat each target as a word as use NLP methods such as bag-of-words. 
+% With with method we will lose data regarding order but that can be analysed later with HMMs.
+% "In this model, a text (such as a sentence or a document) is represented as the bag (multiset) of its words,
+%  disregarding grammar and even word order but keeping multiplicity.
+%   The bag-of-words model has also been used for computer vision." 
+%   - ($wikipedia.org/wiki/Bag-of-words_model$)
+
+% FROM THE CODE
+% Normally with Bag-Of-Words models we end up with a spare matrix of mainly 0s. 
+% https://machinelearningmastery.com/gentle-introduction-bag-words-model/
+% However becuase our vocabulary is so limited (only 6 'words') the martix is full 
+% and so we dont have to wory about effeciency.
+% TF-IDF will not work due to small vocabulary.
+% Word hashing is used to help complexity but this is simple enough that we dont need it.
+
+Limitations of bag of words are - need a carefuly designed vocabulary 
+- Matrix can get very sparse - Context lost.
+First 2 limitations dont apply to this data
+, last limitation is very relevant tho because we can imagine a user switching between sliders 
+will have interesting order of targets that could be used in a model.
+
+
 
 \subsubsection{Naive Bayes}
 
