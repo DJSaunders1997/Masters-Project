@@ -414,46 +414,6 @@ This is a different approach, here the order is the most important thing.
 % 2.2.1 Hidden Markov Models has a nice concise description.
 
 
-\section{Final Implementation}
-% Changed from Implementation to Final Implementation
-
-
-% Talk about all different steps you took?
-To implement a HMM the python library HMMLearn was used \cite{hmmlearn}.
-The sequence data used to train the models was the order of mouse targets.
-The temporal aspect of the data was ignored, but earlier research showed that number of mouse events and time were heavily correlated.
-Therefore using just the order of mouse events should capture the temporal aspect of the data.
-
-When implementing a Hidden Markov model on the actual data there are lots of parameters that must be considered. 
-Given a sequence of input data the HMM model can calculate most of the parameters such as the transition matrix by using the Forwards-Backwards algorithm.
-The most prominent parameter that must be given is the number of hidden states to use.
-
-The paper \cite{pohle2017selecting} addresses this issue on similar data.
-The authors use a HMM to model animal movement behaviour, where they hope the hidden states would roughly relate to the behaviour of the animal.
-For example a 2 state HMM on this model may relate to "foraging/resting” and “travelling".
-Humans can be more complex than animals but we can think of potential states of being "inquisitive" and "bored"
-They trained models with 2, 3, 4, and 5 hidden states and compared the criterion's of AIC, BIC, ICL.
-Similarity to evaluate Lab and Turk models models were trained with number of hidden states ranging from 1 to 11.
-Generally an increase in states should increase the effectiveness, however it will also take longer to train.
-All models used for this comparison was trained to 50 iterations for a fair comparison. 
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.55]{Images/ModelEvaluation.png}
-    \caption{Line plot of evaluation of different HMM architectures.}
-    \label{fig:ModleEval}
-\end{figure}
-
-Figure \ref{fig:ModleEval} shows a different criterion of the total log likelihood of the training data of the model.
-This value is normalised by dividing by the number of data samples, to give a per-sample total likelihood.
-The evaluation of each HMM model does fluctuate based on the random state used, which is why there are drops in the evaluation criterion even when more hidden states are used.
-We can see that the criterion for both models stop improving after 9 states.
-Therefore a 10 state model was used.
-
-% https://projecteuclid.org/download/pdfview_1/euclid.aoas/1491616885
-% paper A MULTIVARIATE MIXED HIDDEN MARKOV MODEL FOR BLUE WHALE BEHAVIOUR AND RESPONSES TO SOUND EXPOSURE
-% interesting reference
-
 \section{Methodology}
 
 %(1/2 page to 1 page)
@@ -618,16 +578,53 @@ Once we have an algorithm that can classify some users as paying attention or no
 If this is done recursively then we can end up with a system that can split all data points into the 2 classes, perhaps with a degree of confidence given as a percentage.
 
 
+\section{Final Implementation}
+% Changed from Implementation to Final Implementation
+
+% Talk about all different steps you took?
+To implement a Hidden Markov Model the python library HMMLearn was used \cite{hmmlearn}.
+The sequence data used to train the models was the order of mouse targets.
+The temporal aspect of the data was ignored, but earlier research showed that number of mouse events and time were heavily correlated.
+Therefore using just the order of mouse events should capture the temporal aspect of the data.
+
+When implementing a Hidden Markov model on the actual data there are lots of parameters that must be considered. 
+Given a sequence of input data the HMM model can calculate the parameters of the model such as the transition matrix by using the Viterbi algorithm \cite{hmmlearn}.
+The most prominent parameter that must be given is the number of hidden states to use.
+
+The paper \cite{pohle2017selecting} addresses this issue on similar data.
+The authors use a HMM to model animal movement behaviour, where they hope the hidden states would roughly relate to the behaviour of the animal.
+For example a 2 state HMM on this model may relate to "foraging/resting” and “travelling".
+Humans can be more complex than animals but we can think of potential states of being "inquisitive" and "bored"
+They trained models with 2, 3, 4, and 5 hidden states and compared the criterion's of AIC, BIC, ICL.
+Similarity to evaluate Lab and Turk models models were trained with number of hidden states ranging from 1 to 11.
+Generally an increase in states should increase the effectiveness, however it will also take longer to train.
+All models used for this comparison was trained to 50 iterations for a fair comparison. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.55]{Images/ModelEvaluation.png}
+    \caption{Line plot of evaluation of different HMM architectures.}
+    \label{fig:ModleEval}
+\end{figure}
+
+Figure \ref{fig:ModleEval} shows a different criterion of the total log likelihood of the training data of the model.
+This value is normalised by dividing by the number of data samples, to give a per-sample total likelihood.
+The evaluation of each HMM model does fluctuate based on the random state used, which is why there are drops in the evaluation criterion even when more hidden states are used.
+We can see that the criterion for both models stop improving after 9 states.
+Therefore a 10 state model was used.
+
+% https://projecteuclid.org/download/pdfview_1/euclid.aoas/1491616885
+% paper A MULTIVARIATE MIXED HIDDEN MARKOV MODEL FOR BLUE WHALE BEHAVIOUR AND RESPONSES TO SOUND EXPOSURE
+% interesting reference
+
+\section{Repeated Experiments}
+% Suggested by Tom as an overview of all the work I've done. 
+
 % Commented out all of Repeated Experiments section.
 % Not deleted as we might want to take bits from this and copy into other places.
 % TODO: Move HMM section out because that section is pretty good.
 % NOTE: put back in on 10/09/2020.
 % This gave another 1,000 words and will give maybe 2/3x as much as that when all completed.
-
-
-\section{Repeated Experiments}
-% Suggested by Tom as an overview of all the work I've done. 
-% Lots of it will probably need adjusting and deleting.
 
 This section will give an overview of the work I have completed during this project.
 Each sub section offers a unique approach to tackling the problem.
@@ -979,7 +976,7 @@ This allows us to have a few different sets of users that we may reclassify as b
 I am most confident in saying that the 12 users reclassified by both versions of the models seem more similar to the lab study users than the other crowdsourced users.
 I am next most confident in the 120 users reclassified by the HMM trained with mouse target data.
 This is because data used in those models was more properly cleaned and had less variation in data.
-The users I am least most confident in reclassifying is the union of users from both sets of models.
+The users I am the least most confident in reclassifying is the union of users from both sets of models.
 This consists of 200 crowdsourced users which is 43\% of the total population.
 
 Alternatively inverting this gives us users which we can assume are not engaged in the tasks, to different degrees.
