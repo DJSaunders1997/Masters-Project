@@ -566,7 +566,7 @@ Raw features will consist of the the number of mouse events recorded, while a cr
 % , and show histograms showing similar distributions of targets.
 One such feature recorded in the data is mouse target.
 This refers to the HTML element that a users mouse was over at any given time.
-As shown in \ref{fig:interface} the most prominent part of the interface that users will interact with is the 5 stock allocation sliders.
+As shown in Figure~\ref{fig:interface} the most prominent part of the interface that users will interact with is the 5 stock allocation sliders.
 % Plot showing alloc-slider-1-5 and other.
 It is hypothesised that users who are paying attention may spend more time fine tuning their stock allocation and therefore would have more mouse events with the sliders as the target.
 % TODO:
@@ -575,6 +575,8 @@ It is hypothesised that users who are paying attention may spend more time fine 
 % TODO: Maybe have a table showing the elements name before and after renaming.
 An attempt to pick up on different parts of the interface was achieved, however the html elements were not clearly named and thus this aim was unachievable.
 
+% TODO: TODO: TODO: Normalised Histograms of targets for both classes.
+% Say how there are differences in teh averages but that the individuals are more different. 
 
 The features chosen to be used by the HMM is the target of 
 
@@ -672,9 +674,26 @@ This can make the accuracy of the model high, even if it misclassified most data
 % Didn't do this but its an example point.
 % (Might have tried kNN).
 
-\subsection{Bag-Of-Words Methods}
+\subsection{Text Classification}
 
-(Maybe mention bag-of-words models in background research?)
+%(Maybe mention bag-of-words models in background research?)
+
+This section of experiments is inspired by text classification algorithms.
+Text mining is becoming increasingly popular, due to the large increases in available text data from the web and social media.
+Such data is typically unstructured, and contains very large amounts of information.
+Such data is also sparse and high dimensional  \cite{aggarwal2012introduction}.
+The high dimensionality of text data stems from the large lexicon of words a document may contain, just the English language has over 170,000 words \cite{BBC2018How}.
+Text data is usually sparse because a given document is unlikely to contain anywhere near that many unique words.
+
+The users mouse data used in this project can be represented as an abnormal word document.
+% TODO: check that we mention about the mouse targets before, otherwise this will not make any sense.
+We can consider a mouse target as a ``word'', and a ``text document'' as a single users sequence of mouse targets.
+This data will have a very limited lexicon of only 6 ``words'', the sliders from 1 to 5 and other.
+Therefore this data will have much lower dimensionality than typical text data.
+Additionally every user has interacted with every target, therefore the data is not sparse but dense.
+
+% TODO: here now describe some of the methods that exist to classify text data.
+% TODO: I decided on some methods that are used for SPAM detection.
 
 Can treat each target as a word as use NLP methods such as bag-of-words. 
 With with method we will lose data regarding order but that can be analysed later with HMMs.
@@ -725,7 +744,7 @@ The HMM can generate a probable sequence of n observed states, however to genera
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{Images/Lengths-Histogram.png}
-    \caption{Histogram of length of mouse events for turker and lab data.}
+    \caption{Histogram of length of mouse events for turk and lab data.}
     \label{fig:normaldis}
 \end{figure}
 
