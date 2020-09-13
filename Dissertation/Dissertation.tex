@@ -808,6 +808,17 @@ This should generate a realistic distribution of lengths, and when combined with
 
 \subsubsection{Revisiting methods}
 
+% This section will discuss the generative properties of a HMM.
+% Explain how the lengths were modelled as a gaussian and points sampled form there.
+% This enables us to, in a way, address the earlier concerns of imbalanced data sizes.
+% TODO: Reference paper that says one way to address imbalanced data is to generate new data.
+
+% Then in conclusion say that while there are definitely issues with the way I created data from such a small number of samples.
+% However it is nice to see that the methods developed earlier in the project are successful, and are appropriate.
+% They were just held back by the poor quality of data which was addressed as one of the major shortcomings of this project.
+
+
+
 With the generated lab study data we can now revisited some of the methods that failed due to imbalanced classes.
 With the naive bayes of counts of different mouse targets, there was little improvement, with an accuracy and f1 score of 49\% and 46\% respectively.
 However there was a big improvement when the bi-grams of events were fed into the model.
@@ -831,32 +842,36 @@ These points were labelled Reclassified Lab data and Reclassified Turk Data.
 \subsection{Table or graph of results}
 % Plot histogram of likelihoods for both classes on both HMM models.
 % Examine outliers.
-% TODO: Idea, use a 2d histogram, or scatter plot lab likelihood against turk likelihood.
 
-One way of attempting to classify users is to identify any users with a higher lab likelihood as being more similar to a lab user than a turk user
-, however all the points have a higher lab likelihood than turk likelihood shown by the black line y=x.
-he model likelihoods are the the log likelihoods that each user belongs to the lab or turk models. 
+One way of attempting to classify users is to identify any users with a higher lab likelihood as being more similar to a lab user than a turk user.
+Figure~\ref{fig:unreclassified} shows this result graphically.
+Any data point above the line $y=x$ has a higher likelihood of belonging to the lab model than the turk model.
+Therefore any turk data that is above this line can be reclassified as seeming to belong more with the lab data than the fellow turk datapoints. 
+An interesting and surprising result is shown from the lab data.
+Not all of the lab data is shown to be belonging more strongly to the lab model than the turk model.
+6 out of 14 (43\%) of the lab data samples has been reclassified by the algorithm as being more similar to the turk data.
 
-% An alternative solution is to plot a regression line of the lab users likelihoods (shown in orange). 
-% We can see that the lab data points form an almost straight line. 
-% Any points above this line have a higher likelihood of being a lab user or a lower likelihood of being a turk user than the actual lab data. 
-% Thus this regression line forms a sort of pareto frontier, with points above it a more feasible choice of lab-like data than points beneath it.  
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[scale=0.5]{Images/labturklikli.png}
+    \caption{Scatterplot of users likelihood of belonging to either group. }
+    \label{fig:unreclassified}
+\end{figure}
 
-% TODO: Update with newer graph so reclassified is green
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.5]{Images/Reclassified-Data.png}
-    \caption{Plot showing the turk users that have been reclassified as behaving more like lab users. }
+    \caption{Scatterplot showing the turk users that have been reclassified as behaving more like lab users. }
     \label{fig:Reclassified}
 \end{figure}
 
 Figure \ref{fig:Reclassified} shows which of the turk users are more similar to the lab users
-, than other turk users. 
-This plot shows the same datapoints and axis
-, but the points above the line are recoloured yellow to show their difference from the actual lab data (green) and normal turk data (purple). 
+, than other users from the same group. 
+The plot shows the same datapoints and axis as in Figure~\ref{fig:unreclassified}
+, but the points above the line are recoloured green to show their difference from the actual lab data and normal turk data. 
 45 of the 461 (9.8\%) turk users are above this threshold. 
 Which seems like a reasonable percentage of the population to be paying attention. 
-Additionally 6 out of 14 (43\%)of the lab data samples has been reclassified by the algorithm as being more similar to the turk data.
 
 % TODO see if I can find any references that say how many turkers/anyone pay attention at a given time.
 The exact distribution of these points change based on the initial random state when training the model.
@@ -991,12 +1006,7 @@ Lastly we have the 449 users not identified by the intersection of the models.
 I am least confident in saying that these users were not engaged in the task.
 
 
-\subsection{Revisiting methods}
-% This section will discuss the generative properties of a HMM.
-% Explain how the lengths were modelled as a gaussian and points sampled form there.
-% This enables us to, in a way, address the earlier concerns of imbalanced data sizes.
-% TODO: Reference paper that says one way to address imbalanced data is to generate new data.
-
+%\subsection{Revisiting methods}
 % Then in conclusion say that while there are definitely issues with the way I created data from such a small number of samples.
 % However it is nice to see that the methods developed earlier in the project are successful, and are appropriate.
 % They were just held back by the poor quality of data which was addressed as one of the major shortcomings of this project.
