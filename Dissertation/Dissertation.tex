@@ -239,9 +239,6 @@ In this project my contributions to fix it are, -a system to classify users, a w
 All related work about actual other attempts to detect user engagement from mouse tracking data.
 Other subsections will be like miniature literature reviews or something?
 
-% TODO: add section on SPAM detection, they're similar in a way?
-% TODO: find a ML project on detecting low quality responses from surveys.
-
 % Taken from project specification
 
 % Dont really link to engagement 
@@ -300,6 +297,30 @@ Hauger et al found that distinct cursor behaviour exists depending on the task, 
 
 % \subsection{Machine learning techniques}
 % I've given a high level overview of the existing literature, here I will be more in depth as to the algorithms and techniques relevant to this project.
+
+\subsection{Crowdsourcing Cheating}
+% TODO: find a ML project on detecting low quality responses from surveys.
+
+% https://www.researchgate.net/publication/228440813_Increasing_cheat_robustness_of_crowdsourcing_tasks
+
+
+Cheating within crowdsourcing system is a well established issue with the concept REF.
+Users use a variety of methods to maximise their HITs.
+These are a few examples.
+
+% Expand on this greatly.
+Crowdflower has an integrated method of detecting cheating.
+This method was used effectively when using human workers to help label datasets \cite{quinn2010crowdflow}.
+Tasks for which the answer is known are periodicity asked to the user, and the accuracy is measured.
+Once a user has completed a number of tasks over a threshold value then their accuracy on the known tasks is assessed.
+Of this accuracy is deemed to be unacceptable then the results from that user are ignored, and they are prohibited from contributing any more.
+This system has the drawback of taking more time and being more expensive than with no cheat detection method.
+Out of the 15 unique users that completed some of the tasks 9 of them where labelled as cheaters, presumably using scripts to randomly select answers.
+This allowed them to create a much larger volume of responses than any legitimate users, with 91\% of the results coming from cheaters.
+
+\subsection{Spam detection}
+% TODO: add section on SPAM detection, they're similar in a way?
+
 
 % these subsections below are old
 % probably pointless as theyre just some ML techniques and not backgroud
