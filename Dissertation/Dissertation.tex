@@ -823,16 +823,41 @@ An n-grams is a series of n words, with unigrams being one word, and bigrams bei
 Different n-grams can be combined together to better understand the complexities of a text document.
 A mixture of unigrams, bigrams, and trigrams are used extract different levels of text complexity and perform well with document classification \cite{aggarwal2012survey}.
 The same technique can be applied to this mouse dataset.
-Bigrams will be of particular interest as they show the transitions from one target to another.
+Bigrams will be of particular interest as they show the transitions from one target to another, thus adding some sequential data to be used by the model.
 However higher n n-grams could reveal information about a users approach to the tasks.
 A user who has many n-grams of different sliders would mean they often changed between sliders, potentially looking for the optimum slider values.
 
-TODO: Plot of ngrams for both classes. Create side by side bar plot.
-%html seems to be higher with turkers rather than lab users, this may be because they were fidgeting and not paying attention?
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[c]{0.4\linewidth}
+        \centering
+        \includegraphics[scale=0.55]{Images/turk-bigrams.png}
+        \caption{Turk Bigrams}
+    \end{subfigure}    
+    \hfill
+    \begin{subfigure}[c]{0.4\linewidth}
+        \centering
+        \includegraphics[scale=0.55]{Images/lab-bigrams.png}
+        \caption{Lab Bigrams}
+    \end{subfigure}  
+    \caption{Plots showing the relative frequency of bigrams for both groups.}
+    \label{fig:bigrams}
+\end{figure}
+
+Figure~\ref{fig:bigrams} shows the bigram differences of the crowdsourced turk data and the lab study data.
+By far the most frequent form of bigram was the same target followed by the same target.
+This indicates that if a user is using a slider their next target will most likely be the same slider, which intuitively makes sense.
+To address this issue bigrams leading to themselves were excluded from the visualisation.
+There are 36 unique bigrams, however only the top 10 most frequent bigrams are shown.
+We can see that the turk data is more likely to have a html element somewhere in the bigram, where as lab users are more likely to have just have sliders.
+This is surprising as in Figure~\ref{fig:1-grams} it was shown that a html target was more common in the lab study data.
+The plots show how bigrams can be used to separate the data, it is hoped that this may help classification especially when combined with trigrams.
+
 
 % TODO: Do with n-grams from 1-3 and see how many columns there are.
-With a combination of 1-grams, 2-grams, and 3-grams the matrix now has a total number of 222 columns.
+With a combination of unigrams, bigrams, and trigrams the matrix now grown massively to have a total number of 222 columns.
 
+% TODO: cross validatoin.
 However due to the aforementioned problems there is still an accuracy of 94.9\% and an F1 score of 48.6.
 
 

@@ -1,39 +1,34 @@
-Thanks for meeting, I have a few points and not much time unfortunately.
+Would really appreciate a skim through of my diss for some guidance, so if Im going down the wrong path already that can be fixed asap.
 
-1.
-Started work as a Data Engineer with LV insurance.
-Good so far, enjoying it.
+Wanted to wait and have a more finished product for you to look at, but also don't want it too late either.
+There's still a question of will it be too short?
+With more padding out in all the sections and a more extensive related work I think it should be enough?
+8,000 words now, possibly up to 12,000 after everything but thats still under the limit.
+Not sure what else could be added.
 
-2.
-I've been referencing your paper risk fixers and sweet spotters, but is that the correct paper?
-Kinda based on that but also more Grubers thesis.
-I have a draft version and nothing finished, is there a finished one and how can I cite?
 
-3.
-Main question I have is when can I get you to look over it.
-I can have a very rough draft on the weekend or Monday for you to skim over
-    , then based on that brief feedback get an actual first draft the week after?
-I appreciate you'll be very busy so I want to find a solution that works for you.
+Will look through my diss bringing up some questions I have for you if thats ok.
+Hopfully makes life a bit easier for you to give you an idea of what im thinking.
 
-4.
-"Record of supervision form"?
-Didn't realise this was a thing.
-Obviously we've met fairly regularly but how should I fill this in.
+What to put in contributions, obviously what this diss contributes but isnt this said in the abstract?
+Maybe just more in depth here, but not sure how indepth I can be.
 
-5. 
-Word Limit of 20,000
-I have 5,000 at the moment.
-Will definitely go up but no way more than 10,000.
-This okay?
+Should Hidden Markov Model be in related work?
+Probably not as its just a model and I'm looking into specific bits of literature.
 
-6.
-Extensions available for students with 
-"Extensions may be granted occasionally in extenuating circumstances 
-(extreme personal/medical problems, 
-or excessive work commitments), 
-but these will have to be well documented and any application for extension should be made well before the final submission deadline."
+Not sure what to put in methodology, I think I talk about the methodology in the data pipeline section.
 
-Should be okay, is it worth nothing this potential issue now?
-If I get beneath 50% anyway I can also resubmit later.
+Repeated experiments, this section was added even though it doesnt really relate to the final outcome of the diss.
+Just to show that I have done work.
+It does feel a bit tacked on though.
 
+Results okay I think, just need to be padded out a bit.
+Maybe too many graphs, but think I need them to convey the information.
+
+Further results section I wasn't going to have originally either.
+This was a secondary attempt at a HMM but on different data.
+I suppose the results are interesting, but theres no reason why this should be a secondary model and not my main one.
+Should I change the abstract and intro to say multiple HMMs were created on different parts of the data?
+
+Conclusion and Future work are to be padded out also.
 
