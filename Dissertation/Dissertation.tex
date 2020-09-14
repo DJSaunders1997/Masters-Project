@@ -342,17 +342,22 @@ More advanced attacks copy domain specific text copied from the internet, which 
 This will be a key aspect of the project as we only have definitive labels for part of our data.
 This reflects the challenges of real world data, by some estimates only 2\% (made up number) of all data is structured and labelled, the rest is unstructured [find reference].
 
-https://sci-hub.tw/10.2200/s00196ed1v01y200906aim006
+% https://sci-hub.tw/10.2200/s00196ed1v01y200906aim006 good paper that ive referenced below.
+Semi-supervised learning is the study of combining both labelled and unlabelled data to improve machine learning techniques \cite{zhu2009introduction}.
+One of the most popular semi-supervised learning techniques are Semi-Supervised Support Vector Machines (S3VMs).
 
-SSL is the study of combining both labelled and unlabelled data to improve machine learning techniques.
 
-Reference \cite{zhu2005semi} as it looks to be massively influential with 4,000 google scholar citations.
 Mention semi-supervised SVMs here. 
 And the abbreviation semi supervised learning (SSL)
 
 
-In a sense the data here is labelled.
-All day belongs to 2 classes, online turk user, or in person lab study user.
+Reference \cite{zhu2005semi} as it looks to be massively influential with 4,000 google scholar citations.
+
+
+
+
+The data used in this dissertation is labelled.
+All data belongs to 2 classes, a crowdsourced turk user class, or a lab study user class.
 However on the other hand the data is not labelled for the task I would like to explore.
 The goal of this project is to identity which users were paying attention.
 We have assumed that we can infer that lab study users will be paying attention, so we can say that those samples are labelled.
@@ -728,6 +733,7 @@ This can make the accuracy of the model high, even if it misclassified most data
 \subsection{Text Classification}
 
 %(Maybe mention bag-of-words models in background research?)
+% TODO: I decided on some methods that are used for SPAM detection.
 
 This section of experiments is inspired by text classification algorithms.
 Text mining is becoming increasingly popular, due to the large increases in available text data from the web and social media.
@@ -743,22 +749,20 @@ This data will have a very limited lexicon of only 6 ``words'', the sliders from
 Therefore this data will have much lower dimensionality than typical text data.
 Additionally every user has interacted with every target, therefore the data is not sparse but dense.
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{Images/1-grams.png}
+    \caption{Histogram of targets.}
+    \label{fig:1-grams}
+\end{figure}
 
-% TODO: I decided on some methods that are used for SPAM detection.
-
-
-\[    % <-- start math environment
-\begin{pmatrix}
-    322 & 430 & 464 & 308 & 230 & 1317 \\
-    332 & 120 & 112 & 123 & 59 & 164 \\
-    41 & 367 & 173 & 565 & 278 & 449 \\
-    \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
-\end{pmatrix}
-\]    % <-- end of math environment
-
-\bigskip % to skip a line
-This matrix shows the first 3 rows of the bag of words representations of each users data.
-The matrix has 6 columns representing each of the mouse targets or ``words''.
+Figure~\ref{fig:1-grams} shows the relative count of each of the targets for the user groups.
+The relative count is calculated by dividing the count of the targets by the number of users, this is so the numbers are comparable otherwise the crowdsourced data would be of a much larger quantity.
+We can see that lab study users seem to perform more mouse events over the other html elements and not over one of the sliders.
+For lab users the most common sliders are 2, 5, then 4.
+For turk users they are 4, 2, then 3.
+The causes of these differences are unknown.
+Importantly they show that there are differences in the data from the classes, something that a classifier should be able to exploit.
 
 % FROM THE CODE
 % TODO: Add to this section if I want more depth in this section.
@@ -782,12 +786,24 @@ A Naïve Bayes classifier predicts a class based on the probability of seeing th
 It can potentially be used here to classify users as lab study or crowdsourced based on their counts of targets.
 For example it may be found that crowdsourced turk users may have a higher lower counts for the later targets, potentially showing how they got tired of the task and stopped putting effort into it.
 
+\[    % <-- start math environment
+\begin{pmatrix}
+    322 & 430 & 464 & 308 & 230 & 1317 \\
+    332 & 120 & 112 & 123 & 59 & 164 \\
+    41 & 367 & 173 & 565 & 278 & 449 \\
+    \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+\end{pmatrix}
+\]    % <-- end of math environment
+
+\bigskip % to skip a line
+This matrix shows the first 3 rows of the bag of words representations of each users data.
+The matrix has 6 columns representing each of the mouse targets or ``words''.
+
+
 % TODO: Model results here.
 % TODO: Do k-fold cross validation to keep class size the same.
-Not attempt of classification was a failure.
+This attempt of classification was a failure.
 The accuracy was 29.6\% and F1 score of 22.8\%.
-
-%html seems to be higher with turkers rather than lab users, this may be because they were fidgeting and not paying attention?
 
 
 % TODO: Use these references about dealing with imbalanced data in diss.
@@ -811,7 +827,6 @@ Bigrams will be of particular interest as they show the transitions from one tar
 However higher n n-grams could reveal information about a users approach to the tasks.
 A user who has many n-grams of different sliders would mean they often changed between sliders, potentially looking for the optimum slider values.
 
-Include image of n-grams distributions?
 TODO: Plot of ngrams for both classes. Create side by side bar plot.
 %html seems to be higher with turkers rather than lab users, this may be because they were fidgeting and not paying attention?
 
