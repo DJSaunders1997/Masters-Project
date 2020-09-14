@@ -308,6 +308,8 @@ Cheating within crowdsourcing system is a well established issue with the concep
 Users use a variety of methods to maximise their HITs.
 These are a few examples.
 
+
+
 % Expand on this greatly.
 Crowdflower has an integrated method of detecting cheating.
 This method was used effectively when using human workers to help label datasets \cite{quinn2010crowdflow}.
@@ -317,6 +319,17 @@ Of this accuracy is deemed to be unacceptable then the results from that user ar
 This system has the drawback of taking more time and being more expensive than with no cheat detection method.
 Out of the 15 unique users that completed some of the tasks 9 of them where labelled as cheaters, presumably using scripts to randomly select answers.
 This allowed them to create a much larger volume of responses than any legitimate users, with 91\% of the results coming from cheaters.
+
+Crowdsourced tasks can be classified as Closed Class tasks and Open Class tasks, with each having unique cheating approaches \cite{eickhoff2013increasing}.
+Closed class questions are more common, requiring workers to chose an answer from a predefined list.
+This includes check boxes, buttons, multiple choice questions, and importantly to this project, sliders.
+Randomly picking answers is the most common cheating attempt, this can be detected by comparing a suspected users responses with a user known to not be cheating or comparing with all other workers answers.
+% Can add other cheating attempt if we want to.
+Open class questions are much easier to cheat, these involve giving a user much more freedom to complete a task.
+Typically workers may be given blank text fields to fill in, or blank canvas' to draw on.
+Standard cheating approaches involve leaving the fields empty, or repeatedly entering the same text.
+These approaches can be easily detected.
+More advanced attacks copy domain specific text copied from the internet, which is difficult to detect. 
 
 \subsection{Spam detection}
 % TODO: add section on SPAM detection, they're similar in a way?
