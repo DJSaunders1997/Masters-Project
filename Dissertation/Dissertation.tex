@@ -391,7 +391,7 @@ It is still useful however to see how semi-supervised learning has been applied 
 
 % explanation from scratch: https://towardsdatascience.com/hidden-markov-model-implemented-from-scratch-72865bda430e
 
-A Hidden Markov Model will be the main statistical modelling technique used in this paper.
+
 
 % Wikipedia definition:
 % "Hidden Markov Model (HMM) is a statistical Markov model in which the system being modeled is assumed to be a Markov process – call it X – with unobservable ("hidden") states. 
@@ -402,6 +402,20 @@ A Hidden Markov Model will be the main statistical modelling technique used in t
 % AN INTRODUCTION TO TEXT MINING
 % 2.2.1 Hidden Markov Models has a nice concise description.
 
+A Hidden Markov Model will be the main statistical modelling technique used in this dissertation.
+A Hidden Markov Model (HMM) is a statistical modelling technique based on the markovian process. Reference
+It assumes that the states of the system follow the rules for a Markov process, that is that every state depends only on the previous state of the system.
+It assumes that we cannot observe a system directly, but only see observations from it.
+
+HMMs can be defined with the parameters $(Q,A,O,B,\pi)$ \cite{jurafsky2018speech}.
+$Q$ is the set of hidden states of the system, the cardinality of which is normally selected empirically \cite{ibe2013markov}.
+$A$ is a transition probability matrix, a square matrix of shape $|Q|\times|Q|$.
+This matrix consists of the probabilities of transitioning from one state to another with each row and column representing a state in $Q$
+, and the main diagonal of the matrix representing a self-transition.
+$O$ is the sequence of observations from the system.
+$B$ is the emission probabilities of the model, these give the probabilities of each observation coming from each state.
+$\pi$ gives the initial probability distributions of the system.
+It is a set with the same cardinality as $Q$, where each item in $\pi$ relates to the probability of the model starting in a specific state.
 
 
 In the case of this project, the hidden states X would be the users thought processes including whether or not they're paying attention.
@@ -863,7 +877,10 @@ However due to the aforementioned problems there is still an accuracy of 94.9\% 
 
 \subsection{Imbalanced classes}
 
-HMMs can be used for classification as shown above, but they are also known as generative models \cite{ferrando2018generating}.
+Hidden Markov Models are generative models.
+They model the most likely output sequence  \cite{ibe2013markov}.
+
+As detailed previously HMMs can be used for classification as shown above, but they are also known as generative models \cite{ferrando2018generating}.
 This means they can be used to create new data.
 The above methods of SVM, KNN, and Naive Bayes failed due to the imbalances of classes.
 Now the trained HMMs could be used to generate new data points, to reduce the imbalances, and make these methods effective.
