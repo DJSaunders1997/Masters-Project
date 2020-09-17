@@ -63,6 +63,8 @@
 % Results
 % Conclusion
 
+% motivation: mention why paying attention is important
+
 \section{Motivation}
 \pagenumbering{arabic}
 
@@ -230,6 +232,7 @@ This means that one of these features may be a good substitute for the other and
 
 In this project my contributions to fix it are, -a system to classify users, a way of visualising their mouse paths, ways to directly and quantitatively compare different users, and a multistage semi-supervised based binary classification output to answer the question of 'are users engaged'.
 
+
 \section{Related Work}
 
 % Convince the reader you've done enough work and research in the area.
@@ -238,6 +241,10 @@ In this project my contributions to fix it are, -a system to classify users, a w
 
 All related work about actual other attempts to detect user engagement from mouse tracking data.
 Other subsections will be like miniature literature reviews or something?
+
+%   rel work: often I have an intro paragraph about how this work spans
+%   categories a, b, and c (and briefly why) and then I have subsections
+%   like you do for each category
 
 % Taken from project specification
 
@@ -403,6 +410,7 @@ It is still useful however to see how semi-supervised learning has been applied 
 % 2.2.1 Hidden Markov Models has a nice concise description.
 
 A Hidden Markov Model will be the main statistical modelling technique used in this dissertation.
+In this section I will give an overview of what they are, and how they have been used in related projects.
 A Hidden Markov Model (HMM) is a statistical modelling technique based on the markovian process. Reference
 It assumes that the states of the system follow the rules for a Markov process, that is that every state depends only on the previous state of the system.
 It assumes that we cannot observe a system directly, but only see observations from it.
@@ -417,9 +425,9 @@ $B$ is the emission probabilities of the model, these give the probabilities of 
 $\pi$ gives the initial probability distributions of the system.
 It is a set with the same cardinality as $Q$, where each item in $\pi$ relates to the probability of the model starting in a specific state.
 
-
-In the case of this project, the hidden states X would be the users thought processes including whether or not they're paying attention.
-The observations, Y, are the data that has been collected from the users such as mouse location over time and sequence of interface elements.
+% Explain this better, but im not really sure myself
+% Had a cursor interface similar to this, but not sure what they did lol.
+HMMs have had success in modelling user behaviour when completing a simple task \cite{ibe2013markov}.
 
 Paper Tom send me about HMM for text classification that I might be able to use \cite{collins2016tagging}.
 
@@ -450,6 +458,7 @@ In the top right we can see a possible transition matrix of our system.
 
 
 
+
 Cut from repeated experiments section.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Was another subsection. % Not sure why but there was 2 titles here.
@@ -466,7 +475,7 @@ Cut from repeated experiments section.
 
 HMMs are typically used with time series data.
 Here I just used the series of mouse events and ignored the timestamps of the event.
-It was found earlier that the length of mouse events and time are positively correlatied with a pearsons correlation of ?? 0.6,
+It was found earlier that the length of mouse events and time are positively correlated with a pearson's correlation of ?? 0.6,
  and so just the sequence of mouse events should still hold the detail that time data would.
 
 With the bag of words model we ignored all order to the sequences looking only at the frequency of each item.
@@ -474,8 +483,17 @@ This is a different approach, here the order is the most important thing.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+% https://projecteuclid.org/download/pdfview_1/euclid.aoas/1491616885
+% paper A MULTIVARIATE MIXED HIDDEN MARKOV MODEL FOR BLUE WHALE BEHAVIOUR AND RESPONSES TO SOUND EXPOSURE
+% interesting reference
+% Example HMM about modelling behaviour, want users but only have fucking blue whale data.
+
+
 % New section Dealing with Imbalanced data?
 % Either here on in the data pipeline section.
+
+%Your overall methodology is an exploratory research. 
+%You conduct a number of experiments that build on each other
 
 \section{Methodology}
 
@@ -644,6 +662,17 @@ If this is done recursively then we can end up with a system that can split all 
 \section{Final Implementation}
 % Changed from Implementation to Final Implementation
 
+% Maybe all this should go under the implementation section.
+
+As defined previously a HMM consists of the 5 parameters $(Q,A,O,B,\pi)$ \cite{jurafsky2018speech}.
+In the case of this project, the hidden states $Q$ would relate to the some aspects of a users thought processes as that is the behaviour that is being modelled.
+The observations $O$ relate to the features as defined in the features section.
+Features used are the users mouse location over time and sequence of interface elements.
+The parameters $(A,B,\pi)$ are all learned during training, so do not need to be specified (REF).
+% TODO: REF https://www.sciencedirect.com/topics/mathematics/hidden-markov-models
+
+
+
 % Talk about all different steps you took?
 To implement a Hidden Markov Model the python library HMMLearn was used \cite{hmmlearn}.
 The sequence data used to train the models was the order of mouse targets.
@@ -657,8 +686,8 @@ The most prominent parameter that must be given is the number of hidden states t
 
 The paper \cite{pohle2017selecting} addresses this issue on similar data.
 The authors use a HMM to model animal movement behaviour, where they hope the hidden states would roughly relate to the behaviour of the animal.
-For example a 2 state HMM on this model may relate to "foraging/resting” and “travelling".
-Humans can be more complex than animals but we can think of potential states of being "inquisitive" and "bored"
+For example in this context a 2 state HMM may relate to ``foraging/resting'' and ``travelling''.
+Humans can be more complex than animals but we can think of potential states of being ``inquisitive'' and ``bored''.
 They trained models with 2, 3, 4, and 5 hidden states and compared the criterion's of AIC, BIC, ICL.
 Similarity to evaluate Lab and Turk models models were trained with number of hidden states ranging from 1 to 11.
 Generally an increase in states should increase the effectiveness, however it will also take longer to train.
@@ -676,10 +705,6 @@ This value is normalised by dividing by the number of data samples, to give a pe
 The evaluation of each HMM model does fluctuate based on the random state used, which is why there are drops in the evaluation criterion even when more hidden states are used.
 We can see that the criterion for both models stop improving after 9 states.
 Therefore a 10 state model was used.
-
-% https://projecteuclid.org/download/pdfview_1/euclid.aoas/1491616885
-% paper A MULTIVARIATE MIXED HIDDEN MARKOV MODEL FOR BLUE WHALE BEHAVIOUR AND RESPONSES TO SOUND EXPOSURE
-% interesting reference
 
 \section{Repeated Experiments}
 % Suggested by Tom as an overview of all the work I've done. 
@@ -1129,30 +1154,6 @@ I have next most confidence in the 341 users that were identified with the mouse
 Lastly we have the 449 users not identified by the intersection of the models.
 I am least confident in saying that these users were not engaged in the task.
 
-
-%\subsection{Revisiting methods}
-% Then in conclusion say that while there are definitely issues with the way I created data from such a small number of samples.
-% However it is nice to see that the methods developed earlier in the project are successful, and are appropriate.
-% They were just held back by the poor quality of data which was addressed as one of the major shortcomings of this project.
-
-\section{Conclusion}
-
-To evaluate the results I would not be too confident in my findings.
-The data was incorrectly labelled for the task I wanted to perform.
-Additionally the data was heavily imbalanced.
-All of the conclusions I have made from the lab data are relying on only a small numver of datapoints which is not statistically significant.
-Additionally there was not a lot of data from the other class of online data either.
-Typically data science and machine learning uses big data, where as this project used only 388 records in total which came to only 330 MB of data (MAYBE).
-Any bias in any of these original samples will be magnified as this was used to classify more points, which would again spread this bias.
-This would become a self fulfilling prophecy as more similar points would be labelled and spread the belief.
-
-Any concern that the models have learned of a simple feature such as sequence event has been disproven
-, showing the reclassification algorithm has nonesuch simple relationship.
-
-Biggest flaw of the project is the first assumption, that the lab people were all paying attention.
-While they were monitored and we can be sure they were not distracted by phones or televisions, many of them may have 'zoned out' and not have been given it their full effort and attention.
-
-
 \section{Future work}
 
 All the problems addressed in the conclusion have potential to be addressed in future work.
@@ -1167,10 +1168,38 @@ It was hypothesised that a users mouse data would not be significantly different
 This hypothesis was based on the findings of the previous study, where the different interfaces had little to no impact on a users success at the investment scenario \cite{gruber2017thesis}.
 Perhaps an investigation into users mouse data might show more of a difference between the behaviours of users using both interfaces.
 
+I would have liked to preform an additional lab study session where we could have generated more data for that class of participant.
+This would have helped alleviate the issue that the imbalance of classes caused.
+Unfortunately this was impossible due to time restraints and the interference of the global COVID-19 pandemic.
+
 Another area of future work would be to see if any of the methods developed here could be applied to other similar datasets.
 A kaggle crowdflower dataset seems like an idea candidate \cite{kaggleWorkerActivity}.
 While it is still not labelled with attention and non-attention, it does contain mouse data of crowdsourced users.
 Additionally the dataset contains the users results from 3 different tasks, a users success at a task may prove to be a reasonable proxy for engagement. 
+
+
+\section{Conclusion}
+
+To evaluate the results I would not be too confident in my findings.
+The data was incorrectly labelled for the task I wanted to perform.
+Additionally the data was heavily imbalanced.
+All of the conclusions I have made from the lab data are relying on only a small number of datapoints which is not statistically significant.
+Additionally there was not a lot of data from the other class of online data either.
+Typically data science and machine learning uses big data, where as this project used only 388 records in total which came to only 330 MB of data (MAYBE).
+Any bias in any of these original samples will be magnified as this was used to classify more points, which would again spread this bias.
+This would become a self fulfilling prophecy as more similar points would be labelled and spread the belief.
+
+Any concern that the models have learned of a simple feature such as sequence event has been disproven
+, showing the reclassification algorithm has nonesuch simple relationship.
+
+Biggest flaw of the project is the first assumption, that the lab people were all paying attention.
+While they were monitored and we can be sure they were not distracted by phones or televisions, many of them may have 'zoned out' and not have been given it their full effort and attention.
+
+%\subsection{Revisiting methods}
+% Then in conclusion say that while there are definitely issues with the way I created data from such a small number of samples.
+% However it is nice to see that the methods developed earlier in the project are successful, and are appropriate.
+% They were just held back by the poor quality of data which was addressed as one of the major shortcomings of this project.
+
 
 \printbibliography
 
