@@ -474,6 +474,9 @@ This is a different approach, here the order is the most important thing.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+% New section Dealing with Imbalanced data?
+% Either here on in the data pipeline section.
+
 \section{Methodology}
 
 %(1/2 page to 1 page)
@@ -883,15 +886,22 @@ They model the most likely output sequence  \cite{ibe2013markov}.
 As detailed previously HMMs can be used for classification as shown above, but they are also known as generative models \cite{ferrando2018generating}.
 This means they can be used to create new data.
 The above methods of SVM, KNN, and Naive Bayes failed due to the imbalances of classes.
+There are many methods to address the issue of class imbalances.
+Undersampling, SMOTE, ADASYN.   % LV Image.
+Trained intelligent undersampling methods very slow. % LV Image.
 Now the trained HMMs could be used to generate new data points, to reduce the imbalances, and make these methods effective.
 
-The HMM can generate a probable sequence of n observed states, however to generate new samples we must decide what length n must be.
-
+A HMM can be used generate a probable sequence of $n$ observed states, however to generate new samples we must decide what length n must be.
+Given $n$ a walk through of the model is performed, the transitions between states then occur based on the probabilities within the transitional matrix.
+The idea of this section is to generate new lab study data so that there is the same quantity of lab study data and crowdsourced turk data.
+This generated data can be used to train the models used before, but will address the issue of unbalanced data.
+The turk data and the generated data will be split into training and testing data as standard.
+However the original lab data will not be used to train the model, this will be withheld to see if the models trained from the generated data will be able classify the actual lab data.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{Images/Lengths-Histogram.png}
-    \caption{Histogram of length of mouse events for turk and lab data.}
+    \caption{Histogram of length of mouse events sequences for turk and lab data.}
     \label{fig:normaldis}
 \end{figure}
 
@@ -902,6 +912,9 @@ This should generate a realistic distribution of lengths, and when combined with
 
 % TODO: model with the actual distribution, such as a log normal, or find a way to deal with the negative values.
 
+%TODO: Check why this number is different from the other number of turks.
+From this distribution 378 values were sampled.
+Each of the 378 values 
 
 \subsubsection{Revisiting methods}
 
@@ -917,11 +930,25 @@ This should generate a realistic distribution of lengths, and when combined with
 
 
 With the generated lab study data we can now revisited some of the methods that failed due to imbalanced classes.
-With the naive bayes of counts of different mouse targets, there was little improvement, with an accuracy and f1 score of 49\% and 46\% respectively.
-However there was a big improvement when the bi-grams of events were fed into the model.
-The accuracy and f1 scores increased to 94\%, a dramatic increase.
-This shows that there is enough difference in the data for a classification algorithm to distinguish the points. 
+The SVM classifier was unable to be revisited as the features used before were the time taken to complete the task and length of mouse events sequence.
+The generated data has a length, however there is no corresponding time feature.
+Despite the data not being suitable for the same style SVM the data was perfect for the previous Bag-Of-Words methods.
 
+Using the naive bayes classifier with a Bag-Of-Words methods, there was improvement.
+The model was trained and tested with 5 fold cross validation which led to an accuracy and f1 score of 60\% and 58\% respectively.
+% Compare this to k-fold CV of non generated data.
+When the bigram model was considered the accuracy increased by 1\% to 61\% and the F1 score remained the same. %45% seems low, rerun.
+Additionally using the original lab study data as testing led to the same results from both models with the same confusion matrix.
+% TODO: Put confusion matrixes everywhere.
+\[    % <-- start math environment
+\begin{pmatrix}
+    0 & 0 \\
+    2 & 12 \\
+\end{pmatrix}
+\]    % <-- end of math environment
+
+The confusion matrix from the models shows that of the 14 original lab study participants, only 2 would be misclassified as a crowdsourced participant.
+This shows that there is enough difference in the data for a classification algorithm to distinguish the points. 
 
 \section{Results}
 % talk about results
