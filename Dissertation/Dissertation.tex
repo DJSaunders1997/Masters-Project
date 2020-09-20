@@ -43,8 +43,8 @@
     %This project explores the use of Hidden Markov Models to explore users mouse cursor data while performing a task.
     This project explores the use of Hidden Markov Models to determine if users are paying attention during a crowdsourced study.
     The users are split into 2 distinct groups, online crowdsourced users, and lab study users.
-    We propose that the lab study users were paying attention, and the crowdsourced users may or may not be paying attention.
-    By using observed data recorded from the users mouse cursor we are able to model both groups interaction with the system with separate Hidden Markov Models.
+    It is proposed that the lab study users were paying attention, and the crowdsourced users may or may not be paying attention.
+    By using observed data recorded from the users mouse cursor it is possible to model both groups interaction with the system with separate Hidden Markov Models.
     Some users interaction seem misplaced compared to their groups.
     These are reclassified with the aim of changing the groups of user from lab study or crowdsourced, to users paying attention and not paying attention.     
     It was found that potentially 9.8\% of turk users were paying attention, and 43\% of lab study users may not have been paying attention.
@@ -225,7 +225,7 @@ Exploration of the data showed that the division of users may not be so straight
 \end{figure}
 
 The lab and turk user classes cannot be separated by a simple metric of their data, such as length of events sequence and time to complete task.
-This rules out distance based machine learning approaches such as K Nearest Neighbours or a Support Vector Machine as there is no relationship there.
+This rules out distance based machine learning approaches such as K Nearest Neighbours or a Support Vector Machine as there is no relationship between such simple features.
 It should be noted that length of events sequence and time are correlated with a pearson's correlation of $0.344$.
 
 As a rule of thumb we can say that correlations below 0.3 have no relationship, and values between 0.3 and 0.5 have a weak relationship \cite{mindrila2017scatterplots}.
@@ -317,14 +317,15 @@ Hauger et al found that distinct cursor behaviour exists depending on the task, 
 % https://www.researchgate.net/publication/228440813_Increasing_cheat_robustness_of_crowdsourcing_tasks
 
 
-Cheating within crowdsourcing system is a well established issue with the concept REF.
-Users use a variety of methods to maximise their HITs.
-These are a few examples.
-
+The inaccuracies of responses when crowdsourcing results is a well established issue.
+Users are paid per job complete, giving them incentives to complete tasks as fast as possible to maximise their income.
+Workers speed up task by submitting incorrect results, or by failing to perform the task correctly \cite{hirth2013analyzing}.
+These workers can be labelled as cheaters, as their contributions are unusable.
+% This is a really good paper, should defo talk more about it.
 
 
 % Expand on this greatly.
-Crowdflower has an integrated method of detecting cheating.
+The crowdsourcing platform Crowdflower created an integrated method of detecting cheating to address this issue.
 This method was used effectively when using human workers to help label datasets \cite{quinn2010crowdflow}.
 Tasks for which the answer is known are periodicity asked to the user, and the accuracy is measured.
 Once a user has completed a number of tasks over a threshold value then their accuracy on the known tasks is assessed.
@@ -365,8 +366,6 @@ And the abbreviation semi supervised learning (SSL)
 
 
 Reference \cite{zhu2005semi} as it looks to be massively influential with 4,000 google scholar citations.
-
-
 
 
 The data used in this dissertation is labelled.
@@ -932,11 +931,11 @@ However the original lab data will not be used to train the model, this will be 
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{Images/Lengths-Histogram.png}
-    \caption{Histogram of length of mouse events sequences for turk and lab data.}
+    \caption{Histogram of length of mouse events sequences for both groups.}
     \label{fig:normaldis}
 \end{figure}
 
-Figure \ref{fig:normaldis} shows a the frequency of different mouse events lengths.
+Figure \ref{fig:normaldis} shows the frequency of different mouse events lengths.
 In red we can see a positively skewed normal distribution which matches the distribution fairly well.
 When determining n for the new sequence data, we will sample from a gaussian distribution with a mean of 1688 and a standard deviation of 1232.
 This should generate a realistic distribution of lengths, and when combined with the trained HMM model, a realistic sequence of data.
@@ -945,7 +944,8 @@ This should generate a realistic distribution of lengths, and when combined with
 
 %TODO: Check why this number is different from the other number of turks.
 From this distribution 378 values were sampled.
-Each of the 378 values 
+Each of the 378 values were then passed into the generative HMM.
+Given a 
 
 \subsubsection{Revisiting methods}
 
