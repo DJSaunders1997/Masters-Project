@@ -348,7 +348,6 @@ More advanced attacks copy domain specific text copied from the internet, which 
 \subsection{Spam detection}
 % TODO: add section on SPAM detection, they're similar in a way?
 
-
 % these subsections below are old
 % probably pointless as theyre just some ML techniques and not backgroud
 
@@ -357,12 +356,11 @@ This will be a key aspect of the project as we only have definitive labels for p
 This reflects the challenges of real world data, where the quantity of unlabelled data is much greater than labelled data.
 % Find reference that says X amount of data is labelled.
 
-% https://sci-hub.tw/10.2200/s00196ed1v01y200906aim006 good paper that ive referenced below.
+% https://sci-hub.tw/10.2200/s00196ed1v01y200906aim006 'Introduction to Semi-Supervised Learning' good paper that ive referenced below.
 Semi-supervised learning is the study of combining both labelled and unlabelled data to improve machine learning techniques \cite{zhu2009introduction}.
 One of the most popular semi-supervised learning techniques are Semi-Supervised Support Vector Machines (S3VMs).
 
-Mention semi-supervised SVMs here. 
-And the abbreviation semi supervised learning (SSL)
+%Mention abbreviation semi supervised learning (SSL)
 
 
 Reference \cite{zhu2005semi} as it looks to be massively influential with 4,000 google scholar citations.
@@ -375,7 +373,7 @@ The goal of this project is to identity which users were paying attention.
 We have assumed that we can infer that lab study users will be paying attention, so we can say that those samples are labelled.
 However the rest of the samples we have which are all of the online data are unlabelled.
 Therefore this is a kind of semi supervised learning problem where we only have a small percentage of our samples labelled, and only confident labels for one class.
-(See if a paper on this exists, semi supervised binary classification with only labels for one class.)
+% TODO: (See if a paper on this exists, semi supervised binary classification with only labels for one class.)
 % Do a literature review type of thing where I review semi supervised learning, talk about methods and how they can be applied to what I'm trying to do.
 
 Semi supervised learning has already been applied successfully to the field of user engagement.
@@ -504,7 +502,12 @@ This is a different approach, here the order is the most important thing.
 
 %(1/2 page to 1 page)
 %(maybe in methodology)
- The assumption of this project is that labs are paying attention and turks are not. Therefore if we get any outliers from the turk data, but that are similar to the lab data, then we will say that that online turk user was paying more attention than his peers, and that they were paying attention.
+The overall methodology of this dissertation is to conduct exploratory research.
+
+
+The assumption of this project is that labs are paying attention and turks are not.
+Therefore any outliers from the turk data that appear to be more similar to the lab data will be examined.
+The outliers can then be classified as potentially paying more attention than his peers
 
 This study (ref) says that only 10\% of all people / turk users pay attention during a task.
 We will look at the 10\% (30ish) of the turk data that looks like it is lab data and day that they were paying attention.
@@ -520,7 +523,7 @@ unfortunately the dataset isn't extensive enough for us to fully test this hypot
 
 \section{Data Pipeline}
 
-When planning and completing this project many decisions were made about the steps taken to convert the raw data to a finished product/classification.
+When planning and completing this project many decisions were made about the steps taken to convert the raw data to a finished project.
 This section may act as an overview of the project, detailing the different sections of work, what they may contain, and the order in which they will be completed.
 
 \begin{figure}[ht]
@@ -587,15 +590,20 @@ Errors were found in some of the data and so the final number of usable data is 
 Example errors include missing mouse events, or time to complete task being recorded incorrectly as 
 $1.4 \times 10^{12}$ seconds or $31,688$ years, obviously incorrect.
 
-This leads to the problem of imbalanced data samples.
-After erroneous data was removed there were only 14 lab data samples and 461 online data samples.
-This means that there were over 30x as many data samples from one class compared to the other.
-As stated in my assumptions, we can say that the lab participants were paying attention, where as the online participants may or may not have been paying attention.
+% TODO: give details on how the data was manipulated form the time in unix time to floats to whole seconds.
 
-If the classes were balanced then simple approach may be to treat this problem as binary classification problem.
-Using something like a Support Vector Machine we could classify a given point as lab or online / paying attention or possibly paying attention based on their proximity to other data points.
-To do so we would need to have balanced classes otherwise the algorithm would have a high accuracy from just classifying everything as possibly paying attention as that is the most frequent class.
-However due to the imbalances, alternative methods are required.
+
+% WHOLE section beneath commented out as it wasnt relivant to this section.
+% TODO: try and fit in this section elsewhere, but don't know if it will fit.
+% This leads to the problem of imbalanced data samples.
+% After erroneous data was removed there were only 14 lab data samples and 461 online data samples.
+% This means that there were over 30x as many data samples from one class compared to the other.
+% As stated in my assumptions, we can say that the lab participants were paying attention, where as the online participants may or may not have been paying attention.
+
+% If the classes were balanced then simple approach may be to treat this problem as binary classification problem.
+% Using something like a Support Vector Machine we could classify a given point as lab or online / paying attention or possibly paying attention based on their proximity to other data points.
+% To do so we would need to have balanced classes otherwise the algorithm would have a high accuracy from just classifying everything as possibly paying attention as that is the most frequent class.
+% However due to the imbalances, alternative methods are required.
 
 % Traditionally there are two main methods of dealing with class imbalances, removing data samples and creating new data samples.
 % It was decided that creating new data samples would be best as there is not a whole lot of data to work with, so there would be a strong preference to keep the data we have.
@@ -615,11 +623,10 @@ However due to the imbalances, alternative methods are required.
 % What are good features? Big/Good question split into smaller sections.
 
 This part of the pipeline refers to what features I am going to extract from the data.
-Features of data can be defined as 'attributes or interesting things from the data'. [reference]
+Features of data can be defined as ``a measurable piece of data that can be used for analysis'' \cite{DataRobot}.
 These will consist of both raw and created features, but what do I mean by this?
-Raw features will consist of the the number of mouse events recorded, while a created feature could be comparing the trace of users cursor data when using the program.
+Raw features will consist of the the number of mouse events recorded, while a created feature would have to be extracted from the data.
 
-% TODO: Maybe add a sample of training data here.
 % TODO: Properly explain how we renamed targets, why
 % , and show histograms showing similar distributions of targets.
 One such feature recorded in the data is mouse target.
@@ -631,12 +638,25 @@ It is hypothesised that users who are paying attention may spend more time fine 
 % Talk about how we had to rename the mouse targets with stuff like anything containing the words alloc-slider-1 was renamed.
 % Issue with Lab and Turk data having a different naming scheme.
 % TODO: Maybe have a table showing the elements name before and after renaming.
-An attempt to pick up on different parts of the interface was achieved, however the html elements were not clearly named and thus this aim was unachievable.
+An attempt to pick up on different parts of the interface was achieved including which element of the stocks plot a user was interacting with.
+However many html elements were ambiguously named and so only the sliders are named from 1 to 5.
+% Examples of items renamed are XYZ for the lab data and YZX for the turk data.
+% It is obvious that they differ greatly, this is due to differences in how the data is recorded.
+% TODO: above
 
 % TODO: TODO: TODO: Normalised Histograms of targets for both classes.
 % Say how there are differences in teh averages but that the individuals are more different. 
-
-The features chosen to be used by the HMM is the target of 
+The html target will be used as a feature in this project.
+Additionally a users mouse location over time may provide useful insight into how they completed the task therefore it wil also be used.
+This feature was even more challenging to engineer as the data needs to be altered to be useful time series of data.
+Ideally the data should be given as a multivariate time series which is a sequence of numerical vectors \cite{xing2010brief}.
+The data should be in the form
+\[    % <-- start math environment
+    \langle(t_0, (x_0, y_0)),\; (t_1, (x_1, y_1))\hdots (t_n, (x_n, y_n))\rangle 
+\]
+where $t$ is the time in seconds, given from the first timestamp $t_0$ in whole seconds to $t=n$.
+The tuple $(x,y)$ refers to the horizontal and vertical location of the users mouse cursor.
+% TODO: give details on how the data was manipulated form the time in unix time to floats to whole seconds.
 
 \subsection{Machine Learning}
 
@@ -646,11 +666,18 @@ The features chosen to be used by the HMM is the target of
 Once we have insightful features from the data we can consider what machine learning algorithm would be most appropriate to use on the data.
 This will obviously be highly dependent on what form the final features are in.
 For example if the features are numerical values such as time taken to complete task and number of mouse events then an algorithm such as a Support Vector Machine could be a good choice.
-If the data is in the form of sequential data such as a list of all mouse events then alternative techniques such as LSTM or RNN networks or HMMs would be more appropriate choices.
-If the features output was an image such as a trace of mouse position over time then a CNN could be a good choice as they're designed for image data.
-It is likely that text classification algorithms will be used when comparing the targets of mouse events.
-Comparing n-grams can be done with algorithms such as XYZ [reference].
-Other text classification algorithms such as cosine similarity or sentiment analysis could also be used.
+If the data is in the form of sequential data such as a sequence of all mouse events then alternative techniques a Hidden Markov Model or neural network would've appropriate choices \cite{xing2010brief}.
+Variations of the traditional neural network such as Recurrent Neural Networks (RNNs) or Long Short Term Memory (LSTM) Networks are known to perform better with sequential data \cite{hochreiter1997long}.
+If the features output was an image such as a trace of mouse position over time then a Convolutional Neural Network could be a suitable choice as they're designed for image data \cite{krizhevsky2012imagenet}.
+An issue with any neural network approach would be their tendency to overfit the data.
+That is when an overly complicated model tries to model relationships that are a result of noise in messy data.
+There is only a limited amount of training data for this project, and so a high risk of this happening.
+Despite techniques such as dropout \cite{srivastava2014dropout} existing to address this issue I do not think any form of neural network would be appropriate for this task.
+% Could expand lots on why CNNs would be a good choice and also why they weren't used in the end.
+
+It is likely that text classification algorithms will be used when comparing the html targets of mouse events.
+Comparing counts of n-grams can be done with algorithms such as probabilistic Naive Bayes classifiers.
+Other suitable classification algorithms include proximity based k-nearest neighbours and ensemble decision tree learners \cite{aggarwal2012survey}.
 
 \subsection{Labels}
 
