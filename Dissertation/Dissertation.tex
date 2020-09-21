@@ -156,7 +156,7 @@ The task simulated an investment scenario, the aim was to maximise the return of
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.3, frame]{Images/interface.png}
+    \includegraphics[scale=0.35, frame]{Images/interface.png}
     % TODO: Find the right interface, current interface doesn't match whats in his paper.
     \caption{The user interface of the lab study.}
     \label{fig:interface}
@@ -612,6 +612,7 @@ $1.4 \times 10^{12}$ seconds or $31,688$ years, obviously incorrect.
 % Each lab study data sample was copied 40 times to even out the classes.
 
 \subsection{Features}
+\label{subsection:Features} % Because I reference this section later when creating secondary HMM.
 
 % Tom said something about this being where I should spend the most time of my project.
 % Spending time here will be more time effective than other sections.
@@ -674,6 +675,11 @@ That is when an overly complicated model tries to model relationships that are a
 There is only a limited amount of training data for this project, and so a high risk of this happening.
 Despite techniques such as dropout \cite{srivastava2014dropout} existing to address this issue I do not think any form of neural network would be appropriate for this task.
 % Could expand lots on why CNNs would be a good choice and also why they weren't used in the end.
+
+% TODO: add somewhere that HMMs can be used as generative models, that might be used in this project somewhere.
+% TODO: Another idea: say they can be used to predict the next most probable item in a sequence.
+%                       However thats not how they would be used in this circumstance.
+%                       Here we would want to see the opposite, what probability a given sequence has of belonging to a model.
 
 It is likely that text classification algorithms will be used when comparing the html targets of mouse events.
 Comparing counts of n-grams can be done with algorithms such as probabilistic Naive Bayes classifiers.
@@ -790,8 +796,7 @@ Only 53\% of the lab data was within the relating decision boundary, where as 86
 This highlights how this method will be ineffective on the dataset.
 While the SVM has created this central band of lab data, this region doesn't accurately model all of the data. 
 
-Additionally this method highlights a reoccurring problem of this project
-, the unbalanced data classes.
+Additionally this method highlights a reoccurring problem of this project, the unbalanced data classes.
 This can make the accuracy of the model high, even if it misclassified most data points.
 %[[  8   6]
 % [ 53 325]]
@@ -1047,8 +1052,7 @@ Not all of the lab data is shown to be belonging more strongly to the lab model 
     \label{fig:Reclassified}
 \end{figure}
 
-Figure \ref{fig:Reclassified} shows which of the turk users are more similar to the lab users
-, than other users from the same group. 
+Figure \ref{fig:Reclassified} shows which of the turk users are more similar to the lab users, than other users from the same group. 
 The plot shows the same datapoints and axis as in Figure~\ref{fig:unreclassified}
 , but the points above the line are recoloured green to show their difference from the actual lab data and normal turk data. 
 45 of the 461 (9.8\%) turk users are above this threshold. 
@@ -1109,7 +1113,8 @@ Therefore such a strong correlation between the length and likelihood is of no c
 Figure ~\ref{fig:diffliklihoodlengths} removes the concern that length of mouse events sequence is the only feature being used in the models.
 The difference in likelihoods and length of mouse events sequence has a correlation of $0.176$, meaning the relationship between the features is non-existant.
 
-\section{Further Results}
+% Think of better model than secondary model.
+\subsection{Secondary Model}    % Changed from Further Results section to Secondary HMM sub section
 % In this section I will talk about how the additional secondary HMM was created to confirm the results.
 % Maybe double check with other HMM using mouse location data.
 % Stretch goal as I don't think this adds much other than saying I can make another HMM but with completely different results.
@@ -1122,28 +1127,41 @@ The key difference is that these models will be trained with different data than
 If models are created with different data, but they identify the same users as potentially belonging to the wrong group then it would be a confirmation that those users are indeed outliers.
 If the models predict a completely different group of users then it would indicate there is no consistency within the data and that the models may not be reflecting the actual processes.  
 
-These confirmation models will be trained on spatial data, of which HMMs are a known classification method. 
 % TODO:fFind reference that HMMS are good at spatial data.
-The exact makeup of data will be a sequence of tuples of users mouse cursor location, $(x, y)$.
 
-There were concerns with the mouse location data, mainly being that the data does not seem to be calibrated correctly.
-Figure~\ref{fig:MousePaths} shows the issues with the mouse path data.
+These confirmation models will be trained on multivariate time series as described in Subsection~\ref{subsection:Features} Features.
+
+The reason that this data is only a secondary aspect of the dissertation is due to concerns with the quality of data.
+Particularly that the mouse location data does not seem to be calibrated correctly.
+Looking at the mouse cursor position for each position it would be expected that many of the cursor locations each user would be the same.
+For example you would expect to see 5 distinct clusters of intensive mouse activity relating to the 5 allocation sliders.
+To end the task workers must press a ``Buy'' button to purchase their selected stocks.
+Therefore the last recorded mouse event of all users should have the same position, that of the button.
+% TODO: Show plot of last event of every user, will NOT show the same position.
+Unfortunately this was not the case.
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[scale=0.6]{Images/Mouse-Path-Data.png}
-    \caption{Graph of spatial coordinates of all users mouse path data.}
-    \label{fig:MousePaths}
+    \includegraphics[scale=0.65]{Images/Mouse-Events-For-Each-Target.png}
+    \caption{Scatterplot of mouse down event coordinates of all users mouse path data.}
+    \label{fig:MouseEventsTargets}
 \end{figure}
 
-Ideally the start and end points of all users should be identical, with the majority of events happening with the same y coordinates because of the horizontal sliders. 
-However we can see that there is a massive range in mouse data, some users have a small range of x and y coordinates, others have a range much larger up to a y value of over 1800.
-This difference is mouse data was not addressed, this may cause some of the users data to be unlikely to belong to any model as they’re such a large outlier.
+Figure~\ref{fig:MouseEventsTargets} shows the issues with the mouse location data.
+Rather than the mouse events for the sliders having roughly the same there appears to be multiple groups with varying coordinates.
+The majority but not all of mouse down events happen within 2 groups with the same y coordinates. 
+Additionally there is a massive range in mouse data.
+Most data falls below an X value of 800, and most are beneath a Y value of 1000 however there are still outliers to this.
+Figure~\ref{fig:MouseEventsTargets} shows only the mouse down events on the slider targets, when considering the other mouse events and other targets the data was even more messy. 
+The cause of this is unknown but is expected to be a result of the data recording process.
+% TODO: If I have time Id love to normalise each users events
 
-% Talk about how there was conserns with the mouse data not being centred on the same points or sliders.
-% P
+This messiness of this mouse data was not addressed.
+This is the reason that this method will only be used as a supporting secondary model.
+It is impossible to draw concrete conclusions from such messy data.
+This data may cause some of the users data to be unlikely to belong to any model as they’re such a large outlier.
 
-\subsection{Results}
+\subsubsection{Results}
 
 \begin{figure}[ht!]
     \centering
@@ -1154,7 +1172,8 @@ This difference is mouse data was not addressed, this may cause some of the user
 
 
 Figure~\ref{fig:SpatialRecData} shows how the new HMMs reclassified 80 of the crowdsourced turk users as belonging more to the lab study.
-It is worth noting that the likelihoods of each user belonging to the model is much lower when the spatial data is used, compared to when the mouse trget data was used.
+It is worth noting that the likelihoods of each user belonging to the model is much lower when the spatial data is used, 
+compared to when the mouse target data was used.
 This is because there is much more variance in the continuous spatial data rather than the categorical target data.
 The original previous HMM classified 45 of the crowdsourced users.
 Taking an intersection of the sets of users will show us how consistent the results are.
