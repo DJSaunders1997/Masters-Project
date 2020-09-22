@@ -140,6 +140,8 @@ Characteristics such as session duration and customer satisfaction are used as p
 However a longer session doesn't necessarily mean a more engagement user and customer satisfaction is not applicable for crowdsourced tasks.
 Therefore existing solutions will not work and now methods must be evolved.
 
+% TODO: Talk about the past of crowdsourcing and give more details about it
+% Give users who know nothing about the topic guidance on what everything even is.
 
 \subsection{Background}
 % TODO: Maybe link to Toms paper too
@@ -245,8 +247,15 @@ In this project my contributions to fix it are, -a system to classify users, a w
 % Convince them it was hard and the topic is hard so you need to help.
 % You've tried other peoples techniques.
 
-All related work about actual other attempts to detect user engagement from mouse tracking data.
-Other subsections will be like miniature literature reviews or something?
+% From MEG:
+% In this section I will discuss XYZ and how it related to my project at whole.
+% I cover the topics of eye tracking, cursor tracking, and ...
+% Other topics that could have been included but weren't are ...
+
+In this section I will discuss the related work to my project.
+This will include more general research in the fields of tracking users mouse data and detecting users engagement.
+Works about crowdsourcing data are found which are key in understanding the background of this project.
+Machine learning techniques, and previous projects that have the possibility of being used in this context are also researched.
 
 %   rel work: often I have an intro paragraph about how this work spans
 %   categories a, b, and c (and briefly why) and then I have subsections
@@ -711,8 +720,10 @@ The parameters $(A,B,\pi)$ are all learned during training, so do not need to be
 
 
 % Talk about all different steps you took?
+% TODO: Mention the differnt types of HMM, multimodal vs whatever here.
 To implement a Hidden Markov Model the python library HMMLearn was used \cite{hmmlearn}.
-The sequence data used to train the models was the order of mouse targets.
+The MultinomialHMM model was used as the emissions are discrete, representing the different interface targets.
+The sequence data used to train the models was the order of mouse targets for each worker.
 The temporal aspect of the data was ignored, but earlier research showed that number of mouse events and time were heavily correlated.
 Therefore using just the order of mouse events should capture the temporal aspect of the data.
 
@@ -1130,6 +1141,7 @@ If the models predict a completely different group of users then it would indica
 % TODO:fFind reference that HMMS are good at spatial data.
 
 These confirmation models will be trained on multivariate time series as described in Subsection~\ref{subsection:Features} Features.
+Because of the different data this model will be a Hidden Markov Model with gaussian emissions as the multivariate inputs are continuous.
 
 The reason that this data is only a secondary aspect of the dissertation is due to concerns with the quality of data.
 Particularly that the mouse location data does not seem to be calibrated correctly.
