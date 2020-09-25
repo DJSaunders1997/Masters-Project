@@ -190,7 +190,7 @@ Participants from the lab study were heavily monitored to ensure they were engag
 The crowdsourced participants were not monitor so we're unable to say that they were engaged with the task, and not looking at another screen. 
 
 \begin{table}[ht]
-    \caption{\label{table:studies} Data collection methods used in the study \cite{torsney2018risk}.}
+    \caption{\label{table:studies} Data collection methods used in the study \cite{gruber2017thesis}.}
     \small
     \begin{tabular}{lll}
         \hline
@@ -1211,6 +1211,18 @@ This is because data used in those models was more properly cleaned and had less
 The users I am the least most confident in reclassifying is the union of users from both sets of models.
 This consists of 200 crowdsourced users which is 43\% of the total population.
 
+\begin{table}[ht]
+    \caption{\label{table:usersattention} The different sets of crowdsourced user paying attention with confidence.}
+    \small
+    \begin{tabular}{llll}
+        \hline
+        Number of Users & Percent of Population & Identified By Models             & Confidence Level \\  \hline
+        12              & 2.6\%                 & Both Models                      & High  \\
+        120             & 26.0\%                & Target Data model only           & Medium  \\  
+        200             & 43.4\%                & Sequence Data model only         & Low  \\  \hline
+    \end{tabular}
+\end{table}
+
 Alternatively inverting this gives us users which we can assume are not engaged in the tasks, to different degrees.
 I am most confident in saying that 261 of the crowdsourced users not reclassified form the union of the models belong with their class and should not be reclassified.
 I have next most confidence in the 341 users that were identified with the mouse target data models.
@@ -1233,6 +1245,7 @@ It was hypothesised that a users mouse data would not be significantly different
 This hypothesis was based on the findings of the previous study, where the different interfaces had little to no impact on a users success at the investment scenario \cite{gruber2017thesis}.
 Perhaps an investigation into users mouse data might show more of a difference between the behaviours of users using both interfaces.
 
+% TODO: Expand on how and why 'RONA fucked up these plans.
 I would have liked to preform an additional lab study session where we could have generated more data for that class of participant.
 This would have helped alleviate the issue that the imbalance of classes caused.
 Unfortunately this was impossible due to time restraints and the interference of the global COVID-19 pandemic.
@@ -1247,11 +1260,14 @@ Additionally the dataset contains the users results from 3 different tasks, a us
 \section{Conclusion}
 
 This dissertation aimed to detect user engagement from mouse tracking data.
-Users mouse data from 2 groups of users performing a simple task was analysed and modelled.
-The different groups conducted the experiment in different ways. 
+From the analysis and exploration conducted it cannot be fully concluded that the methods presented here can fulfil this aim.
+The initial results are promising, but without a properly labelled dataset there is no way of confirming these results.
+
+To summarise this project users mouse data from 2 groups of users performing a simple task was analysed and modelled.
+The different groups conducted the experiment in different ways.
 13 of the users conducted the experiment in a lab, where they were closely monitored to ensure they were paying attention.
 380 of the users were crowdsourced online using Amazon’s Mechanical Turk.
-THese users were not monitored so it is uncertain if they were paying attention.
+These users were not monitored so it is uncertain if they were paying attention.
 % TODO: Double check these numbers I just made them up
 A variety of techniques was attempted, and the use of Hidden Markov Models was evaluated to perform best at this task.
 Models were trained for each group of users on different sources of data. 
@@ -1259,11 +1275,10 @@ One a sequence of html element targets and the other a multivariate time series 
 Each users data was evaluated on the the lab model and the crowdsourced turk model.
 Some of the crowdsourced users was evaluated to belong more closely to some of the lab study users rather than the other crowdsourced users.
 This means that these users were doing something different from there peers, they are suspected to be paying attention more than their peers. 
+From the results of the model I can predict that anywhere from 200 to 12 of the crowdsourced users were paying attention, with varying degrees of confidence.
 
-From the analysis and exploration conducted it cannot be fully concluded that the methods presented here can fulfil this aim.
-The initial results are promising, but without a properly labelled dataset there is no way of confirming these results.
 % Older conclusion
-Therefore I would not be too confident in my findings.
+However I would not be too confident in my findings.
 The data was incorrectly labelled for the task I wanted to perform.
 Additionally the data was heavily imbalanced.
 All of the conclusions I have made from the lab data are relying on only a small number of datapoints which is not statistically significant.
