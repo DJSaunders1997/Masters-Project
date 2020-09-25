@@ -1217,6 +1217,8 @@ I have next most confidence in the 341 users that were identified with the mouse
 Lastly we have the 449 users not identified by the intersection of the models.
 I am least confident in saying that these users were not engaged in the task.
 
+%TODO: Maybe make this into a table to help explain my results.
+
 \section{Future work}
 
 All the problems addressed in the conclusion have potential to be addressed in future work.
@@ -1240,15 +1242,33 @@ A kaggle crowdflower dataset seems like an idea candidate \cite{kaggleWorkerActi
 While it is still not labelled with attention and non-attention, it does contain mouse data of crowdsourced users.
 Additionally the dataset contains the users results from 3 different tasks, a users success at a task may prove to be a reasonable proxy for engagement. 
 
-
+% https://www.scribbr.co.uk/thesis-dissertation/conclusion/
+% 5-7% of word count 
 \section{Conclusion}
 
-To evaluate the results I would not be too confident in my findings.
+This dissertation aimed to detect user engagement from mouse tracking data.
+Users mouse data from 2 groups of users performing a simple task was analysed and modelled.
+The different groups conducted the experiment in different ways. 
+13 of the users conducted the experiment in a lab, where they were closely monitored to ensure they were paying attention.
+380 of the users were crowdsourced online using Amazon’s Mechanical Turk.
+THese users were not monitored so it is uncertain if they were paying attention.
+% TODO: Double check these numbers I just made them up
+A variety of techniques was attempted, and the use of Hidden Markov Models was evaluated to perform best at this task.
+Models were trained for each group of users on different sources of data. 
+One a sequence of html element targets and the other a multivariate time series of a users mouse cursor location.
+Each users data was evaluated on the the lab model and the crowdsourced turk model.
+Some of the crowdsourced users was evaluated to belong more closely to some of the lab study users rather than the other crowdsourced users.
+This means that these users were doing something different from there peers, they are suspected to be paying attention more than their peers. 
+
+From the analysis and exploration conducted it cannot be fully concluded that the methods presented here can fulfil this aim.
+The initial results are promising, but without a properly labelled dataset there is no way of confirming these results.
+% Older conclusion
+Therefore I would not be too confident in my findings.
 The data was incorrectly labelled for the task I wanted to perform.
 Additionally the data was heavily imbalanced.
 All of the conclusions I have made from the lab data are relying on only a small number of datapoints which is not statistically significant.
-Additionally there was not a lot of data from the other class of online data either.
-Typically data science and machine learning uses big data, where as this project used only 388 records in total which came to only 330 MB of data (MAYBE).
+There was not meaningful amounts of data from the other class of online data either.
+Typically data science and machine learning uses big data, where as this project used only 388 records in total which came to only 330 MB of data in its original JSON format.
 Any bias in any of these original samples will be magnified as this was used to classify more points, which would again spread this bias.
 This would become a self fulfilling prophecy as more similar points would be labelled and spread the belief.
 
