@@ -39,14 +39,15 @@
 \renewcommand{\abstractname}{Summary}
 
 \begin{abstract} 
+    %TODO: Update with results from secondary model and say how you doubt it.
     %Potential abstract.
     %This project explores the use of Hidden Markov Models to explore users mouse cursor data while performing a task.
     This project explores the use of Hidden Markov Models to determine if users are paying attention during a crowdsourced study.
     The users are split into 2 distinct groups, online crowdsourced users, and lab study users.
     It is proposed that the lab study users were paying attention, and the crowdsourced users may or may not be paying attention.
-    By using observed data recorded from the users mouse cursor it is possible to model both groups interaction with the system with separate Hidden Markov Models.
-    Some users interaction seem misplaced compared to their groups.
-    These are reclassified with the aim of changing the groups of user from lab study or crowdsourced, to users paying attention and not paying attention.     
+    By using observed data recorded from user's mouse cursor it is possible to model both groups interaction with the system with separate Hidden Markov Models.
+    Some user's interaction seem misplaced compared to their groups.
+    These are reclassified with the aim of changing the groups of users from lab study or crowdsourced, to users paying attention and not paying attention.     
     It was found that potentially 9.8\% of turk users were paying attention, and 43\% of lab study users may not have been paying attention.
     % These results require further research with a properly labelled dataset to confirm any findings.
     % I would also remove the last sentence. That's more of a future work idea.
@@ -114,7 +115,7 @@
 Crowd-sourcing marketplaces like Amazon’s Mechanical Turk are popular services that provide a method for researchers to get participants to complete human intelligence tasks \cite{paolacci2010running}. 
 A common use for this technology is to label data for use in training for machine learning algorithms \cite{chang2017revolt}.
 They can also provide a cheap, scalable method for scientists to gather responses in research.
-The level of user engagement, attention, and low quality responses can all be issues when gathering data from participants with distributed approaches \cite{ipeirotis2010quality}.
+The level of user engagement, attention, and low-quality responses can all be issues when gathering data from participants with distributed approaches \cite{ipeirotis2010quality}.
 The primary motivation of this project is to develop a system of potentially identifying if a crowdsourced user is paying attention during a task.
 
 % Paragraph 2 - Inter disciplinary
@@ -125,9 +126,9 @@ The creation of an easy to implement method to measure user engagement would mas
 % Paragraph 3 - Motivation
 Research has been conducted on how the accuracy and attention of crowdsourced tasks can be increased.
 % Look at these papers to see how they classified attentions.
-Methods such as offering financial incentives \cite{ho2015incentivizing} and engaging a users curiosity \cite{law2016curiosity} have been found to motivate workers into performing better at crowdsourced tasks.
+Methods such as offering financial incentives \cite{ho2015incentivizing} and engaging a user's curiosity \cite{law2016curiosity} have been found to motivate workers into performing better at crowdsourced tasks.
 Despite the research there is still debate as to which method is superior.
-If user engagement can be effectively identified then the best method of ensuring user engagement could be found using this method.
+If user engagement can be effectively identified, then the best method of ensuring user engagement could be found using this method.
 
 % Paragraph 4 - Why measuring attention is hard and why obvious solutions wont work. 
 % It's worth spending some space on why this problem is hard and why any obvious solutions won't work
@@ -135,10 +136,10 @@ If user engagement can be effectively identified then the best method of ensurin
 %Maybe it is hard to quantify attention as it is hard to do so.
 %Measuring attention is hard and obvious solutions wont work.
 Measuring user engagement is well studied in the field of web analytics \cite{peterson2008measuring}.
-However the existing methods of reporting and analysing website data cannot be easily applied to crowdsourced tasks.    
+However, the existing methods of reporting and analysing website data cannot be easily applied to crowdsourced tasks.    
 Characteristics such as session duration and customer satisfaction are used as proxies for engagement.
-However a longer session doesn't necessarily mean a more engagement user and customer satisfaction is not applicable for crowdsourced tasks.
-Therefore existing solutions will not work and now methods must be evolved.
+However, a longer session doesn't necessarily mean a more engagement user and customer satisfaction is not applicable for crowdsourced tasks.
+Therefore, existing solutions will not work and now methods must be evolved.
 
 % TODO: Talk about the past of crowdsourcing and give more details about it
 % Give users who know nothing about the topic guidance on what everything even is.
@@ -148,13 +149,13 @@ Therefore existing solutions will not work and now methods must be evolved.
 
 % TODO Have this section finished soon and have Meg look over it: 04/09/20
 
-The work in this project is build on data gathered from a previous study;
+The work in this project is built on data gathered from a previous study;
 \textit{``A comparison of user interactions in lab and crowdsourced
-studies''}\cite{gruber2017thesis}.
+studies''} \cite{gruber2017thesis}.
 
 The study was centred in the field of visualisation.
-The paper explored whether an alternative more detailed interface could be used help improve a users effectiveness at completing a task.
-The task simulated an investment scenario, the aim was to maximise the return of a collection of stocks over a number of iterations. 
+The paper explored whether an alternative more detailed interface could be used help improve a user's effectiveness at completing a task.
+The task simulated an investment scenario, the aim was to maximise the return of a collection of stocks over several iterations. 
 
 \begin{figure}[ht]
     \centering
@@ -168,9 +169,9 @@ The task simulated an investment scenario, the aim was to maximise the return of
 Figure \ref{fig:interface} shows the main interface of the lab study, with the risk and return of stocks to the right and allocation sliders to the left.
 Users were asked to invest their money by putting it into varying amounts of stocks.
 The 5 stocks were labelled from A to E.
-Depending on the makeup of the users stock portfolio, the plot would update showing the return and risk of their portfolio.
+Depending on the makeup of the user's stock portfolio, the plot would update showing the return and risk of their portfolio.
 They were then asked to confirm their choice by buying these stocks.
-This process was repeated for 5 steps, where after each step the users portfolio value with increase based on their previous investment decisions. 
+This process was repeated for 5 steps, where after each step the user's portfolio value with increase based on their previous investment decisions. 
 
 % TODO get picture of global sa sl both
 \begin{figure}[ht]
@@ -183,7 +184,7 @@ This process was repeated for 5 steps, where after each step the users portfolio
 
 Figure~\ref{fig:interfaceSA} shows the alternative interface design for the study.
 The slider representing each stock was split into 2 separate sliders, showing the return and the risk of the stock.
-Additionally the sliders are no longer 1 dimensional, both sliders are 2 dimensional line charts.
+Additionally, the sliders are no longer 1 dimensional, both sliders are 2 dimensional line charts.
 The assumption of the study was that these extra visualisations would help users to maximise the value of their portfolio.
 
 Participants from the lab study were heavily monitored to ensure they were engaged, focusing on the task.
@@ -201,16 +202,16 @@ The crowdsourced participants were not monitor so we're unable to say that they 
 \end{table}
 
 Table \ref{table:studies} shows the two different ways in which data was collected.
-Only 4.6\% of the data was gathered in person, with the vast majority of responses being crowdsourced.
+Only 4.6\% of the data was gathered in person, with the most of responses being crowdsourced.
 The difference in number of participants shows one of the reasons crowdsourcing is popular. 
-It is much easier to crowd source responses than it is to organise an in person lab study.
+It is much easier to crowd source responses than it is to organise an in-person lab study.
 
 For the purpose of this project the distinction of which interface a user was using ignored.
-The study was inconclusive in proving that the alternative interface design had an meaningful effect on the success of a users portfolio. 
-Additionally rationalise of this is that regardless of which variant of the interface a lab study user was using they would be paying attention.
+The study was inconclusive in proving that the alternative interface design had a meaningful effect on the success of a user's portfolio. 
+Additionally the rationale of this is that regardless of which variant of the interface a lab study user was using they would be paying attention.
 There is likely to have crowdsourced users who are engaged and some that are not engaged regardless of which interface is used.
-While there will be differences in users mouse data depending on the interface
-    , I hypothesise that the difference will not be as large as the difference between users that are engaged or not engaged. 
+While there will be differences in users mouse data depending on the interface,
+ I hypothesise that the difference will not be as large as the difference between users that are engaged or not engaged. 
 
 \subsection{Initial attempt}
 
@@ -227,10 +228,10 @@ Exploration of the data showed that the division of users may not be so straight
 \end{figure}
 
 The lab and turk user classes cannot be separated by a simple metric of their data, such as length of events sequence and time to complete task.
-This rules out distance based machine learning approaches such as K Nearest Neighbours or a Support Vector Machine as there is no relationship between such simple features.
-It should be noted that length of events sequence and time are correlated with a pearson's correlation of $0.344$.
+This eliminates the option of using distance based machine learning approaches such as K Nearest Neighbours or a Support Vector Machine as there is no relationship between such simple features.
+It should be noted that length of events sequence and time are correlated with a Pearson's correlation of $0.344$.
 
-As a rule of thumb we can say that correlations below 0.3 have no relationship, and values between 0.3 and 0.5 have a weak relationship \cite{mindrila2017scatterplots}.
+As a rule of thumb, we can say that correlations below 0.3 have no relationship, and values between 0.3 and 0.5 have a weak relationship \cite{mindrila2017scatterplots}.
 This means the 2 features are weakly correlated, but correlated nonetheless.
 This means that one of these features may be a good substitute for the other and that having both may be redundant.
 
@@ -253,7 +254,7 @@ In this project my contributions to fix it are, -a system to classify users, a w
 % Other topics that could have been included but weren't are ...
 
 In this section I will discuss the related work to my project.
-This will include more general research in the fields of tracking users mouse data and detecting users engagement.
+This will include more general research in the fields of tracking user's mouse data and detecting a user's engagement.
 Works about crowdsourcing data are found which are key in understanding the background of this project.
 Machine learning techniques, and previous projects that have the possibility of being used in this context are also researched.
 
@@ -266,11 +267,11 @@ Machine learning techniques, and previous projects that have the possibility of 
 % Dont really link to engagement 
 \subsection{Eye tracking}
 
-Non-verbal information such as eye tracking may be used to detect user’s level of engagement \cite{lala2017detection}.
-Vision is one of the most powerful human senses so it has the potential to give a good measure of user engagement. 
-The methodology of eye tracking is that we move our eyes to focus on particular areas that we want to see in more detail, and divert our attention to that area \cite{duchowski2007eye}. 
+Non-verbal information such as eye tracking may be used to detect user's level of engagement \cite{lala2017detection}.
+Vision is one of the most powerful human senses, so it has the potential to give a good measure of user engagement. 
+The methodology of eye tracking is that we move our eyes to focus on particular areas that we want to see in more detail and divert our attention to that area \cite{duchowski2007eye}. 
 % duchowski2007eye is a VERY important piece of literature for the field, over 4000 citations
-Thus tracking a user’s gaze can provide insight into which part of a system they’re engaged with, and how much so.
+Thus, tracking a use's gaze can provide insight into which part of a system they're engaged with, and how much so.
 
 \begin{figure}[ht!]
     \centering
@@ -282,11 +283,13 @@ Thus tracking a user’s gaze can provide insight into which part of a system th
 \end{figure}
 
 Eye tracking data can be used to show user interface elements that users focus their attention on as shown in Fig \ref{fig:eyetrack}. 
-From this researchers were able to predict the amount of attention elements of the page would receive.
+From this data researchers were able to predict the amount of attention elements of the page would receive.
 By observing what parts of an interface users are interacting with we can determine what a user is engaging with \cite{buscher2009you}.
 Eye-tracking has been used, and found success novel applications such as recording the engagement of users when playing a game. 
 Tracking users eye movements helped game designers understand how users can recognise interactable game objects and could be used to investigate problematic game design issues \cite{renshaw2009towards}.
 
+%TODO: I mention researchers names here, but nowhere else?
+% Make consistant
 Eivazi and Bednarik extracted features from a users eye tracking data to determine their cognitive state in a problem solving exercise \cite{eivazi2011predicting}.
 Features such as ``mean fixation duration'' and ``total path distances'' were engineered, and users were split into classes based on their performance. 
 Given a user feature set and their performance class it was able to classify their cognitive state during the task with a 87.5\% accuracy with a support vector machine.
@@ -295,7 +298,7 @@ Szafir and Mutlu identified a plethora of verbal and non-verbal behavioural cues
 The behavioural cues could not be recorded directly by a computer, instead EEG signals measured from a headset were used to measure engagement.
 
 Eye tracking is not however a perfect solution and its limitations have been well documented. 
-Track subjects eyes with a good degree of accuracy requires the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
+Tracking subjects eyes with a good degree of accuracy requires the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
 
 
 \subsection{Mouse cursor tracking}
@@ -305,15 +308,15 @@ Track subjects eyes with a good degree of accuracy requires the use of expensive
 Research has also found that there is a correlation between a user’s gaze and their cursor position. 
 The position can be considered a ``poor man’s eye tracker'' as it has been found that eye gaze match mouse position 69\% of the time \cite{cooke2006mouse}. 
 Mouse movement data can be collected without the drawbacks of eye tracking and with more automatic methods, meaning more data can be collected, and on a larger scale \cite{demvsar2017quantifying}.
-Therefore it can be said that mouse data can be used as a good alternative to eye tracking data.
+Therefore, it can be said that mouse data can be used as a good alternative to eye tracking data.
 
 %Mouse activity can be used as input to a neural network and output a quantifiable level of activity for a webpage. 
-By using mouse data it is possible to unobtrusively record a user’s normal use of a web browser without disturbing their experience \cite{goecks2000learning}.
+By using mouse data, it is possible to unobtrusively record a user’s normal use of a web browser without disturbing their experience \cite{goecks2000learning}.
 % Above paper touches on one of the big advantages of measuring user engagement from mouse data, it is unobtrusive! We can monitior them in the background 
 It has also been found that users tend to follow the text they are reading with the mouse cursor \cite{liu2007detecting}. 
-It can be determine what paragraph of a page was being read with an accuracy of 79\% by using mouse cursor data \cite{hauger2011using}. 
+It can be determined what paragraph of a page was being read with an accuracy of 79\% by using mouse cursor data \cite{hauger2011using}. 
 
-Other methodologies explored ways of classifying user engagement from eye and cursor data, however it is also possible to predict users attention and user frustration in complex webpages \cite{navalpakkam2012mouse}.
+Other methodologies explored ways of classifying user engagement from eye and cursor data, however it is also possible to predict user's attention and user frustration in complex webpages \cite{navalpakkam2012mouse}.
 Not all studies agree that mouse cursor is always a good approximation for eye data. 
 Hauger et al found that distinct cursor behaviour exists depending on the task, and that the relationship between eye gaze and mouse position is more nuanced than measuring only mouse data \cite{huang2012user}.
 
@@ -326,7 +329,7 @@ Hauger et al found that distinct cursor behaviour exists depending on the task, 
 % https://www.researchgate.net/publication/228440813_Increasing_cheat_robustness_of_crowdsourcing_tasks
 
 
-The inaccuracies of responses when crowdsourcing results is a well established issue.
+The inaccuracies of responses when crowdsourcing results is a well-established issue.
 Users are paid per job complete, giving them incentives to complete tasks as fast as possible to maximise their income.
 Workers speed up task by submitting incorrect results, or by failing to perform the task correctly \cite{hirth2013analyzing}.
 These workers can be labelled as cheaters, as their contributions are unusable.
@@ -344,12 +347,12 @@ Out of the 15 unique users that completed some of the tasks 9 of them where labe
 This allowed them to create a much larger volume of responses than any legitimate users, with 91\% of the results coming from cheaters.
 
 Crowdsourced tasks can be classified as Closed Class tasks and Open Class tasks, with each having unique cheating approaches \cite{eickhoff2013increasing}.
-Closed class questions are more common, requiring workers to chose an answer from a predefined list.
+Closed class questions are more common, requiring workers to choose an answer from a predefined list.
 This includes check boxes, buttons, multiple choice questions, and importantly to this project, sliders.
 Randomly picking answers is the most common cheating attempt, this can be detected by comparing a suspected users responses with a user known to not be cheating or comparing with all other workers answers.
 % Can add other cheating attempt if we want to.
 Open class questions are much easier to cheat, these involve giving a user much more freedom to complete a task.
-Typically workers may be given blank text fields to fill in, or blank canvas' to draw on.
+Typically, workers may be given blank text fields to fill in, or blank canvas' to draw on.
 Standard cheating approaches involve leaving the fields empty, or repeatedly entering the same text.
 These approaches can be easily detected.
 More advanced attacks copy domain specific text copied from the internet, which is difficult to detect. 
@@ -362,7 +365,7 @@ More advanced attacks copy domain specific text copied from the internet, which 
 
 \subsection{Semi Supervised Learning}
 This will be a key aspect of the project as we only have definitive labels for part of our data.
-This reflects the challenges of real world data, where the quantity of unlabelled data is much greater than labelled data.
+This reflects the challenges of real-world data, where the quantity of unlabelled data is much greater than labelled data.
 % Find reference that says X amount of data is labelled.
 
 % https://sci-hub.tw/10.2200/s00196ed1v01y200906aim006 'Introduction to Semi-Supervised Learning' good paper that ive referenced below.
@@ -377,11 +380,11 @@ Reference \cite{zhu2005semi} as it looks to be massively influential with 4,000 
 
 The data used in this dissertation is labelled.
 All data belongs to 2 classes, a crowdsourced turk user class, or a lab study user class.
-However on the other hand the data is not labelled for the task I would like to explore.
+However, on the other hand the data is not labelled for the task I would like to explore.
 The goal of this project is to identity which users were paying attention.
 We have assumed that we can infer that lab study users will be paying attention, so we can say that those samples are labelled.
-However the rest of the samples we have which are all of the online data are unlabelled.
-Therefore this is a kind of semi supervised learning problem where we only have a small percentage of our samples labelled, and only confident labels for one class.
+However, the rest of the samples we have which are all of the online data are unlabelled.
+Therefore, this is a kind of semi supervised learning problem where we only have a small percentage of our samples labelled, and only confident labels for one class.
 % TODO: (See if a paper on this exists, semi supervised binary classification with only labels for one class.)
 % Do a literature review type of thing where I review semi supervised learning, talk about methods and how they can be applied to what I'm trying to do.
 
@@ -393,10 +396,10 @@ AU facial recognition features were extracted from the pupils faces in the video
 
 Their chosen method of semi supervised learning is a safe semi-supervised support vector machine.
 This variant of a semi supervised support vector machine finds a better separator when there is a small volume of labelled data, but a large volume of unlabelled data.
-The SSL model was trained with numbers of labelled data from 50 to 500, and and equal number of samples from both classes.
-The AUC metric ranged from 0.65 to 0.733 depending on the quantity of labelled dta used, outperforming a traditional SVM.
+The SSL model was trained with numbers of labelled data from 50 to 500, and an equal number of samples from both classes.
+The AUC metric ranged from 0.65 to 0.733 depending on the quantity of labelled data used, outperforming a traditional SVM.
 
-Unfortunately as shown in figure \ref{fig:scatterplot} the data here cannot be spatially separated and therefore any SVM would not be successful on the data. 
+Unfortunately, as shown in figure \ref{fig:scatterplot} the data here cannot be spatially separated and therefore any SVM would not be successful on the data. 
 It is still useful however to see how semi-supervised learning has been applied to the field of detecting user engagement and how it has been successful.
 
 % Removed N-Grams section as wasn't used in the final product. 
@@ -423,7 +426,7 @@ It is still useful however to see how semi-supervised learning has been applied 
 
 A Hidden Markov Model will be the main statistical modelling technique used in this dissertation.
 In this section I will give an overview of what they are, and how they have been used in related projects.
-A Hidden Markov Model (HMM) is a statistical modelling technique based on the markovian process. Reference
+A Hidden Markov Model (HMM) is a statistical modelling technique based on the Markovian process. %Reference?
 It assumes that the states of the system follow the rules for a Markov process, that is that every state depends only on the previous state of the system.
 It assumes that we cannot observe a system directly, but only see observations from it.
 
@@ -447,7 +450,7 @@ Paper claims to use HMM for spam detection, I think they actually just use it to
 Probably could find a better spam detecting HMM, I just like how this almost does something different from the title, which my diss will end up doing.
 
 This paper was recommended by someone on stack overflow as an old influential paper in the field with tens of thousands of references \cite{rabiner1989tutorial}.
-Called a tutorial on HMM and its so old so original source. 
+Called a tutorial on HMM and it's so old so original source. 
 Would definitely be good to reference if I include any of the mathematics behind HMMs. 
 
 Someone's dissertation on the topic of generating synthetic data with HMMs.
@@ -465,13 +468,10 @@ This can be a good way to create synthetic data \cite{ferrando2018generating}.
 \end{figure}
 % Alternatively make a similar looking diagram from scratch in Google drawings.
 
-Figure \ref{fig:Markov} shows the states of a markov model of my system with states A-E representing sliders 1-5 and state F representing an html element.
+Figure \ref{fig:Markov} shows the states of a Hidden Markov Model of my system with states A-E representing sliders 1-5 and state F representing an html element.
 In the top right we can see a possible transition matrix of our system.
 
-
-
-
-Cut from repeated experiments section.
+%Cut from repeated experiments section.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Was another subsection. % Not sure why but there was 2 titles here.
 %\subsection{Hidden Markov Models}
@@ -485,13 +485,8 @@ Cut from repeated experiments section.
 % For each new sample, we compute the likelihood to the model, and if it falls below a pre-defined threshold (that can be chosen with respect to some validation sample, or in the worst case, from the training samples themselves) we assign this sample to Class B. 
 % If the likelihood is above the threshold, we assign the sample to Class A." - https://datascience.stackexchange.com/questions/8560/can-hmm-be-used-as-a-binary-classifier
 
-HMMs are typically used with time series data.
-Here I just used the series of mouse events and ignored the timestamps of the event.
-It was found earlier that the length of mouse events and time are positively correlated with a pearson's correlation of ?? 0.6,
- and so just the sequence of mouse events should still hold the detail that time data would.
+HMMs are typically used with sequential data such as time series data.
 
-With the bag of words model we ignored all order to the sequences looking only at the frequency of each item.
-This is a different approach, here the order is the most important thing.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -512,7 +507,6 @@ This is a different approach, here the order is the most important thing.
 %(1/2 page to 1 page)
 %(maybe in methodology)
 The overall methodology of this dissertation is to conduct exploratory research.
-
 
 The assumption of this project is that labs are paying attention and turks are not.
 Therefore any outliers from the turk data that appear to be more similar to the lab data will be examined.
@@ -589,7 +583,7 @@ Here I will summarise what I have done to the data.
 As previously mentioned the data was gathered through a lab study and an online crowdsourced study.
 The purpose of the online study was to gather a larger amount of data that was possible to do so in person.
 % The aim of this was to make any results more statically significant.
-Data was recorded in a JSON formate with lots of irrelevant and duplicate data relating to the users background and not their mouse movements.
+Data was recorded in a JSON format with lots of irrelevant and duplicate data relating to the users background and not their mouse movements.
 JSON is a form of unstructured data, meaning it is not fully structures but has some organisation to it \cite{ronk2014structured}.
 To use the data in this project it first had to be processed into structured data.
 This was challenging and time consuming as Python's JSON library was unable to directly convert the data.
@@ -602,7 +596,7 @@ $1.4 \times 10^{12}$ seconds or $31,688$ years, obviously incorrect.
 % TODO: give details on how the data was manipulated form the time in unix time to floats to whole seconds.
 
 
-% WHOLE section beneath commented out as it wasnt relivant to this section.
+% WHOLE section beneath commented out as it wasn't relevant to this section.
 % TODO: try and fit in this section elsewhere, but don't know if it will fit.
 % This leads to the problem of imbalanced data samples.
 % After erroneous data was removed there were only 14 lab data samples and 461 online data samples.
@@ -635,7 +629,7 @@ $1.4 \times 10^{12}$ seconds or $31,688$ years, obviously incorrect.
 This part of the pipeline refers to what features I am going to extract from the data.
 Features of data can be defined as ``a measurable piece of data that can be used for analysis'' \cite{DataRobot}.
 These will consist of both raw and created features, but what do I mean by this?
-Raw features will consist of the the number of mouse events recorded, while a created feature would have to be extracted from the data.
+Raw features will consist of the number of mouse events recorded, while a created feature would have to be extracted from the data.
 
 % TODO: Properly explain how we renamed targets, why
 % , and show histograms showing similar distributions of targets.
@@ -657,7 +651,7 @@ However many html elements were ambiguously named and so only the sliders are na
 % TODO: TODO: TODO: Normalised Histograms of targets for both classes.
 % Say how there are differences in teh averages but that the individuals are more different. 
 The html target will be used as a feature in this project.
-Additionally a users mouse location over time may provide useful insight into how they completed the task therefore it wil also be used.
+Additionally a users mouse location over time may provide useful insight into how they completed the task therefore it will also be used.
 This feature was even more challenging to engineer as the data needs to be altered to be useful time series of data.
 Ideally the data should be given as a multivariate time series which is a sequence of numerical vectors \cite{xing2010brief}.
 The data should be in the form
@@ -673,12 +667,12 @@ The tuple $(x,y)$ refers to the horizontal and vertical location of the users mo
 % What ML will I do and what algorithm.
 % MAybe clustering algorithm but on what data?
 
-Once we have insightful features from the data we can consider what machine learning algorithm would be most appropriate to use on the data.
+Once we have insightful features from the data, we can consider what machine learning algorithm would be most appropriate to use on the data.
 This will obviously be highly dependent on what form the final features are in.
 For example if the features are numerical values such as time taken to complete task and number of mouse events then an algorithm such as a Support Vector Machine could be a good choice.
 If the data is in the form of sequential data such as a sequence of all mouse events then alternative techniques a Hidden Markov Model or neural network would've appropriate choices \cite{xing2010brief}.
 Variations of the traditional neural network such as Recurrent Neural Networks (RNNs) or Long Short Term Memory (LSTM) Networks are known to perform better with sequential data \cite{hochreiter1997long}.
-If the features output was an image such as a trace of mouse position over time then a Convolutional Neural Network could be a suitable choice as they're designed for image data \cite{krizhevsky2012imagenet}.
+If the features output was an image such as a trace of mouse position over time, then a Convolutional Neural Network could be a suitable choice as they're designed for image data \cite{krizhevsky2012imagenet}.
 An issue with any neural network approach would be their tendency to overfit the data.
 That is when an overly complicated model tries to model relationships that are a result of noise in messy data.
 There is only a limited amount of training data for this project, and so a high risk of this happening.
@@ -692,7 +686,7 @@ Despite techniques such as dropout \cite{srivastava2014dropout} existing to addr
 
 It is likely that text classification algorithms will be used when comparing the html targets of mouse events.
 Comparing counts of n-grams can be done with algorithms such as probabilistic Naive Bayes classifiers.
-Other suitable classification algorithms include proximity based k-nearest neighbours and ensemble decision tree learners \cite{aggarwal2012survey}.
+Other suitable classification algorithms include proximity-based k-nearest neighbours and ensemble decision tree learners \cite{aggarwal2012survey}.
 
 \subsection{Labels}
 
@@ -712,12 +706,20 @@ If this is done recursively then we can end up with a system that can split all 
 % Maybe all this should go under the implementation section.
 
 As defined previously a HMM consists of the 5 parameters $(Q,A,O,B,\pi)$ \cite{jurafsky2018speech}.
-In the case of this project, the hidden states $Q$ would relate to the some aspects of a users thought processes as that is the behaviour that is being modelled.
+In the case of this project, the hidden states $Q$ would relate to some aspects of a user's thought processes as that is the behaviour that is being modelled.
 The observations $O$ relate to the features as defined in the features section.
 Features used are the users mouse location over time and sequence of interface elements.
 The parameters $(A,B,\pi)$ are all learned during training, so do not need to be specified \cite{porwal2013machine}.
 % TODO: REF https://www.sciencedirect.com/topics/mathematics/hidden-markov-models
 
+For the main model of this dissertation it was decided to use only the series of mouse events and ignored the timestamps of the event. % WHY
+This is because there was no previous correlation discovered between a user’s total time taken or the number of mouse events. 
+Therefore, there is no reason to assume that using a time series would be any more accurate than a non-time series of data. 
+The sequence of mouse events should still hold the detail that time data would.
+
+% TODO: Check that this isnt befoer I mention bag-of-words models in my diss.
+With bag of words models we ignore all order to the sequences looking only at the frequency of each item.
+This is a different approach, here the order is the most important thing.
 
 % Talk about all different steps you took?
 % TODO: Mention the differnt types of HMM, multimodal vs whatever here.
@@ -737,8 +739,8 @@ The authors use a HMM to model animal movement behaviour, where they hope the hi
 For example in this context a 2 state HMM may relate to ``foraging/resting'' and ``travelling''.
 Humans can be more complex than animals but we can think of potential states of being ``inquisitive'' and ``bored''.
 They trained models with 2, 3, 4, and 5 hidden states and compared the criterion's of AIC, BIC, ICL.
-Similarity to evaluate Lab and Turk models models were trained with number of hidden states ranging from 1 to 11.
-Generally an increase in states should increase the effectiveness, however it will also take longer to train.
+Similarity to evaluate the Lab and Turk models, several models were trained with number of hidden states ranging from 1 to 11.
+Generally, an increase in states should increase the effectiveness, however it will also take longer to train.
 All models used for this comparison was trained to 50 iterations for a fair comparison. 
 
 \begin{figure}[ht]
@@ -769,7 +771,7 @@ The different methods were tried sequentially, and the pipeline had to be amende
 
 Approach of this project was to try many different methods of looking through, classifying, and predicting attentiveness of this data.
 These experiments enabled me to get a better understanding of the data, and to explore which methods would be most appropriate.
-While these results did not end up directly contributing to the main goal of this paper, they were important stepping stones of the project.
+While these results did not end up directly contributing to the main goal of this paper, they were important steppingstones of the project.
 
 Before any users were reclassified based on their engagement an alternative aim was established.
 This was to create a method of identifying whether a user was from the lab study or if they were a crowdsourced turk user based on some input data.
@@ -802,12 +804,12 @@ Regardless this method was still attempted.
     \label{fig:SVM}
 \end{figure}
 
-Figure~\ref{fig:SVM} shows the unsuccessful attempts of this method, and shows the sheer imbalance of the dataset.
-Only 53\% of the lab data was within the relating decision boundary, where as 86\% of the turk data was in its respective region.
+Figure~\ref{fig:SVM} shows the unsuccessful attempts of this method and shows the sheer imbalance of the dataset.
+Only 53\% of the lab data was within the relating decision boundary, whereas 86\% of the turk data was in its respective region.
 This highlights how this method will be ineffective on the dataset.
-While the SVM has created this central band of lab data, this region doesn't accurately model all of the data. 
+While the SVM has created this central band of lab data, this region doesn't accurately model all the data. 
 
-Additionally this method highlights a reoccurring problem of this project, the unbalanced data classes.
+Additionally, this method highlights a reoccurring problem of this project, the unbalanced data classes.
 This can make the accuracy of the model high, even if it misclassified most data points.
 %[[  8   6]
 % [ 53 325]]
@@ -826,7 +828,7 @@ This can make the accuracy of the model high, even if it misclassified most data
 
 This section of experiments is inspired by text classification algorithms.
 Text mining is becoming increasingly popular, due to the large increases in available text data from the web and social media.
-Such data is typically unstructured, and contains very large amounts of information.
+Such data is typically unstructured and contains very large amounts of information.
 Such data is also sparse and high dimensional \cite{aggarwal2012introduction}.
 The high dimensionality of text data stems from the large lexicon of words a document may contain, just the English language has over 170,000 words \cite{BBC2018How}.
 Text data is usually sparse because a given document is unlikely to contain anywhere near that many unique words.
@@ -835,8 +837,8 @@ The users mouse data used in this project can be represented as an abnormal word
 % TODO: check that we mention about the mouse targets before, otherwise this will not make any sense.
 We can consider a mouse target as a ``word'', and a ``text document'' as a single users sequence of mouse targets.
 This data will have a very limited lexicon of only 6 ``words'', the sliders from 1 to 5 and other.
-Therefore this data will have much lower dimensionality than typical text data.
-Additionally every user has interacted with every target, therefore the data is not sparse but dense.
+Therefore, this data will have much lower dimensionality than typical text data.
+Additionally, every user has interacted with every target, therefore the data is not sparse but dense.
 
 \begin{figure}[ht]
     \centering
@@ -912,7 +914,7 @@ An n-grams is a series of n words, with unigrams being one word, and bigrams bei
 Different n-grams can be combined together to better understand the complexities of a text document.
 A mixture of unigrams, bigrams, and trigrams are used extract different levels of text complexity and perform well with document classification \cite{aggarwal2012survey}.
 The same technique can be applied to this mouse dataset.
-Bigrams will be of particular interest as they show the transitions from one target to another, thus adding some sequential data to be used by the model.
+Bigrams will be of interest as they show the transitions from one target to another, thus adding some sequential data to be used by the model.
 However higher n n-grams could reveal information about a users approach to the tasks.
 A user who has many n-grams of different sliders would mean they often changed between sliders, potentially looking for the optimum slider values.
 
@@ -938,7 +940,7 @@ By far the most frequent form of bigram was the same target followed by the same
 This indicates that if a user is using a slider their next target will most likely be the same slider, which intuitively makes sense.
 To address this issue bigrams leading to themselves were excluded from the visualisation.
 There are 36 unique bigrams, however only the top 10 most frequent bigrams are shown.
-We can see that the turk data is more likely to have a html element somewhere in the bigram, where as lab users are more likely to have just have sliders.
+We can see that the turk data is more likely to have a html element somewhere in the bigram, whereas lab users are more likely to have just have sliders.
 This is surprising as in Figure~\ref{fig:1-grams} it was shown that a html target was more common in the lab study data.
 The plots show how bigrams can be used to separate the data, it is hoped that this may help classification especially when combined with trigrams.
 
@@ -947,8 +949,7 @@ The plots show how bigrams can be used to separate the data, it is hoped that th
 With a combination of unigrams, bigrams, and trigrams the matrix now grown massively to have a total number of 222 columns.
 
 % TODO: cross validatoin.
-However due to the aforementioned problems there is still an accuracy of 94.9\% and an F1 score of 48.6.
-
+However due to the problems there is still an accuracy of 94.9\% and an F1 score of 48.6.
 
 \subsection{Imbalanced classes}
 
@@ -964,11 +965,11 @@ Trained intelligent undersampling methods very slow. % LV Image.
 Now the trained HMMs could be used to generate new data points, to reduce the imbalances, and make these methods effective.
 
 A HMM can be used generate a probable sequence of $n$ observed states, however to generate new samples we must decide what length n must be.
-Given $n$ a walk through of the model is performed, the transitions between states then occur based on the probabilities within the transitional matrix.
+Given $n$ a walkthrough of the model is performed, the transitions between states then occur based on the probabilities within the transitional matrix.
 The idea of this section is to generate new lab study data so that there is the same quantity of lab study data and crowdsourced turk data.
-This generated data can be used to train the models used before, but will address the issue of unbalanced data.
+This generated data can be used to train the models used before but will address the issue of unbalanced data.
 The turk data and the generated data will be split into training and testing data as standard.
-However the original lab data will not be used to train the model, this will be withheld to see if the models trained from the generated data will be able classify the actual lab data.
+However, the original lab data will not be used to train the model, this will be withheld to see if the models trained from the generated data will be able classify the actual lab data.
 
 \begin{figure}[ht]
     \centering
@@ -1007,8 +1008,8 @@ The SVM classifier was unable to be revisited as the features used before were t
 The generated data has a length, however there is no corresponding time feature.
 Despite the data not being suitable for the same style SVM the data was perfect for the previous Bag-Of-Words methods.
 
-Using the naive bayes classifier with a Bag-Of-Words methods, there was improvement.
-The model was trained and tested with 5 fold cross validation which led to an accuracy and f1 score of 60\% and 58\% respectively.
+Using the Naive Bayes classifier with a Bag-Of-Words methods, there was improvement.
+The model was trained and tested with 5-fold cross validation which led to an accuracy and f1 score of 60\% and 58\% respectively.
 % Compare this to k-fold CV of non generated data.
 When the bigram model was considered the accuracy increased by 1\% to 61\% and the F1 score remained the same. %45% seems low, rerun.
 Additionally using the original lab study data as testing led to the same results from both models with the same confusion matrix.
@@ -1036,7 +1037,7 @@ Outliers with a higher likelihood of belonging to the HMM trained on data from t
 Or at least that outlier is doing something different to their peers, which may be a higher level of attention given to the task. 
 These points were labelled Reclassified Lab data and Reclassified Turk Data.
 
-\subsection{Table or graph of results}
+\subsection{Graphs of results}
 % Plot histogram of likelihoods for both classes on both HMM models.
 % Examine outliers.
 
@@ -1064,8 +1065,7 @@ Not all of the lab data is shown to be belonging more strongly to the lab model 
 \end{figure}
 
 Figure \ref{fig:Reclassified} shows which of the turk users are more similar to the lab users, than other users from the same group. 
-The plot shows the same datapoints and axis as in Figure~\ref{fig:unreclassified}
-, but the points above the line are recoloured green to show their difference from the actual lab data and normal turk data. 
+The plot shows the same datapoints and axis as in Figure~\ref{fig:unreclassified}, but the points above the line are recoloured green to show their difference from the actual lab data and normal turk data. 
 45 of the 461 (9.8\%) turk users are above this threshold. 
 Which seems like a reasonable percentage of the population to be paying attention. 
 
@@ -1075,7 +1075,7 @@ The exact distribution of these points change based on the initial random state 
 Figure~\ref{fig:scatterplot} showed a naive simple attempt to separate the classes of turk users and lab users.
 It was concluded that a spacial based technique such as a SVM would be unsuitable as the data didn't seem to form any patterns or clusters.
 Figure~\ref{fig:Reclassified-Scatterplot} shows how the reclassified datapoints are not linearly separable.
-This proves that my initial hypothesis was correct and that data could not be reclassified purely by looking at simple feature of time taken and just number of mouse events.
+This proves that my initial hypothesis was correct, and that data could not be reclassified purely by looking at simple feature of time taken and just number of mouse events.
 
 % TODO fix labels, this shows reclassified turk/lab data and the unclassified samples.
 \begin{figure}[ht!]
@@ -1088,7 +1088,7 @@ This proves that my initial hypothesis was correct and that data could not be re
 \subsection{Likelihood length correlation}
 
 Examination of the extreme points with the highest and lowest likelihoods revealed a potential correlation likelihoods and length of mouse events sequences.
-I decided to plot this data to understand if there was actually a link between these features.
+I decided to plot this data to understand if there was a link between these features.
 
 \begin{figure}[h!]
     \centering
@@ -1110,7 +1110,7 @@ I decided to plot this data to understand if there was actually a link between t
 Figure \ref{fig:liklihoodlengths} show that the log likelihood from both models and length of a users mouse sequence are highly inversely correlated. 
 The Lab model likelihood and length have a correlation of -0.982, and similarly the Turk model has a correlation of -0.976.
 A value less than $-0.7$ would indicate a strong negative correlation, therefore Figure ~\ref{fig:liklihoodlengths} shows an extremely strong negative correlation \cite{mindrila2017scatterplots}.
-Such a strong correlation could indicate the models are doing nothing, other that looking at the length of a sequence.
+Such a strong correlation could indicate the models are doing nothing, other than looking at the length of a sequence.
 However looking at the reclassified Turk data we can see that there doesn't appear to be any correlation between length, and whether the data has been reclassified.
 Therefore such a strong correlation between the length and likelihood is of no concern. 
 
@@ -1122,7 +1122,7 @@ Therefore such a strong correlation between the length and likelihood is of no c
 \end{figure}
 
 Figure ~\ref{fig:diffliklihoodlengths} removes the concern that length of mouse events sequence is the only feature being used in the models.
-The difference in likelihoods and length of mouse events sequence has a correlation of $0.176$, meaning the relationship between the features is non-existant.
+The difference in likelihoods and length of mouse events sequence has a correlation of $0.176$, meaning the relationship between the features is non-existent.
 
 % Think of better model than secondary model.
 \subsection{Secondary Model}    % Changed from Further Results section to Secondary HMM sub section
@@ -1133,7 +1133,7 @@ The difference in likelihoods and length of mouse events sequence has a correlat
 
 % Information copied from HMM cursor location
 
-In order to confirm any findings it was decided to attempt another experiment using similarly designed HMMs.
+In order to confirm any findings, it was decided to attempt another experiment using similarly designed HMMs.
 The key difference is that these models will be trained with different data than the previous models.
 If models are created with different data, but they identify the same users as potentially belonging to the wrong group then it would be a confirmation that those users are indeed outliers.
 If the models predict a completely different group of users then it would indicate there is no consistency within the data and that the models may not be reflecting the actual processes.  
@@ -1146,11 +1146,11 @@ Because of the different data this model will be a Hidden Markov Model with gaus
 The reason that this data is only a secondary aspect of the dissertation is due to concerns with the quality of data.
 Particularly that the mouse location data does not seem to be calibrated correctly.
 Looking at the mouse cursor position for each position it would be expected that many of the cursor locations each user would be the same.
-For example you would expect to see 5 distinct clusters of intensive mouse activity relating to the 5 allocation sliders.
+For example, you would expect to see 5 distinct clusters of intensive mouse activity relating to the 5 allocation sliders.
 To end the task workers must press a ``Buy'' button to purchase their selected stocks.
-Therefore the last recorded mouse event of all users should have the same position, that of the button.
+Therefore, the last recorded mouse event of all users should have the same position, that of the button.
 % TODO: Show plot of last event of every user, will NOT show the same position.
-Unfortunately this was not the case.
+Unfortunately, this was not the case.
 
 \begin{figure}[ht!]
     \centering
@@ -1246,9 +1246,9 @@ This hypothesis was based on the findings of the previous study, where the diffe
 Perhaps an investigation into users mouse data might show more of a difference between the behaviours of users using both interfaces.
 
 % TODO: Expand on how and why 'RONA fucked up these plans.
-I would have liked to preform an additional lab study session where we could have generated more data for that class of participant.
+I would have liked to perform an additional lab study session where we could have generated more data for that class of participant.
 This would have helped alleviate the issue that the imbalance of classes caused.
-Unfortunately this was impossible due to time restraints and the interference of the global COVID-19 pandemic.
+Unfortunately, this was impossible due to time restraints and the interference of the global COVID-19 pandemic.
 
 Another area of future work would be to see if any of the methods developed here could be applied to other similar datasets.
 A kaggle crowdflower dataset seems like an idea candidate \cite{kaggleWorkerActivity}.
@@ -1272,9 +1272,9 @@ These users were not monitored so it is uncertain if they were paying attention.
 A variety of techniques was attempted, and the use of Hidden Markov Models was evaluated to perform best at this task.
 Models were trained for each group of users on different sources of data. 
 One a sequence of html element targets and the other a multivariate time series of a users mouse cursor location.
-Each users data was evaluated on the the lab model and the crowdsourced turk model.
+Each users data was evaluated on the lab model and the crowdsourced turk model.
 Some of the crowdsourced users was evaluated to belong more closely to some of the lab study users rather than the other crowdsourced users.
-This means that these users were doing something different from there peers, they are suspected to be paying attention more than their peers. 
+This means that these users were doing something different from their peers, they are suspected to be paying attention more than their peers. 
 From the results of the model I can predict that anywhere from 200 to 12 of the crowdsourced users were paying attention, with varying degrees of confidence.
 
 % Older conclusion
@@ -1282,13 +1282,12 @@ However I would not be too confident in my findings.
 The data was incorrectly labelled for the task I wanted to perform.
 Additionally the data was heavily imbalanced.
 All of the conclusions I have made from the lab data are relying on only a small number of datapoints which is not statistically significant.
-There was not meaningful amounts of data from the other class of online data either.
-Typically data science and machine learning uses big data, where as this project used only 388 records in total which came to only 330 MB of data in its original JSON format.
+There were not meaningful amounts of data from the other class of online data either.
+Typically, data science and machine learning uses big data, where as this project used only 388 records in total which came to only 330 MB of data in its original JSON format.
 Any bias in any of these original samples will be magnified as this was used to classify more points, which would again spread this bias.
-This would become a self fulfilling prophecy as more similar points would be labelled and spread the belief.
+This would become a self-fulfilling prophecy as more similar points would be labelled and spread the belief.
 
-Any concern that the models have learned of a simple feature such as sequence event has been disproven
-, showing the reclassification algorithm has nonesuch simple relationship.
+Any concern that the models have learned of a simple feature such as sequence event has been disproven, showing the reclassification algorithm has nonesuch simple relationship.
 
 Biggest flaw of the project is the first assumption, that the lab people were all paying attention.
 While they were monitored and we can be sure they were not distracted by phones or televisions, many of them may have 'zoned out' and not have been given it their full effort and attention.
