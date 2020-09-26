@@ -5,6 +5,7 @@
 \usepackage{amsmath} % For matricies 
 \usepackage[export]{adjustbox}
 \usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
 
 % change reference style to [1], remove stupid sorting, language changed so date in ddmmyyyy
 \usepackage[backend=biber, style=numeric, sorting=none, language=australian]{biblatex}
@@ -36,19 +37,20 @@
 % nature and scope of the work undertaken and of the contribution (if any) made to the
 % knowledge of the subject treated.
 
-\renewcommand{\abstractname}{Summary}
+%\renewcommand{\abstractname}{Summary}
 
 \begin{abstract} 
     %TODO: Update with results from secondary model and say how you doubt it.
     %Potential abstract.
     %This project explores the use of Hidden Markov Models to explore users mouse cursor data while performing a task.
     This project explores the use of Hidden Markov Models to determine if users are paying attention during a crowdsourced study.
-    The users are split into 2 distinct groups, online crowdsourced users, and lab study users.
+    The users are split into two distinct groups, online crowdsourced users, and lab study users.
     It is proposed that the lab study users were paying attention, and the crowdsourced users may or may not be paying attention.
     By using observed data recorded from user's mouse cursor it is possible to model both groups interaction with the system with separate Hidden Markov Models.
-    Some user's interaction seem misplaced compared to their groups.
+    Some user's interactions seem misplaced compared to their groups.
     These are reclassified with the aim of changing the groups of users from lab study or crowdsourced, to users paying attention and not paying attention.     
-    It was found that potentially 9.8\% of turk users were paying attention, and 43\% of lab study users may not have been paying attention.
+    It was found that potentially only 9.8\% of the crowdsourced users were paying attention, which highlights the known inaccuracies of crowdsourcing data.
+
     % These results require further research with a properly labelled dataset to confirm any findings.
     % I would also remove the last sentence. That's more of a future work idea.
 \end{abstract}
@@ -70,6 +72,8 @@
 % Implementation
 % Results
 % Conclusion
+
+\onehalfspacing
 
 % motivation: mention why paying attention is important
 \section{Motivation}
@@ -112,16 +116,20 @@
 %   and how they can be better used to quickly and cheaply pick locks.
 
 % Paragraph 1 - Initial motovation
-Crowd-sourcing marketplaces like Amazon’s Mechanical Turk are popular services that provide a method for researchers to get participants to complete human intelligence tasks \cite{paolacci2010running}. 
+Crowdsourcing is a method of collecting responses from tasks that require human intelligence to complete. 
+One such example of a crowdsourcing service is Amazon's Mechanical Turk \cite{AmazonTurk}.
+%Crowd-sourcing marketplaces like Amazon's Mechanical Turk are popular services that provide a method for researchers to get participants to complete human intelligence tasks \cite{paolacci2010running}. 
 A common use for this technology is to label data for use in training for machine learning algorithms \cite{chang2017revolt}.
-They can also provide a cheap, scalable method for scientists to gather responses in research.
-The level of user engagement, attention, and low-quality responses can all be issues when gathering data from participants with distributed approaches \cite{ipeirotis2010quality}.
-The primary motivation of this project is to develop a system of potentially identifying if a crowdsourced user is paying attention during a task.
+They can also provide a cheap, scalable method for scientists to gather responses in research \cite{paolacci2010running}.
 
 % Paragraph 2 - Inter disciplinary
 The use of gathering responses using Amazon's Mechanical Turk and other crowdsourcing alternatives are becoming prevalent across disciplines.
 It is commonly used in conducting clinical research \cite{chandler2016conducting} and it is estimated that almost half of all cognitive science research involves the use of crowdsourcing services to collect data samples \cite{stewart2017crowdsourcing}.
 The creation of an easy to implement method to measure user engagement would massively help researchers to increase reliability of their research.
+
+The level of user engagement, attention, and low-quality responses can all be issues when gathering data from participants with distributed approaches \cite{ipeirotis2010quality}.
+The primary motivation of this project is to develop a system of potentially identifying if a crowdsourced user is paying attention during a task.
+
 
 % Paragraph 3 - Motivation
 Research has been conducted on how the accuracy and attention of crowdsourced tasks can be increased.
@@ -138,7 +146,7 @@ If user engagement can be effectively identified, then the best method of ensuri
 Measuring user engagement is well studied in the field of web analytics \cite{peterson2008measuring}.
 However, the existing methods of reporting and analysing website data cannot be easily applied to crowdsourced tasks.    
 Characteristics such as session duration and customer satisfaction are used as proxies for engagement.
-However, a longer session doesn't necessarily mean a more engagement user and customer satisfaction is not applicable for crowdsourced tasks.
+However, a longer session doesn't necessarily mean a more engaged user and customer satisfaction is not applicable for crowdsourced tasks.
 Therefore, existing solutions will not work and now methods must be evolved.
 
 % TODO: Talk about the past of crowdsourcing and give more details about it
@@ -153,7 +161,8 @@ The work in this project is built on data gathered from a previous study;
 \textit{``A comparison of user interactions in lab and crowdsourced
 studies''} \cite{gruber2017thesis}.
 
-The study was centred in the field of visualisation.
+%TODO: Was it a data vis paper?
+The study was centred in the field of data visualisation.
 The paper explored whether an alternative more detailed interface could be used help improve a user's effectiveness at completing a task.
 The task simulated an investment scenario, the aim was to maximise the return of a collection of stocks over several iterations. 
 
@@ -161,7 +170,7 @@ The task simulated an investment scenario, the aim was to maximise the return of
     \centering
     \includegraphics[scale=0.35, frame]{Images/interface.png}
     % TODO: Find the right interface, current interface doesn't match whats in his paper.
-    \caption{The user interface of the lab study.}
+    \caption{The main interface of the lab study, with the risk and return of stocks to the right and allocation sliders to the left.}
     \label{fig:interface}
 \end{figure}
 
@@ -182,13 +191,12 @@ This process was repeated for 5 steps, where after each step the user's portfoli
     \label{fig:interfaceSA}
 \end{figure}
 
-Figure~\ref{fig:interfaceSA} shows the alternative interface design for the study.
-The slider representing each stock was split into 2 separate sliders, showing the return and the risk of the stock.
-Additionally, the sliders are no longer 1 dimensional, both sliders are 2 dimensional line charts.
+Figure~\ref{fig:interfaceSA} shows that the sliders representing each stock are split into two separate sliders, showing the return and the risk of the stock.
+Additionally, the sliders are no longer one dimensional, both sliders are two dimensional line charts.
 The assumption of the study was that these extra visualisations would help users to maximise the value of their portfolio.
 
 Participants from the lab study were heavily monitored to ensure they were engaged, focusing on the task.
-The crowdsourced participants were not monitor so we're unable to say that they were engaged with the task, and not looking at another screen. 
+The crowdsourced participants were not monitored so it is unknown if they were engaged with the task, without further analysis.
 
 \begin{table}[ht]
     \caption{\label{table:studies} Data collection methods used in the study \cite{gruber2017thesis}.}
@@ -206,12 +214,11 @@ Only 4.6\% of the data was gathered in person, with the most of responses being 
 The difference in number of participants shows one of the reasons crowdsourcing is popular. 
 It is much easier to crowd source responses than it is to organise an in-person lab study.
 
-For the purpose of this project the distinction of which interface a user was using ignored.
-The study was inconclusive in proving that the alternative interface design had a meaningful effect on the success of a user's portfolio. 
-Additionally the rationale of this is that regardless of which variant of the interface a lab study user was using they would be paying attention.
+The study was inconclusive in proving that the alternative interface design had a meaningful effect on the success of a user's portfolio.
+Therefore, for the purpose of this project the distinction of which interface a participant was using is ignored.
+Additionally the rationale is that regardless of which variant of the interface was being used the participant would be paying attention.
 There is likely to have crowdsourced users who are engaged and some that are not engaged regardless of which interface is used.
-While there will be differences in users mouse data depending on the interface,
- I hypothesise that the difference will not be as large as the difference between users that are engaged or not engaged. 
+While there will be differences in users mouse data depending on the interface, I hypothesise that the difference will not be as large as the difference between users that are engaged or not engaged. 
 
 \subsection{Initial attempt}
 
@@ -219,9 +226,9 @@ One naive assumption might be that a users attention level might be inferred fro
 Exploration of the data showed that the division of users may not be so straightforward, shown in Figure~\ref{fig:scatterplot}.
 % TODO add plot of lengths vs time for different groups.
 
-\begin{figure}[ht]
+\begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.6]{Images/TimeTaken-Mouse-Events.png}
+    \includegraphics[scale=0.55]{Images/TimeTaken-Mouse-Events.png}
     % TODO: Find the right interface, current interface doesn't match whats in his paper.
     \caption{Scatterplot of users.}
     \label{fig:scatterplot}
@@ -231,9 +238,10 @@ The lab and turk user classes cannot be separated by a simple metric of their da
 This eliminates the option of using distance based machine learning approaches such as K Nearest Neighbours or a Support Vector Machine as there is no relationship between such simple features.
 It should be noted that length of events sequence and time are correlated with a Pearson's correlation of $0.344$.
 
-As a rule of thumb, we can say that correlations below 0.3 have no relationship, and values between 0.3 and 0.5 have a weak relationship \cite{mindrila2017scatterplots}.
-This means the 2 features are weakly correlated, but correlated nonetheless.
-This means that one of these features may be a good substitute for the other and that having both may be redundant.
+% Meg Removed
+% As a rule of thumb, we can say that correlations below 0.3 have no relationship, and values between 0.3 and 0.5 have a weak relationship \cite{mindrila2017scatterplots}.
+% This means the two features are weakly correlated, but correlated nonetheless.
+% This means that one of these features may be a good substitute for the other and that having both may be redundant.
 
 \subsection{Contributions}
 % The contributions are 1,2,3 (everyone likes 3s)
@@ -285,20 +293,21 @@ Non-verbal information such as eye tracking may be used to detect user's level o
 Vision is one of the most powerful human senses, so it has the potential to give a good measure of user engagement. 
 The methodology of eye tracking is that we move our eyes to focus on particular areas that we want to see in more detail and divert our attention to that area \cite{duchowski2007eye}. 
 % duchowski2007eye is a VERY important piece of literature for the field, over 4000 citations
-Thus, tracking a use's gaze can provide insight into which part of a system they're engaged with, and how much so.
+Thus, tracking a user's gaze can provide insight into which part of a system they're engaged with, and how much so.
 
 \begin{figure}[ht!]
     \centering
     \centerline{
         \includegraphics[scale=0.6]{Images/EyeHeatmap.PNG}
     }
-    \caption{Heatmap showing popular locations of users eyes on a webpage \cite{buscher2009you}.}
+    \caption{Eye tracking visualisation showing popular locations of users eyes on a webpage. Red areas are more frequently looked at than blue areas \cite{buscher2009you}.}
     \label{fig:eyetrack}
 \end{figure}
 
-Eye tracking data can be used to show user interface elements that users focus their attention on as shown in Fig \ref{fig:eyetrack}. 
+Eye tracking data can be used to show interface elements that users focus their attention on, shown in Figure \ref{fig:eyetrack}. 
 From this data researchers were able to predict the amount of attention elements of the page would receive.
 By observing what parts of an interface users are interacting with we can determine what a user is engaging with \cite{buscher2009you}.
+
 Eye-tracking has been used, and found success novel applications such as recording the engagement of users when playing a game. 
 Tracking users eye movements helped game designers understand how users can recognise interactable game objects and could be used to investigate problematic game design issues \cite{renshaw2009towards}.
 
@@ -1312,6 +1321,7 @@ While they were monitored and we can be sure they were not distracted by phones 
 % They were just held back by the poor quality of data which was addressed as one of the major shortcomings of this project.
 
 
+\singlespacing
 \printbibliography
 
 \end{document}

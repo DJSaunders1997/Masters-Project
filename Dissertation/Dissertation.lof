@@ -1,37 +1,37 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces The user interface of the lab study.\relax }}{2}{figure.caption.4}%
+\contentsline {figure}{\numberline {1}{\ignorespaces The main interface of the lab study, with the risk and return of stocks to the right and allocation sliders to the left.\relax }}{2}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces The alternative user interface of the lab study.\relax }}{2}{figure.caption.5}%
+\contentsline {figure}{\numberline {2}{\ignorespaces The alternative user interface of the lab study.\relax }}{3}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3}{\ignorespaces Scatterplot of users.\relax }}{4}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Heatmap showing popular locations of users eyes on a webpage \cite {buscher2009you}.\relax }}{5}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Eye tracking visualisation showing popular locations of users eyes on a webpage. Red areas are more frequently looked at than blue areas \cite {buscher2009you}.\relax }}{5}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Diagram of an example Markov Chain model \cite {choudhury2007state}.\relax }}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagram of an example Markov Chain model \cite {choudhury2007state}.\relax }}{10}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Diagram of the Data Pipeline of the project.\relax }}{9}{figure.caption.10}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Diagram of the Data Pipeline of the project.\relax }}{11}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Line plot of evaluation of different HMM architectures.\relax }}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Line plot of evaluation of different HMM architectures.\relax }}{16}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Plot of the SVM, showing the decision region boundary.\relax }}{15}{figure.caption.13}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Plot of the SVM, showing the decision region boundary.\relax }}{18}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Histogram of targets.\relax }}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Histogram of targets.\relax }}{19}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Plots showing the relative frequency of bigrams for both groups.\relax }}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Plots showing the relative frequency of bigrams for both groups.\relax }}{21}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces Histogram of length of mouse events sequences for both groups.\relax }}{19}{figure.caption.16}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Histogram of length of mouse events sequences for both groups.\relax }}{22}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Scatterplot of users likelihood of belonging to either group. \relax }}{21}{figure.caption.17}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Scatterplot of users likelihood of belonging to either group. \relax }}{24}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Scatterplot showing the turk users that have been reclassified as behaving more like lab users. \relax }}{21}{figure.caption.18}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Scatterplot showing the turk users that have been reclassified as behaving more like lab users. \relax }}{24}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Plot showing features of the reclassified points. \relax }}{22}{figure.caption.19}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Plot showing features of the reclassified points. \relax }}{25}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Plots showing correlation between likelihood of different models and the length of mouse events.\relax }}{22}{figure.caption.20}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Plots showing correlation between likelihood of different models and the length of mouse events.\relax }}{26}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Plot showing difference in likelihood between the models against length of mouse events sequence. \relax }}{23}{figure.caption.21}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Plot showing difference in likelihood between the models against length of mouse events sequence. \relax }}{27}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces Scatterplot of mouse down event coordinates of all users mouse path data.\relax }}{24}{figure.caption.22}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Scatterplot of mouse down event coordinates of all users mouse path data.\relax }}{28}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces Graph of reclassified datapoints from spatial data HMMs.\relax }}{25}{figure.caption.23}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Graph of reclassified datapoints from spatial data HMMs.\relax }}{29}{figure.caption.23}%
