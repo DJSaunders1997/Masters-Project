@@ -685,6 +685,7 @@ where $t$ is the time in seconds, given from the first timestamp $t_0$ in whole 
 The tuple $(x,y)$ refers to the horizontal and vertical location of the users mouse cursor.
 % TODO: give details on how the data was manipulated form the time in unix time to floats to whole seconds.
 
+
 \subsection{Machine Learning}
 
 % What ML will I do and what algorithm.
@@ -1163,7 +1164,9 @@ If the models predict a completely different group of users then it would indica
 
 % TODO:fFind reference that HMMS are good at spatial data.
 
-These confirmation models will be trained on multivariate time series as described in Subsection~\ref{subsection:Features} Features.
+The initial ideas was that confirmation models would be trained on multivariate time series as described in Subsection~\ref{subsection:Features} Features.
+However using a time series of data caused too much variance in the results, meaning that it could not be modelled by a Hidden Markov Model without access to more data.
+Therefore the sequence of mouse locations was used instead which can still provide interesting results as shown with the other model.
 Because of the different data this model will be a Hidden Markov Model with gaussian emissions as the multivariate inputs are continuous.
 
 The reason that this data is only a secondary aspect of the dissertation is due to concerns with the quality of data.
