@@ -985,12 +985,16 @@ However due to the problems there is still an accuracy of 94.9\% and an F1 score
 
 \subsection{Imbalanced classes}
 
-Hidden Markov Models are generative models.
-They model the most likely output sequence  \cite{ibe2013markov}.
+% Someone's dissertation on the topic of generating synthetic data with HMMs.
+% This can be a good way to create synthetic data \cite{ferrando2018generating}.
 
-As detailed previously HMMs can be used for classification as shown above, but they are also known as generative models \cite{ferrando2018generating}.
+% Hidden Markov Models are generative models.
+% They model the most likely output sequence  \cite{ibe2013markov}.
+
+
+As detailed previously HMMs can be used for classification, but they are also known as generative models \cite{ferrando2018generating}.
 This means they can be used to create new data.
-The above methods of Bag-Of-Words and N-grams failed due to the imbalances of classes.
+This is promising as the previous methods of Bag-Of-Words and N-grams failed due to the imbalances of classes.
 
 There are many methods to address the issue of class imbalances.
 Class imbalances involve a minority class (in this case lab study data) and a majority class (in this case crowdsourced turk data).
