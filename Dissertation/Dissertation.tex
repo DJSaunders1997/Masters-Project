@@ -530,10 +530,11 @@ The assumption of this project is that labs are paying attention and turks are n
 Therefore any outliers from the turk data that appear to be more similar to the lab data will be examined.
 The outliers can then be classified as potentially paying more attention than his peers
 
-This study (ref) says that only 10\% of all people / turk users pay attention during a task.
-We will look at the 10\% (30ish) of the turk data that looks like it is lab data and day that they were paying attention.
-This is just the assumption we have made for the project, 
-unfortunately the dataset isn't extensive enough for us to fully test this hypothesis.
+% TODO: FInd somthing to replace this with 
+% This study (ref) says that only 10\% of all people / turk users pay attention during a task.
+% We will look at the 10\% (30ish) of the turk data that looks like it is lab data and day that they were paying attention.
+% This is just the assumption we have made for the project, 
+% unfortunately the dataset isn't extensive enough for us to fully test this hypothesis.
 
 % https://towardsdatascience.com/data-science-methodology-101-ce9f0d660336
 % Methodology in Data Science is the best way to organize your work
@@ -542,7 +543,7 @@ unfortunately the dataset isn't extensive enough for us to fully test this hypot
 
 
 
-\section{Data Pipeline}
+\subsection{Data Pipeline}
 
 When planning and completing this project many decisions were made about the steps taken to convert the raw data to a finished project.
 This section may act as an overview of the project, detailing the different sections of work, what they may contain, and the order in which they will be completed.
@@ -556,7 +557,7 @@ This section may act as an overview of the project, detailing the different sect
 
 % Everyone is a question
 
-\subsection{Data}
+\subsubsection{Data}
 
 % OLD FROM PROJECT-SPEC
 
@@ -632,7 +633,7 @@ $1.4 \times 10^{12}$ seconds or $31,688$ years, obviously incorrect.
 % Another method is to copy the points, altering them slightly, this was considered but not used in the end.
 % Each lab study data sample was copied 40 times to even out the classes.
 
-\subsection{Features}
+\subsubsection{Features}
 \label{subsection:Features} % Because I reference this section later when creating secondary HMM.
 
 % Tom said something about this being where I should spend the most time of my project.
@@ -681,7 +682,7 @@ The tuple $(x,y)$ refers to the horizontal and vertical location of the users mo
 % TODO: give details on how the data was manipulated form the time in unix time to floats to whole seconds.
 
 
-\subsection{Machine Learning}
+\subsubsection{Machine Learning}
 
 % What ML will I do and what algorithm.
 % MAybe clustering algorithm but on what data?
@@ -707,7 +708,7 @@ It is likely that text classification algorithms will be used when comparing the
 Comparing counts of n-grams can be done with algorithms such as probabilistic Naive Bayes classifiers.
 Other suitable classification algorithms include proximity-based k-nearest neighbours and ensemble decision tree learners \cite{aggarwal2012survey}.
 
-\subsection{Labels}
+\subsubsection{Labels}
 
 % Who's paying attention
 
@@ -715,8 +716,10 @@ Lastly an important section of the pipeline, as it reflects the final outputs of
 Labels will refer to which users are classified as paying attention and which users are not.
 A key aspect of this project will be semi-supervised learning.
 That is we have some data points we can confirm were paying attention, and others where they're level of attention was questionable.
-Once we have an algorithm that can classify some users as paying attention or not we can rerun the algorithm with these preliminary outputs as new training data.
-If this is done recursively then we can end up with a system that can split all data points into the 2 classes, perhaps with a degree of confidence given as a percentage.
+Given that we know the lab study users were paying attention, the aim is to use this data to relabel some of the crowdsourced data as potentially paying attention.
+
+%Once we have an algorithm that can classify some users as paying attention or not we can rerun the algorithm with these preliminary outputs as new training data.
+%If this is done recursively then we can end up with a system that can split all data points into the 2 classes, perhaps with a degree of confidence given as a percentage.
 
 
 \section{Final Implementation}
