@@ -191,7 +191,7 @@ This process was repeated for 5 steps, where after each step the user's portfoli
     \label{fig:interfaceSA}
 \end{figure}
 
-Figure~\ref{fig:interfaceSA} shows that the sliders representing each stock are split into two separate sliders, showing the return and the risk of the stock.
+Figure \ref{fig:interfaceSA} shows that the sliders representing each stock are split into two separate sliders, showing the return and the risk of the stock.
 Additionally, the sliders are no longer one dimensional, both sliders are two dimensional line charts.
 The assumption of the study was that these extra visualisations would help users to maximise the value of their portfolio.
 
@@ -223,7 +223,7 @@ While there will be differences in users mouse data depending on the interface, 
 \subsection{Initial attempt}
 
 One naive assumption might be that a users attention level might be inferred from the time taken to complete the tasks.
-Exploration of the data showed that the division of users may not be so straightforward, shown in Figure~\ref{fig:scatterplot}.
+Exploration of the data showed that the division of users may not be so straightforward, shown in Figure \ref{fig:scatterplot}.
 % TODO add plot of lengths vs time for different groups.
 
 \begin{figure}[!h]
@@ -658,7 +658,7 @@ Raw features will consist of the number of mouse events recorded, while a create
 % , and show histograms showing similar distributions of targets.
 One such feature recorded in the data is mouse target.
 This refers to the HTML element that a users mouse was over at any given time.
-As shown in Figure~\ref{fig:interface} the most prominent part of the interface that users will interact with is the 5 stock allocation sliders.
+As shown in Figure \ref{fig:interface} the most prominent part of the interface that users will interact with is the 5 stock allocation sliders.
 % Plot showing alloc-slider-1-5 and other.
 It is hypothesised that users who are paying attention may spend more time fine tuning their stock allocation and therefore would have more mouse events with the sliders as the target.
 % TODO:
@@ -831,7 +831,7 @@ A Support Vector Machine (SVM) is a common supervised machine learning technique
 Here we look at if a simple hyperplane could separate the data when looking at the simple features of the number of mouse events and the total time taken to do the task. 
 
 It was found that a linear, or non-linear classification with a kernel trick was unable to separate the data.
-However as shown in Figure~\ref{fig:scatterplot}, the data does not appear to be linearly separable.
+However as shown in Figure \ref{fig:scatterplot}, the data does not appear to be linearly separable.
 Regardless this method was still attempted.
 
 \begin{figure}[ht]
@@ -841,7 +841,7 @@ Regardless this method was still attempted.
     \label{fig:SVM}
 \end{figure}
 
-Figure~\ref{fig:SVM} shows the unsuccessful attempts of this method and shows the sheer imbalance of the dataset.
+Figure \ref{fig:SVM} shows the unsuccessful attempts of this method and shows the sheer imbalance of the dataset.
 Only 53\% of the lab data was within the relating decision boundary, whereas 86\% of the turk data was in its respective region.
 This highlights how this method will be ineffective on the dataset.
 While the SVM has created this central band of lab data, this region doesn't accurately model all the data. 
@@ -884,7 +884,7 @@ Additionally, every user has interacted with every target, therefore the data is
     \label{fig:1-grams}
 \end{figure}
 
-Figure~\ref{fig:1-grams} shows the relative count of each of the targets for the user groups.
+Figure \ref{fig:1-grams} shows the relative count of each of the targets for the user groups.
 The relative count is calculated by dividing the count of the targets by the number of users, this is so the numbers are comparable otherwise the crowdsourced data would be of a much larger quantity.
 We can see that lab study users seem to perform more mouse events over the other html elements and not over one of the sliders.
 For lab users the most common sliders are 2, 5, then 4.
@@ -972,13 +972,13 @@ A user who has many n-grams of different sliders would mean they often changed b
     \label{fig:bigrams}
 \end{figure}
 
-Figure~\ref{fig:bigrams} shows the bigram differences of the crowdsourced turk data and the lab study data.
+Figure \ref{fig:bigrams} shows the bigram differences of the crowdsourced turk data and the lab study data.
 By far the most frequent form of bigram was the same target followed by the same target.
 This indicates that if a user is using a slider their next target will most likely be the same slider, which intuitively makes sense.
 To address this issue bigrams leading to themselves were excluded from the visualisation.
 There are 36 unique bigrams, however only the top 10 most frequent bigrams are shown.
 We can see that the turk data is more likely to have a html element somewhere in the bigram, whereas lab users are more likely to have just have sliders.
-This is surprising as in Figure~\ref{fig:1-grams} it was shown that a html target was more common in the lab study data.
+This is surprising as in Figure \ref{fig:1-grams} it was shown that a html target was more common in the lab study data.
 The plots show how bigrams can be used to separate the data, it is hoped that this may help classification especially when combined with trigrams.
 
 
@@ -995,16 +995,23 @@ They model the most likely output sequence  \cite{ibe2013markov}.
 
 As detailed previously HMMs can be used for classification as shown above, but they are also known as generative models \cite{ferrando2018generating}.
 This means they can be used to create new data.
-The above methods of SVM, KNN, and Naive Bayes failed due to the imbalances of classes.
+The above methods of Bag-Of-Words and N-grams failed due to the imbalances of classes.
+
 There are many methods to address the issue of class imbalances.
-Undersampling, SMOTE, ADASYN.   % LV Image.
-Trained intelligent undersampling methods very slow. % LV Image.
-Now the trained HMMs could be used to generate new data points, to reduce the imbalances, and make these methods effective.
+Class imbalances involve a minority class (in this case lab study data) and a majority class (in this case crowdsourced turk data).
+Two of the most popular solutions are to over-sample the minority class or to under-sample the majority class \cite{chawla2002smote}.
+In there basic forms under-sampling effectively ignores data from the majority class, and over-sampling effectively duplicates existing data.
+
+It was decided that under-sampling would not be appropriate as there is only a small amount of data, therefore as much data must be kept as possible.
+Over-sampling was a better solution however, to balance the classes the number of samples must still be increased by around 20 times as much. 
+Trained intelligent undersampling methods can perform better but are more difficult to implement \cite{chawla2002smote}.
+Therefore it was decided to use the existing Hidden Markov Model to generate new data.
+A trained HMMs can be used to generate new data points, to reduce the imbalances, and make the previous classification methods more effective.
 
 A HMM can be used generate a probable sequence of $n$ observed states, however to generate new samples we must decide what length n must be.
 Given $n$ a walkthrough of the model is performed, the transitions between states then occur based on the probabilities within the transitional matrix.
 The idea of this section is to generate new lab study data so that there is the same quantity of lab study data and crowdsourced turk data.
-This generated data can be used to train the models used before but will address the issue of unbalanced data.
+This generated data can be used to train the models used previously with the hope that this new data will address the issue of unbalanced data.
 The turk data and the generated data will be split into training and testing data as standard.
 However, the original lab data will not be used to train the model, this will be withheld to see if the models trained from the generated data will be able classify the actual lab data.
 
@@ -1020,12 +1027,10 @@ In red we can see a positively skewed normal distribution which matches the dist
 When determining n for the new sequence data, we will sample from a gaussian distribution with a mean of 1688 and a standard deviation of 1232.
 This should generate a realistic distribution of lengths, and when combined with the trained HMM model, a realistic sequence of data.
 
-% TODO: model with the actual distribution, such as a log normal, or find a way to deal with the negative values.
-
 %TODO: Check why this number is different from the other number of turks.
 From this distribution 378 values were sampled.
-Each of the 378 values were then passed into the generative HMM.
-Given a 
+Each of the 378 values were then passed into the generative lab study HMM.
+This led to the creation of an equal number of crowdsourced data and synthetic lab data generated from the model.
 
 \subsubsection{Revisiting methods}
 
@@ -1043,7 +1048,7 @@ Given a
 With the generated lab study data we can now revisited some of the methods that failed due to imbalanced classes.
 The SVM classifier was unable to be revisited as the features used before were the time taken to complete the task and length of mouse events sequence.
 The generated data has a length, however there is no corresponding time feature.
-Despite the data not being suitable for the same style SVM the data was perfect for the previous Bag-Of-Words methods.
+Despite the data not being suitable for a similar SVM the data was perfect for the previous Bag-Of-Words methods.
 
 Using the Naive Bayes classifier with a Bag-Of-Words methods, there was improvement.
 The model was trained and tested with 5-fold cross validation which led to an accuracy and f1 score of 60\% and 58\% respectively.
@@ -1079,7 +1084,7 @@ These points were labelled Reclassified Lab data and Reclassified Turk Data.
 % Examine outliers.
 
 One way of attempting to classify users is to identify any users with a higher lab likelihood as being more similar to a lab user than a turk user.
-Figure~\ref{fig:unreclassified} shows this result graphically.
+Figure \ref{fig:unreclassified} shows this result graphically.
 Any data point above the line $y=x$ has a higher likelihood of belonging to the lab model than the turk model.
 Therefore any turk data that is above this line can be reclassified as seeming to belong more with the lab data than the fellow turk datapoints. 
 An interesting and surprising result is shown from the lab data.
@@ -1102,16 +1107,16 @@ Not all of the lab data is shown to be belonging more strongly to the lab model 
 \end{figure}
 
 Figure \ref{fig:Reclassified} shows which of the turk users are more similar to the lab users, than other users from the same group. 
-The plot shows the same datapoints and axis as in Figure~\ref{fig:unreclassified}, but the points above the line are recoloured green to show their difference from the actual lab data and normal turk data. 
-45 of the 461 (9.8\%) turk users are above this threshold. 
+The plot shows the same datapoints and axis as in Figure \ref{fig:unreclassified}, but the points above the line are recoloured green to show their difference from the actual lab data and normal turk data. 
+45 of the 361 (12.5\%) turk users are above this threshold. 
 Which seems like a reasonable percentage of the population to be paying attention. 
 
 % TODO see if I can find any references that say how many turkers/anyone pay attention at a given time.
 The exact distribution of these points change based on the initial random state when training the model.
 
-Figure~\ref{fig:scatterplot} showed a naive simple attempt to separate the classes of turk users and lab users.
+Figure \ref{fig:scatterplot} showed a naive simple attempt to separate the classes of turk users and lab users.
 It was concluded that a spacial based technique such as a SVM would be unsuitable as the data didn't seem to form any patterns or clusters.
-Figure~\ref{fig:Reclassified-Scatterplot} shows how the reclassified datapoints are not linearly separable.
+Figure \ref{fig:Reclassified-Scatterplot} shows how the reclassified datapoints are not linearly separable.
 This proves that my initial hypothesis was correct, and that data could not be reclassified purely by looking at simple feature of time taken and just number of mouse events.
 
 % TODO fix labels, this shows reclassified turk/lab data and the unclassified samples.
@@ -1146,7 +1151,7 @@ I decided to plot this data to understand if there was a link between these feat
 
 Figure \ref{fig:liklihoodlengths} show that the log likelihood from both models and length of a users mouse sequence are highly inversely correlated. 
 The Lab model likelihood and length have a correlation of -0.982, and similarly the Turk model has a correlation of -0.976.
-A value less than $-0.7$ would indicate a strong negative correlation, therefore Figure ~\ref{fig:liklihoodlengths} shows an extremely strong negative correlation \cite{mindrila2017scatterplots}.
+A value less than $-0.7$ would indicate a strong negative correlation, therefore Figure \ref{fig:liklihoodlengths} shows an extremely strong negative correlation \cite{mindrila2017scatterplots}.
 Such a strong correlation could indicate the models are doing nothing, other than looking at the length of a sequence.
 However looking at the reclassified Turk data we can see that there doesn't appear to be any correlation between length, and whether the data has been reclassified.
 Therefore such a strong correlation between the length and likelihood is of no concern. 
@@ -1158,7 +1163,7 @@ Therefore such a strong correlation between the length and likelihood is of no c
     \label{fig:diffliklihoodlengths}
 \end{figure}
 
-Figure ~\ref{fig:diffliklihoodlengths} removes the concern that length of mouse events sequence is the only feature being used in the models.
+Figure \ref{fig:diffliklihoodlengths} removes the concern that length of mouse events sequence is the only feature being used in the models.
 The difference in likelihoods and length of mouse events sequence has a correlation of $0.176$, meaning the relationship between the features is non-existent.
 
 % Think of better model than secondary model.
@@ -1177,7 +1182,7 @@ If the models predict a completely different group of users then it would indica
 
 % TODO:fFind reference that HMMS are good at spatial data.
 
-The initial ideas was that confirmation models would be trained on multivariate time series as described in Subsection~\ref{subsection:Features} Features.
+The initial ideas was that confirmation models would be trained on multivariate time series as described in Subsection\ref{subsection:Features} Features.
 However using a time series of data caused too much variance in the results, meaning that it could not be modelled by a Hidden Markov Model without access to more data.
 Therefore the sequence of mouse locations was used instead which can still provide interesting results as shown with the other model.
 Because of the different data this model will be a Hidden Markov Model with gaussian emissions as the multivariate inputs are continuous.
@@ -1198,12 +1203,12 @@ Unfortunately, this was not the case.
     \label{fig:MouseEventsTargets}
 \end{figure}
 
-Figure~\ref{fig:MouseEventsTargets} shows the issues with the mouse location data.
+Figure \ref{fig:MouseEventsTargets} shows the issues with the mouse location data.
 Rather than the mouse events for the sliders having roughly the same there appears to be multiple groups with varying coordinates.
 The majority but not all of mouse down events happen within 2 groups with the same y coordinates. 
 Additionally there is a massive range in mouse data.
 Most data falls below an X value of 800, and most are beneath a Y value of 1000 however there are still outliers to this.
-Figure~\ref{fig:MouseEventsTargets} shows only the mouse down events on the slider targets, when considering the other mouse events and other targets the data was even more messy. 
+Figure \ref{fig:MouseEventsTargets} shows only the mouse down events on the slider targets, when considering the other mouse events and other targets the data was even more messy. 
 The cause of this is unknown but is expected to be a result of the data recording process.
 % TODO: If I have time Id love to normalise each users events
 
@@ -1222,7 +1227,7 @@ This data may cause some of the users data to be unlikely to belong to any model
 \end{figure}
 
 
-Figure~\ref{fig:SpatialRecData} shows how the new HMMs reclassified 80 of the crowdsourced turk users as belonging more to the lab study.
+Figure \ref{fig:SpatialRecData} shows how the new HMMs reclassified 80 of the crowdsourced turk users as belonging more to the lab study.
 It is worth noting that the likelihoods of each user belonging to the model is much lower when the spatial data is used, 
 compared to when the mouse target data was used.
 This is because there is much more variance in the continuous spatial data rather than the categorical target data.
