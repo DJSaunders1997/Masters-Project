@@ -736,13 +736,26 @@ Features used are the users mouse location over time and sequence of interface e
 The parameters $(A,B,\pi)$ are all learned during training, so do not need to be specified \cite{porwal2013machine}.
 % TODO: REF https://www.sciencedirect.com/topics/mathematics/hidden-markov-models
 
-For the main model of this dissertation it was decided to use only the series of mouse events and ignored the timestamps of the event. % WHY
+Figure \ref{fig:MyHMM} shows the design of the main model used in this dissertation.
+It was decided to use only the series of mouse events and ignored the timestamps of the event. % WHY
 This is because there was no previous correlation discovered between a user’s total time taken or the number of mouse events. 
 Therefore, there is no reason to assume that using a time series would be any more accurate than a non-time series of data. 
 The sequence of mouse events should still hold the detail that time data would.
 
-% TODO: Check that this isnt befoer I mention bag-of-words models in my diss.
-With bag of words models we ignore all order to the sequences looking only at the frequency of each item.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.45]{Images/My HMM.png}
+    \caption{
+        Diagram showing the states of the designed Hidden Markov Model.
+        The emissions $O$ are shown to be the mouse targets.
+        The number of hidden states $Q$ are not specified as that was decided in Figure \ref{fig:ModleEval}.
+        $(A,B,\pi)$ are also not shown as they are calculated and not specified by me.
+    }
+    \label{fig:MyHMM}
+\end{figure}
+
+% TODO: Check that this isnt before I mention bag-of-words models in my diss.
+With Bag-Of-Words models the order of items is ignored and only takes into consideration the frequency of each item.
 This is a different approach, here the order is the most important thing.
 
 % Talk about all different steps you took?
