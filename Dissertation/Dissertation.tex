@@ -119,6 +119,7 @@
 % Paragraph 1 - Initial motovation
 Crowdsourcing is a method of collecting responses from tasks that require human intelligence to complete. 
 One such example of a crowdsourcing service is Amazon's Mechanical Turk \cite{AmazonTurk}.
+Here users known as ``Turkers'' complete tasks in exchange for a small financial incentive. 
 %Crowd-sourcing marketplaces like Amazon's Mechanical Turk are popular services that provide a method for researchers to get participants to complete human intelligence tasks \cite{paolacci2010running}. 
 A common use for this technology is to label data for use in training for machine learning algorithms \cite{chang2017revolt}.
 They can also provide a cheap, scalable method for scientists to gather responses in research \cite{paolacci2010running}.
@@ -196,9 +197,6 @@ Figure \ref{fig:interfaceSA} shows that the sliders representing each stock are 
 Additionally, the sliders are no longer one dimensional, both sliders are two dimensional line charts.
 The assumption of the study was that these extra visualisations would help users to maximise the value of their portfolio.
 
-Participants from the lab study were heavily monitored to ensure they were engaged, focusing on the task.
-The crowdsourced participants were not monitored so it is unknown if they were engaged with the task, without further analysis.
-
 \begin{table}[ht]
     \caption{\label{table:studies} Data collection methods used in the study \cite{gruber2017thesis}.}
     \small
@@ -211,9 +209,11 @@ The crowdsourced participants were not monitored so it is unknown if they were e
 \end{table}
 
 Table \ref{table:studies} shows the two different ways in which data was collected.
-Only 4.6\% of the data was gathered in person, with the most of responses being crowdsourced.
+Only 4.6\% of the data was gathered in person, with the most of responses being crowdsourced using Amazon's Mechanical Turk.
 The difference in number of participants shows one of the reasons crowdsourcing is popular. 
 It is much easier to crowdsource responses than it is to organise an in-person lab study.
+Participants from the lab study were heavily monitored to ensure they were engaged, focusing on the task.
+The crowdsourced participants were not monitored so it is unknown if they were engaged with the task, without further analysis.
 
 The study was inconclusive in proving that the alternative interface design had a meaningful effect on the success of a user's portfolio.
 Therefore, for the purpose of this project the distinction of which interface a participant was using is ignored.
@@ -625,13 +625,15 @@ Here I will summarise what I have done to the data.
 As previously mentioned the data was gathered through a lab study and an online crowdsourced study.
 The purpose of the online study was to gather a larger amount of data that was possible to do so in person.
 % The aim of this was to make any results more statically significant.
+
 Data was recorded in a JSON format with lots of irrelevant and duplicate data relating to the users background and not their mouse movements.
 JSON is a form of unstructured data, meaning it is not fully structures but has some organisation to it \cite{ronk2014structured}.
 To use the data in this project it first had to be processed into structured data.
 This was challenging and time consuming as Python's JSON library was unable to directly convert the data.
 This was because the mouse events were stored as a nested JSON dictionary and there were additionally errors with the way the data was logged causing it to be invalid JSON.
+
 After these challenges were addressed the data was converted and saved to a Pandas DataFrame, and then to a csv with over 100,000 lines.
-Errors were found in some of the data and so the final number of usable data is less than the figures shown in \ref{table:data}.
+Errors were found in some of the data and so the final number of usable data is less than the amount shown in Table \ref{table:data}.
 Example errors include missing mouse events, or time to complete task being recorded incorrectly as 
 $1.4 \times 10^{12}$ seconds or $31,688$ years, obviously incorrect.
 After removing users will erroneous, or missing data values the quantify of usable data was decreased.
@@ -693,6 +695,7 @@ One such feature recorded in the data is mouse target.
 This refers to the HTML element that a users mouse was over at any given time.
 As shown in Figure \ref{fig:interface} the most prominent part of the interface that users will interact with is the 5 stock allocation sliders.
 % Plot showing alloc-slider-1-5 and other.
+
 It is hypothesised that users who are paying attention may spend more time fine tuning their stock allocation and therefore would have more mouse events with the sliders as the target.
 % TODO:
 % Talk about how we had to rename the mouse targets with stuff like anything containing the words alloc-slider-1 was renamed.
@@ -709,6 +712,7 @@ However many html elements were ambiguously named and so only the sliders are na
 The html target will be used as a feature in this project.
 Additionally a users mouse location over time may provide useful insight into how they completed the task therefore it will also be used.
 This feature was even more challenging to engineer as the data needs to be altered to be useful time series of data.
+
 Ideally the data should be given as a multivariate time series which is a sequence of numerical vectors \cite{xing2010brief}.
 The data should be in the form
 \[    % <-- start math environment
@@ -725,14 +729,16 @@ The tuple $(x,y)$ refers to the horizontal and vertical location of the users mo
 % MAybe clustering algorithm but on what data?
 
 Once we have insightful features from the data, we can consider what machine learning algorithm would be most appropriate to use on the data.
-This will obviously be highly dependent on what form the final features are in.
+This will be highly dependent on what form the final features are in.
 For example if the features are numerical values such as time taken to complete task and number of mouse events then an algorithm such as a Support Vector Machine could be a good choice.
-If the data is in the form of sequential data such as a sequence of all mouse events then alternative techniques a Hidden Markov Model or neural network would've appropriate choices \cite{xing2010brief}.
+
+If the data is in the form of sequential data such as a sequence of all mouse events then alternative techniques a Hidden Markov Model or neural network would have been appropriate choices \cite{xing2010brief}.
 Variations of the traditional neural network such as Recurrent Neural Networks (RNNs) or Long Short Term Memory (LSTM) Networks are known to perform better with sequential data \cite{hochreiter1997long}.
-If the features output was an image such as a trace of mouse position over time, then a Convolutional Neural Network could be a suitable choice as they're designed for image data \cite{krizhevsky2012imagenet}.
+If the features output was an image such as a trace of mouse position over time, then a Convolutional Neural Network could be a suitable choice as they are designed for image data \cite{krizhevsky2012imagenet}.
+
 An issue with any neural network approach would be their tendency to overfit the data.
 That is when an overly complicated model tries to model relationships that are a result of noise in messy data.
-There is only a limited amount of training data for this project, and so a high risk of this happening.
+There is only a limited amount of training data available for this project, and so there is a high risk of this happening.
 Despite techniques such as dropout \cite{srivastava2014dropout} existing to address this issue I do not think any form of neural network would be appropriate for this task.
 % Could expand lots on why CNNs would be a good choice and also why they weren't used in the end.
 
@@ -751,6 +757,7 @@ Other suitable classification algorithms include proximity-based k-nearest neigh
 
 Lastly an important section of the pipeline, as it reflects the final outputs of the system.
 Labels will refer to which users are classified as paying attention and which users are not.
+
 A key aspect of this project will be semi-supervised learning.
 That is we have some data points we can confirm were paying attention, and others where they're level of attention was questionable.
 Given that it is known that the lab study users were paying attention, the aim is to use this data to relabel some of the crowdsourced data as potentially paying attention.
@@ -791,7 +798,7 @@ The sequence of mouse events should still hold the detail that time data would.
 
 % TODO: Check that this isnt before I mention bag-of-words models in my diss.
 With Bag-Of-Words models the order of items is ignored and only takes into consideration the frequency of each item.
-This is a different approach, here the order is the most important thing.
+However Hidden Markov Models use a different approach, here the order of the data is the primary attribute the model will use.
 
 % Talk about all different steps you took?
 % TODO: Mention the differnt types of HMM, multimodal vs whatever here.
@@ -806,10 +813,10 @@ When implementing a Hidden Markov model on the actual data there are lots of par
 Given a sequence of input data the HMM model can calculate the parameters of the model such as the transition matrix, emission probabilities, and initial probability distributions by using the Viterbi algorithm \cite{hmmlearn}.
 The most prominent parameter that must be given is the number of hidden states to use.
 
-The paper \cite{pohle2017selecting} addresses this issue on similar data.
+The issue of selecting a number of hidden states has been addressed with similar data \cite{pohle2017selecting}.
 The authors use a HMM to model animal movement behaviour, where they hope the hidden states would roughly relate to the behaviour of the animal.
 For example in this context a 2 state HMM may relate to ``foraging/resting'' and ``travelling''.
-Humans can be more complex than animals but we can think of potential states of being ``inquisitive'' and ``bored''.
+Humans can be more complex than animals but we can think of potential states of being ``inquisitive'' and ``unengaged''.
 They trained models with 2, 3, 4, and 5 hidden states and compared the criterion's of AIC, BIC, ICL.
 Similarity to evaluate the Lab and Turk models, several models were trained with number of hidden states ranging from 1 to 11.
 Generally, an increase in states should increase the effectiveness, however it will also take longer to train.
@@ -818,11 +825,12 @@ All models used for this comparison was trained to 50 iterations for a fair comp
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.55]{Images/ModelEvaluation.png}
-    \caption{Line plot of evaluation of different HMM architectures.}
+    \caption{Evaluations of different HMM architectures.}
     \label{fig:ModleEval}
 \end{figure}
 
 Figure \ref{fig:ModleEval} shows a different criterion of the total log likelihood of the training data of the model.
+This is shown on the vertical axis, the horizontal axis shows an increasing number of hidden states of a Hidden Markov Model.
 This value is normalised by dividing by the number of data samples, to give a per-sample total likelihood.
 The evaluation of each HMM model does fluctuate based on the random state used, which is why there are drops in the evaluation criterion even when more hidden states are used.
 We can see that the criterion for both models appeared to stop improving after 9 states.
@@ -847,10 +855,10 @@ While these results did not end up directly contributing to the main goal of thi
 
 Before any users were reclassified based on their engagement an alternative aim was established.
 This was to create a method of identifying whether a user was from the lab study or if they were a crowdsourced turk user based on some input data.
-While this is not the ambition of this dissertation, it would reveal interesting information about the two user groups.
+While this is not the ambition of this dissertation, it would reveal information about the two user groups.
 If it was trivial to tell these groups apart then it would suggest that there may have been an error in how the data was recorded, or some other unintentional feature a classifier may be identifying.
 If any machine learning method was unable to classify a given user then it may suggest that there is little to no difference between the users data.
-This could additionally indicate that there is no link between a users mouse data and their engagement, which would be a huge and surprising discovery. 
+This could additionally indicate that there is no link between a users mouse data and their engagement, which would be an interesting and surprising discovery. 
 
 % TODO (Get the actual exploration and ml/data science steps by looking at notebooks.)
 
@@ -858,7 +866,7 @@ This could additionally indicate that there is no link between a users mouse dat
 
 % Not sure if this is the best name for it.
 This section provided the initial exploration into the problem.
-These experiments attempted to separate the data samples for crowdsourced turker users, and lab participants by plotting samples in space.
+These experiments attempted to separate the data samples for crowdsourced turk users, and lab participants by plotting samples in space.
 The aim is that this might reveal information about the features of different users.
 If there was a clear distinction between the classes then we could potentially reclassify some points based on their euclidean distance to one another.
 
