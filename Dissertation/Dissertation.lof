@@ -6,21 +6,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3}{\ignorespaces Scatterplot of users.\relax }}{4}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Eye tracking visualisation showing popular locations of users eyes on a webpage. Red areas are more frequently looked at than blue areas \cite {buscher2009you}.\relax }}{5}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Eye tracking visualisation showing popular locations of users eyes on a webpage. Red areas are more frequently looked at than blue areas \cite {buscher2009you}.\relax }}{6}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Diagram of an example Markov Chain model \cite {choudhury2007state}.\relax }}{10}{figure.caption.9}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagram of an example Markov Chain model \cite {choudhury2007state}.\relax }}{11}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6}{\ignorespaces Diagram of the Data Pipeline of the project.\relax }}{11}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Diagram showing the states of the designed Hidden Markov Model. The emissions $O$ are shown to be the mouse targets. The number of hidden states $Q$ are not specified as that was decided in Figure \ref {fig:ModleEval}. $(A,B,\pi )$ are also not shown as they are calculated and not specified by me. \relax }}{15}{figure.caption.13}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagram showing the states of the designed Hidden Markov Model. The emissions $O$ are shown to be the mouse targets. The number of hidden states $Q$ are not specified as that was decided in Figure \ref {fig:ModleEval}. $(A,B,\pi )$ are also not shown as they are calculated and not specified by me. \relax }}{16}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {8}{\ignorespaces Evaluations of different HMM architectures.\relax }}{17}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Plot of the SVM, showing the decision region boundary.\relax }}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Plot of the SVM, showing the decision region boundary.\relax }}{19}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {10}{\ignorespaces Histogram of targets.\relax }}{20}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces Plots showing the relative frequency of bigrams for both groups.\relax }}{21}{figure.caption.17}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Plots showing the relative frequency of bigrams for both groups.\relax }}{22}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {12}{\ignorespaces Histogram of length of mouse events sequences for both groups.\relax }}{23}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
@@ -28,7 +28,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {14}{\ignorespaces Scatterplot showing the turk users that have been reclassified as behaving more like lab users. \relax }}{26}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Plot showing features of the reclassified points. \relax }}{26}{figure.caption.21}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Plot showing features of the reclassified points. \relax }}{27}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {16}{\ignorespaces Plots showing correlation between likelihood of different models and the length of mouse events.\relax }}{27}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
