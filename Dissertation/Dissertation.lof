@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7}{\ignorespaces Diagram showing the states of the designed Hidden Markov Model. The emissions $O$ are shown to be the mouse targets. The number of hidden states $Q$ are not specified as that was decided in Figure \ref {fig:ModleEval}. $(A,B,\pi )$ are also not shown as they are calculated and not specified by me. \relax }}{16}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Evaluations of different HMM architectures.\relax }}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Evaluations of different HMM architectures.\relax }}{18}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {9}{\ignorespaces Plot of the SVM, showing the decision region boundary.\relax }}{19}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
@@ -26,7 +26,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {13}{\ignorespaces Scatterplot of users likelihood of belonging to either group. \relax }}{26}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Scatterplot showing the turk users that have been reclassified as behaving more like lab users. \relax }}{26}{figure.caption.20}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Scatterplot showing the turk users that have been reclassified as behaving more like lab users. \relax }}{27}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {15}{\ignorespaces Plot showing features of the reclassified points. \relax }}{27}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 

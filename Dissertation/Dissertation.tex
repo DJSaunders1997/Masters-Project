@@ -50,7 +50,7 @@
     By using observed data recorded from user's mouse cursor it is possible to model both groups interaction with the system with separate Hidden Markov Models.
     Some user's interactions seem misplaced compared to their groups.
     These are reclassified with the aim of changing the groups of users from lab study or crowdsourced, to users paying attention and not paying attention.
-    It was found that potentially between 4.4\% and 50.9\% of the crowdsourced users were paying attention, which highlights the known inaccuracies of crowdsourcing data.
+    It was found that potentially between 4.4\% and 50.9\% of the crowdsourced users were paying attention, which reflect the known inaccuracies of crowdsourcing data.
 
     % These results require further research with a properly labelled dataset to confirm any findings.
     % I would also remove the last sentence. That's more of a future work idea.
@@ -409,8 +409,7 @@ This shares similarities with crowdsourcing cheating, both involve trying to ide
 The detection of spam email is a classic machine learning problem.
 Unsolicited spam emails are sent out in such large quantities, in part due to how cheap they are to send.
 Bayesian classifiers such as Naive Bayes obtain good results and are being used by multiple spam detecting softwares.
-Other successful techniques include Support Vector Machines and test clustering methods such as measuring the cosine similarity of new mails and classify them using k-means.  
-\cite{sasaki2005spam}
+Other successful techniques include Support Vector Machines and test clustering methods such as measuring the cosine similarity of new mails and classify them using k-means \cite{sasaki2005spam}.
 
 Spam reviews are becoming a big issue for E-commerce websites such as Amazon.
 There are obvious financial incentives to spam reviews.
@@ -419,7 +418,10 @@ Therefore spam reviews can directly lead to increased profit.
 Many spam reviews are duplicates, different uses posting the same positive review or a product, or multiple products.
 Using features from user and review data it was possible to use logistic regression to achieve an average AUC value of 78\% \cite{jindal2007review}.
 
-Twitter
+The social media platform twitter has been experiencing issues due to large amounts of spam data.
+Using twitters API can give information regarding the friend and follower status between tweeters.
+This can be used to detect cases of unknown spam accounts contacting genuine users.
+Again a Bayesian classifier was found to have the best overall performance \cite{wang2010don}.   
 
 
 
