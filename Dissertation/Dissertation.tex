@@ -321,16 +321,16 @@ Eye tracking data can be used to show interface elements that users focus their 
 From this data researchers were able to predict the amount of attention elements of the page would receive.
 By observing what parts of an interface users are interacting with we can determine what a user is engaging with \cite{buscher2009you}.
 
-Eye-tracking has been used, and found success novel applications such as recording the engagement of users when playing a game. 
+Eye-tracking has been used, and found success in novel applications such as recording the engagement of users when playing a game. 
 Tracking users eye movements helped game designers understand how users can recognise interactable game objects and could be used to investigate problematic game design issues \cite{renshaw2009towards}.
 
 %TODO: I mention researchers names here, but nowhere else?
 % Make consistant
-Eivazi and Bednarik extracted features from a users eye tracking data to determine their cognitive state in a problem solving exercise \cite{eivazi2011predicting}.
+Researchers are able to extract features from a users eye tracking data to determine their cognitive state in a problem solving exercise \cite{eivazi2011predicting}.
 Features such as ``mean fixation duration'' and ``total path distances'' were engineered, and users were split into classes based on their performance. 
 Given a user feature set and their performance class it was able to classify their cognitive state during the task with a 87.5\% accuracy with a Support Vector Machine.
 
-Szafir and Mutlu identified a plethora of verbal and non-verbal behavioural cues used by teachers in an educational setting, with gaze being identified as one of them \cite{szafir2012pay}.
+There are a plethora of verbal and non-verbal behavioural cues used by teachers in educational settings to detect engagement, with gaze being identified as one of them \cite{szafir2012pay}.
 The behavioural cues could not be recorded directly by a computer, instead EEG signals measured from a headset were used to measure engagement.
 
 Eye tracking is not however a perfect solution and its limitations have been well documented. 
@@ -401,22 +401,23 @@ More advanced attacks copy domain specific text copied from the internet, which 
 % TODO: add section on SPAM detection, they're similar in a way?
 
 Spam detection can be thought of as a binary classification problem.
+Given a document such as an email, review, or tweets can the non-spam be separated from the spam.
+Spam documents can be though of as unwanted nuisance such as an advertisement, scam, and hoaxes \cite{sasaki2005spam}.
  
-This has similarities with crowdsourcing cheating
+This shares similarities with crowdsourcing cheating, both involve trying to identify genuine wanted data from other unwanted data.
 
-Email
-Spam email is a common detection problem.
-Spam emails are generally ads \cite{jindal2007review}.
+The detection of spam email is a classic machine learning problem.
+Unsolicited spam emails are sent out in such large quantities, in part due to how cheap they are to send.
+Bayesian classifiers such as Naive Bayes obtain good results and are being used by multiple spam detecting softwares.
+Other successful techniques include Support Vector Machines and test clustering methods such as measuring the cosine similarity of new mails and classify them using k-means.  
+\cite{sasaki2005spam}
 
 Spam reviews are becoming a big issue for E-commerce websites such as Amazon.
 There are obvious financial incentives to spam reviews.
 A product with many positive reviews is more likely to be purchased than a similar product with many negative reviews.
 Therefore spam reviews can directly lead to increased profit.
 Many spam reviews are duplicates, different uses posting the same positive review or a product, or multiple products.
-These are easy to detect.
-
-
-\cite{jindal2007review}F
+Using features from user and review data it was possible to use logistic regression to achieve an average AUC value of 78\% \cite{jindal2007review}.
 
 Twitter
 
