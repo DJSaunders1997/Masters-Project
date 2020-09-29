@@ -730,7 +730,7 @@ Lastly an important section of the pipeline, as it reflects the final outputs of
 Labels will refer to which users are classified as paying attention and which users are not.
 A key aspect of this project will be semi-supervised learning.
 That is we have some data points we can confirm were paying attention, and others where they're level of attention was questionable.
-Given that we know the lab study users were paying attention, the aim is to use this data to relabel some of the crowdsourced data as potentially paying attention.
+Given that it is known that the lab study users were paying attention, the aim is to use this data to relabel some of the crowdsourced data as potentially paying attention.
 
 %Once we have an algorithm that can classify some users as paying attention or not we can rerun the algorithm with these preliminary outputs as new training data.
 %If this is done recursively then we can end up with a system that can split all data points into the 2 classes, perhaps with a degree of confidence given as a percentage.
@@ -1221,7 +1221,7 @@ Unfortunately, this was not the case.
 
 Figure \ref{fig:MouseEventsTargets} shows the issues with the mouse location data.
 Rather than the mouse events for the sliders having roughly the same there appears to be multiple groups with varying coordinates.
-The majority but not all of mouse down events happen within 2 groups with the same y coordinates. 
+The majority but not all of mouse down events happen within two groups with the same y coordinates. 
 Additionally there is a massive range in mouse data.
 Most data falls below an X value of 800, and most are beneath a Y value of 1000 however there are still outliers to this.
 Figure \ref{fig:MouseEventsTargets} shows only the mouse down events on the slider targets, when considering the other mouse events and other targets the data was even more messy. 
@@ -1251,7 +1251,8 @@ The original previous HMM classified 45 of the crowdsourced users.
 Taking an intersection of the sets of users will show us how consistent the results are.
 If there is a large intersection of users then the results are consistent with before, however if there is little to no intersection then it would indicate that there is no consistency between models. 
 
-${Previous Reclassified Users} \cap {New Reclassified Users}$
+% Remove equation
+%${Previous Reclassified Users} \cap {New Reclassified Users}$
 
 There is an intersection of 12 users between the two sets of users.
 This indicates either that there is some consistency in the results.
@@ -1324,10 +1325,12 @@ The initial results are promising, but without a properly labelled dataset there
 
 To summarise this project users mouse data from 2 groups of users performing a simple task was analysed and modelled.
 The different groups conducted the experiment in different ways.
-13 of the users conducted the experiment in a lab, where they were closely monitored to ensure they were paying attention.
-380 of the users were crowdsourced online using Amazon’s Mechanical Turk.
-These users were not monitored so it is uncertain if they were paying attention.
+18 of the participants conducted the experiment in a lab, where they were closely monitored to ensure they were paying attention.
+370 of the participants were crowdsourced online using Amazon’s Mechanical Turk.
+These were not monitored so it is uncertain if they were paying attention.
+However due to erroneous data not all of the data from these participants could be used.
 % TODO: Double check these numbers I just made them up
+The main goal of this dissertation was to identify which of the crowdsourced users may have been paying attention.
 A variety of techniques was attempted, and the use of Hidden Markov Models was evaluated to perform best at this task.
 Models were trained for each group of users on different sources of data. 
 One a sequence of html element targets and the other a multivariate time series of a users mouse cursor location.
