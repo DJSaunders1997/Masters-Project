@@ -6,6 +6,7 @@
 \usepackage[export]{adjustbox}
 \usepackage[hidelinks]{hyperref}
 \usepackage{setspace}
+\usepackage{pdfpages}   % To add record of supervision as pdf
 
 % change reference style to [1], remove stupid sorting, language changed so date in ddmmyyyy
 \usepackage[backend=biber, style=numeric, sorting=none, language=australian]{biblatex}
@@ -1362,5 +1363,7 @@ While they were monitored and we can be sure they were not distracted by phones 
 
 \singlespacing
 \printbibliography
+
+\includepdf[pages={1}]{Declaration/RecordOfSupervision.pdf}
 
 \end{document}
