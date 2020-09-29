@@ -2,7 +2,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {1}{\ignorespaces Data collection methods used in the study \cite {gruber2017thesis}.\relax }}{3}{table.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2}{\ignorespaces The first 5 records of results of the crowdsourced task.\relax }}{11}{table.caption.11}%
+\contentsline {table}{\numberline {2}{\ignorespaces The first 5 records of results of the crowdsourced task. The table shows the features of the data. The lab study data and the crowdsourced data have the same schema, except the lab results have a different ID field. \relax }}{11}{table.caption.11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {3}{\ignorespaces The usable amounts of data samples.\relax }}{12}{table.caption.12}%
 \defcounter {refsection}{0}\relax 

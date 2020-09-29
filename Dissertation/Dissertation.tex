@@ -316,20 +316,20 @@ Tracking users eye movements helped game designers understand how users can reco
 % Make consistant
 Eivazi and Bednarik extracted features from a users eye tracking data to determine their cognitive state in a problem solving exercise \cite{eivazi2011predicting}.
 Features such as ``mean fixation duration'' and ``total path distances'' were engineered, and users were split into classes based on their performance. 
-Given a user feature set and their performance class it was able to classify their cognitive state during the task with a 87.5\% accuracy with a support vector machine.
+Given a user feature set and their performance class it was able to classify their cognitive state during the task with a 87.5\% accuracy with a Support Vector Machine.
 
 Szafir and Mutlu identified a plethora of verbal and non-verbal behavioural cues used by teachers in an educational setting, with gaze being identified as one of them \cite{szafir2012pay}.
 The behavioural cues could not be recorded directly by a computer, instead EEG signals measured from a headset were used to measure engagement.
 
 Eye tracking is not however a perfect solution and its limitations have been well documented. 
 Tracking subjects eyes with a good degree of accuracy requires the use of expensive, intrusive equipment that frequently needed recalibrating \cite{richardson2004eye}. 
-
+Therefore, these limitations rule out eye tracking to explore user engagement in my research.
 
 \subsection{Mouse cursor tracking}
 % Copied straight from CSCM10 Initial Report
 % Mouse cursor tracking
 
-Research has also found that there is a correlation between a user’s gaze and their cursor position. 
+There is a direct correlation between a user’s gaze and their cursor position. 
 The position can be considered a ``poor man’s eye tracker'' as it has been found that eye gaze match mouse position 69\% of the time \cite{cooke2006mouse}. 
 Mouse movement data can be collected without the drawbacks of eye tracking and with more automatic methods, meaning more data can be collected, and on a larger scale \cite{demvsar2017quantifying}.
 Therefore, it can be said that mouse data can be used as a good alternative to eye tracking data.
@@ -373,6 +373,7 @@ This allowed them to create a much larger volume of responses than any legitimat
 Crowdsourced tasks can be classified as Closed Class tasks and Open Class tasks, with each having unique cheating approaches \cite{eickhoff2013increasing}.
 Closed class questions are more common, requiring workers to choose an answer from a predefined list.
 This includes check boxes, buttons, multiple choice questions, and importantly to this project, sliders.
+
 Randomly picking answers is the most common cheating attempt, this can be detected by comparing a suspected users responses with a user known to not be cheating or comparing with all other workers answers.
 % Can add other cheating attempt if we want to.
 Open class questions are much easier to cheat, these involve giving a user much more freedom to complete a task.
@@ -400,7 +401,7 @@ Many spam reviews are duplicates, different uses posting the same positive revie
 These are easy to detect.
 
 
-\cite{jindal2007review}
+\cite{jindal2007review}F
 
 Twitter
 
@@ -424,8 +425,8 @@ One of the most popular semi-supervised learning techniques are Semi-Supervised 
 %Reference \cite{zhu2005semi} as it looks to be massively influential with 4,000 google scholar citations.
 
 
-The data used in this dissertation is labelled.
-All data belongs to 2 classes, a crowdsourced turk user class, or a lab study user class.
+All of the data used in this dissertation is labelled.
+The data belongs to two classes, a crowdsourced turk user class, or a lab study user class.
 However, on the other hand the data is not labelled for the task I would like to explore.
 The goal of this project is to identity which users were paying attention.
 We have assumed that we can infer that lab study users will be paying attention, so we can say that those samples are labelled.
@@ -440,12 +441,13 @@ Rather than annotate all data by hand which would be very time intensive, 1000 f
 This led to a split of data labelled 563 engaged and 437 disengaged.
 AU facial recognition features were extracted from the pupils faces in the video frames, and important features decided with a Principal Component Analysis method to keep features totalling 95\% of the variance.
 
-Their chosen method of semi supervised learning is a safe semi-supervised support vector machine.
-This variant of a semi supervised support vector machine finds a better separator when there is a small volume of labelled data, but a large volume of unlabelled data.
+Their chosen method of semi supervised learning is a Safe Semi-Supervised Support Vector Machine.
+This variant of a Semi Supervised Support Vector Machine finds a better separator when there is a small volume of labelled data, but a large volume of unlabelled data.
 The SSL model was trained with numbers of labelled data from 50 to 500, and an equal number of samples from both classes.
 The AUC metric ranged from 0.65 to 0.733 depending on the quantity of labelled data used, outperforming a traditional SVM.
 
-Unfortunately, as shown in figure \ref{fig:scatterplot} the data here cannot be spatially separated and therefore any SVM would not be successful on the data. 
+Unfortunately, as shown in figure \ref{fig:scatterplot} the data here cannot be spatially separated and therefore any SVM would not be successful on the data.
+This is because Support Vector Machines are large margin classifiers, they work by finding a hyperplane that maximises distance from datapoints of different classes \cite{campbell2000query}. 
 It is still useful however to see how semi-supervised learning has been applied to the field of detecting user engagement and how it has been successful.
 
 % Removed N-Grams section as wasn't used in the final product. 
@@ -473,7 +475,7 @@ It is still useful however to see how semi-supervised learning has been applied 
 A Hidden Markov Model will be the main statistical modelling technique used in this dissertation.
 In this section I will give an overview of what they are, and how they have been used in related projects.
 A Hidden Markov Model (HMM) is a statistical modelling technique based on the Markovian process. %Reference?
-It assumes that the states of the system follow the rules for a Markov process, that is that every state depends only on the previous state of the system.
+That is the states of the system follow the rules for a Markov process, meaning every state depends only on the previous state of the system.
 It assumes that we cannot observe a system directly, but only see observations from it.
 
 HMMs can be defined with the parameters $(Q,A,O,B,\pi)$ \cite{jurafsky2018speech}.
@@ -584,11 +586,13 @@ This section may act as an overview of the project, detailing the different sect
 % OLD FROM PROJECT-SPEC
 
 
-The first component of the project has been completed, and data has been extracted form JSON format to a csv format.
+The first component of the project has been completed, and data has been extracted from it's original JSON format to a csv format.
 
 \begin{table}[ht]
-    \caption{\label{table:data} The first 5 records of results of the crowdsourced task.}
-
+    \caption{\label{table:data} The first 5 records of results of the crowdsourced task.
+        The table shows the features of the data.
+        The lab study data and the crowdsourced data have the same schema, except the lab results have a different ID field.
+    }
     \begin{tabular}{llllllll}
         \hline
         event\_type    & target         & time  & x   & y   & step & turkId         \\ \hline
@@ -605,10 +609,7 @@ The first component of the project has been completed, and data has been extract
     \end{tabular}
 \end{table}
 
-Table \ref{table:data} shows us the features of the data.
-The lab study data and the crowdsourced data have the same schema, except lab results have a different ID field.
-
-The target field shows us which element in Fig \ref{fig:interface} a participant is interacting with and event\_type details the type of interaction.
+The target field shows which element in Fig \ref{fig:interface} a participant is interacting with and event\_type details the type of interaction.
 Time field shows the time taken in seconds since the first recorded mouse event.
 We can hypothesise that participants with a shorter time paid less attention than a participant who took much longer, thinking about their actions more.
 The x and y fields show the location of the mouse and step shows which stage of the task, from 1 to 5, a participant was in.
@@ -683,7 +684,7 @@ Table \ref{table:UseableData} shows that only 12 of the lab study participants a
 
 This part of the pipeline refers to what features I am going to extract from the data.
 Features of data can be defined as ``a measurable piece of data that can be used for analysis'' \cite{DataRobot}.
-These will consist of both raw and created features.
+These will consist of both raw and created features, but what do I mean by this?
 Raw features will consist of the number of mouse events recorded, while a created feature would have to be extracted from the data.
 
 % TODO: Properly explain how we renamed targets, why
@@ -1270,8 +1271,8 @@ It is worth noting that the likelihoods of each user belonging to the model is m
 compared to when the mouse target data was used.
 This is because there is much more variance in the continuous spatial data rather than the categorical target data.
 The original previous HMM classified 45 of the crowdsourced users.
-Taking an intersection of the sets of users will show us how consistent the results are.
-If there is a large intersection of users then the results are consistent with before, however if there is little to no intersection then it would indicate that there is no consistency between models. 
+Taking an intersection of the sets of users will highlight the consistency, or inconsistency of the results.
+If there is a large intersection of users then the results are consistent with the previous model, however if there is little to no intersection then it would indicate that there is no consistency between models. 
 
 % Remove equation
 %${Previous Reclassified Users} \cap {New Reclassified Users}$
@@ -1286,7 +1287,7 @@ This is promising as it shows that a number of the reclassified users are shared
 The inconsistency in the mouse location data identified could be causing the differences in reclassified users between the methods.
 Therefore I would predict that the results from the spatial models to be less accurate and representative of the real world processes that the models trained with mouse target data. 
 
-If we take the union of both sets of reclassified users we get a set of 200 reclassified users.
+If we take the union of both sets of reclassified users we get a set of 184 reclassified users.
 This allows us to have a few different sets of users that we may reclassify as belonging to the wrong group, with different confidence levels.
 I am most confident in saying that the 16 users reclassified by both versions of the models seem more similar to the lab study users than the other crowdsourced users.
 I am next most confident in the 42 users reclassified by the HMM trained with mouse target data.
@@ -1307,11 +1308,12 @@ This consists of 184 crowdsourced users which is over half of the total populati
     \end{tabular}
 \end{table}
 
-Alternatively inverting this gives us users which we can assume are not engaged in the tasks, to different degrees.
-I am most confident in saying that 177 of the crowdsourced users not reclassified by either models belong with their class, and were potentially not paying attention.
-I have next most confidence in the 319 users that were identified with the mouse target data models.
-Lastly we have the 345 users not identified by the intersection of the models.
-I am least confident in saying that these users were not engaged in the task.
+% Removed as it was confusing and the confidence number pairs were wrong and I didnt like  it
+% Alternatively inverting this gives us users which we can assume are not engaged in the tasks, to different degrees.
+% I am most confident in saying that 177 of the crowdsourced users not reclassified by either models belong with their class, and were potentially not paying attention.
+% I have next most confidence in the 319 users that were identified with the mouse target data models.
+% Lastly we have the 345 users not identified by the intersection of both models.
+% I am least confident in saying that these users were not engaged in the task.
 
 \section{Future work}
 
