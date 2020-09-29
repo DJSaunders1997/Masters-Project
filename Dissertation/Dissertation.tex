@@ -493,6 +493,15 @@ A Hidden Markov Model (HMM) is a statistical modelling technique based on the Ma
 That is the states of the system follow the rules for a Markov process, meaning every state depends only on the previous state of the system.
 It assumes that we cannot observe a system directly, but only see observations from it.
 
+%Cite diagram from here https://www.researchgate.net/publication/245563174_State_Dependence_in_Lane-Changing_Models/figures?lo=1
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[scale=1.5]{Images/HMM-Paper-Diagram.png}
+    \caption{Diagram of an example Markov Chain model \cite{choudhury2007state}.}
+    \label{fig:Markov}
+\end{figure}
+% Alternatively make a similar looking diagram from scratch in Google drawings.
+
 HMMs can be defined with the parameters $(Q,A,O,B,\pi)$ \cite{jurafsky2018speech}.
 $Q$ is the set of hidden states of the system, the cardinality of which is normally selected empirically \cite{ibe2013markov}.
 $A$ is a transition probability matrix, a square matrix of shape $|Q|\times|Q|$.
@@ -520,14 +529,6 @@ It is a set with the same cardinality as $Q$, where each item in $\pi$ relates t
 % Have figure caption like this, looks professional and really good.
 % https://miro.medium.com/max/556/0*s4wQ8nTIb2122-9s.png
 
-%Cite diagram from here https://www.researchgate.net/publication/245563174_State_Dependence_in_Lane-Changing_Models/figures?lo=1
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=1.5]{Images/HMM-Paper-Diagram.png}
-    \caption{Diagram of an example Markov Chain model \cite{choudhury2007state}.}
-    \label{fig:Markov}
-\end{figure}
-% Alternatively make a similar looking diagram from scratch in Google drawings.
 
 Figure \ref{fig:Markov} shows the components of a Hidden Markov Model.
 
@@ -564,9 +565,14 @@ Figure \ref{fig:Markov} shows the components of a Hidden Markov Model.
 %(1/2 page to 1 page)
 %(maybe in methodology)
 The overall methodology of this dissertation is to conduct exploratory research.
+This involves conducting multiple small experiments that build on each other attempting to model participants mouse data.
+The aim of this was to gain insight into the distributions of the different groups of participants.
+After the data is understood it will then be modelled with a promising technique and the task of identifying engaged participants can begin. 
 
-The methodology consists of the data pipeline.
-
+The methodology also consists of the data pipeline.
+This gives an overview of the stages involved with the project.
+When a new technique was tried on the data the pipeline had to be considered. 
+It describes the flow of data for this project.
 
 % TODO: FInd somthing to replace this with 
 % This study (ref) says that only 10\% of all people / turk users pay attention during a task.
@@ -583,15 +589,16 @@ The methodology consists of the data pipeline.
 
 \subsection{Data Pipeline}
 
-When planning and completing this project many decisions were made about the steps taken to convert the raw data to a finished project.
-This section may act as an overview of the project, detailing the different sections of work, what they may contain, and the order in which they will be completed.
-
-\begin{figure}[ht]
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.5]{Images/Data-Pipeline.png}
     \caption{Diagram of the Data Pipeline of the project.}
     \label{fig:test}
 \end{figure}
+
+When planning and completing this project many decisions were made about the steps taken to convert the raw data to a finished project.
+This section may act as an overview of the project, detailing the different sections of work, what they may contain, and the order in which they will be completed.
+
 
 % Everyone is a question
 
@@ -600,7 +607,8 @@ This section may act as an overview of the project, detailing the different sect
 % OLD FROM PROJECT-SPEC
 
 
-The first component of the project has been completed, and data has been extracted from it's original JSON format to a csv format.
+The first component of the project, consisted of extracting the data from it's original JSON format to a csv format.
+To achieve this a python script was developed to go through the nested dictionaries unpacking them.
 
 \begin{table}[ht]
     \caption{\label{table:data} The first 5 records of results of the crowdsourced task.
@@ -1369,18 +1377,20 @@ This dissertation aimed to detect user engagement from mouse tracking data.
 From the analysis and exploration conducted it cannot be fully concluded that the methods presented here can fulfil this aim.
 The initial results are promising, but without a properly labelled dataset there is no way of confirming these results.
 
-To summarise this project users mouse data from 2 groups of users performing a simple task was analysed and modelled.
+To summarise this project users mouse data from two groups of users performing a simple task was analysed and modelled.
 The different groups conducted the experiment in different ways.
 18 of the participants conducted the experiment in a lab, where they were closely monitored to ensure they were paying attention.
 370 of the participants were crowdsourced online using Amazon’s Mechanical Turk.
 These were not monitored so it is uncertain if they were paying attention.
 However due to erroneous data not all of the data from these participants could be used.
 % TODO: Double check these numbers I just made them up
+
 The main goal of this dissertation was to identify which of the crowdsourced users may have been paying attention.
 A variety of techniques was attempted, and the use of Hidden Markov Models was evaluated to perform best at this task.
 Models were trained for each group of users on different sources of data. 
-One a sequence of html element targets and the other a multivariate time series of a users mouse cursor location.
-Each users data was evaluated on the lab model and the crowdsourced turk model.
+One a sequence of html element targets and the other a multivariate series of a users mouse cursor location.
+
+Each user's data was evaluated on the lab model and the crowdsourced turk model.
 Some of the crowdsourced users was evaluated to belong more closely to some of the lab study users rather than the other crowdsourced users.
 This means that these users were doing something different from their peers, they are suspected to be paying attention more than their peers. 
 From the results of the model I can predict that anywhere from 184 to 16 of the crowdsourced users were paying attention, with varying degrees of confidence.
@@ -1388,17 +1398,20 @@ From the results of the model I can predict that anywhere from 184 to 16 of the 
 % Older conclusion
 However I would not be too confident in my findings.
 The data was incorrectly labelled for the task I wanted to perform.
-Additionally the data was heavily imbalanced.
+
+The data was heavily imbalanced, there is a comparatively very small volume of lab study data compared to the crowdsourced data.
 All of the conclusions I have made from the lab data are relying on only a small number of datapoints which is not statistically significant.
-There were not meaningful amounts of data from the other class of online data either.
+There were not meaningful amounts of data from the other class of crowdsourced data either.
 Typically, data science and machine learning uses big data, where as this project used only 388 records in total which came to only 330 MB of data in its original JSON format.
-Any bias in any of these original samples will be magnified as this was used to classify more points, which would again spread this bias.
-This would become a self-fulfilling prophecy as more similar points would be labelled and spread the belief.
+Any bias in any of these original samples will be magnified as this was used to classify more points, which would spread this bias.
+% This would become a self-fulfilling prophecy as more similar points would be labelled and spread the belief.
 
-Any concern that the models have learned of a simple feature such as sequence event has been disproven, showing the reclassification algorithm has nonesuch simple relationship.
+Another potential flaw of the project is the first assumption, that the lab study participants were always engaged.
+While they were monitored and we can be sure they were not distracted by items such as phones or televisions, many of them may have 'zoned out' and not have been given it their full effort and attention.
 
-Biggest flaw of the project is the first assumption, that the lab people were all paying attention.
-While they were monitored and we can be sure they were not distracted by phones or televisions, many of them may have 'zoned out' and not have been given it their full effort and attention.
+Any concern that the models have learned of a simple feature such as sequence event has been disproven, showing the reclassification algorithm does not model a simple relationship.
+
+To conclude further work is required to strengthen the findings of this dissertation, although the initial results do appear to be promising.
 
 %\subsection{Revisiting methods}
 % Then in conclusion say that while there are definitely issues with the way I created data from such a small number of samples.

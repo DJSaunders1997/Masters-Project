@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4}{\ignorespaces Eye tracking visualisation showing popular locations of users eyes on a webpage. Red areas are more frequently looked at than blue areas \cite {buscher2009you}.\relax }}{6}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Diagram of an example Markov Chain model \cite {choudhury2007state}.\relax }}{11}{figure.caption.9}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagram of an example Markov Chain model \cite {choudhury2007state}.\relax }}{10}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6}{\ignorespaces Diagram of the Data Pipeline of the project.\relax }}{11}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
@@ -22,18 +22,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {11}{\ignorespaces Plots showing the relative frequency of bigrams for both groups.\relax }}{22}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Histogram of length of mouse events sequences for both groups.\relax }}{23}{figure.caption.18}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Histogram of length of mouse events sequences for both groups.\relax }}{24}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Scatterplot of users likelihood of belonging to either group. \relax }}{25}{figure.caption.19}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Scatterplot of users likelihood of belonging to either group. \relax }}{26}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {14}{\ignorespaces Scatterplot showing the turk users that have been reclassified as behaving more like lab users. \relax }}{26}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {15}{\ignorespaces Plot showing features of the reclassified points. \relax }}{27}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Plots showing correlation between likelihood of different models and the length of mouse events.\relax }}{27}{figure.caption.22}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Plots showing correlation between likelihood of different models and the length of mouse events.\relax }}{28}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {17}{\ignorespaces Plot showing difference in likelihood between the models against length of mouse events sequence. \relax }}{28}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces Scatterplot of mouse down event coordinates of all users mouse path data.\relax }}{29}{figure.caption.24}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Scatterplot of mouse down event coordinates of all users mouse path data.\relax }}{30}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {19}{\ignorespaces Graph of reclassified datapoints from spatial data HMMs.\relax }}{30}{figure.caption.25}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Graph of reclassified datapoints from spatial data HMMs.\relax }}{31}{figure.caption.25}%
