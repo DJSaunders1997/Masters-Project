@@ -611,6 +611,20 @@ After these challenges were addressed the data was converted and saved to a Pand
 Errors were found in some of the data and so the final number of usable data is less than the figures shown in \ref{table:data}.
 Example errors include missing mouse events, or time to complete task being recorded incorrectly as 
 $1.4 \times 10^{12}$ seconds or $31,688$ years, obviously incorrect.
+After removing users will erroneous, or missing data values the quantify of usable data was decreased.
+Table \ref{table:UseableData} shows that only 12 of the lab study participants and 361 of the crowdsourced participants data was deemed of an acceptable quality to use going forward.
+
+% TO get percentages we divide the number by 361.
+\begin{table}[ht]
+    \caption{\label{table:UseableData} The usable amounts of data samples.}
+    \small
+    \begin{tabular}{llp{2.3cm}ll}
+        \hline
+        Collection method   & Number of participants & Number of participants with usable data  & Percentage decrease \\  \hline
+        Lab study           & 18                        & 12                                    & 33.3\%  \\
+        Crowdsourced        & 370                       & 361                                   & 1.9\%  \\  \hline
+    \end{tabular}
+\end{table}
 
 % TODO: give details on how the data was manipulated form the time in unix time to floats to whole seconds.
 
@@ -1251,21 +1265,22 @@ Therefore I would predict that the results from the spatial models to be less ac
 
 If we take the union of both sets of reclassified users we get a set of 200 reclassified users.
 This allows us to have a few different sets of users that we may reclassify as belonging to the wrong group, with different confidence levels.
-I am most confident in saying that the 12 users reclassified by both versions of the models seem more similar to the lab study users than the other crowdsourced users.
-I am next most confident in the 120 users reclassified by the HMM trained with mouse target data.
+I am most confident in saying that the 16 users reclassified by both versions of the models seem more similar to the lab study users than the other crowdsourced users.
+I am next most confident in the 42 users reclassified by the HMM trained with mouse target data.
 This is because data used in those models was more properly cleaned and had less variation in data.
 The users I am the least most confident in reclassifying is the union of users from both sets of models.
-This consists of 200 crowdsourced users which is 43\% of the total population.
+This consists of 184 crowdsourced users which is over half of the total population.
 
+% TO get percentages we divide the number by 361.
 \begin{table}[ht]
     \caption{\label{table:usersattention} The different sets of crowdsourced user paying attention with confidence.}
     \small
     \begin{tabular}{llll}
         \hline
         Number of Users & Percent of Population & Identified By Models             & Confidence Level \\  \hline
-        12              & 2.6\%                 & Both Models                      & High  \\
-        120             & 26.0\%                & Target Data model only           & Medium  \\  
-        200             & 43.4\%                & Sequence Data model only         & Low  \\  \hline
+        16              & 4.4\%                 & Both Models                      & High  \\
+        42              & 11.6\%                & Target Data model only           & Medium  \\  
+        184             & 50.9\%                & Cursor Location Data model only  & Low  \\  \hline
     \end{tabular}
 \end{table}
 
@@ -1274,8 +1289,6 @@ I am most confident in saying that 261 of the crowdsourced users not reclassifie
 I have next most confidence in the 341 users that were identified with the mouse target data models.
 Lastly we have the 449 users not identified by the intersection of the models.
 I am least confident in saying that these users were not engaged in the task.
-
-%TODO: Maybe make this into a table to help explain my results.
 
 \section{Future work}
 
