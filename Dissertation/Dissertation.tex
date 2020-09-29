@@ -342,7 +342,10 @@ It can be determined what paragraph of a page was being read with an accuracy of
 
 Other methodologies explored ways of classifying user engagement from eye and cursor data, however it is also possible to predict user's attention and user frustration in complex webpages \cite{navalpakkam2012mouse}.
 Not all studies agree that mouse cursor is always a good approximation for eye data. 
-Hauger et al found that distinct cursor behaviour exists depending on the task, and that the relationship between eye gaze and mouse position is more nuanced than measuring only mouse data \cite{huang2012user}.
+Some have found that distinct cursor behaviour exists depending on the task a user is completing.
+This means that the relationship between eye gaze and mouse position is more nuanced than measuring only mouse data \cite{huang2012user}.
+
+The benefits of tracking users mouse cursors, lead me to believe it will be a suitable attribute to measure from users for this project. 
 
 % \subsection{Machine learning techniques}
 % I've given a high level overview of the existing literature, here I will be more in depth as to the algorithms and techniques relevant to this project.
@@ -1229,7 +1232,7 @@ If the models predict a completely different group of users then it would indica
 
 % TODO:fFind reference that HMMS are good at spatial data.
 
-The initial ideas was that confirmation models would be trained on multivariate time series as described in Subsection\ref{subsection:Features} Features.
+The initial ideas was that confirmation models would be trained on multivariate time series as described in Subsection \ref{subsection:Features} Features.
 However using a time series of data caused too much variance in the results, meaning that it could not be modelled by a Hidden Markov Model without access to more data.
 Therefore the sequence of mouse locations was used instead which can still provide interesting results as shown with the other model.
 Because of the different data this model will be a Hidden Markov Model with gaussian emissions as the multivariate inputs are continuous.
